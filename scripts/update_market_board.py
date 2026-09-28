@@ -62,8 +62,8 @@ def daily_bars() -> list[dict]:
         except (KeyError, TypeError, ValueError):
             continue
     bars.sort(key=lambda b: b["time"])
-    if len(bars) < 15:
-        raise ValueError(f"Only {len(bars)} closed daily OHLC bars received; need at least 15")
+    if len(bars) < 10:
+        raise ValueError(f"Only {len(bars)} closed daily OHLC bars received; need at least 10")
     return bars[-30:]
 
 
@@ -89,7 +89,9 @@ def technical_levels(bars: list[dict], spot: float, fx: float) -> dict:
     for i, bar in enumerate(bars):
         prev = closes[i - 1] if i else bar["close"]
         true_ranges.append(max(bar["high"] - bar["low"], abs(bar["high"] - prev), abs(bar["low"] - prev)))
-    atr = mean(true_ranges[-14:])
+    atr_period = min(14, len(true_ranges))
+    sma_period = min(20, len(closes))
+    atr = mean(true_ranges[-atr_period:])
     pivot_lows, pivot_highs = [], []
     start = max(2, len(bars) - 24)
     for i in range(start, len(bars) - 2):
@@ -123,18 +125,18 @@ def technical_levels(bars: list[dict], spot: float, fx: float) -> dict:
     daily = bars[-1]
     previous_close = closes[-2]
     delta_pct = (spot / previous_close - 1) * 100
-    ma20 = mean(closes[-20:])
+    ma20 = mean(closes[-sma_period:])
     ma50 = ema(closes, 50)
     trend = "ขาขึ้น" if spot > ma20 and ma20 > ma50 else "ขาลง" if spot < ma20 and ma20 < ma50 else "แกว่งตัว/สัญญาณผสม"
     thb_factor = 0.47296
     return {
         "spot": round(spot, 2), "fx_usd_thb": round(fx, 4), "estimated_thb_per_baht": round(spot * fx * thb_factor / 50) * 50,
-        "daily_change_pct": round(delta_pct, 2), "atr14": round(atr, 2), "sma20": round(ma20, 2), "ema50": round(ma50, 2), "trend": trend,
+        "daily_change_pct": round(delta_pct, 2), "atr14": round(atr, 2), "atr_period": atr_period, "sma20": round(ma20, 2), "sma_period": sma_period, "ema50": round(ma50, 2), "trend": trend,
         "support": [{"low": round(v - atr * 0.18, 2), "high": round(v + atr * 0.18, 2)} for v in supports],
         "resistance": [{"low": round(v - atr * 0.18, 2), "high": round(v + atr * 0.18, 2)} for v in resistances],
         "last_closed_bar": {"time": daily["time"], "open": daily["open"], "high": daily["high"], "low": daily["low"], "close": daily["close"]},
         "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
-        "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14); ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
+        "method": f"Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล {atr_period} แท่ง); SMA20 ใช้ข้อมูล {sma_period} แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
     }
 
 
