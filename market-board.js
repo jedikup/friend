@@ -99,6 +99,8 @@
     }
     $('scenarioSummary').textContent = data.market_summary || 'รอผลวิเคราะห์ตลาดจากรอบ 08:00';
     $('scenarioUpdatedAt').textContent = `วิเคราะห์ล่าสุด ${stamp(data.ai_updated_at)} · ระบบคำนวณตามรอบวันละ 1 ครั้ง`;
+    const badge = document.querySelector('.ai-label');
+    if (badge && data.analysis_type === 'rules_based') badge.textContent = 'ประเมินตามกฎจากข้อมูลตลาด · ไม่ใช่ AI/ข่าวจริง';
   }
 
   function renderPlan(data) {
@@ -120,7 +122,7 @@
       const moreList = $('newsMoreItems');
       mainList.replaceChildren(...first.map((item) => renderNewsItem(item)));
       moreList.replaceChildren(...more.map((item) => renderNewsItem(item)));
-      if (!news.length) mainList.append(node('p', 'news-snapshot-note', 'ข่าวและการคัดกรองอัตโนมัติจะแสดงหลังตั้งค่า OPENAI_API_KEY ใน GitHub Actions'));
+      if (!news.length) mainList.append(node('p', 'news-snapshot-note', 'รอบนี้ไม่พบข่าวจากฟีด RSS ที่ดึงมาได้'));
       $('newsToggle').hidden = news.length <= 3;
       $('newsToggle').textContent = `More · ดูเพิ่มอีก ${Math.min(3, Math.max(news.length - 3, 0))} ข่าว`;
       $('newsSourceUpdatedAt').textContent = `คัดข่าวล่าสุด ${stamp(data.news_updated_at)} · แสดง ${news.length} ข่าวที่ตรวจจากฟีดข่าว`;
@@ -155,11 +157,11 @@
       renderPlan(data);
       renderNews(data);
       const status = data.status || {};
-      const missingKey = status.ai === 'needs_api_key' || status.news === 'needs_api_key';
-      $('analysisStatus').textContent = missingKey
-        ? 'แนวรับ–แนวต้านอัปเดตตามข้อมูลตลาดแล้ว · ต้องตั้งค่า OPENAI_API_KEY ใน GitHub Actions เพื่อเปิดบทวิเคราะห์ AI และคัดข่าวอัตโนมัติ'
+      const rulesBased = status.ai === 'rules_based_no_api_key';
+      $('analysisStatus').textContent = rulesBased
+        ? 'แนวรับ–แนวต้านและ Scenario/Checklist อัปเดตจากข้อมูลตลาดด้วยกฎทางเทคนิค · ข่าวเป็นหัวข้อ RSS ที่ยังไม่จัดทิศทาง · ตั้ง OPENAI_API_KEY หากต้องการการวิเคราะห์จาก AI'
         : `สถานะ AI: ${status.ai || 'ไม่ทราบ'} · ข่าว: ${status.news || 'ไม่ทราบ'} · ข้อมูลเทคนิค: ${status.technical || 'ไม่ทราบ'}`;
-      $('analysisStatus').classList.toggle('status-warning', missingKey || status.technical !== 'ok' || status.ai?.includes('error'));
+      $('analysisStatus').classList.toggle('status-warning', (!rulesBased && status.ai === 'needs_api_key') || status.technical !== 'ok' || status.ai?.includes('error'));
       if (status.technical !== 'ok') $('levelsUpdatedAt').textContent = `เตือน: ข้อมูลเทคนิคล่าสุดไม่สำเร็จ · แสดงข้อมูลเดิม ${stamp(data.generated_at)}`;
     } catch (error) {
       const status = $('analysisStatus');
@@ -175,3 +177,4 @@
   load();
   document.addEventListener('visibilitychange', () => { if (!document.hidden) load(); });
 })();
+
