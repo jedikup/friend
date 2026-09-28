@@ -198,7 +198,7 @@ def embed_public_data(data: dict) -> None:
         if re.search(pattern, page, flags=re.DOTALL):
             page = re.sub(pattern, lambda _: block, page, count=1, flags=re.DOTALL)
         else:
-            marker = '<script src="./market-board.js?v=2" defer></script>'
+            marker = '<script src="./market-board.js?v=3" defer></script>'
             if marker not in page:
                 raise ValueError(f"Could not locate market-board.js script tag in {name}")
             page = page.replace(marker, block + marker, 1)
@@ -233,6 +233,57 @@ def ai_analysis(market: dict, bars: list[dict], candidates: list[dict], include_
     return json.loads(result["choices"][0]["message"]["content"])
 
 
+def rules_based_analysis(technical: dict, bars: list[dict], candidates: list[dict], include_long_range: bool) -> dict:
+    """Transparent fallback used when no AI API key is configured.
+
+    It summarizes only observed market levels and volatility. Headlines remain
+    unclassified and are never presented as verified causes of price changes.
+    """
+    spot = float(technical["spot"])
+    atr = float(technical["atr14"])
+    trend = str(technical["trend"])
+    change = float(technical["daily_change_pct"])
+    supports = technical.get("support", [])
+    resistances = technical.get("resistance", [])
+    near_support = float(supports[0]["low"]) if supports else spot - atr
+    near_resistance = float(resistances[0]["high"]) if resistances else spot + atr
+    close = float(bars[-1]["close"])
+    prior_close = float(bars[-2]["close"]) if len(bars) > 1 else close
+    bias = "แรงกดดันยังเอนลง" if trend == "ขาลง" and change < 0 else "โมเมนตัมเอนขึ้น" if trend == "ขาขึ้น" and change > 0 else "สัญญาณยังผสมและเสี่ยงแกว่งในกรอบ"
+    result: dict = {
+        "analysis_type": "rules_based",
+        "market_summary": f"การประเมินตามกฎจากข้อมูลตลาด (ไม่ใช่ AI): {bias} · Spot {spot:,.2f} เปลี่ยนแปลง {change:+.2f}% · แนวโน้มจากค่าเฉลี่ย {trend} · ATR({technical.get('atr_period', 14)}) ${atr:,.2f}. ใช้แนวรับ/ต้านเป็นจุดยืนยัน ไม่ใช่เป้าราคาที่รับประกัน",
+        "scenario": None,
+        "plan": [],
+        "news": [],
+        "hot_news": [],
+    }
+    if include_long_range:
+        def band(days: int) -> str:
+            width = atr * math.sqrt(days)
+            return f"กรอบความผันผวนโดยประมาณ ${max(0, spot-width):,.0f}–${spot+width:,.0f} (คำนวณจาก ATR × √{days}); หากยืนเหนือ ${near_resistance:,.0f} ได้ต่อเนื่อง ภาพจะดีขึ้น; หากหลุด ${near_support:,.0f} มีโอกาสอ่อนต่อ. เป็นกรอบสถิติหยาบ ไม่ใช่ราคาเป้าหมาย"
+        result["scenario"] = {"one_week": band(5), "one_month": band(21), "three_months": band(63)}
+        result["plan"] = [
+            f"แนวโน้มข้อมูลล่าสุด: {trend}; การเปลี่ยนแปลง Spot {change:+.2f}% และแท่งปิดล่าสุด {close:,.2f} เทียบแท่งก่อน {prior_close:,.2f} — รอแท่งยืนยันก่อนตีความทิศทาง",
+            f"ติดตามแนวรับใกล้ ${near_support:,.2f} และแนวต้านใกล้ ${near_resistance:,.2f}; ให้ถือว่าทะลุ/หลุดเมื่อราคาปิดยืนยัน ไม่ใช้การไส้เทียนอย่างเดียว",
+            f"ATR({technical.get('atr_period', 14)}) ${atr:,.2f} บอกขนาดการแกว่ง; ลดขนาดความเสี่ยงเมื่อราคาเหวี่ยงกว้างและหลีกเลี่ยงไล่ราคา",
+            f"ทองไทยยังขึ้นกับ USD/THB {float(technical['fx_usd_thb']):,.4f}; บาทอ่อนอาจพยุงราคาท้องถิ่น ส่วนบาทแข็งอาจหักล้างการขึ้นของ Spot",
+            "ตรวจราคาประกาศสมาคมฯ และส่วนต่างซื้อ-ขายก่อนตัดสินใจ; ตัวเลขประมาณการบนเว็บไม่ใช่ราคาซื้อขายรับประกัน",
+        ]
+    for item in candidates[:20]:
+        result["news"].append({
+            **item,
+            "summary": item.get("snippet") or item["title"],
+            "direction": "watch",
+            "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+            "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา",
+        })
+    result["news_updated_at"] = datetime.now(timezone.utc).isoformat()
+    result["news_candidates"] = len(candidates)
+    result["ai_updated_at"] = datetime.now(timezone.utc).isoformat() if include_long_range else None
+    return result
+
+
 def main() -> None:
     now = datetime.now(timezone.utc)
     local_now = now.astimezone(BANGKOK)
@@ -261,7 +312,12 @@ def main() -> None:
         candidates = []
     morning = local_now.hour < 14
     market["update_slot"] = "morning" if morning else "evening"
-    if status["technical"] == "ok" and candidates and os.getenv("OPENAI_API_KEY"):
+    if status["technical"] == "ok" and not os.getenv("OPENAI_API_KEY"):
+        fallback = rules_based_analysis(market["technical"], market["daily_bars"], candidates, True)
+        market.update(fallback)
+        status["news"] = "rss_unclassified" if candidates else "feed_empty"
+        status["ai"] = "rules_based_no_api_key"
+    elif status["technical"] == "ok" and candidates and os.getenv("OPENAI_API_KEY"):
         try:
             result = ai_analysis(market, bars, candidates, morning)
             by_id = {item["id"]: item for item in candidates}
@@ -308,7 +364,7 @@ def main() -> None:
             status["news"] = "stale_preserved_previous" if previous.get("news") else "unavailable"
 
     market["status"] = status
-    market["news_source_note"] = "หัวข้อ/ข้อความย่อจาก Google News RSS; ลิงก์เปิดไปยังผู้เผยแพร่เดิม; AI ระบุผลที่อาจเกิดแยกจากข้อเท็จจริงและข้อมูลราคา"
+    market["news_source_note"] = "หัวข้อ/ข้อความย่อจาก Google News RSS; ลิงก์เปิดไปยังผู้เผยแพร่เดิม; หากไม่มี API key ข่าวจะไม่ถูกจัดทิศทางและแสดงเป็นรายการเฝ้าติดตามเท่านั้น"
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     DATA_FILE.write_text(json.dumps(market, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     embed_public_data(market)
@@ -317,3 +373,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
