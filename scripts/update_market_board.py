@@ -266,7 +266,7 @@ def embed_public_data(data: dict) -> None:
         if re.search(pattern, page, flags=re.DOTALL):
             page = re.sub(pattern, lambda _: block, page, count=1, flags=re.DOTALL)
         else:
-            marker = '<script src="./market-board.js?v=4" defer></script>'
+            marker = '<script src="./market-board.js?v=5" defer></script>'
             if marker not in page:
                 raise ValueError(f"Could not locate market-board.js script tag in {name}")
             page = page.replace(marker, block + marker, 1)
