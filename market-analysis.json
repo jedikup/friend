@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-28T12:42:04.981640+00:00",
-  "generated_at_bangkok": "2026-09-28T19:42:04.981640+07:00",
+  "generated_at": "2026-09-28T12:49:58.362030+00:00",
+  "generated_at_bangkok": "2026-09-28T19:49:58.362030+07:00",
   "slot": "22:00",
   "technical": {
-    "spot": 4154.74,
-    "fx_usd_thb": 33.5796,
-    "estimated_thb_per_baht": 66000,
-    "daily_change_pct": -2.59,
+    "spot": 4151.98,
+    "fx_usd_thb": 33.5889,
+    "estimated_thb_per_baht": 65950,
+    "daily_change_pct": -2.65,
     "atr14": 75.96,
     "atr_period": 13,
     "sma20": 4359.57,
@@ -15,18 +15,18 @@
     "trend": "ขาลง",
     "support": [
       {
-        "low": 4065.1,
-        "high": 4092.45
+        "low": 4062.35,
+        "high": 4089.69
       },
       {
-        "low": 3989.14,
-        "high": 4016.49
+        "low": 3986.38,
+        "high": 4013.73
       }
     ],
     "resistance": [
       {
-        "low": 4217.03,
-        "high": 4244.38
+        "low": 4214.27,
+        "high": 4241.62
       },
       {
         "low": 4385.94,
@@ -42,7 +42,7 @@
     },
     "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
     "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 13 แท่ง); SMA20 ใช้ข้อมูล 13 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
-    "quote_updated": "2026-09-28T12:42:06.737Z"
+    "quote_updated": "2026-09-28T12:49:59.933Z"
   },
   "daily_bars": [
     {
@@ -104,14 +104,270 @@
   ],
   "candidate_count": 40,
   "update_slot": "evening",
-  "news": [],
+  "analysis_type": "rules_based",
+  "market_summary": "การประเมินตามกฎจากข้อมูลตลาด (ไม่ใช่ AI): แรงกดดันยังเอนลง · Spot 4,151.98 เปลี่ยนแปลง -2.65% · แนวโน้มจากค่าเฉลี่ย ขาลง · ATR(13) $75.96. ใช้แนวรับ/ต้านเป็นจุดยืนยัน ไม่ใช่เป้าราคาที่รับประกัน",
+  "scenario": {
+    "one_week": "กรอบความผันผวนโดยประมาณ $3,982–$4,322 (คำนวณจาก ATR × √5); หากยืนเหนือ $4,242 ได้ต่อเนื่อง ภาพจะดีขึ้น; หากหลุด $4,062 มีโอกาสอ่อนต่อ. เป็นกรอบสถิติหยาบ ไม่ใช่ราคาเป้าหมาย",
+    "one_month": "กรอบความผันผวนโดยประมาณ $3,804–$4,500 (คำนวณจาก ATR × √21); หากยืนเหนือ $4,242 ได้ต่อเนื่อง ภาพจะดีขึ้น; หากหลุด $4,062 มีโอกาสอ่อนต่อ. เป็นกรอบสถิติหยาบ ไม่ใช่ราคาเป้าหมาย",
+    "three_months": "กรอบความผันผวนโดยประมาณ $3,549–$4,755 (คำนวณจาก ATR × √63); หากยืนเหนือ $4,242 ได้ต่อเนื่อง ภาพจะดีขึ้น; หากหลุด $4,062 มีโอกาสอ่อนต่อ. เป็นกรอบสถิติหยาบ ไม่ใช่ราคาเป้าหมาย"
+  },
+  "plan": [
+    "แนวโน้มข้อมูลล่าสุด: ขาลง; การเปลี่ยนแปลง Spot -2.65% และแท่งปิดล่าสุด 4,284.01 เทียบแท่งก่อน 4,265.03 — รอแท่งยืนยันก่อนตีความทิศทาง",
+    "ติดตามแนวรับใกล้ $4,062.35 และแนวต้านใกล้ $4,241.62; ให้ถือว่าทะลุ/หลุดเมื่อราคาปิดยืนยัน ไม่ใช้การไส้เทียนอย่างเดียว",
+    "ATR(13) $75.96 บอกขนาดการแกว่ง; ลดขนาดความเสี่ยงเมื่อราคาเหวี่ยงกว้างและหลีกเลี่ยงไล่ราคา",
+    "ทองไทยยังขึ้นกับ USD/THB 33.5889; บาทอ่อนอาจพยุงราคาท้องถิ่น ส่วนบาทแข็งอาจหักล้างการขึ้นของ Spot",
+    "ตรวจราคาประกาศสมาคมฯ และส่วนต่างซื้อ-ขายก่อนตัดสินใจ; ตัวเลขประมาณการบนเว็บไม่ใช่ราคาซื้อขายรับประกัน"
+  ],
+  "news": [
+    {
+      "id": "N41",
+      "title": "Gold prices today, Monday, September 28, 2026: Gold prices slump as Iran tensions and oil prices rise - Yahoo Finance",
+      "publisher": "Yahoo Finance",
+      "published": "2026-09-28T11:07:30+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNZnV4QXY0dGxlcGVhME00ckZBZnYxZWt2LXNIZW1scE5wdW9xY2dmaVVwWGlUSEdfLVp6VTJkcU11ODQ3RlJRaW5iaV9zMlhGcFp0VmJYYjZKaEVrMUtBdkpUZDgxZ0xMdnNSS2UxUzRfZWlqQXFpMjhiZm9RYi1CLU9VZTcxbnY0NS1PNFR2M3B5T09PX0lnWTYyRnhDQUpDQmFCc053UEsxc09iclNlTU5uMUx3MjNmT1A0OHZSZGdaMnRiQlNkZ2h2cnFrQzhIRHFNcDRrS0lVc3I3RVpneGVTVFdjZEdwMkxSOTNsX003V1hsWkVkdnM0Z3lLN1pUZkRZ?oc=5",
+      "snippet": "Gold prices today, Monday, September 28, 2026: Gold prices slump as Iran tensions and oil prices rise Yahoo Finance",
+      "summary": "Gold prices today, Monday, September 28, 2026: Gold prices slump as Iran tensions and oil prices rise Yahoo Finance",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N3",
+      "title": "Gold tumbles below $4,200 as oil, Fed hike bets weigh on bullion - Investing.com",
+      "publisher": "Investing.com",
+      "published": "2026-09-28T10:55:58+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMWdPUUFrZ0pxckdQT3dGTXF1SXVKeU10ak1uUlNBN0toMjhZanlmM2haVWlpQlQ0Y25PTlA0T2FsdzhrcjlnWjBXVkRQMnFzT0YycWNKaWJGUm05ZlptSHowMHN5dkN6WWliQXZjN0NUUjRTOE1iNXpHYVZOTjJIWld1Sk8tMG56RFkwaGFib2V1WGNWMkYtS3prMUJ6SGZmWkxlWkozc2p6N2EyQ0hPNzJFbjk0NWdOTFNWekxWeDU?oc=5",
+      "snippet": "Gold tumbles below $4,200 as oil, Fed hike bets weigh on bullion Investing.com",
+      "summary": "Gold tumbles below $4,200 as oil, Fed hike bets weigh on bullion Investing.com",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N47",
+      "title": "Oil, Gold Forecast: Two trades to watch - FOREX.com",
+      "publisher": "FOREX.com",
+      "published": "2026-09-28T10:53:54+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRms1VVg5VlVCOE5jUUROUDRmOGN0R3B4a2g3S29XQUZGa3Y0MExJbmxkWjhXX0FCdWhwUjhuTUd4ZmtuWHFhdFdXbUp2T3R6eDRTSHFDNEpiVGFzT0RBZzRzWWZSTEd4VHNRU3N6R3oycnJha2xXUndDU19hNGM2el9CYUVFWlh6T2lQbzRJZkt1c094Q0E?oc=5",
+      "snippet": "Oil, Gold Forecast: Two trades to watch FOREX.com",
+      "summary": "Oil, Gold Forecast: Two trades to watch FOREX.com",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N21",
+      "title": "XAU/USD outlook: Gold loses ground as rising oil prices fuel inflation fears - fxstreet.com",
+      "publisher": "fxstreet.com",
+      "published": "2026-09-28T10:51:25+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbVVVQkhkYVFWWmVJOTlyVlprNGR4aFVnREY0emlEekR2RWxNXzVlQ1R2V0todERyT0tvZkhyVXBMc3RnekxFdlI2X3h1WGl2YUhsZzhRTjM0dVRsVTJ4QnFIMFlZdFV3VUYzZVRqaUVZMGdJRjVBZHQzLUd3Y3Q0TnBCMWNkb0tJajFkM3F1T0VEM3hZUktlRTNCQUNvYkpjREpBc0xqdngtMU5GZk9CSzVFM19MVGNvblB1bFpJMA?oc=5",
+      "snippet": "XAU/USD outlook: Gold loses ground as rising oil prices fuel inflation fears fxstreet.com",
+      "summary": "XAU/USD outlook: Gold loses ground as rising oil prices fuel inflation fears fxstreet.com",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N94",
+      "title": "Gold prices slide in UAE as Hormuz tensions lift oil - ARYnews.tv",
+      "publisher": "ARYnews.tv",
+      "published": "2026-09-28T10:28:18+00:00",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE0tWDk2b3o5QTNvQUp0dWE0MWJVWE9iYkhWWkF4SGo1MlZOdTlBMVJjLUpqdVEtcjNiVENMOV9CNEpYNl8yNUxRRlR1RlJIRDlpeDFBY3VodzFUUldLRF91UndOUENQYy1GTlJRN0VfSWtzZnY2cjlmbHdWZw?oc=5",
+      "snippet": "Gold prices slide in UAE as Hormuz tensions lift oil ARYnews.tv",
+      "summary": "Gold prices slide in UAE as Hormuz tensions lift oil ARYnews.tv",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N59",
+      "title": "Oil, Gold Forecast: Two trades to watch - FOREX.com",
+      "publisher": "FOREX.com",
+      "published": "2026-09-28T09:53:45+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY2txZ2pOWG41VVlWMTBYWTNqcUY2SDVidGQxM2xYY3ZsM1pyUzh1SjlCRUEwNEZTaVBUaERUY3VIc0NIc2pXZkVUbUY0NXlwWGVUSjRfYzczcnZ5bnQ4d0Y2MVdpNzM2WFFBM2pmYWNuVWYyNnhtMFBHUVZMM2JjNnFGNEJNTTRLRzlkN2Q2U3F3dXFDbVVOQ3JVYUpYcVJ3WkHSAaIBQVVfeXFMTmNrcWdqTlhuNVVZVjEwWFkzanFGNkg1YnRkMTNsWGN2bDNaclM4dUo5QkVBMDRGU2lQVGhEVGN1SHNDSHNqV2ZFVG1GNDV5cFhlVEo0X2M3M3J2eW50OHdGNjFXaTczNlhRQTNqZmFjblVmMjZ4bTBQR1FWTDNiYzZxRjRCTU00S0c5ZDdkNlNxd3VxQ21VTkNyVWFKWHFSd1pB?oc=5",
+      "snippet": "Oil, Gold Forecast: Two trades to watch FOREX.com",
+      "summary": "Oil, Gold Forecast: Two trades to watch FOREX.com",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N62",
+      "title": "Gold slides as oil surge and Fed rate path weigh on markets - Yeni Şafak English",
+      "publisher": "Yeni Şafak English",
+      "published": "2026-09-28T09:04:41+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRFliRWQwWVEyRWZsbDNLVVptejJUR0gwZ2UxWVdueDZyMmU3NkdWSFlsWl96RjdWMUR5SmxXT0dFTEFSLW5XNTJmdk9HWHU3dmh6a2w0eEludFpkMTRDQ01OS0lIYklmLUxyTWxNQTNiUVNJQWZmSUxGMGtzbFN1OWlKUWNmTlM1VHlZUl9HeUxjWThOTG51UmI1OTZDbjJCNkE?oc=5",
+      "snippet": "Gold slides as oil surge and Fed rate path weigh on markets Yeni Şafak English",
+      "summary": "Gold slides as oil surge and Fed rate path weigh on markets Yeni Şafak English",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N19",
+      "title": "Gold slumps below $4,150, fresh low since August 5 amid oil-fueled Fed hike bets - fxstreet.com",
+      "publisher": "fxstreet.com",
+      "published": "2026-09-28T08:55:11+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWkFxSU4zVzNyUWNnc1lVM25EWDI5b2tlM3pHYVdFay1nc1RQcms3T2U5Y1ZWWVdJVmZqVVpPbnZkWWJBeTFpX0tQR2I5S01jOEVMbFdOLTNvZ3JvNWVwYUt4WjB5Y2FVaW9WZmFnWnB1Z1k1b2txUmUxRThWNTVPQ21pN1o2dWRIaFFlZjdzZ3dna3hvc1ZzLXc2X3ZBOHc?oc=5",
+      "snippet": "Gold slumps below $4,150, fresh low since August 5 amid oil-fueled Fed hike bets fxstreet.com",
+      "summary": "Gold slumps below $4,150, fresh low since August 5 amid oil-fueled Fed hike bets fxstreet.com",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N55",
+      "title": "Gold collapses as Trump rejects Iran's proposal to reopen Strait of Hormuz and signals new bombings - investingLive",
+      "publisher": "investingLive",
+      "published": "2026-09-28T07:59:08+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQOHJEUnl3VFN1NGtOTE9fYkgwLTlzVE9zTlpabGhYOUNMX0tOT3VlZzZYMjQzUjRoVGZ0ZWUzbS1Md0ZJOHhJT3UtUGhjRTFwd2dkZE93Vml0LU1YX0ZrWEQ3LUY5RDhJQVptUVFCY3JQUFF0bzJ6YXRwbVpSR0ZuSFp4ZGw2QVk3dGw2Q3JkeDMzUnZ4TUctM2Y4ZUZ0WmdtSzNHZjdZNlgyOWVVWlM3RGxCaHZGYTFpOHpabHc4VTV2MDBJbHlCQ1dxbGMzVDFBMkY2bw?oc=5",
+      "snippet": "Gold collapses as Trump rejects Iran's proposal to reopen Strait of Hormuz and signals new bombings investingLive",
+      "summary": "Gold collapses as Trump rejects Iran's proposal to reopen Strait of Hormuz and signals new bombings investingLive",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N127",
+      "title": "ปรับจนตกใจ! ราคาทองรอบบ่ายวันนี้ 28 ก.ย. 69 - LINE TODAY",
+      "publisher": "LINE TODAY",
+      "published": "2026-09-28T07:43:16+00:00",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE55cmo3Q2kwZ1FiTm5uMjVaekdPSmxoYlJCcnhFZzFaQk4zaFdrMldVMG1vREp1NFBVNHVYV3hMQ2lHeXZja2R0Y0hoaG42a0NkdlM1SnFNelltRjV1S0hHb0hGWFdGOUdSNjVWaEp5THc?oc=5",
+      "snippet": "ปรับจนตกใจ! ราคาทองรอบบ่ายวันนี้ 28 ก.ย. 69 LINE TODAY",
+      "summary": "ปรับจนตกใจ! ราคาทองรอบบ่ายวันนี้ 28 ก.ย. 69 LINE TODAY",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N98",
+      "title": "Thai baht hits two-month low as oil surge, elevated yields pressure Asian FX - The Edge Malaysia",
+      "publisher": "The Edge Malaysia",
+      "published": "2026-09-28T07:17:25+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1JdVlYTXFTcTQxbGFvbG5iUXUxMlZlQmw0bWVlLXNRQkVzS1lOSW9BQk9kUEVkcDBtVGI5ZmwwTFpfWGlqM1A0Y3JTRHRJdEZ0?oc=5",
+      "snippet": "Thai baht hits two-month low as oil surge, elevated yields pressure Asian FX The Edge Malaysia",
+      "summary": "Thai baht hits two-month low as oil surge, elevated yields pressure Asian FX The Edge Malaysia",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N87",
+      "title": "Kuwait Gold Prices Slide as Hormuz Crisis Pushes Oil Higher - Arab Times Kuwait News",
+      "publisher": "Arab Times Kuwait News",
+      "published": "2026-09-28T07:17:10+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb1hmVkRwaU5IVnlYMy1BclF5LUdMSUY3amZCVTRZS1lkY2l6dmdLN2M3bG1WaGMza1RfbDJ5X2Mwa01QSWhYQjZ4ZWNsMWNsQjdRekN1V0xvbUtSelFoUnNHMl9PZFh1WWNtVXR5YnMzT1N2bkVQUVl3NG5rcmgzQno0R1lOSTJva0xCclZKZ29USGExX05nT0pzOTBKUQ?oc=5",
+      "snippet": "Kuwait Gold Prices Slide as Hormuz Crisis Pushes Oil Higher Arab Times Kuwait News",
+      "summary": "Kuwait Gold Prices Slide as Hormuz Crisis Pushes Oil Higher Arab Times Kuwait News",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N23",
+      "title": "Gold falls below $4,300 as oil, Fed hike bets keep pressure on bullion - Investing.com Nigeria",
+      "publisher": "Investing.com Nigeria",
+      "published": "2026-09-28T07:02:35+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaVh5SDRJWVI0OVExc3Z6X2VoU3hIWi1hNFVzLW5mS25ObkVvLVpkenRZUEtsWEhYTTgxOFZzQk84R245MHE1N25veHpZRTk4V3JrZmlENGhUTU9peFpQQXBmbU14WEFvTnpGdG5uTXA1ZWthc1FsSzZtcFR5ZjRPcVl5TmlpUk1OOVh0czRyOFBhb25Xb19maGtGUS0wS0tqSllJeDYzUWZFSF9ia0cwMDNET01LdGtILWdIdUxrOA?oc=5",
+      "snippet": "Gold falls below $4,300 as oil, Fed hike bets keep pressure on bullion Investing.com Nigeria",
+      "summary": "Gold falls below $4,300 as oil, Fed hike bets keep pressure on bullion Investing.com Nigeria",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N124",
+      "title": "ดิ่งพสุธา! ราคาทองเช้าวันนี้ 28 ก.ย. 69 - LINE TODAY",
+      "publisher": "LINE TODAY",
+      "published": "2026-09-28T06:35:02+00:00",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1RM2h6dXZRSWQ2R0ZvMmd1NDFWZnFHUmpqb0NwSzlPOVN2d195cmd0cWNDSHlaeExIZzBFaTVRNzJlVkFTbHZzT2RabjdHOUdMNS1zdC11c1lpWG5vNkp2U25lbWpwQlNmSVFwYzZ6clpwSzgtRTVJ?oc=5",
+      "snippet": "ดิ่งพสุธา! ราคาทองเช้าวันนี้ 28 ก.ย. 69 LINE TODAY",
+      "summary": "ดิ่งพสุธา! ราคาทองเช้าวันนี้ 28 ก.ย. 69 LINE TODAY",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N99",
+      "title": "Thai baht/US dollar weaker on Monday - Business Recorder",
+      "publisher": "Business Recorder",
+      "published": "2026-09-28T06:33:37+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNS2RsY3lXNElvYUZyZGxsNkVGLWNyLWZSSGcxQWRvYmlWM3NLVlZwYTl4ZktsUjBlNWNiSUFBQWFidDRDa1hVWkpWMjZ3YlEwYmFyYW1BQ3MxR0NOUkFWVElPSVc3TFc2Q3cwNWRvTEFYWWRGUll2Qmd0QWptZVEzT9IBVkFVX3lxTFBpdmM2RGxDamtfdlBUNm5MeDcyeVhxMGF0UzZja3JUNkhMQWpoTnFBbFctMWJURS1KWkxETUJSTXV5TGRTZ3Y3WmV5RTdFUzBPejIyclR3?oc=5",
+      "snippet": "Thai baht/US dollar weaker on Monday Business Recorder",
+      "summary": "Thai baht/US dollar weaker on Monday Business Recorder",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N14",
+      "title": "Gold (XAU/USD) & Silver Price Forecast: Fed Hike Bets Deepen Metals Selloff - FXEmpire",
+      "publisher": "FXEmpire",
+      "published": "2026-09-28T06:19:35+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOc2RfcnRjdGNBekRCdllYU1dNQXBwMW9hazZBV3lhWGtMUFlrdDEyOHFwM21LbUpLdmVYN29CeEFRTktpV1BwRFpRRkFQZGFNZ0RiVWtscm5UOXFCRy1fM2hEMldia3g2dmt3X2NqdWNEVDNial9Oc1Y1aXF5NkpvUHZSTGNFanBtX0hWTUZNTHZTQkRVRjZsTWVZcGRQRXVSTmhwYkRBMmxNakRrSGI1VGotSlBBVjBoNlQyNkZ3?oc=5",
+      "snippet": "Gold (XAU/USD) & Silver Price Forecast: Fed Hike Bets Deepen Metals Selloff FXEmpire",
+      "summary": "Gold (XAU/USD) & Silver Price Forecast: Fed Hike Bets Deepen Metals Selloff FXEmpire",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N36",
+      "title": "Gold crashes below $4,200 as oil shock backfires: here’s why $4,000 matters - Invezz",
+      "publisher": "Invezz",
+      "published": "2026-09-28T05:58:10+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcGQ0TWxKMVhDZ0FjU3hGT3lhd0kzRWUyRTVBWmxFM3B6Ujl2aWlqTENiZUhhR3VZVFJ2aXd5QmVJRHhCY245M3R1WVZ0cEtRWE9tTVNTVTFKX1lDYXN5NE9ycHlRalpWdXFqSDhvME9jWEZxc2p2NmZFcGJNcU1QaUVzcEV2dXV0X1psVUpTOXg3V3BRaWJ4WDRGa0JHZ3ZKcUkzeWppcGFsS1FXZGRodm5DV1ZPSXFUZ2pzZg?oc=5",
+      "snippet": "Gold crashes below $4,200 as oil shock backfires: here’s why $4,000 matters Invezz",
+      "summary": "Gold crashes below $4,200 as oil shock backfires: here’s why $4,000 matters Invezz",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N9",
+      "title": "Hawkish Fed Tone and Rising US Dollar Push Gold to $4,200 - TradingPedia",
+      "publisher": "TradingPedia",
+      "published": "2026-09-28T05:56:06+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZG1CdF8tZFVfYjdVV3B1ZUlNUmtRQUhnSExPTlRqdlA4cDdSdGpLSFVhZHAzS3RzeW9TVnFkWEZLd2RITFg0ZFBSX1NoTnJrY0U0czh6NENISGpnd1A2SDBpcExfUVRUUEF2V0lIT0JRTXhDWjhuNkRJdmprTDFWYU1Ha2VQVTBkOEhGaUR4UXEwdXltQmlib3pMdGE?oc=5",
+      "snippet": "Hawkish Fed Tone and Rising US Dollar Push Gold to $4,200 TradingPedia",
+      "summary": "Hawkish Fed Tone and Rising US Dollar Push Gold to $4,200 TradingPedia",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N73",
+      "title": "Strait of Hormuz Standoff Fuels Rate Hike Bets as Gold Plunges Nearly $100 in Asian Trading, Breaching $4,200 - finance.biggo.com",
+      "publisher": "finance.biggo.com",
+      "published": "2026-09-28T05:55:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1kNFpTdTA4aFRnQ1drdG9HWC0tZGZXdVYxV0x3b21CZEE5ZXJscF9kaVFmZHlVS0VpZ3lrSm40SlpoVW5mSUtzZUlCeGZXWXZkUHlUUFhrai1LY0Y3Mzl0ZzZoT0ZYQVA5VXBkTHhkNXM3WVdGdkE?oc=5",
+      "snippet": "Strait of Hormuz Standoff Fuels Rate Hike Bets as Gold Plunges Nearly $100 in Asian Trading, Breaching $4,200 finance.biggo.com",
+      "summary": "Strait of Hormuz Standoff Fuels Rate Hike Bets as Gold Plunges Nearly $100 in Asian Trading, Breaching $4,200 finance.biggo.com",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    },
+    {
+      "id": "N79",
+      "title": "Gold slips below ₹1.50 lakh on US-Iran impasse; silver tumbles too - business-standard.com",
+      "publisher": "business-standard.com",
+      "published": "2026-09-28T04:33:27+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMms2LXJXd0Z4LUpwdFVuaDhOc2ZZbWFLeXJQa3RVOVBIdVpSVDRtRGd6MVNrUndQQjUwc2hGckpSbjhvVUZEOXpEQ0RkVk5mcThBOURNTkcxQllzUWtuYnZXRU5zOWFhYW9YakdmRjkwS09vUlRPMWhNRmtoTXhoQ1E0QTVZMEk5SjVIcDlYbEJSVDRLT0lIMllLcmpSYUFYMEZ1S0NYNElsN2pNNW4tTG1nT1VlMWVPVThabjhqaU1VMjNZUmNmc1NyTGE0bFlrNWtfNtIB2gFBVV95cUxPSnJBQ1NuM2p1bFRmN1FDeThNbVFjNUVMM0x4NzNld2lOOXBjUEMwVHpXcVFpSjNYblhibURzTUpZeUFxZGppQm0zdEN6SzBIbmlaQmJsR2lNVEZHd2lpRW5QeHhnSVFEWHo5Q1ZkLWNVNm9MNUpUNmU1SU1wWUtxS0YtakdDendxS0txV0xsckhDeFJHSnBadzFuSnd3YnpleE9iRUgwZERBVFBYa3hWbDg4LWFlMGZnTUNsdl83dW9iR0JTN3RSaG45YlFJQ3k0cEl0TTlxdlM5Zw?oc=5",
+      "snippet": "Gold slips below ₹1.50 lakh on US-Iran impasse; silver tumbles too business-standard.com",
+      "summary": "Gold slips below ₹1.50 lakh on US-Iran impasse; silver tumbles too business-standard.com",
+      "direction": "watch",
+      "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
+      "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา"
+    }
+  ],
   "hot_news": [],
-  "scenario": null,
-  "plan": [],
+  "news_updated_at": "2026-09-28T12:50:02.249004+00:00",
+  "news_candidates": 40,
+  "ai_updated_at": "2026-09-28T12:50:02.249010+00:00",
   "status": {
     "technical": "ok",
-    "news": "needs_api_key",
-    "ai": "needs_api_key"
+    "news": "rss_unclassified",
+    "ai": "rules_based_no_api_key"
   },
-  "news_source_note": "หัวข้อ/ข้อความย่อจาก Google News RSS; ลิงก์เปิดไปยังผู้เผยแพร่เดิม; AI ระบุผลที่อาจเกิดแยกจากข้อเท็จจริงและข้อมูลราคา"
+  "news_source_note": "หัวข้อ/ข้อความย่อจาก Google News RSS; ลิงก์เปิดไปยังผู้เผยแพร่เดิม; หากไม่มี API key ข่าวจะไม่ถูกจัดทิศทางและแสดงเป็นรายการเฝ้าติดตามเท่านั้น"
 }
