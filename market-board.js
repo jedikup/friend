@@ -83,7 +83,7 @@
     $('spotResistanceNext').textContent = rangeText(resistances[1]);
     updateThaiLevelLabels(technical.fx_usd_thb);
     $('levelsUpdatedAt').textContent = `คำนวณล่าสุด ${stamp(data.generated_at)} · แหล่งข้อมูล: ${technical.source || 'OHLC/Spot'}`;
-    $('levelsMethod').textContent = `${technical.method || 'คำนวณจาก swing high/low และ ATR'} · ภาพแนวโน้ม ${technical.trend || '—'} · ATR(14) $${fmt(technical.atr14 || 0)}`;
+    $('levelsMethod').textContent = `${technical.method || 'คำนวณจาก swing high/low และ ATR'} · ภาพแนวโน้ม ${technical.trend || '—'} · ATR(${technical.atr_period || 14}) $${fmt(technical.atr14 || 0)}`;
   }
 
   function renderScenario(data) {
