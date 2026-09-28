@@ -8,6 +8,7 @@ import json
 import math
 import os
 import re
+import re
 import sys
 import urllib.parse
 import urllib.request
@@ -175,6 +176,27 @@ def previous_data() -> dict:
         return {}
 
 
+def embed_public_data(data: dict) -> None:
+    # Put the same generated snapshot into each Pages document. GitHub Pages serves
+    # the HTML reliably even when static JSON MIME/path handling differs by client.
+    serialized = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
+    block = f'<script id="marketAnalysisData" type="application/json">{serialized}</script>'
+    for name in ("index.html", "news.html"):
+        path = ROOT / name
+        if not path.exists():
+            continue
+        page = path.read_text(encoding="utf-8")
+        pattern = r'<script id="marketAnalysisData" type="application/json">.*?</script>'
+        if re.search(pattern, page, flags=re.DOTALL):
+            page = re.sub(pattern, lambda _: block, page, count=1, flags=re.DOTALL)
+        else:
+            marker = '<script src="./market-board.js" defer></script>'
+            if marker not in page:
+                raise ValueError(f"Could not locate market-board.js script tag in {name}")
+            page = page.replace(marker, block + marker, 1)
+        path.write_text(page, encoding="utf-8")
+
+
 def ai_analysis(market: dict, bars: list[dict], candidates: list[dict], include_long_range: bool) -> dict:
     key = os.getenv("OPENAI_API_KEY")
     if not key:
@@ -281,6 +303,7 @@ def main() -> None:
     market["news_source_note"] = "หัวข้อ/ข้อความย่อจาก Google News RSS; ลิงก์เปิดไปยังผู้เผยแพร่เดิม; AI ระบุผลที่อาจเกิดแยกจากข้อเท็จจริงและข้อมูลราคา"
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     DATA_FILE.write_text(json.dumps(market, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    embed_public_data(market)
     print(json.dumps({"generated_at": market["generated_at"], "slot": market["slot"], "status": status, "news_candidates": len(candidates)}, ensure_ascii=False))
 
 
