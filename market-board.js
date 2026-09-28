@@ -141,9 +141,14 @@
 
   async function load() {
     try {
-      const response = await fetch(dataUrl, { cache: 'no-store' });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = await response.json();
+      const embedded = $('marketAnalysisData');
+      let data;
+      if (embedded) data = JSON.parse(embedded.textContent);
+      else {
+        const response = await fetch(dataUrl, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        data = await response.json();
+      }
       if (data.technical && Object.keys(data.technical).length) renderLevels(data.technical, data);
       renderScenario(data);
       renderPlan(data);
