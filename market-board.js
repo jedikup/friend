@@ -120,6 +120,7 @@
       const moreList = $('newsMoreItems');
       mainList.replaceChildren(...first.map((item) => renderNewsItem(item)));
       moreList.replaceChildren(...more.map((item) => renderNewsItem(item)));
+      if (!news.length) mainList.append(node('p', 'news-snapshot-note', 'ข่าวและการคัดกรองอัตโนมัติจะแสดงหลังตั้งค่า OPENAI_API_KEY ใน GitHub Actions'));
       $('newsToggle').hidden = news.length <= 3;
       $('newsToggle').textContent = `More · ดูเพิ่มอีก ${Math.min(3, Math.max(news.length - 3, 0))} ข่าว`;
       $('newsSourceUpdatedAt').textContent = `คัดข่าวล่าสุด ${stamp(data.news_updated_at)} · แสดง ${news.length} ข่าวที่ตรวจจากฟีดข่าว`;
@@ -156,7 +157,7 @@
       const status = data.status || {};
       const missingKey = status.ai === 'needs_api_key' || status.news === 'needs_api_key';
       $('analysisStatus').textContent = missingKey
-        ? 'ข้อมูลเทคนิครอรอบอัปเดต · ต้องตั้งค่า OPENAI_API_KEY ใน GitHub Actions เพื่อเปิดการวิเคราะห์และคัดข่าวอัตโนมัติ'
+        ? 'แนวรับ–แนวต้านอัปเดตตามข้อมูลตลาดแล้ว · ต้องตั้งค่า OPENAI_API_KEY ใน GitHub Actions เพื่อเปิดบทวิเคราะห์ AI และคัดข่าวอัตโนมัติ'
         : `สถานะ AI: ${status.ai || 'ไม่ทราบ'} · ข่าว: ${status.news || 'ไม่ทราบ'} · ข้อมูลเทคนิค: ${status.technical || 'ไม่ทราบ'}`;
       $('analysisStatus').classList.toggle('status-warning', missingKey || status.technical !== 'ok' || status.ai?.includes('error'));
       if (status.technical !== 'ok') $('levelsUpdatedAt').textContent = `เตือน: ข้อมูลเทคนิคล่าสุดไม่สำเร็จ · แสดงข้อมูลเดิม ${stamp(data.generated_at)}`;
