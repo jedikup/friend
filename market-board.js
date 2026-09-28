@@ -187,7 +187,7 @@
       const status = data.status || {};
       const rulesBased = status.ai === 'rules_based_no_api_key';
       $('analysisStatus').textContent = rulesBased
-        ? 'ราคา Spot/FX รีเฟรชทุก 1 นาที · แนวรับ ข่าว และ Scenario/Checklist อัปเดตตามรอบ 08:00/22:00 น. · ไม่มี API key จึงใช้กฎคัดพาดหัว ไม่ใช่ AI; คะแนน Hot เป็นตัวช่วยเฝ้าดู ไม่ใช่การยืนยันผลกระทบ
+        ? 'ราคา Spot/FX รีเฟรชทุก 1 นาที · แนวรับ ข่าว และ Scenario/Checklist อัปเดตตามรอบ 08:00/22:00 น. · ไม่มี API key จึงใช้กฎคัดพาดหัว ไม่ใช่ AI; คะแนน Hot เป็นตัวช่วยเฝ้าดู ไม่ใช่การยืนยันผลกระทบ'
         : `สถานะ AI: ${status.ai || 'ไม่ทราบ'} · ข่าว: ${status.news || 'ไม่ทราบ'} · ข้อมูลเทคนิค: ${status.technical || 'ไม่ทราบ'}`;
       $('analysisStatus').classList.toggle('status-warning', (!rulesBased && status.ai === 'needs_api_key') || status.technical !== 'ok' || status.ai?.includes('error'));
       if (status.technical !== 'ok') $('levelsUpdatedAt').textContent = `เตือน: ข้อมูลเทคนิคล่าสุดไม่สำเร็จ · แสดงข้อมูลเดิม ${stamp(data.generated_at)}`;
