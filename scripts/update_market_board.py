@@ -266,7 +266,7 @@ def embed_public_data(data: dict) -> None:
         if re.search(pattern, page, flags=re.DOTALL):
             page = re.sub(pattern, lambda _: block, page, count=1, flags=re.DOTALL)
         else:
-            marker = '<script src="./market-board.js?v=3" defer></script>'
+            marker = '<script src="./market-board.js?v=4" defer></script>'
             if marker not in page:
                 raise ValueError(f"Could not locate market-board.js script tag in {name}")
             page = page.replace(marker, block + marker, 1)
@@ -331,7 +331,17 @@ def ranked_hot_news(news: list[dict]) -> list[dict]:
         reason = "คัดจากคำในพาดหัว: " + " + ".join(themes[:3])
         ranked.append((score, item.get("published", ""), {**item, "hot_reason": reason}))
     ranked.sort(key=lambda row: (row[0], row[1]), reverse=True)
-    return [row[2] for row in ranked[:3]]
+    chosen = []
+    seen_publishers: set[str] = set()
+    for _score, _published, item in ranked:
+        publisher_key = re.split(r"[\\s./:-]+", item.get("publisher", "").lower())[0]
+        if publisher_key in seen_publishers:
+            continue
+        seen_publishers.add(publisher_key)
+        chosen.append(item)
+        if len(chosen) == 3:
+            break
+    return chosen
 
 
 def rules_based_analysis(technical: dict, bars: list[dict], candidates: list[dict], include_long_range: bool) -> dict:
