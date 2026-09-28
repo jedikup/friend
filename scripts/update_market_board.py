@@ -2,6 +2,7 @@
 """Scheduled market-data and analysis publisher for the static Gold Market Board."""
 from __future__ import annotations
 
+import calendar
 import email.utils
 import html
 import json
@@ -344,42 +345,100 @@ def ranked_hot_news(news: list[dict]) -> list[dict]:
     return chosen
 
 
-def rules_based_analysis(technical: dict, bars: list[dict], candidates: list[dict], include_long_range: bool) -> dict:
-    """Transparent fallback used when no AI API key is configured.
+def add_calendar_months(day, months: int):
+    month_index = day.month - 1 + months
+    year = day.year + month_index // 12
+    month = month_index % 12 + 1
+    return day.replace(year=year, month=month, day=min(day.day, calendar.monthrange(year, month)[1]))
 
-    It summarizes only observed market levels and volatility. Headlines remain
-    unclassified and are never presented as verified causes of price changes.
-    """
+
+def th_date(day) -> str:
+    months = ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."]
+    return f"{day.day} {months[day.month - 1]} {day.year + 543}"
+
+
+def rules_based_analysis(technical: dict, bars: list[dict], candidates: list[dict], include_long_range: bool) -> dict:
+    """Transparent fallback: market facts and scenarios are separated from RSS headline cues."""
     spot = float(technical["spot"])
     atr = float(technical["atr14"])
     trend = str(technical["trend"])
     change = float(technical["daily_change_pct"])
+    fx = float(technical.get("fx_usd_thb") or 0)
     supports = technical.get("support", [])
     resistances = technical.get("resistance", [])
-    near_support = float(supports[0]["low"]) if supports else spot - atr
-    near_resistance = float(resistances[0]["high"]) if resistances else spot + atr
-    close = float(bars[-1]["close"])
+    support_low = float(supports[0]["low"]) if supports else spot - atr
+    support_high = float(supports[0]["high"]) if supports else spot - atr * 0.5
+    next_support = supports[1] if len(supports) > 1 else None
+    resistance_low = float(resistances[0]["low"]) if resistances else spot + atr * 0.5
+    resistance_high = float(resistances[0]["high"]) if resistances else spot + atr
+    sma = float(technical.get("sma20") or spot)
+    ema = float(technical.get("ema50") or spot)
+    close = float(bars[-1]["close"]) if bars else spot
     prior_close = float(bars[-2]["close"]) if len(bars) > 1 else close
-    bias = "แรงกดดันยังเอนลง" if trend == "ขาลง" and change < 0 else "โมเมนตัมเอนขึ้น" if trend == "ขาขึ้น" and change > 0 else "สัญญาณยังผสมและเสี่ยงแกว่งในกรอบ"
+    if trend == "ขาลง" and change < 0:
+        bias = "แรงขายยังนำ"
+    elif trend == "ขาขึ้น" and change > 0:
+        bias = "แรงซื้อยังนำ"
+    else:
+        bias = "สัญญาณยังผสม ควรรอทิศทางชัด"
+    now = datetime.now(BANGKOK)
+    today = now.date()
+    date_ranges = {
+        "one_week": f"{th_date(today)} – {th_date(today + timedelta(days=7))}",
+        "one_month": f"{th_date(today)} – {th_date(add_calendar_months(today, 1))}",
+        "three_months": f"{th_date(today)} – {th_date(add_calendar_months(today, 3))}",
+    }
     result: dict = {
         "analysis_type": "rules_based",
-        "market_summary": f"การประเมินตามกฎจากข้อมูลตลาด (ไม่ใช่ AI): {bias} · Spot {spot:,.2f} เปลี่ยนแปลง {change:+.2f}% · แนวโน้มจากค่าเฉลี่ย {trend} · ATR({technical.get('atr_period', 14)}) ${atr:,.2f}. ใช้แนวรับ/ต้านเป็นจุดยืนยัน ไม่ใช่เป้าราคาที่รับประกัน",
+        "market_summary": (
+            f"ภาพรวม: {trend} — {bias}\n"
+            f"• Gold Spot USD {spot:,.2f} ({change:+.2f}%); SMA ล่าสุด USD {sma:,.2f}, EMA50 USD {ema:,.2f}\n"
+            f"• แนวรับ USD {support_low:,.0f}–{support_high:,.0f} · แนวต้าน USD {resistance_low:,.0f}–{resistance_high:,.0f}\n"
+            f"• ทองไทย: USD/THB {fx:,.4f}; บาทอ่อนอาจพยุงราคาไทยบางส่วน แต่ไม่หักล้างแรงลงของ Spot โดยอัตโนมัติ\n"
+            "• ติดตาม Fed/ยีลด์ เงินเฟ้อ น้ำมัน และภูมิรัฐศาสตร์; ข่าวเป็นบริบท ไม่ใช่หลักฐานเหตุและผล"
+        ),
         "scenario": None,
+        "scenario_dates": date_ranges,
         "plan": [],
         "news": [],
         "hot_news": [],
     }
     if include_long_range:
-        def band(days: int) -> str:
+        def band(days: int, base_case: str) -> str:
             width = atr * math.sqrt(days)
-            return f"กรอบความผันผวนโดยประมาณ ${max(0, spot-width):,.0f}–${spot+width:,.0f} (คำนวณจาก ATR × √{days}); หากยืนเหนือ ${near_resistance:,.0f} ได้ต่อเนื่อง ภาพจะดีขึ้น; หากหลุด ${near_support:,.0f} มีโอกาสอ่อนต่อ. เป็นกรอบสถิติหยาบ ไม่ใช่ราคาเป้าหมาย"
-        result["scenario"] = {"one_week": band(5), "one_month": band(21), "three_months": band(63)}
+            low = max(0, spot - width)
+            high = spot + width
+            next_level = (
+                f" · แนวรับถัดไป USD {float(next_support['low']):,.0f}–{float(next_support['high']):,.0f}"
+                if next_support else ""
+            )
+            return (
+                f"กรอบผันผวนจาก ATR: USD {low:,.0f}–{high:,.0f} (ไม่ใช่เป้าราคา)\n"
+                f"• กรณีหลัก: {base_case}\n"
+                f"• ยืนยันฟื้นเมื่อปิดเหนือ USD {resistance_low:,.0f}–{resistance_high:,.0f}; "
+                f"ปิดหลุด USD {support_low:,.0f}–{support_high:,.0f} ให้ระวัง{next_level}"
+            )
+        if trend == "ขาลง" and change < 0:
+            weekly_case = f"แรงขายยังนำจนกว่าจะปิดกลับเหนือแนวต้านใกล้"
+            monthly_case = f"ภาพยังเปราะบาง หากราคาต่ำกว่าค่าเฉลี่ยและแนวต้าน"
+        elif trend == "ขาขึ้น" and change > 0:
+            weekly_case = f"แรงซื้อยังนำ ตราบใดที่แนวรับใกล้ยังรับอยู่"
+            monthly_case = f"ภาพยังได้เปรียบหากราคายืนเหนือแนวรับและค่าเฉลี่ย"
+        else:
+            weekly_case = "มีโอกาสแกว่งในกรอบ รอปิดยืนยันเหนือแนวต้านหรือใต้แนวรับ"
+            monthly_case = "ทิศทางยังไม่ชัด ให้ติดตามการยืนเหนือ/หลุดระดับสำคัญ"
+        result["scenario"] = {
+            "one_week": band(5, weekly_case),
+            "one_month": band(21, monthly_case),
+            "three_months": band(63, "ระยะยาวขึ้นกับเงินเฟ้อ ดอกเบี้ย ดอลลาร์ และความเสี่ยงภูมิรัฐศาสตร์"),
+        }
         result["plan"] = [
-            f"แนวโน้มข้อมูลล่าสุด: {trend}; การเปลี่ยนแปลง Spot {change:+.2f}% และแท่งปิดล่าสุด {close:,.2f} เทียบแท่งก่อน {prior_close:,.2f} — รอแท่งยืนยันก่อนตีความทิศทาง",
-            f"ติดตามแนวรับใกล้ ${near_support:,.2f} และแนวต้านใกล้ ${near_resistance:,.2f}; ให้ถือว่าทะลุ/หลุดเมื่อราคาปิดยืนยัน ไม่ใช้การไส้เทียนอย่างเดียว",
-            f"ATR({technical.get('atr_period', 14)}) ${atr:,.2f} บอกขนาดการแกว่ง; ลดขนาดความเสี่ยงเมื่อราคาเหวี่ยงกว้างและหลีกเลี่ยงไล่ราคา",
-            f"ทองไทยยังขึ้นกับ USD/THB {float(technical['fx_usd_thb']):,.4f}; บาทอ่อนอาจพยุงราคาท้องถิ่น ส่วนบาทแข็งอาจหักล้างการขึ้นของ Spot",
-            "ตรวจราคาประกาศสมาคมฯ และส่วนต่างซื้อ-ขายก่อนตัดสินใจ; ตัวเลขประมาณการบนเว็บไม่ใช่ราคาซื้อขายรับประกัน",
+            f"ภาพหลัก {trend}: Spot เปลี่ยน {change:+.2f}%; แท่งปิดล่าสุด USD {close:,.2f} เทียบแท่งก่อน USD {prior_close:,.2f}. รอแท่งปิดยืนยัน ไม่ไล่ราคาจากไส้เทียน",
+            f"แนวรับใกล้ USD {support_low:,.2f}–{support_high:,.2f}; แนวต้าน USD {resistance_low:,.2f}–{resistance_high:,.2f}. ใช้ราคาปิดยืนยันการหลุดหรือทะลุ",
+            f"ATR({technical.get('atr_period', 14)}) USD {atr:,.2f} บอกขนาดการแกว่ง ไม่ได้บอกทิศทาง; ลดความเสี่ยงเมื่อผันผวนสูง",
+            f"ตรวจ USD/THB {fx:,.4f}: บาทอ่อนอาจช่วยพยุงทองไทย ส่วนบาทแข็งอาจหักล้างการขึ้นของ Spot",
+            "ติดตาม Fed/ยีลด์ น้ำมัน และข่าวภูมิรัฐศาสตร์จากต้นทาง; Hot คัดพาดหัวอัตโนมัติ ไม่ยืนยันผลกระทบ",
+            "ตรวจราคาสมาคมฯ และส่วนต่างซื้อ–ขายก่อนส่งคำสั่ง; ราคาแปลง Spot เป็นทองไทยเป็นค่าประมาณ",
         ]
     for item in candidates[:20]:
         direction, rationale, reaction = headline_outlook(item, float(technical["daily_change_pct"]))
@@ -391,11 +450,10 @@ def rules_based_analysis(technical: dict, bars: list[dict], candidates: list[dic
             "market_reaction": reaction,
         })
     result["hot_news"] = ranked_hot_news(result["news"])
-    result["news_updated_at"] = datetime.now(timezone.utc).isoformat()
+    result["news_updated_at"] = now.astimezone(timezone.utc).isoformat()
     result["news_candidates"] = len(candidates)
-    result["ai_updated_at"] = datetime.now(timezone.utc).isoformat() if include_long_range else None
+    result["ai_updated_at"] = now.astimezone(timezone.utc).isoformat() if include_long_range else None
     return result
-
 
 def main() -> None:
     now = datetime.now(timezone.utc)
