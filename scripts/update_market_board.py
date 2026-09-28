@@ -301,6 +301,39 @@ def ai_analysis(market: dict, bars: list[dict], candidates: list[dict], include_
     return json.loads(result["choices"][0]["message"]["content"])
 
 
+def ranked_hot_news(news: list[dict]) -> list[dict]:
+    """Rank watch-worthy RSS headlines without claiming causal proof."""
+    ranked = []
+    seen_titles: set[str] = set()
+    for item in news:
+        text = f"{item.get('title', '')} {item.get('snippet', '')}".lower()
+        title_key = re.sub(r"[^a-z0-9ก-๙]+", " ", item.get("title", "").lower()).strip()
+        if not title_key or title_key in seen_titles:
+            continue
+        seen_titles.add(title_key)
+        themes = []
+        score = 0.0
+        if re.search(r"gold|bullion|xau|ทองคำ|ราคาทอง", text):
+            score += 2.0; themes.append("กล่าวถึงราคาทอง")
+        if re.search(r"fed|federal reserve|ดอกเบี้ย|rate hike|rate cut|bond yield|treasury yield|ยีลด์", text):
+            score += 1.5; themes.append("ดอกเบี้ย/ยีลด์")
+        if re.search(r"oil|crude|inflation|เงินเฟ้อ|น้ำมัน", text):
+            score += 1.1; themes.append("น้ำมัน/เงินเฟ้อ")
+        if re.search(r"war|conflict|iran|israel|hormuz|strait|สงคราม|อิหร่าน|ฮอร์มุซ|โจมตี", text):
+            score += 1.2; themes.append("ภูมิรัฐศาสตร์")
+        publisher = item.get("publisher", "").lower()
+        if any(name in publisher for name in ("reuters", "bloomberg", "associated press", "financial times", "cnbc", "gold traders association", "ธนาคารแห่งประเทศไทย")):
+            score += 1.6
+        elif any(name in publisher for name in ("investing.com", "fxstreet", "fxempire", "yahoo finance", "forex.com")):
+            score += 0.9
+        if score < 4.5 or not themes:
+            continue
+        reason = "คัดจากคำในพาดหัว: " + " + ".join(themes[:3])
+        ranked.append((score, item.get("published", ""), {**item, "hot_reason": reason}))
+    ranked.sort(key=lambda row: (row[0], row[1]), reverse=True)
+    return [row[2] for row in ranked[:3]]
+
+
 def rules_based_analysis(technical: dict, bars: list[dict], candidates: list[dict], include_long_range: bool) -> dict:
     """Transparent fallback used when no AI API key is configured.
 
@@ -347,7 +380,7 @@ def rules_based_analysis(technical: dict, bars: list[dict], candidates: list[dic
             "response": f"ประเมินเบื้องต้นจากพาดหัว: {rationale} · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
             "market_reaction": reaction,
         })
-    result["news_updated_at"] = datetime.now(timezone.utc).isoformat()
+    result["hot_news"] = ranked_hot_news(result["news"])\n    result["news_updated_at"] = datetime.now(timezone.utc).isoformat()
     result["news_candidates"] = len(candidates)
     result["ai_updated_at"] = datetime.now(timezone.utc).isoformat() if include_long_range else None
     return result
