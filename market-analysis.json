@@ -1,9 +1,107 @@
 {
-  "generated_at": "2026-09-28T09:34:29.157659+00:00",
-  "generated_at_bangkok": "2026-09-28T16:34:29.157659+07:00",
+  "generated_at": "2026-09-28T09:36:22.955961+00:00",
+  "generated_at_bangkok": "2026-09-28T16:36:22.955961+07:00",
   "slot": "22:00",
-  "technical": {},
-  "daily_bars": [],
+  "technical": {
+    "spot": 4147.57,
+    "fx_usd_thb": 33.5926,
+    "estimated_thb_per_baht": 65900,
+    "daily_change_pct": -2.75,
+    "atr14": 75.96,
+    "atr_period": 13,
+    "sma20": 4359.57,
+    "sma_period": 13,
+    "ema50": 4412.99,
+    "trend": "ขาลง",
+    "support": [
+      {
+        "low": 4057.93,
+        "high": 4085.28
+      },
+      {
+        "low": 3981.97,
+        "high": 4009.32
+      }
+    ],
+    "resistance": [
+      {
+        "low": 4209.86,
+        "high": 4237.21
+      },
+      {
+        "low": 4385.94,
+        "high": 4413.28
+      }
+    ],
+    "last_closed_bar": {
+      "time": "2026-09-25T00:00:00Z",
+      "open": 4265.026,
+      "high": 4315.686,
+      "low": 4254.6405,
+      "close": 4284.0105
+    },
+    "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
+    "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 13 แท่ง); SMA20 ใช้ข้อมูล 13 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
+    "quote_updated": "2026-09-28T09:36:24.241Z"
+  },
+  "daily_bars": [
+    {
+      "open": 4349.42,
+      "high": 4352.625,
+      "low": 4347.4369,
+      "close": 4349.445,
+      "time": "2026-09-13T00:00:00Z"
+    },
+    {
+      "open": 4283.5875,
+      "high": 4366.6475,
+      "low": 4235.1975,
+      "close": 4271.827,
+      "time": "2026-09-16T00:00:00Z"
+    },
+    {
+      "open": 4272.0095,
+      "high": 4380.8005,
+      "low": 4266.5995,
+      "close": 4346.488,
+      "time": "2026-09-17T00:00:00Z"
+    },
+    {
+      "open": 4346.3775,
+      "high": 4399.6085,
+      "low": 4334.4875,
+      "close": 4378.482,
+      "time": "2026-09-18T00:00:00Z"
+    },
+    {
+      "open": 4369.305,
+      "high": 4375.9005,
+      "low": 4291.5055,
+      "close": 4370.1005,
+      "time": "2026-09-22T00:00:00Z"
+    },
+    {
+      "open": 4338.2115,
+      "high": 4347.3695,
+      "low": 4275.0535,
+      "close": 4288.5735,
+      "time": "2026-09-23T00:00:00Z"
+    },
+    {
+      "open": 4288.7535,
+      "high": 4303.3305,
+      "low": 4244.4295,
+      "close": 4265.026,
+      "time": "2026-09-24T00:00:00Z"
+    },
+    {
+      "open": 4265.026,
+      "high": 4315.686,
+      "low": 4254.6405,
+      "close": 4284.0105,
+      "time": "2026-09-25T00:00:00Z"
+    }
+  ],
   "candidate_count": 40,
   "update_slot": "evening",
   "news": [],
@@ -11,9 +109,9 @@
   "scenario": null,
   "plan": [],
   "status": {
-    "technical": "unavailable",
-    "news": "unavailable",
-    "ai": "market_data_unavailable"
+    "technical": "ok",
+    "news": "needs_api_key",
+    "ai": "needs_api_key"
   },
   "news_source_note": "หัวข้อ/ข้อความย่อจาก Google News RSS; ลิงก์เปิดไปยังผู้เผยแพร่เดิม; AI ระบุผลที่อาจเกิดแยกจากข้อเท็จจริงและข้อมูลราคา"
 }
