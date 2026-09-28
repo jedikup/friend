@@ -1,5 +1,5 @@
 (() => {
-  const dataUrl = new URL('./data/market-analysis.json', location.href);
+  const dataUrl = new URL('./market-analysis.json', location.href);
   dataUrl.searchParams.set('v', Date.now());
   const $ = (id) => document.getElementById(id);
   const fmt = (n, digits = 2) => Number(n).toLocaleString('th-TH', { maximumFractionDigits: digits });
