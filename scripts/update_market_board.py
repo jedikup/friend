@@ -12,6 +12,7 @@ import re
 import sys
 import urllib.parse
 import urllib.request
+import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -25,8 +26,12 @@ OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-6-luna")
 
 def get_json(url: str, headers: dict[str, str] | None = None) -> dict:
     request = urllib.request.Request(url, headers={"User-Agent": "GoldMarketBoard/1.0 (market research dashboard)", **(headers or {})})
-    with urllib.request.urlopen(request, timeout=25) as response:
-        return json.loads(response.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(request, timeout=25) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")[:600]
+        raise RuntimeError(f"HTTP {exc.code} from {urllib.parse.urlsplit(url).netloc}: {detail}") from exc
 
 
 def gold_spot_fx() -> tuple[float, float, str]:
@@ -38,7 +43,8 @@ def gold_spot_fx() -> tuple[float, float, str]:
 
 
 def daily_bars() -> list[dict]:
-    query = urllib.parse.urlencode({"symbol": "XAU-USD-SPOT", "interval": "1d", "limit": "30"})
+    today = datetime.now(timezone.utc).date()
+    query = urllib.parse.urlencode({"symbol": "XAU-USD-SPOT", "interval": "1d", "from": (today - timedelta(days=29)).isoformat(), "to": today.isoformat(), "limit": "30"})
     headers = {}
     key = os.getenv("GOLDPRICE_DEV_API_KEY")
     if key:
