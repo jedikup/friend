@@ -184,6 +184,62 @@ def previous_data() -> dict:
         return {}
 
 
+def headline_outlook(item: dict, daily_change_pct: float) -> tuple[str, str, str]:
+    """Classify a headline conservatively; this is a cue, never causal proof."""
+    title = item.get("title", "")
+    text = f"{title} {item.get('snippet', '')}".lower()
+    positive = 0
+    negative = 0
+    positive_reasons: list[str] = []
+    negative_reasons: list[str] = []
+    direct_down = re.search(r"(?:gold|bullion|xau[/ ]?usd|ทองคำ|ราคาทอง)[^.!?]{0,85}(?:falls?|fell|drops?|slumps?|tumbles?|crashes?|slides?|declines?|sinks?|dives?|rall(?:y|ies|ied)|down|ร่วง|ดิ่ง|ปรับลง|ลดลง|ทรุด)", text)
+    direct_up = re.search(r"(?:gold|bullion|xau[/ ]?usd|ทองคำ|ราคาทอง)[^.!?]{0,85}(?:rises?|rose|gains?|surges?|rall(?:y|ies|ied)|climbs?|jumps?|advances?|up|พุ่ง|ปรับขึ้น|ดีด|บวก)", text)
+    if direct_down:
+        negative += 2
+        negative_reasons.append("พาดหัวรายงานราคาทองอ่อนตัว")
+    if direct_up:
+        positive += 2
+        positive_reasons.append("พาดหัวรายงานราคาทองแข็งขึ้น")
+    if re.search(r"(?:dollar|greenback|ดอลลาร์).{0,35}(?:rises?|strengthens?|jumps?|แข็งค่า|ปรับขึ้น)", text):
+        negative += 1; negative_reasons.append("ดอลลาร์แข็งอาจกดดันทอง")
+    if re.search(r"(?:yield|treasury yields|bond yields|อัตราผลตอบแทน).{0,35}(?:rise|rises|higher|jump|พุ่ง|เพิ่มขึ้น)", text):
+        negative += 1; negative_reasons.append("ผลตอบแทนพันธบัตรสูงขึ้นอาจกดดันทอง")
+    if re.search(r"(?:fed|federal reserve).{0,45}(?:rate hike|hikes rates|hawkish|higher rates|ขึ้นดอกเบี้ย|คงดอกเบี้ยสูง)", text):
+        negative += 1; negative_reasons.append("ตลาดกังวลดอกเบี้ยสูง/ขึ้นดอกเบี้ย")
+    if re.search(r"(?:dollar|greenback|ดอลลาร์).{0,35}(?:falls?|weakens?|slips?|อ่อนค่า|ปรับลง)", text):
+        positive += 1; positive_reasons.append("ดอลลาร์อ่อนอาจหนุนทอง")
+    if re.search(r"(?:yield|treasury yields|bond yields|อัตราผลตอบแทน).{0,35}(?:fall|falls|lower|ease|ลดลง|อ่อนตัว)", text):
+        positive += 1; positive_reasons.append("ผลตอบแทนพันธบัตรลดลงอาจหนุนทอง")
+    if re.search(r"(?:fed|federal reserve).{0,45}(?:rate cut|cuts rates|dovish|ลดดอกเบี้ย)", text):
+        positive += 1; positive_reasons.append("คาดการณ์ลดดอกเบี้ยอาจหนุนทอง")
+    if re.search(r"(?:บาทอ่อน|baht.{0,25}(?:weak|low)|weak baht)", text):
+        positive += 1; positive_reasons.append("บาทอ่อนอาจหนุนราคาทองไทย")
+
+    if positive and negative:
+        direction = "mixed"
+        rationale = f"สัญญาณในพาดหัวขัดกัน: {'; '.join(positive_reasons[:2])} ขณะที่ {'; '.join(negative_reasons[:2])}"
+    elif positive:
+        direction = "up"
+        rationale = "; ".join(positive_reasons)
+    elif negative:
+        direction = "down"
+        rationale = "; ".join(negative_reasons)
+    else:
+        direction = "watch"
+        rationale = "พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+
+    if daily_change_pct > 0.15:
+        observed = f"Spot ใน snapshot วันเดียวกัน +{daily_change_pct:.2f}%"
+        reaction = f"ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · {rationale}"
+    elif daily_change_pct < -0.15:
+        observed = f"Spot ใน snapshot วันเดียวกัน {daily_change_pct:.2f}%"
+        reaction = f"ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · {rationale}"
+    else:
+        observed = f"Spot เปลี่ยนแปลงวันเดียวกัน {daily_change_pct:+.2f}%"
+        reaction = f"ข้อมูลราคาใกล้ทรงตัวใน snapshot · {rationale}"
+    return direction, rationale, reaction
+
+
 def embed_public_data(data: dict) -> None:
     # Put the same generated snapshot into each Pages document. GitHub Pages serves
     # the HTML reliably even when static JSON MIME/path handling differs by client.
@@ -271,12 +327,13 @@ def rules_based_analysis(technical: dict, bars: list[dict], candidates: list[dic
             "ตรวจราคาประกาศสมาคมฯ และส่วนต่างซื้อ-ขายก่อนตัดสินใจ; ตัวเลขประมาณการบนเว็บไม่ใช่ราคาซื้อขายรับประกัน",
         ]
     for item in candidates[:20]:
+        direction, rationale, reaction = headline_outlook(item, float(technical["daily_change_pct"]))
         result["news"].append({
             **item,
             "summary": item.get("snippet") or item["title"],
-            "direction": "watch",
-            "response": "เป็นหัวข้อจาก RSS ที่เกี่ยวข้องกับคำค้นทอง/เศรษฐกิจ; เปิดอ่านต้นทางและตรวจบริบทก่อนสรุปผลบวกหรือลบต่อทอง",
-            "market_reaction": "ระบบยังไม่ได้ยืนยันความสัมพันธ์เชิงเหตุและผลระหว่างข่าวนี้กับการเคลื่อนไหวของราคา",
+            "direction": direction,
+            "response": f"ประเมินเบื้องต้นจากพาดหัว: {rationale} · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+            "market_reaction": reaction,
         })
     result["news_updated_at"] = datetime.now(timezone.utc).isoformat()
     result["news_candidates"] = len(candidates)
@@ -315,7 +372,7 @@ def main() -> None:
     if status["technical"] == "ok" and not os.getenv("OPENAI_API_KEY"):
         fallback = rules_based_analysis(market["technical"], market["daily_bars"], candidates, True)
         market.update(fallback)
-        status["news"] = "rss_unclassified" if candidates else "feed_empty"
+        status["news"] = "rss_headline_heuristic" if candidates else "feed_empty"
         status["ai"] = "rules_based_no_api_key"
     elif status["technical"] == "ok" and candidates and os.getenv("OPENAI_API_KEY"):
         try:
@@ -364,7 +421,7 @@ def main() -> None:
             status["news"] = "stale_preserved_previous" if previous.get("news") else "unavailable"
 
     market["status"] = status
-    market["news_source_note"] = "หัวข้อ/ข้อความย่อจาก Google News RSS; ลิงก์เปิดไปยังผู้เผยแพร่เดิม; หากไม่มี API key ข่าวจะไม่ถูกจัดทิศทางและแสดงเป็นรายการเฝ้าติดตามเท่านั้น"
+    market["news_source_note"] = "พาดหัว/ข้อความย่อจาก Google News RSS; หากไม่มี API key จะประเมินทิศทางด้วยกฎคำสำคัญเบื้องต้น ไม่ใช่การอ่านบทความเต็ม และไม่ยืนยันว่าเป็นสาเหตุของราคา"
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     DATA_FILE.write_text(json.dumps(market, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     embed_public_data(market)

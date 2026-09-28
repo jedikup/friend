@@ -159,7 +159,7 @@
       const status = data.status || {};
       const rulesBased = status.ai === 'rules_based_no_api_key';
       $('analysisStatus').textContent = rulesBased
-        ? 'แนวรับ–แนวต้านและ Scenario/Checklist อัปเดตจากข้อมูลตลาดด้วยกฎทางเทคนิค · ข่าวเป็นหัวข้อ RSS ที่ยังไม่จัดทิศทาง · ตั้ง OPENAI_API_KEY หากต้องการการวิเคราะห์จาก AI'
+        ? 'แนวรับ–แนวต้านและ Scenario/Checklist อัปเดตจากข้อมูลตลาดด้วยกฎทางเทคนิค · ข่าวประเมินบวก/ลบจากคำในพาดหัว RSS เบื้องต้น ไม่ยืนยันเหตุและผล · ตั้ง OPENAI_API_KEY หากต้องการวิเคราะห์ข่าวด้วย AI'
         : `สถานะ AI: ${status.ai || 'ไม่ทราบ'} · ข่าว: ${status.news || 'ไม่ทราบ'} · ข้อมูลเทคนิค: ${status.technical || 'ไม่ทราบ'}`;
       $('analysisStatus').classList.toggle('status-warning', (!rulesBased && status.ai === 'needs_api_key') || status.technical !== 'ok' || status.ai?.includes('error'));
       if (status.technical !== 'ok') $('levelsUpdatedAt').textContent = `เตือน: ข้อมูลเทคนิคล่าสุดไม่สำเร็จ · แสดงข้อมูลเดิม ${stamp(data.generated_at)}`;
