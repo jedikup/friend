@@ -17,7 +17,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_FILE = ROOT / "data" / "market-analysis.json"
+DATA_FILE = ROOT / "market-analysis.json"
 BANGKOK = ZoneInfo("Asia/Bangkok")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-6-luna")
 
