@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-28T13:00:30.190593+00:00",
-  "generated_at_bangkok": "2026-09-28T20:00:30.190593+07:00",
+  "generated_at": "2026-09-28T13:02:48.093150+00:00",
+  "generated_at_bangkok": "2026-09-28T20:02:48.093150+07:00",
   "slot": "22:00",
   "technical": {
     "spot": 4147.16,
@@ -42,7 +42,7 @@
     },
     "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
     "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 13 แท่ง); SMA20 ใช้ข้อมูล 13 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
-    "quote_updated": "2026-09-28T13:00:32.780Z"
+    "quote_updated": "2026-09-28T13:02:49.172Z"
   },
   "daily_bars": [
     {
@@ -139,9 +139,9 @@
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMWdPUUFrZ0pxckdQT3dGTXF1SXVKeU10ak1uUlNBN0toMjhZanlmM2haVWlpQlQ0Y25PTlA0T2FsdzhrcjlnWjBXVkRQMnFzT0YycWNKaWJGUm05ZlptSHowMHN5dkN6WWliQXZjN0NUUjRTOE1iNXpHYVZOTjJIWld1Sk8tMG56RFkwaGFib2V1WGNWMkYtS3prMUJ6SGZmWkxlWkozc2p6N2EyQ0hPNzJFbjk0NWdOTFNWekxWeDU?oc=5",
       "snippet": "Gold tumbles below $4,200 as oil, Fed hike bets weigh on bullion Investing.com",
       "summary": "Gold tumbles below $4,200 as oil, Fed hike bets weigh on bullion Investing.com",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+      "direction": "down",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
       "id": "N47",
@@ -193,12 +193,12 @@
     },
     {
       "id": "N62",
-      "title": "Gold slides as oil surge and Fed rate path weigh on markets - en.yenisafak.com",
-      "publisher": "en.yenisafak.com",
+      "title": "Gold slides as oil surge and Fed rate path weigh on markets - Yeni Şafak English",
+      "publisher": "Yeni Şafak English",
       "published": "2026-09-28T09:04:41+00:00",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRFliRWQwWVEyRWZsbDNLVVptejJUR0gwZ2UxWVdueDZyMmU3NkdWSFlsWl96RjdWMUR5SmxXT0dFTEFSLW5XNTJmdk9HWHU3dmh6a2w0eEludFpkMTRDQ01OS0lIYklmLUxyTWxNQTNiUVNJQWZmSUxGMGtzbFN1OWlKUWNmTlM1VHlZUl9HeUxjWThOTG51UmI1OTZDbjJCNkE?oc=5",
-      "snippet": "Gold slides as oil surge and Fed rate path weigh on markets en.yenisafak.com",
-      "summary": "Gold slides as oil surge and Fed rate path weigh on markets en.yenisafak.com",
+      "snippet": "Gold slides as oil surge and Fed rate path weigh on markets Yeni Şafak English",
+      "summary": "Gold slides as oil surge and Fed rate path weigh on markets Yeni Şafak English",
       "direction": "down",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
@@ -217,12 +217,12 @@
     },
     {
       "id": "N42",
-      "title": "Gold Declines as Hormuz Impasse Keeps Rate-Hike Bets Elevated - Bloomberg",
-      "publisher": "Bloomberg",
+      "title": "Gold Declines as Hormuz Impasse Keeps Rate-Hike Bets Elevated - Bloomberg.com",
+      "publisher": "Bloomberg.com",
       "published": "2026-09-28T08:40:40+00:00",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOX0J0NEgxVmIzdXBFV0xEaGZoZEx3S3l1SWVnTm1WTEZXM3dWUzkwb1EzX3lIenB1RVRUTmZfQ3g0aHZCSnNqQUZFYk1MZFhJeHNUOGxUXy1aS3Uwa0lueWktbHMybEt1RU9qUVlueGVrcXhZZEYzQkVnRjJVa0JmSGF2VjJaNVdIb3Zvb1pFNXR2TENDRy1ybDVNZ0ZmRTYyX003ZExNZDlKZWFsM1VGNjNn?oc=5",
-      "snippet": "Gold Declines as Hormuz Impasse Keeps Rate-Hike Bets Elevated Bloomberg",
-      "summary": "Gold Declines as Hormuz Impasse Keeps Rate-Hike Bets Elevated Bloomberg",
+      "snippet": "Gold Declines as Hormuz Impasse Keeps Rate-Hike Bets Elevated Bloomberg.com",
+      "summary": "Gold Declines as Hormuz Impasse Keeps Rate-Hike Bets Elevated Bloomberg.com",
       "direction": "down",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
@@ -283,12 +283,12 @@
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaVh5SDRJWVI0OVExc3Z6X2VoU3hIWi1hNFVzLW5mS25ObkVvLVpkenRZUEtsWEhYTTgxOFZzQk84R245MHE1N25veHpZRTk4V3JrZmlENGhUTU9peFpQQXBmbU14WEFvTnpGdG5uTXA1ZWthc1FsSzZtcFR5ZjRPcVl5TmlpUk1OOVh0czRyOFBhb25Xb19maGtGUS0wS0tqSllJeDYzUWZFSF9ia0cwMDNET01LdGtILWdIdUxrOA?oc=5",
       "snippet": "Gold falls below $4,300 as oil, Fed hike bets keep pressure on bullion Investing.com Nigeria",
       "summary": "Gold falls below $4,300 as oil, Fed hike bets keep pressure on bullion Investing.com Nigeria",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+      "direction": "down",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
-      "id": "N122",
+      "id": "N123",
       "title": "ดิ่งพสุธา! ราคาทองเช้าวันนี้ 28 ก.ย. 69 - LINE TODAY",
       "publisher": "LINE TODAY",
       "published": "2026-09-28T06:35:02+00:00",
@@ -301,12 +301,12 @@
     },
     {
       "id": "N99",
-      "title": "Thai baht/US dollar weaker on Monday - Business Recorder",
-      "publisher": "Business Recorder",
+      "title": "Thai baht/US dollar weaker on Monday - brecorder.com",
+      "publisher": "brecorder.com",
       "published": "2026-09-28T06:33:37+00:00",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNS2RsY3lXNElvYUZyZGxsNkVGLWNyLWZSSGcxQWRvYmlWM3NLVlZwYTl4ZktsUjBlNWNiSUFBQWFidDRDa1hVWkpWMjZ3YlEwYmFyYW1BQ3MxR0NOUkFWVElPSVc3TFc2Q3cwNWRvTEFYWWRGUll2Qmd0QWptZVEzT9IBVkFVX3lxTFBpdmM2RGxDamtfdlBUNm5MeDcyeVhxMGF0UzZja3JUNkhMQWpoTnFBbFctMWJURS1KWkxETUJSTXV5TGRTZ3Y3WmV5RTdFUzBPejIyclR3?oc=5",
-      "snippet": "Thai baht/US dollar weaker on Monday Business Recorder",
-      "summary": "Thai baht/US dollar weaker on Monday Business Recorder",
+      "snippet": "Thai baht/US dollar weaker on Monday brecorder.com",
+      "summary": "Thai baht/US dollar weaker on Monday brecorder.com",
       "direction": "up",
       "response": "ประเมินเบื้องต้นจากพาดหัว: บาทอ่อนอาจหนุนราคาทองไทย · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · บาทอ่อนอาจหนุนราคาทองไทย"
@@ -361,9 +361,9 @@
     }
   ],
   "hot_news": [],
-  "news_updated_at": "2026-09-28T13:00:34.686505+00:00",
+  "news_updated_at": "2026-09-28T13:02:51.164823+00:00",
   "news_candidates": 40,
-  "ai_updated_at": "2026-09-28T13:00:34.686514+00:00",
+  "ai_updated_at": "2026-09-28T13:02:51.164831+00:00",
   "status": {
     "technical": "ok",
     "news": "rss_headline_heuristic",
