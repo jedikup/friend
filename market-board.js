@@ -30,6 +30,7 @@
     const when = node('time', 'news-meta', `${stamp(item.published)} · ${item.publisher || 'แหล่งข่าวไม่ระบุ'}`);
     if (item.published) when.dateTime = item.published;
     heading.append(when);
+    if (item.hot_reason) card.append(node('p', 'hot-reason', `เหตุที่ควรจับตา: ${item.hot_reason}`));
     const summary = node('p');
     summary.append(node('b', '', 'ข่าวรายงาน: '), document.createTextNode(item.summary || item.snippet || 'ไม่มีข้อความสรุปจากต้นทาง'));
     card.append(heading, summary);
@@ -50,6 +51,33 @@
       const p = node('p'); p.append(source); card.append(p);
     }
     return card;
+  }
+
+  function horizonLabel(data, key, fallback) {
+    if (data.scenario_dates && data.scenario_dates[key]) return `${fallback} · ${data.scenario_dates[key]}`;
+    const source = data.ai_updated_at || data.generated_at;
+    if (!source) return fallback;
+    const sourceDate = new Date(source);
+    if (Number.isNaN(sourceDate.getTime())) return fallback;
+    const parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Bangkok', year: 'numeric', month: '2-digit', day: '2-digit' })
+      .formatToParts(sourceDate).reduce((o, p) => (o[p.type] = p.value, o), {});
+    const start = new Date(Date.UTC(Number(parts.year), Number(parts.month) - 1, Number(parts.day)));
+    const end = new Date(start);
+    const originalDay = end.getUTCDate();
+    if (key === 'one_week') end.setUTCDate(end.getUTCDate() + 7);
+    else {
+      const monthStep = key === 'one_month' ? 1 : 3;
+      end.setUTCDate(1);
+      end.setUTCMonth(end.getUTCMonth() + monthStep);
+      const lastDay = new Date(Date.UTC(end.getUTCFullYear(), end.getUTCMonth() + 1, 0)).getUTCDate();
+      end.setUTCDate(Math.min(originalDay, lastDay));
+    }
+    const fmtDate = (date) => date.toLocaleDateString('th-TH', { timeZone: 'UTC', day: 'numeric', month: 'short', year: 'numeric' });
+    return `${fallback} · ${fmtDate(start)} – ${fmtDate(end)}`;
+  }
+
+  function analysisStamp(data) {
+    return `อัปเดตบทวิเคราะห์ ${stamp(data.ai_updated_at)} · ราคาอ้างอิง ${stamp(data.technical?.quote_updated)} · อัปเดตรอบ 08:00/22:00 น.`;
   }
 
   function rangeText(range, currency = '$') {
@@ -91,14 +119,14 @@
     const host = $('scenarioGrid');
     if (!host) return;
     host.replaceChildren();
-    const entries = [['1 สัปดาห์', scenario?.one_week], ['1 เดือน', scenario?.one_month], ['3 เดือน', scenario?.three_months]];
+    const entries = [[horizonLabel(data, 'one_week', '1 สัปดาห์'), scenario?.one_week], [horizonLabel(data, 'one_month', '1 เดือน'), scenario?.one_month], [horizonLabel(data, 'three_months', '3 เดือน'), scenario?.three_months]];
     for (const [label, text] of entries) {
       const card = node('div', 'forecast');
       card.append(node('b', '', label), node('p', '', text || 'รอผลวิเคราะห์จากรอบ 08:00'));
       host.append(card);
     }
     $('scenarioSummary').textContent = data.market_summary || 'รอผลวิเคราะห์ตลาดจากรอบ 08:00';
-    $('scenarioUpdatedAt').textContent = `วิเคราะห์ล่าสุด ${stamp(data.ai_updated_at)} · ระบบคำนวณตามรอบวันละ 1 ครั้ง`;
+    $('scenarioUpdatedAt').textContent = analysisStamp(data);
     const badge = document.querySelector('.ai-label');
     if (badge && data.analysis_type === 'rules_based') badge.textContent = 'ประเมินตามกฎจากข้อมูลตลาด · ไม่ใช่ AI/ข่าวจริง';
   }
@@ -109,7 +137,7 @@
     list.replaceChildren();
     (data.plan || []).forEach((line) => list.append(node('li', '', line)));
     if (!list.children.length) list.append(node('li', '', 'รอผลวิเคราะห์จากรอบ 08:00'));
-    $('planUpdatedAt').textContent = `อัปเดตล่าสุด ${stamp(data.ai_updated_at)} · checklist เป็นการวิเคราะห์ตามข้อมูลตลาด ไม่ใช่คำสั่งซื้อขาย`;
+    $('planUpdatedAt').textContent = `${analysisStamp(data)} · checklist เป็นข้อมูลประกอบ ไม่ใช่คำสั่งซื้อขาย`;
   }
 
   function renderNews(data) {
@@ -122,16 +150,16 @@
       const moreList = $('newsMoreItems');
       mainList.replaceChildren(...first.map((item) => renderNewsItem(item)));
       moreList.replaceChildren(...more.map((item) => renderNewsItem(item)));
-      if (!news.length) mainList.append(node('p', 'news-snapshot-note', 'รอบนี้ไม่พบข่าวจากฟีด RSS ที่ดึงมาได้'));
+      if (!news.length) mainList.append(node('p', 'news-snapshot-note', 'รอบนี้ดึงข่าว RSS ไม่ได้ · คงข่าวเดิมไว้จนกว่าจะมีข้อมูลใหม่'));
       $('newsToggle').hidden = news.length <= 3;
       $('newsToggle').textContent = `More · ดูเพิ่มอีก ${Math.min(3, Math.max(news.length - 3, 0))} ข่าว`;
-      $('newsSourceUpdatedAt').textContent = `คัดข่าวล่าสุด ${stamp(data.news_updated_at)} · แสดง ${news.length} ข่าวที่ตรวจจากฟีดข่าว`;
+      $('newsSourceUpdatedAt').textContent = `คัดข่าวล่าสุด ${stamp(data.news_updated_at)} · แสดง ${news.length} ข่าวจาก RSS · ข่าว/บทวิเคราะห์รอบ 08:00 และ 22:00; ราคา Spot/FX ตรวจทุก 1 นาที`;
     }
     const hotHost = $('hotNewsList');
     if (hotHost) {
       const hot = data.hot_news || [];
       hotHost.replaceChildren(...hot.slice(0, 3).map((item) => renderNewsItem(item)));
-      $('hotModeNote').textContent = hot.length ? `ข่าวที่ระบบคัดเป็นผลกระทบสูง · ประเมินล่าสุด ${stamp(data.news_updated_at)}` : 'ยังไม่มีข่าวที่มีหลักฐานพอให้จัดเป็นข่าวผลกระทบสูง';
+      $('hotModeNote').textContent = hot.length ? (data.status?.ai === 'rules_based_no_api_key' ? `คัดเบื้องต้นจากคำในพาดหัวและประเภทแหล่งข่าว · ${stamp(data.news_updated_at)} · ไม่ยืนยันว่าข่าวทำให้ราคาขยับ` : `คัดข่าวเด่นจากการวิเคราะห์ · ${stamp(data.news_updated_at)} · ตรวจสอบบทความต้นทาง`) : 'รอบนี้ไม่พบข่าวที่ผ่านเกณฑ์คัดเบื้องต้นจากฟีดที่ดึงได้ · ไม่ได้แปลว่าไม่มีข่าวสำคัญในตลาด';
     }
     const allHost = $('allNewsList');
     if (allHost) {
@@ -159,7 +187,7 @@
       const status = data.status || {};
       const rulesBased = status.ai === 'rules_based_no_api_key';
       $('analysisStatus').textContent = rulesBased
-        ? 'แนวรับ–แนวต้านและ Scenario/Checklist อัปเดตจากข้อมูลตลาดด้วยกฎทางเทคนิค · ข่าวประเมินบวก/ลบจากคำในพาดหัว RSS เบื้องต้น ไม่ยืนยันเหตุและผล · ตั้ง OPENAI_API_KEY หากต้องการวิเคราะห์ข่าวด้วย AI'
+        ? 'ราคา Spot/FX รีเฟรชทุก 1 นาที · แนวรับ ข่าว และ Scenario/Checklist อัปเดตตามรอบ 08:00/22:00 น. · ไม่มี API key จึงใช้กฎคัดพาดหัว ไม่ใช่ AI; คะแนน Hot เป็นตัวช่วยเฝ้าดู ไม่ใช่การยืนยันผลกระทบ
         : `สถานะ AI: ${status.ai || 'ไม่ทราบ'} · ข่าว: ${status.news || 'ไม่ทราบ'} · ข้อมูลเทคนิค: ${status.technical || 'ไม่ทราบ'}`;
       $('analysisStatus').classList.toggle('status-warning', (!rulesBased && status.ai === 'needs_api_key') || status.technical !== 'ok' || status.ai?.includes('error'));
       if (status.technical !== 'ok') $('levelsUpdatedAt').textContent = `เตือน: ข้อมูลเทคนิคล่าสุดไม่สำเร็จ · แสดงข้อมูลเดิม ${stamp(data.generated_at)}`;
