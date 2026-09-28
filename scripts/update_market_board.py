@@ -380,7 +380,8 @@ def rules_based_analysis(technical: dict, bars: list[dict], candidates: list[dic
             "response": f"ประเมินเบื้องต้นจากพาดหัว: {rationale} · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
             "market_reaction": reaction,
         })
-    result["hot_news"] = ranked_hot_news(result["news"])\n    result["news_updated_at"] = datetime.now(timezone.utc).isoformat()
+    result["hot_news"] = ranked_hot_news(result["news"])
+    result["news_updated_at"] = datetime.now(timezone.utc).isoformat()
     result["news_candidates"] = len(candidates)
     result["ai_updated_at"] = datetime.now(timezone.utc).isoformat() if include_long_range else None
     return result
