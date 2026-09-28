@@ -192,14 +192,17 @@ def headline_outlook(item: dict, daily_change_pct: float) -> tuple[str, str, str
     negative = 0
     positive_reasons: list[str] = []
     negative_reasons: list[str] = []
-    direct_down = re.search(r"(?:gold|bullion|xau[/ ]?usd|ทองคำ|ราคาทอง)[^.!?]{0,85}(?:falls?|fell|drops?|slumps?|tumbles?|crashes?|slides?|declines?|sinks?|dives?|rall(?:y|ies|ied)|down|ร่วง|ดิ่ง|ปรับลง|ลดลง|ทรุด)", text)
-    direct_up = re.search(r"(?:gold|bullion|xau[/ ]?usd|ทองคำ|ราคาทอง)[^.!?]{0,85}(?:rises?|rose|gains?|surges?|rall(?:y|ies|ied)|climbs?|jumps?|advances?|up|พุ่ง|ปรับขึ้น|ดีด|บวก)", text)
-    if direct_down:
-        negative += 2
-        negative_reasons.append("พาดหัวรายงานราคาทองอ่อนตัว")
-    if direct_up:
-        positive += 2
-        positive_reasons.append("พาดหัวรายงานราคาทองแข็งขึ้น")
+    gold_mentions = list(re.finditer(r"gold|bullion|xau[/ ]?usd|ทองคำ|ราคาทอง", text))
+    if gold_mentions:
+        nearby = text[gold_mentions[-1].end():gold_mentions[-1].end() + 100]
+        direct_down = re.search(r"\b(?:falls?|fell|drops?|slumps?|tumbles?|crashes?|slides?|declines?|sinks?|dives?|down|ร่วง|ดิ่ง|ปรับลง|ลดลง|ทรุด)\b", nearby)
+        direct_up = re.search(r"\b(?:rises?|rose|gains?|surges?|rall(?:y|ies|ied)|climbs?|jumps?|advances?|up|พุ่ง|ปรับขึ้น|ดีด|บวก)\b", nearby)
+        if direct_down and (not direct_up or direct_down.start() <= direct_up.start()):
+            negative += 2
+            negative_reasons.append("พาดหัวรายงานราคาทองอ่อนตัว")
+        elif direct_up:
+            positive += 2
+            positive_reasons.append("พาดหัวรายงานราคาทองแข็งขึ้น")
     if re.search(r"(?:dollar|greenback|ดอลลาร์).{0,35}(?:rises?|strengthens?|jumps?|แข็งค่า|ปรับขึ้น)", text):
         negative += 1; negative_reasons.append("ดอลลาร์แข็งอาจกดดันทอง")
     if re.search(r"(?:yield|treasury yields|bond yields|อัตราผลตอบแทน).{0,35}(?:rise|rises|higher|jump|พุ่ง|เพิ่มขึ้น)", text):
