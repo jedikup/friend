@@ -193,14 +193,23 @@ def headline_outlook(item: dict, daily_change_pct: float) -> tuple[str, str, str
     positive_reasons: list[str] = []
     negative_reasons: list[str] = []
     gold_mentions = list(re.finditer(r"gold|bullion|xau[/ ]?usd|ทองคำ|ราคาทอง", text))
-    if gold_mentions:
-        nearby = text[gold_mentions[-1].end():gold_mentions[-1].end() + 100]
-        direct_down = re.search(r"\b(?:falls?|fell|drops?|slumps?|tumbles?|crashes?|slides?|declines?|sinks?|dives?|down|ร่วง|ดิ่ง|ปรับลง|ลดลง|ทรุด)\b", nearby)
-        direct_up = re.search(r"\b(?:rises?|rose|gains?|surges?|rall(?:y|ies|ied)|climbs?|jumps?|advances?|up|พุ่ง|ปรับขึ้น|ดีด|บวก)\b", nearby)
-        if direct_down and (not direct_up or direct_down.start() <= direct_up.start()):
+    direct_hits: list[tuple[int, str]] = []
+    for i, mention in enumerate(gold_mentions):
+        end = min(mention.end() + 100, gold_mentions[i + 1].start() if i + 1 < len(gold_mentions) else len(text))
+        nearby = text[mention.end():end]
+        for direction, pattern in (
+            ("down", r"\b(?:falls?|fell|drops?|slumps?|tumbles?|crashes?|slides?|declines?|sinks?|dives?|down|ร่วง|ดิ่ง|ปรับลง|ลดลง|ทรุด)\b"),
+            ("up", r"\b(?:rises?|rose|gains?|surges?|rall(?:y|ies|ied)|climbs?|jumps?|advances?|up|พุ่ง|ปรับขึ้น|ดีด|บวก)\b"),
+        ):
+            match = re.search(pattern, nearby)
+            if match:
+                direct_hits.append((mention.end() + match.start(), direction))
+    if direct_hits:
+        direct_direction = min(direct_hits)[1]
+        if direct_direction == "down":
             negative += 2
             negative_reasons.append("พาดหัวรายงานราคาทองอ่อนตัว")
-        elif direct_up:
+        else:
             positive += 2
             positive_reasons.append("พาดหัวรายงานราคาทองแข็งขึ้น")
     if re.search(r"(?:dollar|greenback|ดอลลาร์).{0,35}(?:rises?|strengthens?|jumps?|แข็งค่า|ปรับขึ้น)", text):
