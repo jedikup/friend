@@ -1,57 +1,50 @@
 {
-  "generated_at": "2026-09-30T15:14:39.283803+00:00",
-  "generated_at_bangkok": "2026-09-30T22:14:39.283803+07:00",
-  "slot": "22:00",
+  "generated_at": "2026-10-01T01:11:54.716646+00:00",
+  "generated_at_bangkok": "2026-10-01T08:11:54.716646+07:00",
+  "slot": "08:00",
   "technical": {
-    "spot": 4165.12,
-    "fx_usd_thb": 33.5785,
-    "estimated_thb_per_baht": 66150,
-    "daily_change_pct": 0.91,
-    "atr14": 88.79,
-    "atr_period": 13,
-    "sma20": 4313.82,
-    "sma_period": 13,
-    "ema50": 4378.99,
+    "spot": 4144.82,
+    "fx_usd_thb": 33.6208,
+    "estimated_thb_per_baht": 65900,
+    "daily_change_pct": -0.96,
+    "atr14": 87.58,
+    "atr_period": 14,
+    "sma20": 4302.55,
+    "sma_period": 14,
+    "ema50": 4370.25,
     "trend": "ขาลง",
     "support": [
       {
-        "low": 4094.92,
-        "high": 4126.89
+        "low": 4095.14,
+        "high": 4126.67
       },
       {
-        "low": 4060.35,
-        "high": 4092.32
+        "low": 4041.47,
+        "high": 4073.0
       }
     ],
     "resistance": [
       {
-        "low": 4237.93,
-        "high": 4269.9
+        "low": 4216.64,
+        "high": 4248.17
       },
       {
-        "low": 4383.63,
-        "high": 4415.59
+        "low": 4383.84,
+        "high": 4415.37
       }
     ],
     "last_closed_bar": {
-      "time": "2026-09-29T00:00:00Z",
-      "open": 4127.7735,
-      "high": 4187.6415,
-      "low": 4113.5995,
-      "close": 4184.999
+      "time": "2026-09-30T00:00:00Z",
+      "open": 4184.72,
+      "high": 4219.282,
+      "low": 4147.417,
+      "close": 4156.069
     },
     "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
-    "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 13 แท่ง); SMA20 ใช้ข้อมูล 13 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
-    "quote_updated": "2026-09-30T15:14:40.937Z"
+    "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 14 แท่ง); SMA20 ใช้ข้อมูล 14 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
+    "quote_updated": "2026-10-01T01:11:57.478Z"
   },
   "daily_bars": [
-    {
-      "open": 4272.0095,
-      "high": 4380.8005,
-      "low": 4266.5995,
-      "close": 4346.488,
-      "time": "2026-09-17T00:00:00Z"
-    },
     {
       "open": 4346.3775,
       "high": 4399.6085,
@@ -100,33 +93,64 @@
       "low": 4113.5995,
       "close": 4184.999,
       "time": "2026-09-29T00:00:00Z"
+    },
+    {
+      "open": 4184.72,
+      "high": 4219.282,
+      "low": 4147.417,
+      "close": 4156.069,
+      "time": "2026-09-30T00:00:00Z"
     }
   ],
   "candidate_count": 40,
-  "update_slot": "evening",
+  "update_slot": "morning",
   "analysis_type": "rules_based",
-  "market_summary": "ภาพรวม: ขาลง — สัญญาณยังผสม ควรรอทิศทางชัด\n• Gold Spot USD 4,165.12 (+0.91%); SMA ล่าสุด USD 4,313.82, EMA50 USD 4,378.99\n• แนวรับ USD 4,095–4,127 · แนวต้าน USD 4,238–4,270\n• ทองไทย: USD/THB 33.5785; บาทอ่อนอาจพยุงราคาไทยบางส่วน แต่ไม่หักล้างแรงลงของ Spot โดยอัตโนมัติ\n• ติดตาม Fed/ยีลด์ เงินเฟ้อ น้ำมัน และภูมิรัฐศาสตร์; ข่าวเป็นบริบท ไม่ใช่หลักฐานเหตุและผล",
+  "market_summary": "ภาพรวม: ขาลง — แรงขายยังนำ\n• Gold Spot USD 4,144.82 (-0.96%); SMA ล่าสุด USD 4,302.55, EMA50 USD 4,370.25\n• แนวรับ USD 4,095–4,127 · แนวต้าน USD 4,217–4,248\n• ทองไทย: USD/THB 33.6208; บาทอ่อนอาจพยุงราคาไทยบางส่วน แต่ไม่หักล้างแรงลงของ Spot โดยอัตโนมัติ\n• ติดตาม Fed/ยีลด์ เงินเฟ้อ น้ำมัน และภูมิรัฐศาสตร์; ข่าวเป็นบริบท ไม่ใช่หลักฐานเหตุและผล",
   "scenario": {
-    "one_week": "กรอบผันผวนจาก ATR: USD 3,967–4,364 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: มีโอกาสแกว่งในกรอบ รอปิดยืนยันเหนือแนวต้านหรือใต้แนวรับ\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,238–4,270; ปิดหลุด USD 4,095–4,127 ให้ระวัง · แนวรับถัดไป USD 4,060–4,092",
-    "one_month": "กรอบผันผวนจาก ATR: USD 3,758–4,572 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: ทิศทางยังไม่ชัด ให้ติดตามการยืนเหนือ/หลุดระดับสำคัญ\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,238–4,270; ปิดหลุด USD 4,095–4,127 ให้ระวัง · แนวรับถัดไป USD 4,060–4,092",
-    "three_months": "กรอบผันผวนจาก ATR: USD 3,460–4,870 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: ระยะยาวขึ้นกับเงินเฟ้อ ดอกเบี้ย ดอลลาร์ และความเสี่ยงภูมิรัฐศาสตร์\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,238–4,270; ปิดหลุด USD 4,095–4,127 ให้ระวัง · แนวรับถัดไป USD 4,060–4,092"
+    "one_week": "กรอบผันผวนจาก ATR: USD 3,949–4,341 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: แรงขายยังนำจนกว่าจะปิดกลับเหนือแนวต้านใกล้\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,217–4,248; ปิดหลุด USD 4,095–4,127 ให้ระวัง · แนวรับถัดไป USD 4,041–4,073",
+    "one_month": "กรอบผันผวนจาก ATR: USD 3,743–4,546 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: ภาพยังเปราะบาง หากราคาต่ำกว่าค่าเฉลี่ยและแนวต้าน\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,217–4,248; ปิดหลุด USD 4,095–4,127 ให้ระวัง · แนวรับถัดไป USD 4,041–4,073",
+    "three_months": "กรอบผันผวนจาก ATR: USD 3,450–4,840 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: ระยะยาวขึ้นกับเงินเฟ้อ ดอกเบี้ย ดอลลาร์ และความเสี่ยงภูมิรัฐศาสตร์\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,217–4,248; ปิดหลุด USD 4,095–4,127 ให้ระวัง · แนวรับถัดไป USD 4,041–4,073"
   },
   "scenario_dates": {
-    "one_week": "30 ก.ย. 2569 – 7 ต.ค. 2569",
-    "one_month": "30 ก.ย. 2569 – 30 ต.ค. 2569",
-    "three_months": "30 ก.ย. 2569 – 30 ธ.ค. 2569"
+    "one_week": "1 ต.ค. 2569 – 8 ต.ค. 2569",
+    "one_month": "1 ต.ค. 2569 – 1 พ.ย. 2569",
+    "three_months": "1 ต.ค. 2569 – 1 ม.ค. 2570"
   },
   "plan": [
-    "ภาพหลัก ขาลง: Spot เปลี่ยน +0.91%; แท่งปิดล่าสุด USD 4,185.00 เทียบแท่งก่อน USD 4,127.47. รอแท่งปิดยืนยัน ไม่ไล่ราคาจากไส้เทียน",
-    "แนวรับใกล้ USD 4,094.92–4,126.89; แนวต้าน USD 4,237.93–4,269.90. ใช้ราคาปิดยืนยันการหลุดหรือทะลุ",
-    "ATR(13) USD 88.79 บอกขนาดการแกว่ง ไม่ได้บอกทิศทาง; ลดความเสี่ยงเมื่อผันผวนสูง",
-    "ตรวจ USD/THB 33.5785: บาทอ่อนอาจช่วยพยุงทองไทย ส่วนบาทแข็งอาจหักล้างการขึ้นของ Spot",
+    "ภาพหลัก ขาลง: Spot เปลี่ยน -0.96%; แท่งปิดล่าสุด USD 4,156.07 เทียบแท่งก่อน USD 4,185.00. รอแท่งปิดยืนยัน ไม่ไล่ราคาจากไส้เทียน",
+    "แนวรับใกล้ USD 4,095.14–4,126.67; แนวต้าน USD 4,216.64–4,248.17. ใช้ราคาปิดยืนยันการหลุดหรือทะลุ",
+    "ATR(14) USD 87.58 บอกขนาดการแกว่ง ไม่ได้บอกทิศทาง; ลดความเสี่ยงเมื่อผันผวนสูง",
+    "ตรวจ USD/THB 33.6208: บาทอ่อนอาจช่วยพยุงทองไทย ส่วนบาทแข็งอาจหักล้างการขึ้นของ Spot",
     "ติดตาม Fed/ยีลด์ น้ำมัน และข่าวภูมิรัฐศาสตร์จากต้นทาง; Hot คัดพาดหัวอัตโนมัติ ไม่ยืนยันผลกระทบ",
     "ตรวจราคาสมาคมฯ และส่วนต่างซื้อ–ขายก่อนส่งคำสั่ง; ราคาแปลง Spot เป็นทองไทยเป็นค่าประมาณ"
   ],
   "news": [
     {
-      "id": "N8",
+      "id": "N33",
+      "title": "Gold Price Forecast — XAU/USD ($4,212) Rebounds as Core PCE Cools to 3.0% — $4,300 Upside Target - TradingNEWS",
+      "publisher": "TradingNEWS",
+      "published": "2026-09-30T16:27:58+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOY3ZmM1duN3NNR1AzdjlSdFNxMVh4Z0hKYVNkVEtsMzFXamx6UVRBSmhhQnljMTRKcFdab2hyWVRQcjdZNVN0VWJ2WjZwcnVZdXV2dmNicG1iQ3pVeEpWU3Z6Q2JCWGZHbjZSb1Y5WGVsZU91Q1kxWngtcU05TmxlU0N3QnhBOXloRVNUOXF6Q0JVUQ?oc=5",
+      "snippet": "Gold Price Forecast — XAU/USD ($4,212) Rebounds as Core PCE Cools to 3.0% — $4,300 Upside Target TradingNEWS",
+      "summary": "Gold Price Forecast — XAU/USD ($4,212) Rebounds as Core PCE Cools to 3.0% — $4,300 Upside Target TradingNEWS",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N9",
+      "title": "Gold loses momentum as the initial reaction to softer US PCE inflation fades - FXStreet",
+      "publisher": "FXStreet",
+      "published": "2026-09-30T14:52:48+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeVVWTkxpSVpUcHV5UVNlRFF0SUtvVzdGUGFBMDdKNHhxN1JuZGp3Mm9PT2JwaTJRSDVabDlQNENGN0trWU1BcGc1Nl9PMEQzR2dZYkhJbEV5QXFPcVJ5SHpxb0RnczV1OG1rSUpYb0JLZE1lM2RyTklfZEZkU1dvRWc2TWVkcVJhWFlja0JZb0lNZTdfOGdSNTg1VWhNOVNfZE5LQ2pfMjd4cXJBeUIzRmlEWFg?oc=5",
+      "snippet": "Gold loses momentum as the initial reaction to softer US PCE inflation fades FXStreet",
+      "summary": "Gold loses momentum as the initial reaction to softer US PCE inflation fades FXStreet",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N7",
       "title": "Bitcoin and Gold Prices Jump in Minutes as US Inflation Cools to 3.4% - CryptoRank",
       "publisher": "CryptoRank",
       "published": "2026-09-30T14:20:21+00:00",
@@ -135,10 +159,10 @@
       "summary": "Bitcoin and Gold Prices Jump in Minutes as US Inflation Cools to 3.4% CryptoRank",
       "direction": "up",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
     },
     {
-      "id": "N50",
+      "id": "N45",
       "title": "Canada Commodities: Oil, Gold Prices Higher; Iran Receives US Response to Proposal to End War - marketscreener.com",
       "publisher": "marketscreener.com",
       "published": "2026-09-30T13:57:36+00:00",
@@ -147,10 +171,10 @@
       "summary": "Canada Commodities: Oil, Gold Prices Higher; Iran Receives US Response to Proposal to End War marketscreener.com",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N136",
+      "id": "N133",
       "title": "โอ้โห มือไม้สั่น! ราคาทองวันนี้ 30 ก.ย. 69 - LINE TODAY",
       "publisher": "LINE TODAY",
       "published": "2026-09-30T13:40:38+00:00",
@@ -159,34 +183,22 @@
       "summary": "โอ้โห มือไม้สั่น! ราคาทองวันนี้ 30 ก.ย. 69 LINE TODAY",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N36",
-      "title": "XAUUSD|Gold|Price:4179.420|Chg%:-2.230 - TradingKey",
-      "publisher": "TradingKey",
-      "published": "2026-09-30T13:29:48+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXYUYtXzJ5MUQ3Q0dqanZ1VjhZcGk2emdzU2hITXhDZl84NmVweXpqeXJlcE1aNXJveVZBdks1TXctbTcyMU1iUzdSdWpmUmRpb3RSUGNQTDU1S3dXVmFKNQ?oc=5",
-      "snippet": "XAUUSD|Gold|Price:4179.420|Chg%:-2.230 TradingKey",
-      "summary": "XAUUSD|Gold|Price:4179.420|Chg%:-2.230 TradingKey",
+      "id": "N32",
+      "title": "Gold struggles for direction ahead of Fed’s preferred PCE inflation data - Gold Eagle",
+      "publisher": "Gold Eagle",
+      "published": "2026-09-30T11:35:39+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUjZEeDBOQVh1d0RtT1lWNFRsbFRqY01seFhLMURVMlh1QmRZcnBERnVLOWRNMzFKWE5jVnphQ3VZVnlnNzN4Y25NUzJfeWN4dnZSbjM5cVh1MW4wVktiSmg3OFdiejlpZ1RrYXRfcjBYUnlrVEhKdFpOV1gtYU0yQ3FVR0Vqel9tbDhNU2JHaldBVHdSWFlJQUxOMzJ1MmtCdFB1MEJLVQ?oc=5",
+      "snippet": "Gold struggles for direction ahead of Fed’s preferred PCE inflation data Gold Eagle",
+      "summary": "Gold struggles for direction ahead of Fed’s preferred PCE inflation data Gold Eagle",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N11",
-      "title": "Gold firms as softer US PCE inflation cools October Fed hike bets - FXStreet",
-      "publisher": "FXStreet",
-      "published": "2026-09-30T13:17:45+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeVVWTkxpSVpUcHV5UVNlRFF0SUtvVzdGUGFBMDdKNHhxN1JuZGp3Mm9PT2JwaTJRSDVabDlQNENGN0trWU1BcGc1Nl9PMEQzR2dZYkhJbEV5QXFPcVJ5SHpxb0RnczV1OG1rSUpYb0JLZE1lM2RyTklfZEZkU1dvRWc2TWVkcVJhWFlja0JZb0lNZTdfOGdSNTg1VWhNOVNfZE5LQ2pfMjd4cXJBeUIzRmlEWFg?oc=5",
-      "snippet": "Gold firms as softer US PCE inflation cools October Fed hike bets FXStreet",
-      "summary": "Gold firms as softer US PCE inflation cools October Fed hike bets FXStreet",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N108",
+      "id": "N101",
       "title": "ทองคำโลกหลุด 4,200 ดอลลาร์ ร่วง 5.8% กสิกรไทยชี้ 4 ปัจจัยชี้ทิศระยะข้างหน้า - thansettakij",
       "publisher": "thansettakij",
       "published": "2026-09-30T10:56:00+00:00",
@@ -195,34 +207,22 @@
       "summary": "ทองคำโลกหลุด 4,200 ดอลลาร์ ร่วง 5.8% กสิกรไทยชี้ 4 ปัจจัยชี้ทิศระยะข้างหน้า thansettakij",
       "direction": "down",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
-      "id": "N135",
-      "title": "พุ่งขึ้นอีก! ราคาทองรอบบ่ายวันนี้ 30 ก.ย. 69 - LINE TODAY",
+      "id": "N127",
+      "title": "พุ่งขึ้นอีก! ราคาทองรอบบ่ายวันนี้ 30 ก.ย. 69 | มุมข่าว - LINE TODAY",
       "publisher": "LINE TODAY",
       "published": "2026-09-30T08:31:59+00:00",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE45Q2dUeVlEdTRQbHh2TWV4Y0hSNnNlWjVRNnZ3NnZhbWE5d0w5M3E4cFdtVDM5Wmd4V3BEZU5RNGF1N0dqWUw5a0pjcmdoVzhRMWlYSmJyTWRYOGVkUVhiV3dzSXoxUTY3am1reHpzR3k?oc=5",
-      "snippet": "พุ่งขึ้นอีก! ราคาทองรอบบ่ายวันนี้ 30 ก.ย. 69 LINE TODAY",
-      "summary": "พุ่งขึ้นอีก! ราคาทองรอบบ่ายวันนี้ 30 ก.ย. 69 LINE TODAY",
+      "snippet": "พุ่งขึ้นอีก! ราคาทองรอบบ่ายวันนี้ 30 ก.ย. 69 | มุมข่าว LINE TODAY",
+      "summary": "พุ่งขึ้นอีก! ราคาทองรอบบ่ายวันนี้ 30 ก.ย. 69 | มุมข่าว LINE TODAY",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N28",
-      "title": "Gold holds gains near $4,200 as USD softens before US PCE - FXStreet",
-      "publisher": "FXStreet",
-      "published": "2026-09-30T08:24:49+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQW90bm9IRmx2Y0RNZE5udHdfb1dFUVg0aEZMT2xnMmdrQnd3Z01jakIxQXdRMVlzVURuTGJzOEhpcERYcmRyZmNMZWRNMXh0c181ZXloM1NiS3BtUUUxZ2pOTGRYZFQyN2FPUXJKSGtFMGc3LUYzQmRIQ2syZGpNUFQ3QWpmU0U0bmdPSHFXX2ZuUzJ6Z2lTM1JEQzlzWjJleWhEYk1rQUJJZHhNZzQ1NnNXVHJBTHlZZlJaTVdsV0p4b0ht?oc=5",
-      "snippet": "Gold holds gains near $4,200 as USD softens before US PCE FXStreet",
-      "summary": "Gold holds gains near $4,200 as USD softens before US PCE FXStreet",
-      "direction": "up",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
-    },
-    {
-      "id": "N147",
+      "id": "N142",
       "title": "ราคาทองวันนี้ 30 ก.ย. 69 ครั้งที่ 1 ปรับขึ้น 300 บาท ทองแท่งขาย 66,300 บาท - Thaiger",
       "publisher": "Thaiger",
       "published": "2026-09-30T07:49:46+00:00",
@@ -231,10 +231,10 @@
       "summary": "ราคาทองวันนี้ 30 ก.ย. 69 ครั้งที่ 1 ปรับขึ้น 300 บาท ทองแท่งขาย 66,300 บาท Thaiger",
       "direction": "up",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
     },
     {
-      "id": "N52",
+      "id": "N48",
       "title": "Citi Cuts Brent Forecasts as U.S.-Iran MoU Points to Strait of Hormuz Flow Normalization - EnergyNow.com",
       "publisher": "EnergyNow.com",
       "published": "2026-09-30T07:46:22+00:00",
@@ -243,10 +243,10 @@
       "summary": "Citi Cuts Brent Forecasts as U.S.-Iran MoU Points to Strait of Hormuz Flow Normalization EnergyNow.com",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N24",
+      "id": "N21",
       "title": "Gold rebounds from eight-week low as oil-led inflation bolsters Fed tightening expectations - VT Markets",
       "publisher": "VT Markets",
       "published": "2026-09-30T07:15:01+00:00",
@@ -255,22 +255,10 @@
       "summary": "Gold rebounds from eight-week low as oil-led inflation bolsters Fed tightening expectations VT Markets",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N30",
-      "title": "Gold edges lower as Treasury yields offset softer oil, Fed hike concerns linger - Investing.com Canada",
-      "publisher": "Investing.com Canada",
-      "published": "2026-09-30T07:05:27+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOem9kbllqUTVEWEdaaWdwUDlVakZsOU1mRXZfVHoyT1l2MXpYTlBmbmZhc3c5VjhYZWlwQVJ6MjVKZEdOVTdFakNUc1VwNksyOWhBekhWWkRKZ3ZrQ3lreE0wSkV6TGplYmxhSTYxTVZvS1hrSUh4dFBWZ3pjQU13cW43ak91eU5vZ1ZRbFM0UTdZR1o0OEZoa280SWRrRTFEdWZTMWl6MEFlTE9hS3lpZUFDU1F0bGI3QlN1T0pWVWVCMDRSUXc?oc=5",
-      "snippet": "Gold edges lower as Treasury yields offset softer oil, Fed hike concerns linger Investing.com Canada",
-      "summary": "Gold edges lower as Treasury yields offset softer oil, Fed hike concerns linger Investing.com Canada",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N127",
+      "id": "N123",
       "title": "โอ้โห มือไม้สั่น! ราคาทองวันนี้ 30 ก.ย. 69 - LINE TODAY",
       "publisher": "LINE TODAY",
       "published": "2026-09-30T07:00:41+00:00",
@@ -279,22 +267,10 @@
       "summary": "โอ้โห มือไม้สั่น! ราคาทองวันนี้ 30 ก.ย. 69 LINE TODAY",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N10",
-      "title": "Gold Forecast: Are Bears Regaining Control of XAU/USD? - FOREX.com",
-      "publisher": "FOREX.com",
-      "published": "2026-09-30T06:43:22+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNazFuV3c3MnVaVnJJV2lzSnNhOUNmTEYtMDhmNUhVQVVLRTA2dXBxYlQ1M09ZZ1BTd04zbnBTa1ZhRTNXM3N2NjlvOEM5R0FWWHE1eXFPeGlwQ3A5VTNQeVZ4WEdNbm51YTBQa2Y4TnNHVkFuMmM3Q1NvN2FOVmVoblFGLXlYYUpQOEFadGlqN09mTW5OcmVRZDk4cG9MNm55?oc=5",
-      "snippet": "Gold Forecast: Are Bears Regaining Control of XAU/USD? FOREX.com",
-      "summary": "Gold Forecast: Are Bears Regaining Control of XAU/USD? FOREX.com",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N5",
+      "id": "N4",
       "title": "Gold (XAU/USD) & Silver Price Forecast: PCE Inflation Takes Center Stage - FXEmpire",
       "publisher": "FXEmpire",
       "published": "2026-09-30T06:09:11+00:00",
@@ -303,10 +279,10 @@
       "summary": "Gold (XAU/USD) & Silver Price Forecast: PCE Inflation Takes Center Stage FXEmpire",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N85",
+      "id": "N77",
       "title": "Gold, silver prices rebound as crude oil prices fall on supply boost - Business Standard",
       "publisher": "Business Standard",
       "published": "2026-09-30T05:44:15+00:00",
@@ -315,31 +291,7 @@
       "summary": "Gold, silver prices rebound as crude oil prices fall on supply boost Business Standard",
       "direction": "down",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
-    },
-    {
-      "id": "N145",
-      "title": "พุ่งขึ้นจนตกใจ!! ราคาทองวันนี้ 30 ก.ย.69 | มุมข่าว - LINE TODAY",
-      "publisher": "LINE TODAY",
-      "published": "2026-09-30T05:31:56+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5sSnZZUDJVcTI1T1BzWkl1UVdBZi1qUm0tS0NtRmMwYkRiVXpDZXFFM0lMRENjQ2lFRmk5OXVnb3FhRGJCM0M2bGprVFlkbjF5dmV5OWVn?oc=5",
-      "snippet": "พุ่งขึ้นจนตกใจ!! ราคาทองวันนี้ 30 ก.ย.69 | มุมข่าว LINE TODAY",
-      "summary": "พุ่งขึ้นจนตกใจ!! ราคาทองวันนี้ 30 ก.ย.69 | มุมข่าว LINE TODAY",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N1",
-      "title": "Gold ticks up, yet is set for monthly loss as Fed rate outlook weighs - Reuters",
-      "publisher": "Reuters",
-      "published": "2026-09-30T04:54:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTld2SXpINElrMTRxSGliajBqR3dqcC1fQkJZNTVJb3JLVEI2aWxRVXRzclZBbGtoclctUVkxZ0t2VjdtRmpjRlhHMUp2Q1c2Nm9qb01HX1ZKZnRuNk5ETWVoaHU0VFVuU3JZMUZIZXVKT1ozMTc0VHM0emdJOVJJTHZrRGZPUkJhbFRZTGFhZUlNTlFqbGhhSENMRDhJcUxxUHlGR29ocWdjeGFo?oc=5",
-      "snippet": "Gold ticks up, yet is set for monthly loss as Fed rate outlook weighs Reuters",
-      "summary": "Gold ticks up, yet is set for monthly loss as Fed rate outlook weighs Reuters",
-      "direction": "up",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
       "id": "N2",
@@ -351,10 +303,10 @@
       "summary": "Gold Price Forecast: XAU/USD eyes US PCE inflation data for next move FXStreet",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N73",
+      "id": "N66",
       "title": "Oil prices edge higher after Trump denies sanctions relief to Iran - Business Standard",
       "publisher": "Business Standard",
       "published": "2026-09-30T03:08:09+00:00",
@@ -363,53 +315,88 @@
       "summary": "Oil prices edge higher after Trump denies sanctions relief to Iran Business Standard",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N113",
+      "title": "ทองวันนี้เปิดบวก 300 บาท! รับความหวังสหรัฐฯ–อิหร่านเจรจาหยุดยิง หนุนทองฟื้นแตะ 67,100 บาท - LINE TODAY",
+      "publisher": "LINE TODAY",
+      "published": "2026-09-30T02:41:48+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBLR2I5dmFwUGh2X3hjempwa0N6aFdWOUpZZFJ3cC1ZV1JGZG9Nb05oZ3BOdXVKM2RNcmR6aFAxU0NTQjZoejh1UHc0blotNk5ZRkt1ZUx3?oc=5",
+      "snippet": "ทองวันนี้เปิดบวก 300 บาท! รับความหวังสหรัฐฯ–อิหร่านเจรจาหยุดยิง หนุนทองฟื้นแตะ 67,100 บาท LINE TODAY",
+      "summary": "ทองวันนี้เปิดบวก 300 บาท! รับความหวังสหรัฐฯ–อิหร่านเจรจาหยุดยิง หนุนทองฟื้นแตะ 67,100 บาท LINE TODAY",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N105",
+      "title": "ราคาทองวันนี้ 30 ก.ย. เปิดตลาดทะยาน 300 บาท ทองแท่งขายออก 66,300 บาท - The Bangkok Insight",
+      "publisher": "The Bangkok Insight",
+      "published": "2026-09-30T02:25:18+00:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAtOGxhaGIzajh1Z2NIR0pSaXVyOHhUNUNaTjV0QXhmeVZZOGFqVF9fV3RXN3hEaWdidDBwdTZzX1pVRVRvOWF0ZlZYZjh3WnlaOG9LRW9wblo5cWprdkZNWE1xMnFhaTRVNGRSRjF0SzZUZ0MzR3l5cg?oc=5",
+      "snippet": "ราคาทองวันนี้ 30 ก.ย. เปิดตลาดทะยาน 300 บาท ทองแท่งขายออก 66,300 บาท The Bangkok Insight",
+      "summary": "ราคาทองวันนี้ 30 ก.ย. เปิดตลาดทะยาน 300 บาท ทองแท่งขายออก 66,300 บาท The Bangkok Insight",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N57",
+      "title": "Commodity Corner: Oil rises as Trump rules out easing Iran sanctions; gold steadies - Moneycontrol.com",
+      "publisher": "Moneycontrol.com",
+      "published": "2026-09-30T02:09:36+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUXNIMk0wR0FGSjRPR2VweGM0d3VocnB4RGgzLUM5RXBjOFVMMHVCSEU1NVFPWnVYdkZubEQ2bzdlT0ZycTRlS2VmdEtlUUZnUVpnYWlHOThtbXAzMlNTM2tGRUZqQ05wU1lYMEMwU0JJTnhRQ0UwR3NVSWd5aENFNUd3VDByU3Z4Smw5N2dEZ0NGTWdEWkt6VVJmWFU0VGItU3BOemZmZHZGTVlobF96WWFfUkFOeTRzWi1JazZxR0ExUXA5NHE3cFRScHdwUFRHaEcxclZBQkdrMHZpSWg00gHkAUFVX3lxTE1iakpWR3ZWUEExUmRsYml2cHhlWFU5azNwU1JacjhJd1JkVGJtS0tQVU9ERjRFeGEtMFZQa1NGRW1MNHBuSW85N0FTQVpwczhDeG9OMjBWUHFJY0xDMGJpT2JIN2UtNzFmNkRFSE9zdXZHRThrbkhmWW1QZTFjWkF6dDBhcVBtWXJmZGRveGJ5SXRwYUd1bDVVb2NBTHpUQnBVcFNyT0NuclVDS0NGQldBX2pia29DS1Bsa2x1Tk9jbGo2Vk5VWXR3ME1yal83N2N5b2F6TG9zSHA4c2ZaclNrWHJGMQ?oc=5",
+      "snippet": "Commodity Corner: Oil rises as Trump rules out easing Iran sanctions; gold steadies Moneycontrol.com",
+      "summary": "Commodity Corner: Oil rises as Trump rules out easing Iran sanctions; gold steadies Moneycontrol.com",
+      "direction": "up",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
+    },
+    {
+      "id": "N108",
+      "title": "บาทเปิดเช้านี้ 33.55 บาท/ดอลลาร์ | การเงินธนาคาร - LINE TODAY",
+      "publisher": "LINE TODAY",
+      "published": "2026-09-30T01:51:48+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5oY2d0eGlkZmc5c2lpdnMwWUdaWG5tVFhtbnFfdjFlWnJQWGFlNE9NdTZ5eEtOVHMxM29UT1oxNHhRaUQ0Mmluc2xPclNUNC1PMWZVam1R?oc=5",
+      "snippet": "บาทเปิดเช้านี้ 33.55 บาท/ดอลลาร์ | การเงินธนาคาร LINE TODAY",
+      "summary": "บาทเปิดเช้านี้ 33.55 บาท/ดอลลาร์ | การเงินธนาคาร LINE TODAY",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     }
   ],
   "hot_news": [
     {
-      "id": "N11",
-      "title": "Gold firms as softer US PCE inflation cools October Fed hike bets - FXStreet",
-      "publisher": "FXStreet",
-      "published": "2026-09-30T13:17:45+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeVVWTkxpSVpUcHV5UVNlRFF0SUtvVzdGUGFBMDdKNHhxN1JuZGp3Mm9PT2JwaTJRSDVabDlQNENGN0trWU1BcGc1Nl9PMEQzR2dZYkhJbEV5QXFPcVJ5SHpxb0RnczV1OG1rSUpYb0JLZE1lM2RyTklfZEZkU1dvRWc2TWVkcVJhWFlja0JZb0lNZTdfOGdSNTg1VWhNOVNfZE5LQ2pfMjd4cXJBeUIzRmlEWFg?oc=5",
-      "snippet": "Gold firms as softer US PCE inflation cools October Fed hike bets FXStreet",
-      "summary": "Gold firms as softer US PCE inflation cools October Fed hike bets FXStreet",
+      "id": "N32",
+      "title": "Gold struggles for direction ahead of Fed’s preferred PCE inflation data - Gold Eagle",
+      "publisher": "Gold Eagle",
+      "published": "2026-09-30T11:35:39+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUjZEeDBOQVh1d0RtT1lWNFRsbFRqY01seFhLMURVMlh1QmRZcnBERnVLOWRNMzFKWE5jVnphQ3VZVnlnNzN4Y25NUzJfeWN4dnZSbjM5cVh1MW4wVktiSmg3OFdiejlpZ1RrYXRfcjBYUnlrVEhKdFpOV1gtYU0yQ3FVR0Vqel9tbDhNU2JHaldBVHdSWFlJQUxOMzJ1MmtCdFB1MEJLVQ?oc=5",
+      "snippet": "Gold struggles for direction ahead of Fed’s preferred PCE inflation data Gold Eagle",
+      "summary": "Gold struggles for direction ahead of Fed’s preferred PCE inflation data Gold Eagle",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้",
       "hot_reason": "คัดจากคำในพาดหัว: กล่าวถึงราคาทอง + ดอกเบี้ย/ยีลด์ + น้ำมัน/เงินเฟ้อ"
     },
     {
-      "id": "N30",
-      "title": "Gold edges lower as Treasury yields offset softer oil, Fed hike concerns linger - Investing.com Canada",
-      "publisher": "Investing.com Canada",
-      "published": "2026-09-30T07:05:27+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOem9kbllqUTVEWEdaaWdwUDlVakZsOU1mRXZfVHoyT1l2MXpYTlBmbmZhc3c5VjhYZWlwQVJ6MjVKZEdOVTdFakNUc1VwNksyOWhBekhWWkRKZ3ZrQ3lreE0wSkV6TGplYmxhSTYxTVZvS1hrSUh4dFBWZ3pjQU13cW43ak91eU5vZ1ZRbFM0UTdZR1o0OEZoa280SWRrRTFEdWZTMWl6MEFlTE9hS3lpZUFDU1F0bGI3QlN1T0pWVWVCMDRSUXc?oc=5",
-      "snippet": "Gold edges lower as Treasury yields offset softer oil, Fed hike concerns linger Investing.com Canada",
-      "summary": "Gold edges lower as Treasury yields offset softer oil, Fed hike concerns linger Investing.com Canada",
+      "id": "N21",
+      "title": "Gold rebounds from eight-week low as oil-led inflation bolsters Fed tightening expectations - VT Markets",
+      "publisher": "VT Markets",
+      "published": "2026-09-30T07:15:01+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZUsyUS1faVRCVEI3bFlTbEhqZGVVaXRMeVNFTDhRZ0thYWFUVDBkd1dfNzlQMWVDVkJtOXh1WmViMDFBZndZZ18yMHlkakdhdXFzdlN0aFRPcXVyRlJUR0Y5VWt4UEVWUTBHQlVnbE9FMnptaGRBa2VpbVhvUU85aGs3NEFIZ2RJQWpGem1PQ0dvQXkyUENiRTBRWndHMTZybGFFQ0Z6a2xWR2FIa2NCTW5PdlliYXVscFhPeWYzcWJxSlpxZUs5S181eV9EUEZSaXNaajNR?oc=5",
+      "snippet": "Gold rebounds from eight-week low as oil-led inflation bolsters Fed tightening expectations VT Markets",
+      "summary": "Gold rebounds from eight-week low as oil-led inflation bolsters Fed tightening expectations VT Markets",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้",
       "hot_reason": "คัดจากคำในพาดหัว: กล่าวถึงราคาทอง + ดอกเบี้ย/ยีลด์ + น้ำมัน/เงินเฟ้อ"
-    },
-    {
-      "id": "N1",
-      "title": "Gold ticks up, yet is set for monthly loss as Fed rate outlook weighs - Reuters",
-      "publisher": "Reuters",
-      "published": "2026-09-30T04:54:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTld2SXpINElrMTRxSGliajBqR3dqcC1fQkJZNTVJb3JLVEI2aWxRVXRzclZBbGtoclctUVkxZ0t2VjdtRmpjRlhHMUp2Q1c2Nm9qb01HX1ZKZnRuNk5ETWVoaHU0VFVuU3JZMUZIZXVKT1ozMTc0VHM0emdJOVJJTHZrRGZPUkJhbFRZTGFhZUlNTlFqbGhhSENMRDhJcUxxUHlGR29ocWdjeGFo?oc=5",
-      "snippet": "Gold ticks up, yet is set for monthly loss as Fed rate outlook weighs Reuters",
-      "summary": "Gold ticks up, yet is set for monthly loss as Fed rate outlook weighs Reuters",
-      "direction": "up",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น",
-      "hot_reason": "คัดจากคำในพาดหัว: กล่าวถึงราคาทอง + ดอกเบี้ย/ยีลด์"
     }
   ],
-  "news_updated_at": "2026-09-30T15:14:45.778018+00:00",
+  "news_updated_at": "2026-10-01T01:11:59.525677+00:00",
   "news_candidates": 40,
-  "ai_updated_at": "2026-09-30T15:14:45.778018+00:00",
+  "ai_updated_at": "2026-10-01T01:11:59.525677+00:00",
   "status": {
     "technical": "ok",
     "news": "rss_headline_heuristic",
