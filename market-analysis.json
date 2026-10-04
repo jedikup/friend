@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-04T04:00:08.723338+00:00",
-  "generated_at_bangkok": "2026-10-04T11:00:08.723338+07:00",
+  "generated_at": "2026-10-04T20:38:19.500805+00:00",
+  "generated_at_bangkok": "2026-10-05T03:38:19.500805+07:00",
   "slot": "08:00",
   "technical": {
-    "spot": 4141.25,
-    "fx_usd_thb": 33.5399,
+    "spot": 4141.62,
+    "fx_usd_thb": 33.5398,
     "estimated_thb_per_baht": 65700,
-    "daily_change_pct": -0.36,
+    "daily_change_pct": -0.35,
     "atr14": 82.41,
     "atr_period": 14,
     "sma20": 4284.78,
@@ -19,14 +19,14 @@
         "high": 4125.74
       },
       {
-        "low": 4044.01,
-        "high": 4073.68
+        "low": 4044.38,
+        "high": 4074.04
       }
     ],
     "resistance": [
       {
-        "low": 4208.82,
-        "high": 4238.49
+        "low": 4209.19,
+        "high": 4238.86
       },
       {
         "low": 4384.78,
@@ -42,7 +42,7 @@
     },
     "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
     "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 14 แท่ง); SMA20 ใช้ข้อมูล 14 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
-    "quote_updated": "2026-10-04T04:00:10.194Z"
+    "quote_updated": "2026-10-04T20:38:20.115Z"
   },
   "daily_bars": [
     {
@@ -105,52 +105,76 @@
   "candidate_count": 40,
   "update_slot": "morning",
   "analysis_type": "rules_based",
-  "market_summary": "ภาพรวม: ขาลง — แรงขายยังนำ\n• Gold Spot USD 4,141.25 (-0.36%); SMA ล่าสุด USD 4,284.78, EMA50 USD 4,357.08\n• แนวรับ USD 4,096–4,126 · แนวต้าน USD 4,209–4,238\n• ทองไทย: USD/THB 33.5399; บาทอ่อนอาจพยุงราคาไทยบางส่วน แต่ไม่หักล้างแรงลงของ Spot โดยอัตโนมัติ\n• ติดตาม Fed/ยีลด์ เงินเฟ้อ น้ำมัน และภูมิรัฐศาสตร์; ข่าวเป็นบริบท ไม่ใช่หลักฐานเหตุและผล",
+  "market_summary": "ภาพรวม: ขาลง — แรงขายยังนำ\n• Gold Spot USD 4,141.62 (-0.35%); SMA ล่าสุด USD 4,284.78, EMA50 USD 4,357.08\n• แนวรับ USD 4,096–4,126 · แนวต้าน USD 4,209–4,239\n• ทองไทย: USD/THB 33.5398; บาทอ่อนอาจพยุงราคาไทยบางส่วน แต่ไม่หักล้างแรงลงของ Spot โดยอัตโนมัติ\n• ติดตาม Fed/ยีลด์ เงินเฟ้อ น้ำมัน และภูมิรัฐศาสตร์; ข่าวเป็นบริบท ไม่ใช่หลักฐานเหตุและผล",
   "scenario": {
-    "one_week": "กรอบผันผวนจาก ATR: USD 3,957–4,326 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: แรงขายยังนำจนกว่าจะปิดกลับเหนือแนวต้านใกล้\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,209–4,238; ปิดหลุด USD 4,096–4,126 ให้ระวัง · แนวรับถัดไป USD 4,044–4,074",
-    "one_month": "กรอบผันผวนจาก ATR: USD 3,764–4,519 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: ภาพยังเปราะบาง หากราคาต่ำกว่าค่าเฉลี่ยและแนวต้าน\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,209–4,238; ปิดหลุด USD 4,096–4,126 ให้ระวัง · แนวรับถัดไป USD 4,044–4,074",
-    "three_months": "กรอบผันผวนจาก ATR: USD 3,487–4,795 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: ระยะยาวขึ้นกับเงินเฟ้อ ดอกเบี้ย ดอลลาร์ และความเสี่ยงภูมิรัฐศาสตร์\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,209–4,238; ปิดหลุด USD 4,096–4,126 ให้ระวัง · แนวรับถัดไป USD 4,044–4,074"
+    "one_week": "กรอบผันผวนจาก ATR: USD 3,957–4,326 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: แรงขายยังนำจนกว่าจะปิดกลับเหนือแนวต้านใกล้\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,209–4,239; ปิดหลุด USD 4,096–4,126 ให้ระวัง · แนวรับถัดไป USD 4,044–4,074",
+    "one_month": "กรอบผันผวนจาก ATR: USD 3,764–4,519 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: ภาพยังเปราะบาง หากราคาต่ำกว่าค่าเฉลี่ยและแนวต้าน\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,209–4,239; ปิดหลุด USD 4,096–4,126 ให้ระวัง · แนวรับถัดไป USD 4,044–4,074",
+    "three_months": "กรอบผันผวนจาก ATR: USD 3,488–4,796 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: ระยะยาวขึ้นกับเงินเฟ้อ ดอกเบี้ย ดอลลาร์ และความเสี่ยงภูมิรัฐศาสตร์\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,209–4,239; ปิดหลุด USD 4,096–4,126 ให้ระวัง · แนวรับถัดไป USD 4,044–4,074"
   },
   "scenario_dates": {
-    "one_week": "4 ต.ค. 2569 – 11 ต.ค. 2569",
-    "one_month": "4 ต.ค. 2569 – 4 พ.ย. 2569",
-    "three_months": "4 ต.ค. 2569 – 4 ม.ค. 2570"
+    "one_week": "5 ต.ค. 2569 – 12 ต.ค. 2569",
+    "one_month": "5 ต.ค. 2569 – 5 พ.ย. 2569",
+    "three_months": "5 ต.ค. 2569 – 5 ม.ค. 2570"
   },
   "plan": [
-    "ภาพหลัก ขาลง: Spot เปลี่ยน -0.36%; แท่งปิดล่าสุด USD 4,182.01 เทียบแท่งก่อน USD 4,156.07. รอแท่งปิดยืนยัน ไม่ไล่ราคาจากไส้เทียน",
-    "แนวรับใกล้ USD 4,096.07–4,125.74; แนวต้าน USD 4,208.82–4,238.49. ใช้ราคาปิดยืนยันการหลุดหรือทะลุ",
+    "ภาพหลัก ขาลง: Spot เปลี่ยน -0.35%; แท่งปิดล่าสุด USD 4,182.01 เทียบแท่งก่อน USD 4,156.07. รอแท่งปิดยืนยัน ไม่ไล่ราคาจากไส้เทียน",
+    "แนวรับใกล้ USD 4,096.07–4,125.74; แนวต้าน USD 4,209.19–4,238.86. ใช้ราคาปิดยืนยันการหลุดหรือทะลุ",
     "ATR(14) USD 82.41 บอกขนาดการแกว่ง ไม่ได้บอกทิศทาง; ลดความเสี่ยงเมื่อผันผวนสูง",
-    "ตรวจ USD/THB 33.5399: บาทอ่อนอาจช่วยพยุงทองไทย ส่วนบาทแข็งอาจหักล้างการขึ้นของ Spot",
+    "ตรวจ USD/THB 33.5398: บาทอ่อนอาจช่วยพยุงทองไทย ส่วนบาทแข็งอาจหักล้างการขึ้นของ Spot",
     "ติดตาม Fed/ยีลด์ น้ำมัน และข่าวภูมิรัฐศาสตร์จากต้นทาง; Hot คัดพาดหัวอัตโนมัติ ไม่ยืนยันผลกระทบ",
     "ตรวจราคาสมาคมฯ และส่วนต่างซื้อ–ขายก่อนส่งคำสั่ง; ราคาแปลง Spot เป็นทองไทยเป็นค่าประมาณ"
   ],
   "news": [
     {
-      "id": "N130",
-      "title": "ปรับอีก! ราคาทองวันนี้ 4 ต.ค. 69 - LINE TODAY",
+      "id": "N45",
+      "title": "Citi Cuts Brent Forecasts as U.S.-Iran MoU Points to Strait of Hormuz Flow Normalization - EnergyNow.com",
+      "publisher": "EnergyNow.com",
+      "published": "2026-10-04T17:27:02+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWU1tQ1dtUFdyRTVQMmt4V0NUUEMwT19PTnVIcE5xd1ZaSjNrWDYzay1uejNFNUhaX0dOaWNxQUx0X3ZZNlZrR2ZXdHdiUnluYm4tYlhaeU4wUFRnRnVPb0FzS3lMWnY5UXNwbWtDdENCOWF6eHV4Sl96RDQtNVRxQ2lRUmZhOGFRSjRQYm1mN3NnTnVfaFRXU2VfT25XVGd6Sk5fdnd6TW5ablpPZHV5b1ZPd1Vjd0VTbWc?oc=5",
+      "snippet": "Citi Cuts Brent Forecasts as U.S.-Iran MoU Points to Strait of Hormuz Flow Normalization EnergyNow.com",
+      "summary": "Citi Cuts Brent Forecasts as U.S.-Iran MoU Points to Strait of Hormuz Flow Normalization EnergyNow.com",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N81",
+      "title": "Bullion faces choppy week as dollar, US-Iran risks test sentiment: Analysts - Business Standard",
+      "publisher": "Business Standard",
+      "published": "2026-10-04T14:43:47+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOVUhoZ05hcEVYR3NLTzlTR1FtWEhHdFgwOEZ4VHZGNjRxSWdfT3dUMHVXZWpqY2dRWDZIcWVYOTRsdExPZUdQcFNqb1NmRWM5UUFabnNuSTFCSWwzcm5JS0VBYXlQUXNFZC12eEtsTkpRc1N5N1Zyb3NpVFJjX2ZYY0pMUkJrS294WnVrRW45ZHUzMTY5dGhLcWNlS1IxaGZISEhBMWxzWnFaT0NOSFBHbHhIdjJMRXNtS0RMV2s4MklFdmhySHZicS12REh6WWNRV3dHMl95UG90cFRFSmlMRNIB5gFBVV95cUxOS1lZb0prQ2ExOUY1dFVpd2h0bVc5REc0OGp2NkdSZGlUanJBRnp6cGVHNHpSTXN3bHkydERCcUxLbk9ST0tCQXU3NXRUdUFheFNUcVNjY1BxaXl2U0RGRVlNZ0NyTkpMR3RxTFpSN29qTE5lX3VLMWxoUDBlcXMtN3RHRnhfNnpsa0RqSHVKQTkta2JCME51N21BaUIyNFpuNkF0VVRzeUtBSlJocjBRRjBxNWVnY2YwalNDbm1DQkFib0VKaC1SSzlXUTVlSkNNUzJVX1BXYjE5S1ZUd3lTSmhhS21Fdw?oc=5",
+      "snippet": "Bullion faces choppy week as dollar, US-Iran risks test sentiment: Analysts Business Standard",
+      "summary": "Bullion faces choppy week as dollar, US-Iran risks test sentiment: Analysts Business Standard",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N123",
+      "title": "ปรับอีก! ราคาทองวันนี้ 4 ต.ค. 69 | มุมข่าว - LINE TODAY",
       "publisher": "LINE TODAY",
-      "published": "2026-10-04T03:27:05+00:00",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE14SkxVNTF1ZFRtNUt3TlloRjR2U3ZBZjdGbWRJV01iWTM5SEFfUmxURHJPeHpYM3pfNXg5ZEl5eWVlVXVIQVpsVEFHaGt5RjJrM2VsQ2xiWXZDZTlLSndFYUVrTWdkN05GZmE1LWYtcXc?oc=5",
-      "snippet": "ปรับอีก! ราคาทองวันนี้ 4 ต.ค. 69 LINE TODAY",
-      "summary": "ปรับอีก! ราคาทองวันนี้ 4 ต.ค. 69 LINE TODAY",
+      "published": "2026-10-04T03:13:10+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBZTkFzM3FBbTdfeHExb0h3OVUxRDZTeU5ha2JRNzQ1bUh3dmF2eFJaN1FPWHF4aE1DVUVBdnJGRnZrRDhmb184WjN2Y29XV2IwYXJDYlRn?oc=5",
+      "snippet": "ปรับอีก! ราคาทองวันนี้ 4 ต.ค. 69 | มุมข่าว LINE TODAY",
+      "summary": "ปรับอีก! ราคาทองวันนี้ 4 ต.ค. 69 | มุมข่าว LINE TODAY",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N49",
-      "title": "Iraq’s state tanker firm moves crude through Hormuz strait - Investing.com",
-      "publisher": "Investing.com",
-      "published": "2026-10-04T02:07:20+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNU2ZNRks4Sy1xczVVSTJHMEVpbU1nSWRLVjZLZzcteGJOSTlQQy1KUnhZak9zOTVwVC1Hb2FTMmRwa0tEX3FiN0wxYTRrM0pNTzluRXgzUXg5SnozNlkwbUIyWEwwWGlyS3F2VGpZaXRHRFlEZXNHLVVTSUVtVlY5T2hRNjlQTGdBX3ZZckxMRG9ybXAyZ3dLRVlGSWtJeTJzWDZaVmVTUkN3T0psSHN5UkI1TWVnRjU3Unc?oc=5",
-      "snippet": "Iraq’s state tanker firm moves crude through Hormuz strait Investing.com",
-      "summary": "Iraq’s state tanker firm moves crude through Hormuz strait Investing.com",
+      "id": "N42",
+      "title": "Oil, Gold Forecast: Two trades to watch 280926 - StoneX",
+      "publisher": "StoneX",
+      "published": "2026-10-04T00:38:57+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYkM3NklQWjZpT2VpR191b0dXMkE1eWlJNXF5Z2JwcFloWU1wWDVPQWFyME1ST3RUTUhXNEZkWm1TbmtmSENiY2J1RE9tbktsa1BJbjRoSTdTN3o1NngzUWpvNTJKNnNWTDhVZUQybk1VTktoNmo5WTAwdXlzcFhMNGkzT3FNV2ZHS0p6WkltMndMV2Rkb2t3?oc=5",
+      "snippet": "Oil, Gold Forecast: Two trades to watch 280926 StoneX",
+      "summary": "Oil, Gold Forecast: Two trades to watch 280926 StoneX",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N104",
+      "id": "N107",
       "title": "Baht slides to two-month low, faces more pressure next week - Pattaya Mail",
       "publisher": "Pattaya Mail",
       "published": "2026-10-03T18:11:30+00:00",
@@ -162,23 +186,11 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · บาทอ่อนอาจหนุนราคาทองไทย"
     },
     {
-      "id": "N43",
-      "title": "Citi Cuts Brent Forecasts as U.S.-Iran MoU Points to Strait of Hormuz Flow Normalization - EnergyNow.com",
-      "publisher": "EnergyNow.com",
-      "published": "2026-10-03T15:25:47+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWU1tQ1dtUFdyRTVQMmt4V0NUUEMwT19PTnVIcE5xd1ZaSjNrWDYzay1uejNFNUhaX0dOaWNxQUx0X3ZZNlZrR2ZXdHdiUnluYm4tYlhaeU4wUFRnRnVPb0FzS3lMWnY5UXNwbWtDdENCOWF6eHV4Sl96RDQtNVRxQ2lRUmZhOGFRSjRQYm1mN3NnTnVfaFRXU2VfT25XVGd6Sk5fdnd6TW5ablpPZHV5b1ZPd1Vjd0VTbWc?oc=5",
-      "snippet": "Citi Cuts Brent Forecasts as U.S.-Iran MoU Points to Strait of Hormuz Flow Normalization EnergyNow.com",
-      "summary": "Citi Cuts Brent Forecasts as U.S.-Iran MoU Points to Strait of Hormuz Flow Normalization EnergyNow.com",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N101",
+      "id": "N102",
       "title": "Trade Department checking stocks to ensure sufficient consumer goods - Thai PBS World",
       "publisher": "Thai PBS World",
       "published": "2026-10-03T04:57:12+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5xclBhVTNHNUdZNmhQd1M2R1ZHMDhBejF0cUVEbVZUbG9oSHRsbnA1VGZMRzdJZEtvc3ZEMHU0WXJ1MmVkR2VzaFhhTi1NOHN1anlrTw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wa2RqR1RsZlNxQThLZWtLbmc0UnNmWC1wQ0JzT1VpR2pSU0hIbEpXUnRrcFhEMFJtZ3h0SjBQVVJFWHc1V2JPcm5hRXNHOGZYR01QTmZn?oc=5",
       "snippet": "Trade Department checking stocks to ensure sufficient consumer goods Thai PBS World",
       "summary": "Trade Department checking stocks to ensure sufficient consumer goods Thai PBS World",
       "direction": "watch",
@@ -186,7 +198,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N110",
+      "id": "N113",
       "title": "\"ทอง\" ราคาร่วงแรง! ในประเทศเปิดเช้านี้ลดลง บาทละ 500 - สยามรัฐ",
       "publisher": "สยามรัฐ",
       "published": "2026-10-03T03:10:00+00:00",
@@ -198,7 +210,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N133",
+      "id": "N136",
       "title": "ราคาทองวันนี้ 3 ต.ค. ประกาศครั้งเดียว! ร่วงแรง 500 บาท - The Bangkok Insight",
       "publisher": "The Bangkok Insight",
       "published": "2026-10-03T02:34:50+00:00",
@@ -210,7 +222,19 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N127",
+      "id": "N3",
+      "title": "Gold Futures Overview - cmegroup.com",
+      "publisher": "cmegroup.com",
+      "published": "2026-10-02T20:44:45+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1WeDc1RGtZSl9sWTFkQXE5RFZpdVo3VkRJT08zLU5TSUVSQWpLTUNOR3RjZEwxY2hYNUdLUzdrV2xsdDY1OTlkcGJxM1pyaUNOSndxdDNuY2N0NXROM1psWERyeVVRZko1ZGc?oc=5",
+      "snippet": "Gold Futures Overview cmegroup.com",
+      "summary": "Gold Futures Overview cmegroup.com",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N132",
       "title": "ปรับขึ้นอีก! ราคาทองรอบบ่ายวันนี้ 2 ต.ค. 69 - LINE TODAY",
       "publisher": "LINE TODAY",
       "published": "2026-10-02T15:02:17+00:00",
@@ -222,7 +246,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N126",
+      "id": "N130",
       "title": "ถึงกับตกใจ! ราคาทองวันนี้ 2 ต.ค. 69 | มุมข่าว - LINE TODAY",
       "publisher": "LINE TODAY",
       "published": "2026-10-02T13:54:49+00:00",
@@ -234,7 +258,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N122",
+      "id": "N125",
       "title": "ปิดตลาดแล้ว! สรุปราคาทองวันนี้ 2 ต.ค. 69 | มุมข่าว - LINE TODAY",
       "publisher": "LINE TODAY",
       "published": "2026-10-02T11:16:42+00:00",
@@ -246,19 +270,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N39",
-      "title": "Oil, Gold Forecast: Two trades to watch 280926 - StoneX",
-      "publisher": "StoneX",
-      "published": "2026-10-02T09:28:17+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYkM3NklQWjZpT2VpR191b0dXMkE1eWlJNXF5Z2JwcFloWU1wWDVPQWFyME1ST3RUTUhXNEZkWm1TbmtmSENiY2J1RE9tbktsa1BJbjRoSTdTN3o1NngzUWpvNTJKNnNWTDhVZUQybk1VTktoNmo5WTAwdXlzcFhMNGkzT3FNV2ZHS0p6WkltMndMV2Rkb2t3?oc=5",
-      "snippet": "Oil, Gold Forecast: Two trades to watch 280926 StoneX",
-      "summary": "Oil, Gold Forecast: Two trades to watch 280926 StoneX",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N51",
+      "id": "N55",
       "title": "Rallying oil price could see gold price fall $1400 an ounce next year - AFR",
       "publisher": "AFR",
       "published": "2026-10-02T06:30:00+00:00",
@@ -270,31 +282,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
-      "id": "N132",
-      "title": "ปิดตลาดแล้ว! สรุปราคาทองวันนี้ 1 ต.ค. 69 - LINE TODAY",
-      "publisher": "LINE TODAY",
-      "published": "2026-10-02T05:54:20+00:00",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA5bTdWeWZnUkJiVE5MYjJhajFKdnRUTW1QbkNMVVhvclBfNWtKMExYeFpqcm9wOE1HVXU1MjJUbWRDZUJCclBPWWNpX1M1SWdUMFZYQ3FIb0pEU2ZnTWo3Q0d5ajZVX2R0TVV3?oc=5",
-      "snippet": "ปิดตลาดแล้ว! สรุปราคาทองวันนี้ 1 ต.ค. 69 LINE TODAY",
-      "summary": "ปิดตลาดแล้ว! สรุปราคาทองวันนี้ 1 ต.ค. 69 LINE TODAY",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N88",
-      "title": "Hormuz crude flows return to pre-war levels, yet oil may still stay at $90–$100 | Here's why - Livemint",
-      "publisher": "Livemint",
-      "published": "2026-10-02T05:36:53+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNUXk3X05XbzVGSmZVaDAwSGtYUjFod01vc1BfaVhISDZfa2V6ck90QXRhVU02VndfRl9ieG5NRnhSaFFjSDh2Znhjb001NVE1S2NZZTYweUE0UXprd1VQRFFkdnRzUlZsSmRPTE02ZDBiMEwydktmYlBYRms0UHpaVlpmcGhGc1RCUlNIUkJvblZPQ3ExcG9qb3MtRlpNZWVoOWFJNnJMX2M3cVg5Z2JEbmljSEo2LVBhMFpUY2x5LVR5dkpEMlEwXzUwWjJEWUNKOTRjYkVrM3MwSEXSAdsBQVVfeXFMTVF5N19OV281RkpmVWgwMEhrWFIxaHdNb3NQX2lYSEg2X2tlenJPdEF0YVVNNlZ3X0ZfYnhuTUZ4UmhRY0g4dmZ4Y29NNTVRNUtjWWU2MHlBNFF6a3dVUERRZHZ0c1JWbEpkT0xNNmQwYjBMMnZLZmJQWEZrNFB6WlZaZnBoRnNUQlJTSFJCb25WT0NxMXBvam9zLUZaTWVlaDlhSTZyTF9jN3FYOWdiRG5pY0hKNi1QYTBaVGNseS1UeXZKRDJRMF81MFoyRFlDSjk0Y2JFazNzMEhF?oc=5",
-      "snippet": "Hormuz crude flows return to pre-war levels, yet oil may still stay at $90–$100 | Here's why Livemint",
-      "summary": "Hormuz crude flows return to pre-war levels, yet oil may still stay at $90–$100 | Here's why Livemint",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N91",
+      "id": "N96",
       "title": "Brent Crude Oil Prices Rise Above $102 As US-Iran Tensions Threaten Middle East Supplies - Free Press Journal",
       "publisher": "Free Press Journal",
       "published": "2026-10-02T05:05:38+00:00",
@@ -306,7 +294,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N13",
+      "id": "N14",
       "title": "Gold struggles to lure buyers amid bullish USD; eye US NFP for Fed rate cues - tmgm.com",
       "publisher": "tmgm.com",
       "published": "2026-10-02T04:26:57+00:00",
@@ -330,7 +318,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N131",
+      "id": "N134",
       "title": "ราคาทองวันนี้ 2 ต.ค. เปิดตลาดลด 200 บาท ทองแท่งขายออก 66,200 บาท - The Bangkok Insight",
       "publisher": "The Bangkok Insight",
       "published": "2026-10-02T02:15:19+00:00",
@@ -342,7 +330,19 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N136",
+      "id": "N77",
+      "title": "Oil prices edge higher, hover around $102 as US-Iran tensions, China fuel curbs support prices; MCX closed - The Economic Times",
+      "publisher": "The Economic Times",
+      "published": "2026-10-02T02:13:57+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWThpY1RaRHN6dFBUcVV2OVM1VXVMdE1uOWhUNllJclVhb3BfTGpSN1JJVHhFYkxTNm9aS0ozcGpRV1NERFJMMU53SDVTM0d6SjFNNU8yUEl3NkprMGhhbGdjV0Z2RG9XdWNGRV9POXV4eHBBS2NwdGdPSWN0V0FrY2lNSVl1ZVg3ZnJnX21VSzVPaG95U3ByWk5zQW5YanBwYkpnMFVFdkNhQlNvZDFWOGJRY1pnaExoSXZYby1VclE2akdETVBHMHBNZ09fUkgy0gHWAUFVX3lxTE9lZVltY1lWcUF0LXh6UHQzVDNrbGVXSy1tSGR2ek5ld0RMbVhJeUZ6YVRHdDB2UVhHbXlQWmlHOXVQQ3lMUWNmdkxOUnZ3VnJTTW13OVRCaG9FWnhxUDNwcEFENnV4eE9ZaUNwWnZ1Vi1peTN1dzN6akhMakJRczE0U1F4MjlsaDRNVGFlZmJmdEhvckNSSF9aaFR2NTFXcTZaR0dHQ1pBMU0wOFgzcXI2UG80bG1jR3RnMkswQjlLVUNCQ0RIZUxVaTFQd2I5amRmTU04dmc?oc=5",
+      "snippet": "Oil prices edge higher, hover around $102 as US-Iran tensions, China fuel curbs support prices; MCX closed The Economic Times",
+      "summary": "Oil prices edge higher, hover around $102 as US-Iran tensions, China fuel curbs support prices; MCX closed The Economic Times",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N139",
       "title": "ราคาทองวันนี้ 2 ต.ค. 69 ครั้งที่ 1 ปรับลง 200 บาท ทองแท่งขาย 66,200 บาท - Thaiger",
       "publisher": "Thaiger",
       "published": "2026-10-02T02:04:40+00:00",
@@ -354,7 +354,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
-      "id": "N68",
+      "id": "N71",
       "title": "NY Gold Futures Rise for Third Straight Session on Dip-Buying as U.S. Long-Term Yields Fall; Crude Oil Surges on Middle East Concerns - finance.biggo.com",
       "publisher": "finance.biggo.com",
       "published": "2026-10-02T01:35:00+00:00",
@@ -367,9 +367,9 @@
     }
   ],
   "hot_news": [],
-  "news_updated_at": "2026-10-04T04:00:35.869566+00:00",
+  "news_updated_at": "2026-10-04T20:38:21.842360+00:00",
   "news_candidates": 40,
-  "ai_updated_at": "2026-10-04T04:00:35.869566+00:00",
+  "ai_updated_at": "2026-10-04T20:38:21.842360+00:00",
   "status": {
     "technical": "ok",
     "news": "rss_headline_heuristic",
