@@ -139,7 +139,9 @@
     const note = $('indicatorSnapshotAt');
     if (note) {
       note.textContent = `ค่าที่แสดงอ้างอิง snapshot ${stampText} · Gold Spot 1D`;
-      const anyReading = hasEma || hasRsi || hasMacd || hasBands || hasAtr;\n      note.hidden = !anyReading;\n      if (note.parentElement) note.parentElement.hidden = !anyReading;
+      const anyReading = hasEma || hasRsi || hasMacd || hasBands || hasAtr;
+      note.hidden = !anyReading;
+      if (note.parentElement) note.parentElement.hidden = !anyReading;
     }
   }
 
