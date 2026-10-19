@@ -119,7 +119,7 @@
     const v = t.indicators || {};
     const stampText = stamp(v.source_note ? data.generated_at : t.last_closed_bar?.time);
     const set = (id, text) => { const el = $(id); if (el) el.textContent = text; };
-    set('indicatorEmaNow', v.ema20 != null
+    set('indicatorEmaNow', v.ema20 != null && v.ema50 != null && v.ema200 != null
       ? `Spot ${fmt(t.spot)} · EMA20 ${fmt(v.ema20)} / EMA50 ${fmt(v.ema50)} / EMA200 ${fmt(v.ema200)} · ${v.ema_reading || ''}`
       : `ไม่มีค่า EMA20/200 ใน snapshot ${stampText}; EMA50 ที่มี ${fmt(t.ema50)} · รอข้อมูลแท่งย้อนหลังครบ`);
     set('indicatorRsiNow', v.rsi14 != null
