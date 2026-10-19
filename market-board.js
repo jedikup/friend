@@ -118,23 +118,29 @@
     const t = data.technical || {};
     const v = t.indicators || {};
     const stampText = stamp(v.source_note ? data.generated_at : t.last_closed_bar?.time);
-    const set = (id, text) => { const el = $(id); if (el) el.textContent = text; };
-    set('indicatorEmaNow', v.ema20 != null && v.ema50 != null
-      ? `Spot $${fmt(t.spot)} · EMA20 $${fmt(v.ema20)} / EMA50 $${fmt(v.ema50)} / EMA200 ${v.ema200 != null ? `$${fmt(v.ema200)}` : 'ข้อมูลย้อนหลังยังไม่พอ'} · ${v.ema_reading || ''}`
-      : `ไม่มีค่า EMA20/200 ใน snapshot ${stampText}; EMA50 ที่มี ${fmt(t.ema50)} · รอข้อมูลแท่งย้อนหลังครบ`);
-    set('indicatorRsiNow', v.rsi14 != null
-      ? `RSI(14) ${fmt(v.rsi14, 1)}/100 · ${v.rsi_reading || ''}`
-      : `ยังไม่มีค่า RSI(14) ใน snapshot ${stampText}; ต้องใช้แท่งราคาย้อนหลังอย่างน้อย 14 ช่วง`);
-    set('indicatorMacdNow', v.macd != null
-      ? `MACD $${fmt(v.macd)} · Signal $${fmt(v.macd_signal)} · Histogram $${fmt(v.macd_hist)} · ${v.macd_reading || ''}`
-      : `ยังไม่มีค่า MACD ใน snapshot ${stampText}; ต้องใช้ข้อมูลแท่งราคาย้อนหลังเพิ่มเติม`);
-    set('indicatorBbNow', v.bb_mid != null
-      ? `บน $${fmt(v.bb_upper)} · กลาง $${fmt(v.bb_mid)} · ล่าง $${fmt(v.bb_lower)} · ${v.bb_reading || ''}`
-      : `ยังไม่มีค่า Bollinger Bands ใน snapshot ${stampText}; ต้องใช้แท่งราคาย้อนหลัง 20 ช่วง`);
-    set('indicatorAtrNow', v.atr14 != null
-      ? `ATR(14) ${fmt(v.atr14)}/oz · ${v.atr_reading || ''}`
-      : `ATR(14) ${fmt(t.atr14 || 0)}/oz · ค่าจากข้อมูลระดับตลาด; บอกขนาดการแกว่ง ไม่ใช่ทิศทาง`);
-    set('indicatorSnapshotAt', `ข้อมูลคำนวณจาก Gold Spot 1D · ${v.source_note || `snapshot ${stampText} · รอบถัดไปจะแสดงค่าเมื่อข้อมูลพร้อม`}`);
+    const set = (id, text) => {
+      const el = $(id);
+      if (!el) return false;
+      el.textContent = text || '';
+      el.hidden = !text;
+      return Boolean(text);
+    };
+    const emaParts = [];
+    if (v.ema20 != null) emaParts.push(`EMA20 $${fmt(v.ema20)}`);
+    if (v.ema50 != null || t.ema50 != null) emaParts.push(`EMA50 $${fmt(v.ema50 ?? t.ema50)}`);
+    if (v.ema200 != null) emaParts.push(`EMA200 $${fmt(v.ema200)}`);
+    if (v.ema_reading) emaParts.push(v.ema_reading);
+    const hasEma = set('indicatorEmaNow', emaParts.length ? `Spot $${fmt(t.spot)} · ${emaParts.join(' · ')}` : '');
+    const hasRsi = set('indicatorRsiNow', v.rsi14 != null ? `RSI(14) ${fmt(v.rsi14, 1)}/100 · ${v.rsi_reading || ''}` : '');
+    const hasMacd = set('indicatorMacdNow', v.macd != null ? `MACD $${fmt(v.macd)} · Signal $${fmt(v.macd_signal)} · Histogram $${fmt(v.macd_hist)} · ${v.macd_reading || ''}` : '');
+    const hasBands = set('indicatorBbNow', v.bb_mid != null ? `บน $${fmt(v.bb_upper)} · กลาง $${fmt(v.bb_mid)} · ล่าง $${fmt(v.bb_lower)} · ${v.bb_reading || ''}` : '');
+    const atr = v.atr14 ?? t.atr14;
+    const hasAtr = set('indicatorAtrNow', atr != null ? `ATR(14) $${fmt(atr)}/oz · ${v.atr_reading || 'บอกขนาดการแกว่ง ไม่ได้บอกทิศทาง'}` : '');
+    const note = $('indicatorSnapshotAt');
+    if (note) {
+      note.textContent = `ค่าที่แสดงอ้างอิง snapshot ${stampText} · Gold Spot 1D`;
+      note.hidden = !(hasEma || hasRsi || hasMacd || hasBands || hasAtr);
+    }
   }
 
   function renderScenario(data) {
