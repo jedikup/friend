@@ -65,7 +65,7 @@ def daily_bars() -> list[dict]:
     bars.sort(key=lambda b: b["time"])
     if len(bars) < 10:
         raise ValueError(f"Only {len(bars)} closed daily OHLC bars received; need at least 10")
-    return bars[-30:]
+    return bars
 
 
 def mean(values: list[float]) -> float:
