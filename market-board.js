@@ -137,7 +137,7 @@
     list.replaceChildren();
     (data.plan || []).forEach((line) => list.append(node('li', '', line)));
     if (!list.children.length) list.append(node('li', '', 'รอผลวิเคราะห์จากรอบ 08:00'));
-    $('planUpdatedAt').textContent = `${analysisStamp(data)} · checklist เป็นข้อมูลประกอบ ไม่ใช่คำสั่งซื้อขาย`;
+    $('planUpdatedAt').textContent = `${analysisStamp(data)} · แผนนี้เป็นแนวทางแบบมีเงื่อนไข ไม่ใช่คำสั่งซื้อขาย`;
   }
 
   function renderNews(data) {
