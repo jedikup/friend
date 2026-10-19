@@ -126,10 +126,10 @@
       ? `RSI(14) ${fmt(v.rsi14, 1)}/100 · ${v.rsi_reading || ''}`
       : `ยังไม่มีค่า RSI(14) ใน snapshot ${stampText}; ต้องใช้แท่งราคาย้อนหลังอย่างน้อย 14 ช่วง`);
     set('indicatorMacdNow', v.macd != null
-      ? `MACD ${fmt(v.macd)} · Signal ${fmt(v.macd_signal)} · Histogram ${fmt(v.macd_hist)} · ${v.macd_reading || ''}`
+      ? `MACD $${fmt(v.macd)} · Signal $${fmt(v.macd_signal)} · Histogram $${fmt(v.macd_hist)} · ${v.macd_reading || ''}`
       : `ยังไม่มีค่า MACD ใน snapshot ${stampText}; ต้องใช้ข้อมูลแท่งราคาย้อนหลังเพิ่มเติม`);
     set('indicatorBbNow', v.bb_mid != null
-      ? `บน ${fmt(v.bb_upper)} · กลาง ${fmt(v.bb_mid)} · ล่าง ${fmt(v.bb_lower)} · ${v.bb_reading || ''}`
+      ? `บน $${fmt(v.bb_upper)} · กลาง $${fmt(v.bb_mid)} · ล่าง $${fmt(v.bb_lower)} · ${v.bb_reading || ''}`
       : `ยังไม่มีค่า Bollinger Bands ใน snapshot ${stampText}; ต้องใช้แท่งราคาย้อนหลัง 20 ช่วง`);
     set('indicatorAtrNow', v.atr14 != null
       ? `ATR(14) ${fmt(v.atr14)}/oz · ${v.atr_reading || ''}`
