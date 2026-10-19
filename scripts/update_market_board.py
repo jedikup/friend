@@ -45,7 +45,7 @@ def gold_spot_fx() -> tuple[float, float, str]:
 
 def daily_bars() -> list[dict]:
     today = datetime.now(timezone.utc).date()
-    query = urllib.parse.urlencode({"symbol": "XAU-USD-SPOT", "interval": "1d", "from": (today - timedelta(days=29)).isoformat(), "to": today.isoformat(), "limit": "30"})
+    query = urllib.parse.urlencode({"symbol": "XAU-USD-SPOT", "interval": "1d", "from": (today - timedelta(days=280)).isoformat(), "to": today.isoformat(), "limit": "260"})
     headers = {}
     key = os.getenv("GOLDPRICE_DEV_API_KEY")
     if key:
@@ -130,9 +130,43 @@ def technical_levels(bars: list[dict], spot: float, fx: float) -> dict:
     ma50 = ema(closes, 50)
     trend = "ขาขึ้น" if spot > ma20 and ma20 > ma50 else "ขาลง" if spot < ma20 and ma20 < ma50 else "แกว่งตัว/สัญญาณผสม"
     thb_factor = 0.47296
+    ema20_value = ema(closes, 20)
+    ema50_value = ema(closes, 50)
+    ema200_value = ema(closes, 200)
+    gains = [max(closes[i] - closes[i - 1], 0) for i in range(1, len(closes))]
+    losses = [max(closes[i - 1] - closes[i], 0) for i in range(1, len(closes))]
+    rsi_period = min(14, len(gains))
+    avg_gain = mean(gains[-rsi_period:]) if rsi_period else 0
+    avg_loss = mean(losses[-rsi_period:]) if rsi_period else 0
+    rsi_value = 100 if avg_loss == 0 and avg_gain > 0 else 50 if avg_loss == 0 else 100 - (100 / (1 + avg_gain / avg_loss))
+    macd_values = [ema(closes[:i + 1], 12) - ema(closes[:i + 1], 26) for i in range(len(closes))]
+    macd_line = macd_values[-1] if macd_values else 0
+    macd_signal = ema(macd_values, 9)
+    macd_hist = macd_line - macd_signal
+    bb_values = closes[-20:]
+    bb_mid = mean(bb_values)
+    bb_std = math.sqrt(mean([(v - bb_mid) ** 2 for v in bb_values])) if bb_values else 0
+    bb_upper, bb_lower = bb_mid + 2 * bb_std, bb_mid - 2 * bb_std
+    if spot > ema20_value and spot > ema50_value and spot > ema200_value:
+        ema_reading = "Spot อยู่เหนือ EMA20/50/200 · แนวโน้มขาขึ้นได้เปรียบ"
+    elif spot < ema20_value and spot < ema50_value and spot < ema200_value:
+        ema_reading = "Spot อยู่ใต้ EMA20/50/200 · แนวโน้มขาลงได้เปรียบ"
+    else:
+        ema_reading = "Spot อยู่คนละด้านของเส้น EMA · แนวโน้มยังผสม"
+    rsi_reading = "เขตอ่อนแรงมาก แต่ไม่ยืนยันว่าจะเด้ง" if rsi_value < 30 else "เขตแรงซื้อมาก อาจผันผวนหรือพักตัว" if rsi_value > 70 else "โมเมนตัมไม่สุดโต่ง; ต่ำกว่า 50 เอนอ่อน เหนือ 50 เอนแข็ง"
+    macd_reading = ("แรงส่งบวก" if macd_hist > 0 else "แรงส่งลบ") + (" และเส้น MACD อยู่เหนือเส้นสัญญาณ" if macd_line > macd_signal else " แต่เส้น MACD อยู่ใต้เส้นสัญญาณ")
+    bb_reading = "ราคาเกินแถบบน · ระวังการยืดตัว" if spot > bb_upper else "ราคาใต้แถบล่าง · อ่อนแรงแต่ยังไม่ยืนยันกลับตัว" if spot < bb_lower else "ราคาอยู่ในกรอบแถบ · ใช้ดูความผันผวน ไม่ใช่สัญญาณซื้อขายเดี่ยว"
+    indicators = {
+        "ema20": round(ema20_value, 2), "ema50": round(ema50_value, 2), "ema200": round(ema200_value, 2), "ema_reading": ema_reading,
+        "rsi14": round(rsi_value, 1), "rsi_reading": rsi_reading,
+        "macd": round(macd_line, 2), "macd_signal": round(macd_signal, 2), "macd_hist": round(macd_hist, 2), "macd_reading": macd_reading,
+        "bb_upper": round(bb_upper, 2), "bb_mid": round(bb_mid, 2), "bb_lower": round(bb_lower, 2), "bb_reading": bb_reading,
+        "atr14": round(atr, 2), "atr_reading": f"ช่วงแกว่งเฉลี่ยล่าสุดราว ${atr:,.2f}/oz ต่อวัน; ATR บอกขนาด ไม่บอกทิศทาง",
+        "source_note": f"คำนวณจากแท่ง Gold Spot 1D ปิดแล้ว {len(closes)} แท่ง; snapshot {daily['time']}"
+    }
     return {
         "spot": round(spot, 2), "fx_usd_thb": round(fx, 4), "estimated_thb_per_baht": round(spot * fx * thb_factor / 50) * 50,
-        "daily_change_pct": round(delta_pct, 2), "atr14": round(atr, 2), "atr_period": atr_period, "sma20": round(ma20, 2), "sma_period": sma_period, "ema50": round(ma50, 2), "trend": trend,
+        "daily_change_pct": round(delta_pct, 2), "indicators": indicators, "atr14": round(atr, 2), "atr_period": atr_period, "sma20": round(ma20, 2), "sma_period": sma_period, "ema50": round(ma50, 2), "trend": trend,
         "support": [{"low": round(v - atr * 0.18, 2), "high": round(v + atr * 0.18, 2)} for v in supports],
         "resistance": [{"low": round(v - atr * 0.18, 2), "high": round(v + atr * 0.18, 2)} for v in resistances],
         "last_closed_bar": {"time": daily["time"], "open": daily["open"], "high": daily["high"], "low": daily["low"], "close": daily["close"]},
@@ -472,7 +506,7 @@ def main() -> None:
         technical = technical_levels(bars, spot, fx)
         technical["quote_updated"] = quote_time
         market["technical"] = technical
-        market["daily_bars"] = bars[-8:]
+        market["daily_bars"] = bars[-30:]
         status["technical"] = "ok"
     except Exception as exc:
         print(f"Market data/technical calculation failed: {exc}", file=sys.stderr)
