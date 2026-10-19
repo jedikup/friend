@@ -1,57 +1,50 @@
 {
-  "generated_at": "2026-10-18T15:17:10.507727+00:00",
-  "generated_at_bangkok": "2026-10-18T22:17:10.507727+07:00",
-  "slot": "22:00",
+  "generated_at": "2026-10-19T01:29:35.415251+00:00",
+  "generated_at_bangkok": "2026-10-19T08:29:35.415251+07:00",
+  "slot": "08:00",
   "technical": {
-    "spot": 4165.89,
-    "fx_usd_thb": 33.4465,
+    "spot": 4171.86,
+    "fx_usd_thb": 33.4003,
     "estimated_thb_per_baht": 65900,
-    "daily_change_pct": 1.31,
-    "atr14": 77.69,
+    "daily_change_pct": 0.38,
+    "atr14": 69.01,
     "atr_period": 14,
-    "sma20": 4195.23,
-    "sma_period": 19,
-    "ema50": 4269.93,
+    "sma20": 4193.74,
+    "sma_period": 20,
+    "ema50": 4265.83,
     "trend": "ขาลง",
     "support": [
       {
-        "low": 4096.92,
-        "high": 4124.89
+        "low": 4098.48,
+        "high": 4123.33
       },
       {
-        "low": 4074.22,
-        "high": 4102.19
+        "low": 4090.42,
+        "high": 4115.27
       }
     ],
     "resistance": [
       {
-        "low": 4207.36,
-        "high": 4235.33
+        "low": 4204.91,
+        "high": 4229.76
       },
       {
-        "low": 4211.37,
-        "high": 4239.34
+        "low": 4208.92,
+        "high": 4233.77
       }
     ],
     "last_closed_bar": {
-      "time": "2026-10-15T00:00:00Z",
-      "open": 4112.135,
-      "high": 4177.3335,
-      "low": 4111.3625,
-      "close": 4156.037
+      "time": "2026-10-16T00:00:00Z",
+      "open": 4155.765,
+      "high": 4198.924,
+      "low": 4147.273,
+      "close": 4165.4517
     },
     "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
-    "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 14 แท่ง); SMA20 ใช้ข้อมูล 19 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
-    "quote_updated": "2026-10-18T15:17:12.314Z"
+    "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 14 แท่ง); SMA20 ใช้ข้อมูล 20 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
+    "quote_updated": "2026-10-19T01:29:36.376Z"
   },
   "daily_bars": [
-    {
-      "open": 4134.4085,
-      "high": 4184.3095,
-      "low": 4103.5375,
-      "close": 4165.9665,
-      "time": "2026-10-06T00:00:00Z"
-    },
     {
       "open": 4165.8985,
       "high": 4169.592,
@@ -100,33 +93,76 @@
       "low": 4111.3625,
       "close": 4156.037,
       "time": "2026-10-15T00:00:00Z"
+    },
+    {
+      "open": 4155.765,
+      "high": 4198.924,
+      "low": 4147.273,
+      "close": 4165.4517,
+      "time": "2026-10-16T00:00:00Z"
     }
   ],
   "candidate_count": 40,
-  "update_slot": "evening",
+  "update_slot": "morning",
   "analysis_type": "rules_based",
-  "market_summary": "ภาพรวม: ขาลง — สัญญาณยังผสม ควรรอทิศทางชัด\n• Gold Spot USD 4,165.89 (+1.31%); SMA ล่าสุด USD 4,195.23, EMA50 USD 4,269.93\n• แนวรับ USD 4,097–4,125 · แนวต้าน USD 4,207–4,235\n• ทองไทย: USD/THB 33.4465; บาทอ่อนอาจพยุงราคาไทยบางส่วน แต่ไม่หักล้างแรงลงของ Spot โดยอัตโนมัติ\n• ติดตาม Fed/ยีลด์ เงินเฟ้อ น้ำมัน และภูมิรัฐศาสตร์; ข่าวเป็นบริบท ไม่ใช่หลักฐานเหตุและผล",
+  "market_summary": "ภาพรวม: ขาลง — สัญญาณยังผสม ควรรอทิศทางชัด\n• Gold Spot USD 4,171.86 (+0.38%); SMA ล่าสุด USD 4,193.74, EMA50 USD 4,265.83\n• แนวรับ USD 4,098–4,123 · แนวต้าน USD 4,205–4,230\n• ทองไทย: USD/THB 33.4003; บาทอ่อนอาจพยุงราคาไทยบางส่วน แต่ไม่หักล้างแรงลงของ Spot โดยอัตโนมัติ\n• ติดตาม Fed/ยีลด์ เงินเฟ้อ น้ำมัน และภูมิรัฐศาสตร์; ข่าวเป็นบริบท ไม่ใช่หลักฐานเหตุและผล",
   "scenario": {
-    "one_week": "กรอบผันผวนจาก ATR: USD 3,992–4,340 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: มีโอกาสแกว่งในกรอบ รอปิดยืนยันเหนือแนวต้านหรือใต้แนวรับ\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,207–4,235; ปิดหลุด USD 4,097–4,125 ให้ระวัง · แนวรับถัดไป USD 4,074–4,102",
-    "one_month": "กรอบผันผวนจาก ATR: USD 3,810–4,522 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: ทิศทางยังไม่ชัด ให้ติดตามการยืนเหนือ/หลุดระดับสำคัญ\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,207–4,235; ปิดหลุด USD 4,097–4,125 ให้ระวัง · แนวรับถัดไป USD 4,074–4,102",
-    "three_months": "กรอบผันผวนจาก ATR: USD 3,549–4,783 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: ระยะยาวขึ้นกับเงินเฟ้อ ดอกเบี้ย ดอลลาร์ และความเสี่ยงภูมิรัฐศาสตร์\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,207–4,235; ปิดหลุด USD 4,097–4,125 ให้ระวัง · แนวรับถัดไป USD 4,074–4,102"
+    "one_week": "กรอบผันผวนจาก ATR: USD 4,018–4,326 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: มีโอกาสแกว่งในกรอบ รอปิดยืนยันเหนือแนวต้านหรือใต้แนวรับ\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,205–4,230; ปิดหลุด USD 4,098–4,123 ให้ระวัง · แนวรับถัดไป USD 4,090–4,115",
+    "one_month": "กรอบผันผวนจาก ATR: USD 3,856–4,488 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: ทิศทางยังไม่ชัด ให้ติดตามการยืนเหนือ/หลุดระดับสำคัญ\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,205–4,230; ปิดหลุด USD 4,098–4,123 ให้ระวัง · แนวรับถัดไป USD 4,090–4,115",
+    "three_months": "กรอบผันผวนจาก ATR: USD 3,624–4,720 (ไม่ใช่เป้าราคา)\n• กรณีหลัก: ระยะยาวขึ้นกับเงินเฟ้อ ดอกเบี้ย ดอลลาร์ และความเสี่ยงภูมิรัฐศาสตร์\n• ยืนยันฟื้นเมื่อปิดเหนือ USD 4,205–4,230; ปิดหลุด USD 4,098–4,123 ให้ระวัง · แนวรับถัดไป USD 4,090–4,115"
   },
   "scenario_dates": {
-    "one_week": "18 ต.ค. 2569 – 25 ต.ค. 2569",
-    "one_month": "18 ต.ค. 2569 – 18 พ.ย. 2569",
-    "three_months": "18 ต.ค. 2569 – 18 ม.ค. 2570"
+    "one_week": "19 ต.ค. 2569 – 26 ต.ค. 2569",
+    "one_month": "19 ต.ค. 2569 – 19 พ.ย. 2569",
+    "three_months": "19 ต.ค. 2569 – 19 ม.ค. 2570"
   },
   "plan": [
-    "ภาพหลัก ขาลง: Spot เปลี่ยน +1.31%; แท่งปิดล่าสุด USD 4,156.04 เทียบแท่งก่อน USD 4,111.89. รอแท่งปิดยืนยัน ไม่ไล่ราคาจากไส้เทียน",
-    "แนวรับใกล้ USD 4,096.92–4,124.89; แนวต้าน USD 4,207.36–4,235.33. ใช้ราคาปิดยืนยันการหลุดหรือทะลุ",
-    "ATR(14) USD 77.69 บอกขนาดการแกว่ง ไม่ได้บอกทิศทาง; ลดความเสี่ยงเมื่อผันผวนสูง",
-    "ตรวจ USD/THB 33.4465: บาทอ่อนอาจช่วยพยุงทองไทย ส่วนบาทแข็งอาจหักล้างการขึ้นของ Spot",
+    "ภาพหลัก ขาลง: Spot เปลี่ยน +0.38%; แท่งปิดล่าสุด USD 4,165.45 เทียบแท่งก่อน USD 4,156.04. รอแท่งปิดยืนยัน ไม่ไล่ราคาจากไส้เทียน",
+    "แนวรับใกล้ USD 4,098.48–4,123.33; แนวต้าน USD 4,204.91–4,229.76. ใช้ราคาปิดยืนยันการหลุดหรือทะลุ",
+    "ATR(14) USD 69.01 บอกขนาดการแกว่ง ไม่ได้บอกทิศทาง; ลดความเสี่ยงเมื่อผันผวนสูง",
+    "ตรวจ USD/THB 33.4003: บาทอ่อนอาจช่วยพยุงทองไทย ส่วนบาทแข็งอาจหักล้างการขึ้นของ Spot",
     "ติดตาม Fed/ยีลด์ น้ำมัน และข่าวภูมิรัฐศาสตร์จากต้นทาง; Hot คัดพาดหัวอัตโนมัติ ไม่ยืนยันผลกระทบ",
     "ตรวจราคาสมาคมฯ และส่วนต่างซื้อ–ขายก่อนส่งคำสั่ง; ราคาแปลง Spot เป็นทองไทยเป็นค่าประมาณ"
   ],
   "news": [
     {
-      "id": "N88",
+      "id": "N100",
+      "title": "Kasikornbank sees baht trading between 33.00 and 33.80 per dollar - Pattaya Mail",
+      "publisher": "Pattaya Mail",
+      "published": "2026-10-18T19:29:11+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQjJrRW43c0x2MldmRVRPMS1EM2c5QmNia0pTRlJfY2dXUkxudzRqYllMTUlsdEpUelEwWEJrb2NQY0R3bldKRHRnSTJNQjNWOVpSaVp6dGdRNE1iYlRYcFBrQlFXVzJqVm5UX1dpTW56WFNtZW5LSURZNVhRWlFHWjljcEpySmdjTExSdTRuekpHYXRTU0V2NzQtYnp6a09MV3ZhcnZDb0RoRFdLRWw0YzctcHFEWUk?oc=5",
+      "snippet": "Kasikornbank sees baht trading between 33.00 and 33.80 per dollar Pattaya Mail",
+      "summary": "Kasikornbank sees baht trading between 33.00 and 33.80 per dollar Pattaya Mail",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N86",
+      "title": "Why Brent crude could hit $120 amid Iran war? What it means for India as analysts warn oil prices to remain volatile - Livemint",
+      "publisher": "Livemint",
+      "published": "2026-10-18T14:10:20+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPZkMwZzBVaks2V3ByQjhxbG1VU3NxTkV6NDJaYjNUZXZVbW50UTJ2dmRzM2VRNWV2bDlTRm9LcGJzQUNhM1RPa3BjTXppOE5uSTNqRjlyNi1JRnFDYkZ0bm1XcjVLUF93TnVNM1ZKbDU0eVZIRGFteUp3RXNOY2VMWUFoVDQzdWNYeFMtY0o5VjhTOTNTMThBSlRyeV95aUZPd1VoODR4NGFkaFhoYjVwdG0tc2RDOWJzQkZMMDZrLV8wR1ppY2FTMlZPdDJrOXJVekVFQ2xVSThIa2daNkNDMW9RcUI5aHllOUs0YkM4NUhYNnpybWhrR2ZPSEpLQ0pRZ2h1Z9IBhAJBVV95cUxPZkMwZzBVaks2V3ByQjhxbG1VU3NxTkV6NDJaYjNUZXZVbW50UTJ2dmRzM2VRNWV2bDlTRm9LcGJzQUNhM1RPa3BjTXppOE5uSTNqRjlyNi1JRnFDYkZ0bm1XcjVLUF93TnVNM1ZKbDU0eVZIRGFteUp3RXNOY2VMWUFoVDQzdWNYeFMtY0o5VjhTOTNTMThBSlRyeV95aUZPd1VoODR4NGFkaFhoYjVwdG0tc2RDOWJzQkZMMDZrLV8wR1ppY2FTMlZPdDJrOXJVekVFQ2xVSThIa2daNkNDMW9RcUI5aHllOUs0YkM4NUhYNnpybWhrR2ZPSEpLQ0pRZ2h1Zw?oc=5",
+      "snippet": "Why Brent crude could hit $120 amid Iran war? What it means for India as analysts warn oil prices to remain volatile Livemint",
+      "summary": "Why Brent crude could hit $120 amid Iran war? What it means for India as analysts warn oil prices to remain volatile Livemint",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N62",
+      "title": "The dollar «drowned» in Hormuz - Persian Gulf oil will no longer fund the economic and military power of the USA - Bankingnews",
+      "publisher": "Bankingnews",
+      "published": "2026-10-18T13:26:31+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxOeEZjaVlGdnVvQTBzWUl0OFN0Z0Q0eTdGUnlGTzRjRjJpbi0xZUtOMkZJeFBhMURUZzJhS0J0OWxTX2J0Ukt6NUkxMlBubnJYSThZVTdIZ1N2NHdfNlg1cEVxNnMwcGthRGV6N0lldDNpaHhlR3NuZUs2MzRXdWR4cmw4VVR2cUJaT3h4bVhnc0dfLUtPU0NveHZ0LS00cWxGa3M4MUhzYjdwU0k0cUNZeXZqMW5lYWFLbTBIVmU4MmhhamxLZmM2OTRhVXliVFZmRUpVMm9mUmRwM3JqSWh3TnBRTEdGaFNrM0RtZXdfcGR6X0xROG50NnJjZEdOb0IzWlpWX0RhMFlNM0l5S2xmQ0NDXzQ0WXQ2VFY2WWE4UQ?oc=5",
+      "snippet": "The dollar «drowned» in Hormuz - Persian Gulf oil will no longer fund the economic and military power of the USA Bankingnews",
+      "summary": "The dollar «drowned» in Hormuz - Persian Gulf oil will no longer fund the economic and military power of the USA Bankingnews",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N89",
       "title": "Russia’s Novak says oil prices could climb higher unless Hormuz reopens - Hiru News",
       "publisher": "Hiru News",
       "published": "2026-10-18T07:45:00+00:00",
@@ -138,7 +174,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N51",
+      "id": "N49",
       "title": "U.S. targets Iran-linked banks and oil networks - IranOilGas",
       "publisher": "IranOilGas",
       "published": "2026-10-18T04:09:52+00:00",
@@ -150,7 +186,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N73",
+      "id": "N74",
       "title": "Iran says two tankers hit mines in Hormuz - Business Recorder",
       "publisher": "Business Recorder",
       "published": "2026-10-17T23:53:26+00:00",
@@ -162,19 +198,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N60",
-      "title": "Deal, Delay or Strike? Investors on Edge as Trump’s Iran Deadline Nears - EnergyNow",
-      "publisher": "EnergyNow",
-      "published": "2026-10-17T19:42:01+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSlhxVjc0Z2diXzBSQzBpalllZUVRTUpFbk41RGNLSUlfTjlETTFQdko1bDdBdlc2MTlVcXdlVldWZTBVYlpRQUM3MXZlWGdfdndwN2l3RHBBMzZndFh0NjJWbHBVT2FiaFpzWEVIUDNhMnhsQi01MW90RVZ1aGN3Q0RiUTVubkNDOG11TmtYb2xhU2JBTGJVaGdvRmNaZXc?oc=5",
-      "snippet": "Deal, Delay or Strike? Investors on Edge as Trump’s Iran Deadline Nears EnergyNow",
-      "summary": "Deal, Delay or Strike? Investors on Edge as Trump’s Iran Deadline Nears EnergyNow",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N62",
+      "id": "N63",
       "title": "Brent Crude Oil London Trade at Marker Futures (Mar 2027) Trade Ideas — NYMEX:BZLH2027 - TradingView",
       "publisher": "TradingView",
       "published": "2026-10-17T14:51:03+00:00",
@@ -186,7 +210,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N30",
+      "id": "N29",
       "title": "Gold Price Week Ahead: Bull and Bear Case From $4,166 as $110 Oil Revives Inflation Fears - FinanceFeeds",
       "publisher": "FinanceFeeds",
       "published": "2026-10-17T11:57:50+00:00",
@@ -198,7 +222,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N42",
+      "id": "N41",
       "title": "Oil Just Hit $100 a Barrel. What Happened to Bitcoin the Last Time Oil Prices Hit Three Digits? - 24/7 Wall St.",
       "publisher": "24/7 Wall St.",
       "published": "2026-10-17T11:30:00+00:00",
@@ -210,7 +234,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N4",
+      "id": "N5",
       "title": "Gold Price Slides on Hot Inflation, but Schiff Says It’s a Gift - BeInCrypto",
       "publisher": "BeInCrypto",
       "published": "2026-10-17T11:13:00+00:00",
@@ -222,7 +246,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
-      "id": "N92",
+      "id": "N94",
       "title": "FTSE 100 (^FTSE) Slips As Strait Of Hormuz Closure Pushes Oil Above $105 - London Insider",
       "publisher": "London Insider",
       "published": "2026-10-17T08:25:52+00:00",
@@ -234,7 +258,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N126",
+      "id": "N129",
       "title": "KBANK คาดกรอบบาทสัปดาห์หน้า 33.00-33.80 จับตาทิศทาง Flow-ราคาทอง : อินโฟเควสท์ - สำนักข่าวอินโฟเควสท์",
       "publisher": "สำนักข่าวอินโฟเควสท์",
       "published": "2026-10-17T07:25:00+00:00",
@@ -246,7 +270,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N45",
+      "id": "N37",
       "title": "A (TEMPORARY) GOLDEN ERA – Iran War Ushers in Oil Refining Golden Era. It Won’t Last: Ron Bousso - EnergyNow.com",
       "publisher": "EnergyNow.com",
       "published": "2026-10-17T06:59:50+00:00",
@@ -258,19 +282,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N65",
-      "title": "Brentcrude oil prices hit $110 for first time since May as Iran attacks continue, Ukraine eyes Russia energy infra - The Economic Times",
-      "publisher": "The Economic Times",
-      "published": "2026-10-17T06:18:37+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxNc2JkbEdCZWlVdnpieDd0a25kdTdWU0xENVdpeE1kQUdpLTNCQlJBYktaVGk5VjNremY3eFQ1akZTWjA0MHdzM2VhZDhWYmRaTUtodWhPdDdybWpReGhVMDZoLVF6SHRiaUJ5Q0FXUWRCT3VPYUgybVlXbG5LcmJENmpBaC05clViaTY2SVJianlFd3kxeTh3X0hLUnZ1X2Q4TG5OS2FERGM0aTM3ajRudUJsM3Q1dlZydXhreWE4Z0U5Qm92U0NZa0wzM2pzaVc5ZEhlbml5TmdYeDh2SzROTFFlRjBlOGFBdlVwbExqT3VVYUdmWGljM2hsMHdoV0Vlbnh4UGZlVi13a3U2Z25SamRpbVl0Si1GNWNPZzJya3BZUjJDRDc4?oc=5",
-      "snippet": "Brentcrude oil prices hit $110 for first time since May as Iran attacks continue, Ukraine eyes Russia energy infra The Economic Times",
-      "summary": "Brentcrude oil prices hit $110 for first time since May as Iran attacks continue, Ukraine eyes Russia energy infra The Economic Times",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N87",
+      "id": "N88",
       "title": "Brent oil touches $110 as Iran escalates Hormuz attacks - Hiru News",
       "publisher": "Hiru News",
       "published": "2026-10-17T03:47:41+00:00",
@@ -294,7 +306,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N118",
+      "id": "N120",
       "title": "ประกาศแล้ว! ราคาทองวันนี้ 17 ต.ค. 69 | มุมข่าว - LINE TODAY",
       "publisher": "LINE TODAY",
       "published": "2026-10-17T02:47:33+00:00",
@@ -306,7 +318,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N135",
+      "id": "N139",
       "title": "ราคาทองวันนี้ 17 ต.ค. ประกาศครั้งเดียว! ราคาไม่เปลี่ยน ทองแท่งขายออก 66,100 บาท - The Bangkok Insight",
       "publisher": "The Bangkok Insight",
       "published": "2026-10-17T02:20:31+00:00",
@@ -318,7 +330,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N89",
+      "id": "N90",
       "title": "Any passage through strait of Hormuz requires Iran's permission - Hiru News",
       "publisher": "Hiru News",
       "published": "2026-10-17T01:59:14+00:00",
@@ -342,25 +354,13 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N98",
+      "id": "N99",
       "title": "Thailand’s Relationship With the IMF-World Bank - Chiang Rai Times",
       "publisher": "Chiang Rai Times",
       "published": "2026-10-17T00:57:18+00:00",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9tQzlpQWl3WDZPb3ZQLXFNNHNLZDkxVnJWYnQ0V1VmeWNRdk5SMURwcnpxWkdud2F6RWp6T3lYdll4Z2gzQTJ3WDFjejJMUVI0RmFqZmZPRlloYTBqOHZHN3g4NmF2OS1sMFI1NjFnT2p0Zw?oc=5",
       "snippet": "Thailand’s Relationship With the IMF-World Bank Chiang Rai Times",
       "summary": "Thailand’s Relationship With the IMF-World Bank Chiang Rai Times",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N15",
-      "title": "Gold stumbles as US yields eclipse fading October Fed hike bets - www.tmgm.com",
-      "publisher": "www.tmgm.com",
-      "published": "2026-10-16T23:32:58+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaWxZS19sTkpZenJJRTdQenczS25VcDVnZmFNLTJlYlVRYlNGSVFGSmhzX3BjdExUWHphUFpSU2F4ei1kRVR2cGZETElFTHkxaExQTmdsdTFrQnF3dnRSLVZIYWRHRlAtUHZHWGlyVUdZWlB2Z3JLZ3FaUTZ2ZjRVMXFxX0dLZkc2dEFMOFZValIxdkRUSk9KVHBENENpYks4R0FBRFcwdlFmeFd4dEt0VEctNnhSaXl2NlVJdURiSzlWR1JWR2ZtRUVvSEY?oc=5",
-      "snippet": "Gold stumbles as US yields eclipse fading October Fed hike bets www.tmgm.com",
-      "summary": "Gold stumbles as US yields eclipse fading October Fed hike bets www.tmgm.com",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
@@ -381,9 +381,9 @@
       "hot_reason": "คัดจากคำในพาดหัว: กล่าวถึงราคาทอง + ดอกเบี้ย/ยีลด์ + น้ำมัน/เงินเฟ้อ"
     }
   ],
-  "news_updated_at": "2026-10-18T15:17:14.342476+00:00",
+  "news_updated_at": "2026-10-19T01:29:38.799949+00:00",
   "news_candidates": 40,
-  "ai_updated_at": "2026-10-18T15:17:14.342476+00:00",
+  "ai_updated_at": "2026-10-19T01:29:38.799949+00:00",
   "status": {
     "technical": "ok",
     "news": "rss_headline_heuristic",
