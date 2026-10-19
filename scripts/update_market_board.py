@@ -132,7 +132,7 @@ def technical_levels(bars: list[dict], spot: float, fx: float) -> dict:
     thb_factor = 0.47296
     ema20_value = ema(closes, 20)
     ema50_value = ema(closes, 50)
-    ema200_value = ema(closes, 200)
+    ema200_value = ema(closes, 200) if len(closes) >= 200 else None
     gains = [max(closes[i] - closes[i - 1], 0) for i in range(1, len(closes))]
     losses = [max(closes[i - 1] - closes[i], 0) for i in range(1, len(closes))]
     rsi_period = min(14, len(gains))
@@ -160,7 +160,7 @@ def technical_levels(bars: list[dict], spot: float, fx: float) -> dict:
     macd_reading = ("แรงส่งบวก" if macd_hist > 0 else "แรงส่งลบ") + (" และเส้น MACD อยู่เหนือเส้นสัญญาณ" if macd_line > macd_signal else " แต่เส้น MACD อยู่ใต้เส้นสัญญาณ")
     bb_reading = "ราคาเกินแถบบน · ระวังการยืดตัว" if spot > bb_upper else "ราคาใต้แถบล่าง · อ่อนแรงแต่ยังไม่ยืนยันกลับตัว" if spot < bb_lower else "ราคาอยู่ในกรอบแถบ · ใช้ดูความผันผวน ไม่ใช่สัญญาณซื้อขายเดี่ยว"
     indicators = {
-        "ema20": round(ema20_value, 2), "ema50": round(ema50_value, 2), "ema200": round(ema200_value, 2), "ema_reading": ema_reading,
+        "ema20": round(ema20_value, 2), "ema50": round(ema50_value, 2), "ema200": round(ema200_value, 2) if ema200_value is not None else None, "ema_reading": ema_reading,
         "rsi14": round(rsi_value, 1), "rsi_reading": rsi_reading,
         "macd": round(macd_line, 2), "macd_signal": round(macd_signal, 2), "macd_hist": round(macd_hist, 2), "macd_reading": macd_reading,
         "bb_upper": round(bb_upper, 2), "bb_mid": round(bb_mid, 2), "bb_lower": round(bb_lower, 2), "bb_reading": bb_reading,
