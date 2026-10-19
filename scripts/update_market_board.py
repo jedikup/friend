@@ -136,8 +136,11 @@ def technical_levels(bars: list[dict], spot: float, fx: float) -> dict:
     gains = [max(closes[i] - closes[i - 1], 0) for i in range(1, len(closes))]
     losses = [max(closes[i - 1] - closes[i], 0) for i in range(1, len(closes))]
     rsi_period = min(14, len(gains))
-    avg_gain = mean(gains[-rsi_period:]) if rsi_period else 0
-    avg_loss = mean(losses[-rsi_period:]) if rsi_period else 0
+    avg_gain = mean(gains[:rsi_period]) if rsi_period else 0
+    avg_loss = mean(losses[:rsi_period]) if rsi_period else 0
+    for gain, loss in zip(gains[rsi_period:], losses[rsi_period:]):
+        avg_gain = (avg_gain * (rsi_period - 1) + gain) / rsi_period
+        avg_loss = (avg_loss * (rsi_period - 1) + loss) / rsi_period
     rsi_value = 100 if avg_loss == 0 and avg_gain > 0 else 50 if avg_loss == 0 else 100 - (100 / (1 + avg_gain / avg_loss))
     macd_values = [ema(closes[:i + 1], 12) - ema(closes[:i + 1], 26) for i in range(len(closes))]
     macd_line = macd_values[-1] if macd_values else 0
