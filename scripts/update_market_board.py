@@ -391,11 +391,11 @@ def rules_based_analysis(technical: dict, bars: list[dict], candidates: list[dic
     result: dict = {
         "analysis_type": "rules_based",
         "market_summary": (
-            f"ภาพรวม: {trend} — {bias}\n"
-            f"• Gold Spot USD {spot:,.2f} ({change:+.2f}%); SMA ล่าสุด USD {sma:,.2f}, EMA50 USD {ema:,.2f}\n"
-            f"• แนวรับ USD {support_low:,.0f}–{support_high:,.0f} · แนวต้าน USD {resistance_low:,.0f}–{resistance_high:,.0f}\n"
-            f"• ทองไทย: USD/THB {fx:,.4f}; บาทอ่อนอาจพยุงราคาไทยบางส่วน แต่ไม่หักล้างแรงลงของ Spot โดยอัตโนมัติ\n"
-            "• ติดตาม Fed/ยีลด์ เงินเฟ้อ น้ำมัน และภูมิรัฐศาสตร์; ข่าวเป็นบริบท ไม่ใช่หลักฐานเหตุและผล"
+            f"สรุปง่าย ๆ: {bias} — {trend} และราคาวันนี้ {change:+.2f}%\\n"
+            f"Spot ล่าสุด ${spot:,.2f}/oz; SMA20 ${sma:,.2f}, EMA50 ${ema:,.2f}\\n"
+            f"แนวรับ ${support_low:,.0f}–${support_high:,.0f}; แนวต้าน ${resistance_low:,.0f}–${resistance_high:,.0f}\\n"
+            f"USD/THB {fx:,.4f}: บาทอ่อนช่วยพยุงทองไทยบางส่วน แต่ไม่ลบผลจาก Spot ที่อ่อน\\n"
+            f"ข่าวที่รวบรวมเป็นบริบท ไม่ใช่หลักฐานเหตุและผล (เวลา quote: {technical.get('quote_updated') or 'ไม่ระบุ'})"
         ),
         "scenario": None,
         "scenario_dates": date_ranges,
