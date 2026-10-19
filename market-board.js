@@ -114,6 +114,29 @@
     $('levelsMethod').textContent = `${technical.method || 'คำนวณจาก swing high/low และ ATR'} · ภาพแนวโน้ม ${technical.trend || '—'} · ATR(${technical.atr_period || 14}) $${fmt(technical.atr14 || 0)}`;
   }
 
+  function renderIndicators(data) {
+    const t = data.technical || {};
+    const v = t.indicators || {};
+    const stampText = stamp(v.source_note ? data.generated_at : t.last_closed_bar?.time);
+    const set = (id, text) => { const el = $(id); if (el) el.textContent = text; };
+    set('indicatorEmaNow', v.ema20 != null
+      ? `Spot ${fmt(t.spot)} · EMA20 ${fmt(v.ema20)} / EMA50 ${fmt(v.ema50)} / EMA200 ${fmt(v.ema200)} · ${v.ema_reading || ''}`
+      : `ไม่มีค่า EMA20/200 ใน snapshot ${stampText}; EMA50 ที่มี ${fmt(t.ema50)} · รอข้อมูลแท่งย้อนหลังครบ`);
+    set('indicatorRsiNow', v.rsi14 != null
+      ? `RSI(14) ${fmt(v.rsi14, 1)}/100 · ${v.rsi_reading || ''}`
+      : `ยังไม่มีค่า RSI(14) ใน snapshot ${stampText}; ต้องใช้แท่งราคาย้อนหลังอย่างน้อย 14 ช่วง`);
+    set('indicatorMacdNow', v.macd != null
+      ? `MACD ${fmt(v.macd)} · Signal ${fmt(v.macd_signal)} · Histogram ${fmt(v.macd_hist)} · ${v.macd_reading || ''}`
+      : `ยังไม่มีค่า MACD ใน snapshot ${stampText}; ต้องใช้ข้อมูลแท่งราคาย้อนหลังเพิ่มเติม`);
+    set('indicatorBbNow', v.bb_mid != null
+      ? `บน ${fmt(v.bb_upper)} · กลาง ${fmt(v.bb_mid)} · ล่าง ${fmt(v.bb_lower)} · ${v.bb_reading || ''}`
+      : `ยังไม่มีค่า Bollinger Bands ใน snapshot ${stampText}; ต้องใช้แท่งราคาย้อนหลัง 20 ช่วง`);
+    set('indicatorAtrNow', v.atr14 != null
+      ? `ATR(14) ${fmt(v.atr14)}/oz · ${v.atr_reading || ''}`
+      : `ATR(14) ${fmt(t.atr14 || 0)}/oz · ค่าจากข้อมูลระดับตลาด; บอกขนาดการแกว่ง ไม่ใช่ทิศทาง`);
+    set('indicatorSnapshotAt', `ข้อมูลคำนวณจาก Gold Spot 1D · ${v.source_note || `snapshot ${stampText} · รอบถัดไปจะแสดงค่าเมื่อข้อมูลพร้อม`}`);
+  }
+
   function renderScenario(data) {
     const scenario = data.scenario;
     const host = $('scenarioGrid');
@@ -180,7 +203,7 @@
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         data = await response.json();
       }
-      if (data.technical && Object.keys(data.technical).length) renderLevels(data.technical, data);
+      if (data.technical && Object.keys(data.technical).length) { renderLevels(data.technical, data); renderIndicators(data); }
       renderScenario(data);
       renderPlan(data);
       renderNews(data);
