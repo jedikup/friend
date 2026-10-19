@@ -432,13 +432,18 @@ def rules_based_analysis(technical: dict, bars: list[dict], candidates: list[dic
             "one_month": band(21, monthly_case),
             "three_months": band(63, "ระยะยาวขึ้นกับเงินเฟ้อ ดอกเบี้ย ดอลลาร์ และความเสี่ยงภูมิรัฐศาสตร์"),
         }
+        thb = lambda level: round(level * fx * 0.47296 / 50) * 50 if fx else 0
+        thb_support = sorted((thb(support_low), thb(support_high)))
+        thb_resistance = sorted((thb(resistance_low), thb(resistance_high)))
+        quote_time = technical.get("quote_updated") or "ไม่ระบุเวลา"
+        entry_mode = "รอจังหวะ ไม่ไล่ซื้อ" if trend == "ขาลง" or change < 0 else "รอแท่งปิดยืนยันก่อนเข้าซื้อ"
         result["plan"] = [
-            f"ภาพหลัก {trend}: Spot เปลี่ยน {change:+.2f}%; แท่งปิดล่าสุด USD {close:,.2f} เทียบแท่งก่อน USD {prior_close:,.2f}. รอแท่งปิดยืนยัน ไม่ไล่ราคาจากไส้เทียน",
-            f"แนวรับใกล้ USD {support_low:,.2f}–{support_high:,.2f}; แนวต้าน USD {resistance_low:,.2f}–{resistance_high:,.2f}. ใช้ราคาปิดยืนยันการหลุดหรือทะลุ",
-            f"ATR({technical.get('atr_period', 14)}) USD {atr:,.2f} บอกขนาดการแกว่ง ไม่ได้บอกทิศทาง; ลดความเสี่ยงเมื่อผันผวนสูง",
-            f"ตรวจ USD/THB {fx:,.4f}: บาทอ่อนอาจช่วยพยุงทองไทย ส่วนบาทแข็งอาจหักล้างการขึ้นของ Spot",
-            "ติดตาม Fed/ยีลด์ น้ำมัน และข่าวภูมิรัฐศาสตร์จากต้นทาง; Hot คัดพาดหัวอัตโนมัติ ไม่ยืนยันผลกระทบ",
-            "ตรวจราคาสมาคมฯ และส่วนต่างซื้อ–ขายก่อนส่งคำสั่ง; ราคาแปลง Spot เป็นทองไทยเป็นค่าประมาณ",
+            f"ตอนนี้: {entry_mode}; Spot อัปเดต {quote_time}",
+            f"ซื้อย่อ: พิจารณาเมื่อเข้าใกล้แนวรับ ${support_low:,.0f}–${support_high:,.0f} และกราฟ 4H กลับตัว; ถ้าปิดหลุดขอบล่างให้ยกเลิกแผน ไม่ถัวขาดทุน",
+            f"ซื้อตามแรง: รอราคาปิดเหนือ ${resistance_high:,.0f} และยืนทดสอบซ้ำได้; หากกลับลงใต้ระดับทะลุให้หยุดแผน",
+            f"ขาย/ลดความเสี่ยง: หากเด้งไม่ผ่าน ${resistance_low:,.0f}–${resistance_high:,.0f} พิจารณาทยอยลด; หากปิดหลุดแนวรับ ${support_low:,.0f} ให้ทบทวนสถานะ",
+            f"เทียบไทยโดยประมาณ: แนวรับ ฿{thb_support[0]:,.0f}–฿{thb_support[1]:,.0f}; แนวต้าน ฿{thb_resistance[0]:,.0f}–฿{thb_resistance[1]:,.0f} คำนวณจาก Spot × USD/THB {fx:,.4f} × 0.47296 ไม่ใช่ราคาสมาคมฯ และไม่รวมส่วนต่างร้าน",
+            f"ก่อนส่งคำสั่ง เช็ก Spot ${spot:,.2f}, USD/THB {fx:,.4f} และราคาสมาคมฯ ล่าสุด; ATR(14) ${atr:,.2f} บอกขนาดการแกว่ง ไม่ได้บอกทิศทาง",
         ]
     for item in candidates[:20]:
         direction, rationale, reaction = headline_outlook(item, float(technical["daily_change_pct"]))
