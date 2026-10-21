@@ -45,7 +45,8 @@ def gold_spot_fx() -> tuple[float, float, str]:
 
 def daily_bars() -> list[dict]:
     today = datetime.now(timezone.utc).date()
-    query = urllib.parse.urlencode({"symbol": "XAU-USD-SPOT", "interval": "1d", "from": (today - timedelta(days=280)).isoformat(), "to": today.isoformat(), "limit": "260"})
+    # Stay within GoldPrice.dev Free's rolling 30-day daily-history window.
+    query = urllib.parse.urlencode({"symbol": "XAU-USD-SPOT", "interval": "1d", "from": (today - timedelta(days=29)).isoformat(), "to": today.isoformat(), "limit": "30"})
     headers = {}
     key = os.getenv("GOLDPRICE_DEV_API_KEY")
     if key:
