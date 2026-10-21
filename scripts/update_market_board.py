@@ -526,11 +526,18 @@ def main() -> None:
     morning = local_now.hour < 14
     market["update_slot"] = "morning" if morning else "evening"
     if status["technical"] == "ok" and not os.getenv("OPENAI_API_KEY"):
-        fallback = rules_based_analysis(market["technical"], market["daily_bars"], candidates, True)
+        # The evening run refreshes levels and headlines; scenarios/checklist are morning-only.
+        fallback = rules_based_analysis(market["technical"], market["daily_bars"], candidates, morning)
         market.update(fallback)
         status["news"] = "rss_headline_heuristic" if candidates else "feed_empty"
-        status["ai"] = "rules_based_no_api_key"
-    elif status["technical"] == "ok" and candidates and os.getenv("OPENAI_API_KEY"):
+        if morning:
+            status["ai"] = "rules_based_no_api_key"
+        else:
+            for field in ("market_summary", "scenario", "scenario_dates", "plan", "ai_updated_at"):
+                if field in previous:
+                    market[field] = previous[field]
+            status["ai"] = "preserved_morning_analysis"
+    elif status["technical"] == "ok" and os.getenv("OPENAI_API_KEY"):
         try:
             result = ai_analysis(market, bars, candidates, morning)
             by_id = {item["id"]: item for item in candidates}
@@ -547,6 +554,10 @@ def main() -> None:
                 hot_ids = set(result["hot_ids"])
                 market["hot_news"] = [x for x in analysed_news if x["id"] in hot_ids][:3]
                 status["news"] = "ok"
+            else:
+                market["news"] = []
+                market["hot_news"] = []
+                status["news"] = "feed_empty"
             if morning:
                 market["market_summary"] = result["market_summary"]
                 market["scenario"] = result["scenario"]
@@ -554,7 +565,7 @@ def main() -> None:
                 market["ai_updated_at"] = now.isoformat()
                 status["ai"] = "ok"
             else:
-                for field in ("market_summary", "scenario", "plan", "ai_updated_at"):
+                for field in ("market_summary", "scenario", "scenario_dates", "plan", "ai_updated_at"):
                     if field in previous:
                         market[field] = previous[field]
                 status["ai"] = "preserved_morning_analysis"
@@ -563,13 +574,13 @@ def main() -> None:
             market["model"] = OPENAI_MODEL
         except Exception as exc:
             print(f"AI request failed: {exc}", file=sys.stderr)
-            for field in ("news", "hot_news", "market_summary", "scenario", "plan", "ai_updated_at", "news_updated_at"):
+            for field in ("news", "hot_news", "market_summary", "scenario", "scenario_dates", "plan", "ai_updated_at", "news_updated_at"):
                 if field in previous:
                     market[field] = previous[field]
             status["ai"] = "error_preserved_previous"
             status["news"] = "stale_preserved_previous" if previous.get("news") else "unavailable"
     else:
-        for field in ("news", "hot_news", "market_summary", "scenario", "plan", "ai_updated_at", "news_updated_at"):
+        for field in ("news", "hot_news", "market_summary", "scenario", "scenario_dates", "plan", "ai_updated_at", "news_updated_at"):
             if field in previous:
                 market[field] = previous[field]
         if status["technical"] != "ok":
