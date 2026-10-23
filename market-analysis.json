@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-23T01:32:49.127562+00:00",
-  "generated_at_bangkok": "2026-10-23T08:32:49.127562+07:00",
-  "slot": "08:00",
+  "generated_at": "2026-10-23T15:26:51.838747+00:00",
+  "generated_at_bangkok": "2026-10-23T22:26:51.838747+07:00",
+  "slot": "22:00",
   "technical": {
     "spot": 4147.14,
     "fx_usd_thb": 33.5601,
@@ -103,7 +103,7 @@
     }
   ],
   "candidate_count": 40,
-  "update_slot": "morning",
+  "update_slot": "evening",
   "news": [
     {
       "id": "N73",
