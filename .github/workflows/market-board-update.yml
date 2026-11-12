@@ -1,6 +1,10 @@
 name: Refresh public gold market board
 
 on:
+  push:
+    paths:
+      - ".github/workflows/market-board-update.yml"
+      - "scripts/update_market_board.py"
   schedule:
     # Price feed checked every 10 minutes; script runs full analysis only at Bangkok 08:00/22:00.
     - cron: '*/10 * * * *'
