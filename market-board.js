@@ -184,7 +184,7 @@
       if (!news.length) mainList.append(node('p', 'news-snapshot-note', 'รอบนี้ดึงข่าว RSS ไม่ได้ · คงข่าวเดิมไว้จนกว่าจะมีข้อมูลใหม่'));
       $('newsToggle').hidden = news.length <= 3;
       $('newsToggle').textContent = `More · ดูเพิ่มอีก ${Math.min(3, Math.max(news.length - 3, 0))} ข่าว`;
-      $('newsSourceUpdatedAt').textContent = `คัดข่าวล่าสุด ${stamp(data.news_updated_at)} · แสดง ${news.length} ข่าวจาก RSS · ข่าว/บทวิเคราะห์รอบ 08:00 และ 22:00; ราคา Spot/FX ตรวจทุก 1 นาที`;
+      $('newsSourceUpdatedAt').textContent = `คัดข่าวล่าสุด ${stamp(data.news_updated_at)} · แสดง ${news.length} ข่าวจาก RSS · ข่าว/บทวิเคราะห์รอบ 08:00 และ 22:00; ราคา Spot ตรวจทุก 10 นาที`;
     }
     const hotHost = $('hotNewsList');
     if (hotHost) {
@@ -203,14 +203,9 @@
 
   async function load() {
     try {
-      const embedded = $('marketAnalysisData');
-      let data;
-      if (embedded) data = JSON.parse(embedded.textContent);
-      else {
-        const response = await fetch(dataUrl, { cache: 'no-store' });
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        data = await response.json();
-      }
+      const response = await fetch(dataUrl, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = await response.json();
       if (data.technical && Object.keys(data.technical).length) { renderLevels(data.technical, data); renderIndicators(data); }
       renderScenario(data);
       renderPlan(data);
@@ -218,7 +213,7 @@
       const status = data.status || {};
       const rulesBased = status.ai === 'rules_based_no_api_key';
       $('analysisStatus').textContent = rulesBased
-        ? 'ราคา Spot/FX รีเฟรชทุก 1 นาที · แนวรับ ข่าว และ Scenario/Checklist อัปเดตตามรอบ 08:00/22:00 น. · ไม่มี API key จึงใช้กฎคัดพาดหัว ไม่ใช่ AI; คะแนน Hot เป็นตัวช่วยเฝ้าดู ไม่ใช่การยืนยันผลกระทบ'
+        ? 'ราคา Spot ตรวจทุก 10 นาที (ข้อมูลอาจล่าช้าตามผู้ให้บริการ) · ข่าวและแนวรับ/แนวต้านอัปเดต 08:00/22:00 น. · Scenario/Checklist อัปเดต 08:00 น. · ไม่มี API key จึงใช้กฎคัดพาดหัว ไม่ใช่ AI; คะแนน Hot เป็นตัวช่วยเฝ้าดู ไม่ใช่การยืนยันผลกระทบ'
         : `สถานะ AI: ${status.ai || 'ไม่ทราบ'} · ข่าว: ${status.news || 'ไม่ทราบ'} · ข้อมูลเทคนิค: ${status.technical || 'ไม่ทราบ'}`;
       $('analysisStatus').classList.toggle('status-warning', (!rulesBased && status.ai === 'needs_api_key') || status.technical !== 'ok' || status.ai?.includes('error'));
       if (status.technical !== 'ok') $('levelsUpdatedAt').textContent = `เตือน: ข้อมูลเทคนิคล่าสุดไม่สำเร็จ · แสดงข้อมูลเดิม ${stamp(data.generated_at)}`;
