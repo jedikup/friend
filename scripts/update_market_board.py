@@ -9,7 +9,6 @@ import json
 import math
 import os
 import re
-import re
 import sys
 import urllib.parse
 import urllib.request
@@ -35,12 +34,27 @@ def get_json(url: str, headers: dict[str, str] | None = None) -> dict:
         raise RuntimeError(f"HTTP {exc.code} from {urllib.parse.urlsplit(url).netloc}: {detail}") from exc
 
 
-def gold_spot_fx() -> tuple[float, float, str]:
-    data = get_json("https://goldpricezone.com/api/public/widget-data")
-    spot, fx = float(data["metals"]["gold"]), float(data["rates"]["THB"])
+def gold_spot_fx() -> tuple[float, float, str, str]:
+    # GoldPriceZone's former widget endpoint now returns 404.
+    headers = {}
+    key = os.getenv("GOLDPRICE_DEV_API_KEY")
+    if key:
+        headers["Authorization"] = f"Bearer {key}"
+    payload = get_json("https://api.goldprice.dev/v1/prices?symbol=XAU-USD-SPOT", headers)
+    rows = payload.get("symbols") or []
+    if not rows:
+        raise ValueError("GoldPrice.dev returned no XAU/USD spot row")
+    row = rows[0]
+    spot = float(row["price"])
+    quote_time = str(row.get("computed_at") or "")
+    if row.get("is_stale"):
+        raise ValueError("GoldPrice.dev marked the XAU/USD spot quote stale")
+    fx_data = get_json("https://api.frankfurter.dev/v2/rate/usd/thb")
+    fx = float(fx_data["rate"])
+    fx_date = str(fx_data.get("date") or "")
     if not (300 <= spot <= 20000 and 20 <= fx <= 60):
-        raise ValueError("GoldPriceZone returned out-of-range spot/FX values")
-    return spot, fx, str(data.get("updated") or "")
+        raise ValueError("Market source returned out-of-range spot/FX values")
+    return spot, fx, quote_time, fx_date
 
 
 def daily_bars() -> list[dict]:
@@ -498,21 +512,50 @@ def rules_based_analysis(technical: dict, bars: list[dict], candidates: list[dic
     result["ai_updated_at"] = now.astimezone(timezone.utc).isoformat() if include_long_range else None
     return result
 
+def live_only_update(previous: dict, now: datetime) -> None:
+    spot, fx, quote_time, fx_date = gold_spot_fx()
+    previous["live_quote"] = {
+        "spot": round(spot, 2), "fx_usd_thb": round(fx, 4),
+        "estimated_thb_per_baht": round(spot * fx * 0.47296 / 50) * 50,
+        "quote_updated": quote_time, "fx_reference_date": fx_date,
+        "checked_at": now.isoformat(),
+        "spot_source": "GoldPrice.dev · XAU/USD Spot",
+        "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB",
+    }
+    previous.setdefault("status", {})["live_quote"] = "ok"
+    DATA_FILE.write_text(json.dumps(previous, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"live_quote": previous["live_quote"]}, ensure_ascii=False))
+
+
 def main() -> None:
     now = datetime.now(timezone.utc)
     local_now = now.astimezone(BANGKOK)
     previous = previous_data()
-    market = {"generated_at": now.isoformat(), "generated_at_bangkok": local_now.isoformat(), "slot": "08:00" if local_now.hour < 14 else "22:00"}
+    if os.getenv("GITHUB_EVENT_NAME") == "schedule" and not (local_now.hour in (8, 22) and local_now.minute < 10):
+        live_only_update(previous, now)
+        return
+    market = {"generated_at": previous.get("generated_at"), "attempted_at": now.isoformat(), "slot": "08:00" if local_now.hour < 14 else "22:00"}
     status = {"technical": "error", "news": "needs_api_key", "ai": "needs_api_key"}
+    market_error = False
     try:
-        spot, fx, quote_time = gold_spot_fx()
+        spot, fx, quote_time, fx_date = gold_spot_fx()
+        market["live_quote"] = {
+            "spot": round(spot, 2), "fx_usd_thb": round(fx, 4),
+            "estimated_thb_per_baht": round(spot * fx * 0.47296 / 50) * 50,
+            "quote_updated": quote_time, "fx_reference_date": fx_date,
+            "checked_at": now.isoformat(),
+            "spot_source": "GoldPrice.dev · XAU/USD Spot",
+            "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB",
+        }
         bars = daily_bars()
         technical = technical_levels(bars, spot, fx)
         technical["quote_updated"] = quote_time
+        technical["fx_reference_date"] = fx_date
         market["technical"] = technical
         market["daily_bars"] = bars[-30:]
         status["technical"] = "ok"
     except Exception as exc:
+        market_error = True
         print(f"Market data/technical calculation failed: {exc}", file=sys.stderr)
         market["technical"] = previous.get("technical", {})
         market["daily_bars"] = previous.get("daily_bars", [])
@@ -590,10 +633,15 @@ def main() -> None:
 
     market["status"] = status
     market["news_source_note"] = "พาดหัว/ข้อความย่อจาก Google News RSS; หากไม่มี API key จะประเมินทิศทางด้วยกฎคำสำคัญเบื้องต้น ไม่ใช่การอ่านบทความเต็ม และไม่ยืนยันว่าเป็นสาเหตุของราคา"
+    if status["technical"] == "ok":
+        market["generated_at"] = now.isoformat()
+        market["generated_at_bangkok"] = local_now.isoformat()
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     DATA_FILE.write_text(json.dumps(market, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     embed_public_data(market)
-    print(json.dumps({"generated_at": market["generated_at"], "slot": market["slot"], "status": status, "news_candidates": len(candidates)}, ensure_ascii=False))
+    print(json.dumps({"generated_at": market.get("generated_at"), "attempted_at": market["attempted_at"], "slot": market["slot"], "status": status, "news_candidates": len(candidates)}, ensure_ascii=False))
+    if market_error:
+        raise SystemExit("Market source unavailable; previous published data was preserved as stale.")
 
 
 if __name__ == "__main__":
