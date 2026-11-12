@@ -525,7 +525,6 @@ def live_only_update(previous: dict, now: datetime) -> None:
         "spot": round(spot, 2), "fx_usd_thb": round(fx, 4),
         "estimated_thb_per_baht": round(spot * fx * 0.47296 / 50) * 50,
         "quote_updated": quote_time, "fx_reference_date": fx_date,
-        "checked_at": now.isoformat(),
         "spot_source": "GoldPrice.dev · XAU/USD Spot",
         "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB",
     }
@@ -550,8 +549,7 @@ def main() -> None:
             "spot": round(spot, 2), "fx_usd_thb": round(fx, 4),
             "estimated_thb_per_baht": round(spot * fx * 0.47296 / 50) * 50,
             "quote_updated": quote_time, "fx_reference_date": fx_date,
-            "checked_at": now.isoformat(),
-            "spot_source": "GoldPrice.dev · XAU/USD Spot",
+                "spot_source": "GoldPrice.dev · XAU/USD Spot",
             "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB",
         }
         bars = daily_bars()
