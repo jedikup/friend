@@ -165,7 +165,14 @@ def technical_levels(bars: list[dict], spot: float, fx: float) -> dict:
     bb_mid = mean(bb_values)
     bb_std = math.sqrt(mean([(v - bb_mid) ** 2 for v in bb_values])) if bb_values else 0
     bb_upper, bb_lower = bb_mid + 2 * bb_std, bb_mid - 2 * bb_std
-    if spot > ema20_value and spot > ema50_value and spot > ema200_value:
+    if ema200_value is None:
+        if spot > ema20_value and spot > ema50_value:
+            ema_reading = "Spot อยู่เหนือ EMA20/50; EMA200 ไม่มีข้อมูลจากประวัติ 30 วัน"
+        elif spot < ema20_value and spot < ema50_value:
+            ema_reading = "Spot อยู่ใต้ EMA20/50; EMA200 ไม่มีข้อมูลจากประวัติ 30 วัน"
+        else:
+            ema_reading = "Spot อยู่คนละด้านของ EMA20/50; EMA200 ไม่มีข้อมูลจากประวัติ 30 วัน"
+    elif spot > ema20_value and spot > ema50_value and spot > ema200_value:
         ema_reading = "Spot อยู่เหนือ EMA20/50/200 · แนวโน้มขาขึ้นได้เปรียบ"
     elif spot < ema20_value and spot < ema50_value and spot < ema200_value:
         ema_reading = "Spot อยู่ใต้ EMA20/50/200 · แนวโน้มขาลงได้เปรียบ"
