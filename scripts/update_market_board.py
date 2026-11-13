@@ -227,7 +227,7 @@ def news_candidates(now: datetime) -> list[dict]:
                 # directly relevant macro/geopolitical drivers to prevent unrelated headlines.
                 relevance_text = f"{title} {snippet}".lower()
                 relevant = re.search(
-                    r"\\b(?:gold|bullion|xau(?:/usd)?|federal reserve|fed|inflation|cpi|ppi|treasury|bond yields?|real yields?|interest rates?|dollar index|dxy|central bank|oil prices?|iran|hormuz|war|ceasefire|geopolitic|safe haven)\\b|ทองคำ|ราคาทอง|ทองแท่ง|ค่าเงินบาท|ดอกเบี้ย|เงินเฟ้อ|บอนด์ยีลด์|สงคราม|อิหร่าน|ฮอร์มุซ",
+                    r"\b(?:gold|bullion|xau(?:/usd)?|federal reserve|fed|inflation|cpi|ppi|treasury|bond yields?|real yields?|interest rates?|dollar index|dxy|central bank|oil prices?|iran|hormuz|war|ceasefire|geopolitic|safe haven)\b|ทองคำ|ราคาทอง|ทองแท่ง|ค่าเงินบาท|ดอกเบี้ย|เงินเฟ้อ|บอนด์ยีลด์|สงคราม|อิหร่าน|ฮอร์มุซ",
                     relevance_text,
                 )
                 if not relevant:
