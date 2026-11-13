@@ -2,6 +2,13 @@
   const dataUrl = new URL('./market-analysis.json', location.href);
   dataUrl.searchParams.set('v', Date.now());
   const $ = (id) => document.getElementById(id);
+  const CACHE_KEY='friend-market-analysis-v1';
+  async function readSnapshot(){
+    const urls=[dataUrl.href,'https://raw.githubusercontent.com/jedikup/friend/main/market-analysis.json?v='+Date.now()];
+    for(const url of urls){try{const response=await fetch(url,{cache:'no-store'});if(!response.ok)continue;const data=await response.json();if(data&&(data.live_quote||data.technical||data.news)){try{localStorage.setItem(CACHE_KEY,JSON.stringify(data))}catch(_){}return {data,fallback:false}}}catch(_){}}
+    try{const cached=JSON.parse(localStorage.getItem(CACHE_KEY)||'null');if(cached)return {data:cached,fallback:true}}catch(_){}
+    throw new Error('Market data unavailable');
+  }
   const fmt = (n, digits = 2) => Number(n).toLocaleString('th-TH', { maximumFractionDigits: digits });
   const stamp = (value) => {
     if (!value) return 'ไม่พบเวลาข้อมูล';
@@ -171,6 +178,18 @@
     $('planUpdatedAt').textContent = `${analysisStamp(data)} · แผนนี้เป็นแนวทางแบบมีเงื่อนไข ไม่ใช่คำสั่งซื้อขาย`;
   }
 
+  function fallbackChart(id,bars,field,fx){
+    const host=$(id); if(!host||!Array.isArray(bars)||bars.length<2)return;
+    const vals=bars.slice(-40).map(b=>Number(b.close)*(field==='thai'?Number(fx)*0.47296:1)).filter(Number.isFinite);
+    if(vals.length<2)return;
+    const lo=Math.min(...vals),hi=Math.max(...vals),span=(hi-lo)||1;
+    const pts=vals.map((v,i)=>`${20+i*960/(vals.length-1)},${300-(v-lo)/span*250}`).join(' ');
+    const wrap=node('div','chart-fallback'); wrap.style.cssText='position:absolute;inset:0;z-index:20;background:#f5f1df;padding:12px;border:1px solid #c8bb80;border-radius:8px';
+    wrap.append(node('b','',field==='thai'?'กราฟสำรอง · ทองไทยประมาณการ':'กราฟสำรอง · Gold Spot'));
+    const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 1000 340');svg.style.cssText='width:100%;height:85%';
+    const line=document.createElementNS(svg.namespaceURI,'polyline');line.setAttribute('points',pts);line.setAttribute('fill','none');line.setAttribute('stroke','#147451');line.setAttribute('stroke-width','5');svg.append(line);wrap.append(svg);host.style.position='relative';host.append(wrap);
+    setTimeout(()=>{if(host.querySelector('.tradingview-widget-container iframe'))wrap.remove()},12000);
+  }
   function renderNews(data) {
     const news = data.news || [];
     const host = $('latestNews');
@@ -203,13 +222,16 @@
 
   async function load() {
     try {
-      const response = await fetch(dataUrl, { cache: 'no-store' });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = await response.json();
+      const {data,fallback}=await readSnapshot();
       if (data.technical && Object.keys(data.technical).length) { renderLevels(data.technical, data); renderIndicators(data); }
       renderScenario(data);
       renderPlan(data);
       renderNews(data);
+      const q=data.live_quote||{};
+      fallbackChart('thaiOverviewChart',data.daily_bars,'thai',q.fx_usd_thb);
+      fallbackChart('spotTradingView',data.daily_bars,'spot',q.fx_usd_thb);
+      fallbackChart('thaiTradingView',data.daily_bars,'thai',q.fx_usd_thb);
+      if(fallback){const status=$('feedStatus');if(status)status.textContent='ใช้ข้อมูลสำรองที่เคยโหลดไว้ · อาจไม่ใช่ราคาปัจจุบัน';const dot=$('feedDot');if(dot)dot.classList.add('off')}
       const status = data.status || {};
       const rulesBased = status.ai === 'rules_based_no_api_key';
       $('analysisStatus').textContent = rulesBased
