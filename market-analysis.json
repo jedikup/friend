@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-13T15:27:26.825139+00:00",
-  "attempted_at": "2026-11-13T15:27:26.825139+00:00",
+  "generated_at": "2026-11-13T15:27:52.137614+00:00",
+  "attempted_at": "2026-11-13T15:27:52.137614+00:00",
   "slot": "22:00",
   "live_quote": {
     "spot": 3885.34,
@@ -222,7 +222,7 @@
       "time": "2026-11-12T00:00:00Z"
     }
   ],
-  "candidate_count": 25,
+  "candidate_count": 40,
   "update_slot": "evening",
   "analysis_type": "rules_based",
   "market_summary": "สรุปง่าย ๆ: แรงขายยังนำ — ขาลง และราคาวันนี้ -4.08%\nSpot ล่าสุด $3,873.72/oz; SMA20 $4,049.45, EMA50 $4,074.03\nแนวรับ $3,854–$3,886; แนวต้าน $3,947–$3,980\nUSD/THB 33.7230: บาทอ่อนช่วยพยุงทองไทยบางส่วน แต่ไม่ลบผลจาก Spot ที่อ่อน\nข่าวที่รวบรวมเป็นบริบท ไม่ใช่หลักฐานเหตุและผล (เวลา quote: 2026-11-12T17:50:02.939173+00:00)",
@@ -246,7 +246,19 @@
   ],
   "news": [
     {
-      "id": "N12",
+      "id": "N10",
+      "title": "Gold Falls as Post-Election Optimism Proves Misplaced. Forecast as of 13.11.2026 - LiteFinance",
+      "publisher": "LiteFinance",
+      "published": "2026-11-13T12:10:17+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQQzBEZWlpQllMOXZkeFFleDhJX21QQnk1MTRXY2ZmSnFZSGQwaDV0OEdQQmxKYlB2NDlOVk1DdDlWaWV2TTAtWWJwVVl0enJJeW9wTjJXNmJLOU50WHhSbnBiejVRNkRZRnNwSTdVMC1VX2ttNHB0Mk9NQXZqSGJoQWZrTF9hOGFaR2E2bGNFZlh6MkZRVjRIMmIxbGNmckFScTlkb1RVZ2tVYkZ2d3YzeGR4VkUyUHU3Nm1OT3FqZVJCU1kxdDZGbFhoV1g5RGY1bXNBdnRxWk9LNXBPTFcxeEpuNGdMclR2WEFPdTc1NXZCQQ?oc=5",
+      "snippet": "Gold Falls as Post-Election Optimism Proves Misplaced. Forecast as of 13.11.2026 LiteFinance",
+      "summary": "Gold Falls as Post-Election Optimism Proves Misplaced. Forecast as of 13.11.2026 LiteFinance",
+      "direction": "down",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
+    },
+    {
+      "id": "N77",
       "title": "ราคาทองวันนี้ ปิดลบ 550 บาท รูปพรรณเหลือ 63,450 บาท ดอลลาร์แข็ง–บอนด์ยีลด์พุ่งกดดันราคา - LINE TODAY",
       "publisher": "LINE TODAY",
       "published": "2026-11-13T11:20:12+00:00",
@@ -258,7 +270,43 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N19",
+      "id": "N28",
+      "title": "Where to Buy Gold in Australia in 2026: Is Now a Good Time? - Mitrade",
+      "publisher": "Mitrade",
+      "published": "2026-11-13T09:42:19+00:00",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5kOWlER0hKMlZEcWZUaC1SYWpiYVU4dzBxb01lZnQtYXk5TFdhUDJwcGd5ZGlQMi1BYllaRHprQnFGTW15RnpnTjIxM3lJYkdSY2xNNUhsb0ZRaWlsdEZpQ3QweUF0V0ZVOXJycnRpMlE5Zm82MGNN?oc=5",
+      "snippet": "Where to Buy Gold in Australia in 2026: Is Now a Good Time? Mitrade",
+      "summary": "Where to Buy Gold in Australia in 2026: Is Now a Good Time? Mitrade",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N21",
+      "title": "Gold sinks: Where does such strong pressure on precious metals come from? - FXStreet",
+      "publisher": "FXStreet",
+      "published": "2026-11-13T08:54:37+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPalR6SzJRRXlIQjQxemoxSWlDeDY5QnVsZHozbnVONzF2TlBpOEtYaWNxRzlCNDFjSFhHLWhRNTNoRGhKN2JjSXk3QmNGUi1Bci1lQ3NJTjBKOXY2amo0ZWxhV2dtbGlLWTJQUUo1VkR5bXN4LTFRaEg4SFhYQ1hhVTUxbG5JcS1rTE05RkgwZGo5WTdJWE9iVzk0ZGEyV2RzV0ZXSUNvZHVwaUR2NTZsLTJFeDNFRTVYSEE?oc=5",
+      "snippet": "Gold sinks: Where does such strong pressure on precious metals come from? FXStreet",
+      "summary": "Gold sinks: Where does such strong pressure on precious metals come from? FXStreet",
+      "direction": "down",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
+    },
+    {
+      "id": "N3",
+      "title": "Gold Price Today | Price of Gold Per Ounce | 24 Hour Spot Chart - Kitco",
+      "publisher": "Kitco",
+      "published": "2026-11-13T08:47:51+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBnU2dTNUduLWh4WmxVQy1ndS1jN01abVlCeTNTMnFMbFdmS1d6TnFCekxTZVlXNGtKdnNRN3plT00yZm5LQmh6Rg?oc=5",
+      "snippet": "Gold Price Today | Price of Gold Per Ounce | 24 Hour Spot Chart Kitco",
+      "summary": "Gold Price Today | Price of Gold Per Ounce | 24 Hour Spot Chart Kitco",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N84",
       "title": "ปรับโหด! ราคาทองรอบบ่ายวันนี้ 13 พ.ย.69 - LINE TODAY",
       "publisher": "LINE TODAY",
       "published": "2026-11-13T08:11:44+00:00",
@@ -270,7 +318,31 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N25",
+      "id": "N35",
+      "title": "Oil on track to post second weekly decline as Trump eases fears of renewed war with Iran - www.thenationalnews.com",
+      "publisher": "www.thenationalnews.com",
+      "published": "2026-11-13T07:01:18+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPOHRNdFNqY3d4YkY5N1ljTzByOEpwcjhxRWZuNkljWVVZRFB1UjdXVkZFWDQ2c0Jpc05nMTBLaXEtTWtBV2lfeXVaWTdQVy1CWTB4Z0xkNW5UUk9WTTQyUEVlNFFFV3BTYXZQNVEzSkQyd2NLQkNld2h1c1Q4R21adXl5VWJHLUFLYm1EX2Z1bW1SdGZfOWxPSDh4V2UwU19XaHZFdmVUZ1pNTzZOdURHTl9aQjJTa0FKdDMxUFB0SkU2eUlSZ2JWWmJXTFdFeFlIdjNPQkpxcEw2UGNpOW1QU1p3?oc=5",
+      "snippet": "Oil on track to post second weekly decline as Trump eases fears of renewed war with Iran www.thenationalnews.com",
+      "summary": "Oil on track to post second weekly decline as Trump eases fears of renewed war with Iran www.thenationalnews.com",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N64",
+      "title": "Bank of Thailand Plans 5 Measures Covering Gold, BNPL - SME & Entrepreneurship Magazine",
+      "publisher": "SME & Entrepreneurship Magazine",
+      "published": "2026-11-13T07:00:48+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5aMTByeTJBeFlDSkVsc2Iwb3FXRW1jVVg4T2UwdExTSXhpVzNCNngtUVpiQkxfdklhTmFVR19CUkVyeFJKRmtIWlZzMWQyUTAxTUhjTWpuUU1WWmZDenVjYVhxM2dwVkNBVnZ5M01sZG9lekMzNmVyYmpR?oc=5",
+      "snippet": "Bank of Thailand Plans 5 Measures Covering Gold, BNPL SME & Entrepreneurship Magazine",
+      "summary": "Bank of Thailand Plans 5 Measures Covering Gold, BNPL SME & Entrepreneurship Magazine",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N90",
       "title": "ราคาทองวันนี้ 13 พ.ย. 69 ครั้งที่ 1 ปรับลง 400 บาท ทองแท่งขาย 62,800 บาท - Thaiger",
       "publisher": "Thaiger",
       "published": "2026-11-13T06:12:45+00:00",
@@ -282,7 +354,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
-      "id": "N18",
+      "id": "N83",
       "title": "ปรับอีก! ราคาทองวันนี้ 13 พ.ย.69 - LINE TODAY",
       "publisher": "LINE TODAY",
       "published": "2026-11-13T05:17:08+00:00",
@@ -294,7 +366,55 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N7",
+      "id": "N49",
+      "title": "Oil prices set for second weekly drop as Trump to stay with Iran blockade - Business Standard",
+      "publisher": "Business Standard",
+      "published": "2026-11-13T04:39:04+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOVV5OGtWQlBIYXZTLWpkckdJdjZSSU9ydEdqTS10bGJmeWo2Y0ptTGN2UVQ5RWFwc05tOFFXMTE5eHFwTENHNFF0ZG1KV016VU8xQWw4LU1zOHZXR3lJTnhPT01aeklsLU04czRpOG54RjlsU2NuQ3A3WTB1SC1pZ09kSERKX3ZlUnh1NzFmZHBNWmVUZ0xpU0ZDQU1ldG1RQW5WeEJuQW1jbFh2a2cxclVHajF2b1o1eTNTeXA0RlEyVmVEQmphc0RZcnUySVhURkF0UWZTMDFxQkUtOUd4QdIB5gFBVV95cUxOaVV4WlMwMGpOVWFTNFRWRzBUWjdaNlVtR056clg4MkZlanpkd3VMa2s3MTJvb0NsWlc2aDFtSlk2VjhQcTNZdWFRdU81dG16TV9xSHpLTjZCbXdNU1hCd3ctbU1lVDFIbWJiZ3NfM082amVJNDRBYkEzSlhxR1ZpeHNub3hVNlQwa0NGcnMtbFduU2lVOERMX0JTNnB1M09ucGxrYW1scXFxSjJYWVUxd0JpV3VYOUFFd3pxUk9IMzNSQmpNdTRTVzJZa3dKRDhvVzhsblM5aTZ5djN3eU9TdEE1Mi1wQQ?oc=5",
+      "snippet": "Oil prices set for second weekly drop as Trump to stay with Iran blockade Business Standard",
+      "summary": "Oil prices set for second weekly drop as Trump to stay with Iran blockade Business Standard",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N17",
+      "title": "Gold Price Forecast: XAU/USD finds temporary floor near $3,850, downside risks persist - FXStreet",
+      "publisher": "FXStreet",
+      "published": "2026-11-13T03:28:32+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPN2o0bGFjWHM1R19zczQzNHRzeWRsamFkNXhnNnN6c29CWVR6UjNValNiZHBJcFVqdEQ2Z0V1VlBxM1hqQVZCSjYteEhZUC1KVTYwYnc4aDFrMGRscWMtR3dEd3hnS2xGbDFCRmFuZU9wM3FMb2ZFelpHQWNsSEd5RkkxS1JPcUhOUnlzZzZBWXdST2FTUmZPWVI0YzlNb2I1UUFSRzFyRmY0TzhLWGFCeTNCNk1FaEVYdXZxc094cFdvZGJiY3QyTDRR?oc=5",
+      "snippet": "Gold Price Forecast: XAU/USD finds temporary floor near $3,850, downside risks persist FXStreet",
+      "summary": "Gold Price Forecast: XAU/USD finds temporary floor near $3,850, downside risks persist FXStreet",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N61",
+      "title": "Oil prices set for second weekly decline as Trump sticks with Iran blockade - Business Recorder",
+      "publisher": "Business Recorder",
+      "published": "2026-11-13T03:12:57+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE01THdRVEFHLVFMVlB3RlROYW9Ka2lrM2Zmc1dJN2xZTThpeUlmMjdRYmpYY181U0VsQU9CbnA0WXV5OUV5MzdKLUdFbWp3cnUz0gFWQVVfeXFMTWpuVmNxMUpzWk52XzZBSlBPX29xS1ZpblljcFFVbHBZLUlsWWVSNFpwSEFJVmp1a1AwT3hWeHQ1Z1dBNnhYakVEM3FjR0phMmlrSHV3dXc?oc=5",
+      "snippet": "Oil prices set for second weekly decline as Trump sticks with Iran blockade Business Recorder",
+      "summary": "Oil prices set for second weekly decline as Trump sticks with Iran blockade Business Recorder",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N38",
+      "title": "Commodity Corner: Oil holds gains on US-Iran tensions; gold near one-year low on rate hike bets - TradingView",
+      "publisher": "TradingView",
+      "published": "2026-11-13T02:31:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQbWMyTXozT2JNS1pQcXA1X08tVFFUTTNhNmpTUWNsdHBiSG1YeERkR05sdlhZZGM3TkpUT3p3eXJlN1RfOHFsQTRsd2JLakk4ZmNPTnlmNlluYmpDWVN3WTRyNTh4MEk0djVZN1V4bllvYm5QRHFqeUZtbVFWTzUwaHhfc3ljaGhkMWNBakFqU0E0eTFUcEhMcjJYWGhTZUVJcC0zb3BVcU1BVlBjeURIb0ZOUlNvb1BwRnNRcXg4YmpOdV9GeE5tcmpRZkhuNE85elVJVXZfeC1BNXhLZzBNWUVwQ2ttM2NZZmphMQ?oc=5",
+      "snippet": "Commodity Corner: Oil holds gains on US-Iran tensions; gold near one-year low on rate hike bets TradingView",
+      "summary": "Commodity Corner: Oil holds gains on US-Iran tensions; gold near one-year low on rate hike bets TradingView",
+      "direction": "up",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
+    },
+    {
+      "id": "N72",
       "title": "ร่วงต่อเนื่อง! ราคาทองวันนี้ 13 พ.ย. เปิดตลาดลดอีก 400 บาท ทองแท่งหลุด 63,000 บาท - The Bangkok Insight",
       "publisher": "The Bangkok Insight",
       "published": "2026-11-13T02:22:53+00:00",
@@ -306,7 +426,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N23",
+      "id": "N88",
       "title": "กังวลเงินเฟ้อหลังน้ำมันพุ่งหนุนเฟดปรับขึ้นดอกเบี้ยกดดันทองคําร่วง - ราคาทองคําวันนี้",
       "publisher": "ราคาทองคําวันนี้",
       "published": "2026-11-13T01:59:33+00:00",
@@ -318,177 +438,70 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N21",
-      "title": "ร่วงหนัก! ราคาทองวันนี้ 12 พ.ย. 69 ปิดตลาด -1,400 บาท ผันผวนจัดปรับเปลี่ยน 29 ครั้งในวันเดียว | News In Thailand - LINE TODAY",
-      "publisher": "LINE TODAY",
-      "published": "2026-11-12T12:14:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ReHEyNzVnRzV0SUhyVEJLZUxZTVhpMzREeXZITzExS0VHaGJtOW1FNlVpOUNtdDBhdlNadXlkU3lJTHB6bHRYQVpnWnJ3dUVkVWxzNWdNX2JsM1lhOEJSMGFTUDZrUjZ5TUFRaUpyeHlyM2ZfejBobTNncWhSSjQ?oc=5",
-      "snippet": "ร่วงหนัก! ราคาทองวันนี้ 12 พ.ย. 69 ปิดตลาด -1,400 บาท ผันผวนจัดปรับเปลี่ยน 29 ครั้งในวันเดียว | News In Thailand LINE TODAY",
-      "summary": "ร่วงหนัก! ราคาทองวันนี้ 12 พ.ย. 69 ปิดตลาด -1,400 บาท ผันผวนจัดปรับเปลี่ยน 29 ครั้งในวันเดียว | News In Thailand LINE TODAY",
+      "id": "N43",
+      "title": "Trump Says 'No Need for a Deal With Iran' as Oil Prices Jump More Than 2.6%, Brent Nears $96 - BigGo Finance",
+      "publisher": "BigGo Finance",
+      "published": "2026-11-13T00:55:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9yYkNjaGVZc3c4LTBoNWE4R0VCaTZuLTR4Q1dVZEVEWVVrZDNRamJhdlRGdHFPU19tQ3ZkTDQycTNsd3ZwdjVlOXFkQ1NPaGtESnRTRTd3SjRDdk5UNUNMOFphWUJTLTc5M0pER0tIZUIxRE9ncHc?oc=5",
+      "snippet": "Trump Says 'No Need for a Deal With Iran' as Oil Prices Jump More Than 2.6%, Brent Nears $96 BigGo Finance",
+      "summary": "Trump Says 'No Need for a Deal With Iran' as Oil Prices Jump More Than 2.6%, Brent Nears $96 BigGo Finance",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N24",
-      "title": "ราคาทองวันนี้ 12 พ.ย. 69 ครั้งที่ 1 ปรับลง 750 บาท ทองแท่งขาย 63,800 บาท - Thaiger",
-      "publisher": "Thaiger",
-      "published": "2026-11-12T06:11:36+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9pTEtQeHFoa1NZcHBTeURJdmZoRk1WTldSQWdEaWdUdjJBUmxmc05MakJKd0VIbjZXR3NWVWRlSVBLVzZTX2w1VUxQZHFMY2Jk?oc=5",
-      "snippet": "ราคาทองวันนี้ 12 พ.ย. 69 ครั้งที่ 1 ปรับลง 750 บาท ทองแท่งขาย 63,800 บาท Thaiger",
-      "summary": "ราคาทองวันนี้ 12 พ.ย. 69 ครั้งที่ 1 ปรับลง 750 บาท ทองแท่งขาย 63,800 บาท Thaiger",
-      "direction": "down",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
-    },
-    {
-      "id": "N20",
-      "title": "ร่วงแรงจนตกใจ ราคาทองวันนี้ 12 พฤศจิกายน 2569 | มุมข่าว - LINE TODAY",
-      "publisher": "LINE TODAY",
-      "published": "2026-11-12T05:42:09+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB6VVMzSkxIeExWWXpnV3p6NW5LV25zeGtYUWptbC1nOW5YWGs3a3o0X2RoX0NyY3BnUzVKMnN6UDJpMkotak1mcWc2N0stMkRpNFJxdFhn?oc=5",
-      "snippet": "ร่วงแรงจนตกใจ ราคาทองวันนี้ 12 พฤศจิกายน 2569 | มุมข่าว LINE TODAY",
-      "summary": "ร่วงแรงจนตกใจ ราคาทองวันนี้ 12 พฤศจิกายน 2569 | มุมข่าว LINE TODAY",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N3",
-      "title": "บาทร่วงต่อเนื่องจากสถานการณ์ ตอ.กลาง-ราคาทอง คาดวันนี้เคลื่อนไหวที่ 33.65-33.85 บาท/ดอลลาร์ - ไทยแทบลอยด์",
-      "publisher": "ไทยแทบลอยด์",
-      "published": "2026-11-12T03:07:54+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBpUmZfNkRqRFBLWkFXVzEySndUaFVPbUU2OWlZdmM1c3huUkRid3EyLXhNdC0weHpkZU1laGF4dkNHSDM1SjBfcG9DZEl1WWFp?oc=5",
-      "snippet": "บาทร่วงต่อเนื่องจากสถานการณ์ ตอ.กลาง-ราคาทอง คาดวันนี้เคลื่อนไหวที่ 33.65-33.85 บาท/ดอลลาร์ ไทยแทบลอยด์",
-      "summary": "บาทร่วงต่อเนื่องจากสถานการณ์ ตอ.กลาง-ราคาทอง คาดวันนี้เคลื่อนไหวที่ 33.65-33.85 บาท/ดอลลาร์ ไทยแทบลอยด์",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N8",
-      "title": "ราคาทองวันนี้ (12 พ.ย.) ร่วง 750 บาท รูปพรรณขายออก 64,600 บาท เงินเฟ้อสหรัฐฯ พุ่งเกินคาด ดอลลาร์แข็ง–ตลาดผวาเฟดขึ้นดอกเบี้ย | การเงินธนาคาร - LINE TODAY",
-      "publisher": "LINE TODAY",
-      "published": "2026-11-12T02:52:32+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBhc0syUTJQVDhyUmExc2dJM2hBZy1GNmRPcVpCVnY3S1BsdzR1X0xKU09lbk5lSGx2RHMxUFUwNTFDMkY3SVc3YUtTcElucEc1M0E3T0RR?oc=5",
-      "snippet": "ราคาทองวันนี้ (12 พ.ย.) ร่วง 750 บาท รูปพรรณขายออก 64,600 บาท เงินเฟ้อสหรัฐฯ พุ่งเกินคาด ดอลลาร์แข็ง–ตลาดผวาเฟดขึ้นดอกเบี้ย | การเงินธนาคาร LINE TODAY",
-      "summary": "ราคาทองวันนี้ (12 พ.ย.) ร่วง 750 บาท รูปพรรณขายออก 64,600 บาท เงินเฟ้อสหรัฐฯ พุ่งเกินคาด ดอลลาร์แข็ง–ตลาดผวาเฟดขึ้นดอกเบี้ย | การเงินธนาคาร LINE TODAY",
-      "direction": "down",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
-    },
-    {
-      "id": "N9",
-      "title": "ราคาทองวันนี้ 12 พ.ย. เปิดตลาดดิ่งแรง 750 บาท ทองแท่งขายออก 63,800 บาท - The Bangkok Insight",
-      "publisher": "The Bangkok Insight",
-      "published": "2026-11-12T02:19:13+00:00",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBXaGk4WVp3d3JuSktGMHBkMFlkNGdYVXNncXE2YVc4S0VrUXRTYWtnclNralhJSEhvVUd4QUs3SDVpMS1MX2l3c1AtM0FVTmV4cWQzd3M1UG94Q25XTVZRazNpdVNqcnVmaENuZVFDbW1FbGdtcFI0bg?oc=5",
-      "snippet": "ราคาทองวันนี้ 12 พ.ย. เปิดตลาดดิ่งแรง 750 บาท ทองแท่งขายออก 63,800 บาท The Bangkok Insight",
-      "summary": "ราคาทองวันนี้ 12 พ.ย. เปิดตลาดดิ่งแรง 750 บาท ทองแท่งขายออก 63,800 บาท The Bangkok Insight",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N17",
-      "title": "กนง. ห่วงผลข้างเคียงดอกเบี้ยต่ำยาว เสี่ยงสะสมหนี้ ฉุดศักยภาพเศรษฐกิจ | การเงินธนาคาร - LINE TODAY",
-      "publisher": "LINE TODAY",
-      "published": "2026-11-11T02:41:56+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE85ai1TaWNqRk5Eb1lfeHVrQlFlcGc0WlZ0eUh4OEJpd0RHakRabnZfZGx1bUlUTERLOVBWZ2tyRWtMVWhmSEwxZE1ZNnJWWlBWa2pjRDJB?oc=5",
-      "snippet": "กนง. ห่วงผลข้างเคียงดอกเบี้ยต่ำยาว เสี่ยงสะสมหนี้ ฉุดศักยภาพเศรษฐกิจ | การเงินธนาคาร LINE TODAY",
-      "summary": "กนง. ห่วงผลข้างเคียงดอกเบี้ยต่ำยาว เสี่ยงสะสมหนี้ ฉุดศักยภาพเศรษฐกิจ | การเงินธนาคาร LINE TODAY",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N2",
-      "title": "ราคาทองวันนี้ 11 พ.ย. เปิดตลาดร่วง 300 บาท ทองแท่งขายออก 64,350 บาท - The Bangkok Insight",
-      "publisher": "The Bangkok Insight",
-      "published": "2026-11-11T02:38:45+00:00",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NQm1hNS1jMTltcWdyelpIQVBHOEY0MmhJVVNITy1WdkFlcW93MTVlQVpUN0JTOWFqOUdVTGZWckIzSWdZV3ZPWGdiQ00zMWJUVUdfQ1d5RzdHOXl0T3NCWkJCR0FEZk1aeXFhRC1GYUxkeWMtQmViaQ?oc=5",
-      "snippet": "ราคาทองวันนี้ 11 พ.ย. เปิดตลาดร่วง 300 บาท ทองแท่งขายออก 64,350 บาท The Bangkok Insight",
-      "summary": "ราคาทองวันนี้ 11 พ.ย. เปิดตลาดร่วง 300 บาท ทองแท่งขายออก 64,350 บาท The Bangkok Insight",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N16",
-      "title": "“ทองคำ” เช้านี้ปรับลง 300 บ. “รูปพรรณ” ขายออก 65,150 บาท | ข่าวหุ้นธุรกิจ - LINE TODAY",
-      "publisher": "LINE TODAY",
-      "published": "2026-11-11T02:29:50+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1MMmp0N1dLdTQxWnNvVERwMENwMkZhR1JRR3hTMEMyMFJxaWtYWkZMcGZta0hyMktJWXA0RHlVZHdmM0R5X2hWbnJOTjFQTXNvMHd0SldR?oc=5",
-      "snippet": "“ทองคำ” เช้านี้ปรับลง 300 บ. “รูปพรรณ” ขายออก 65,150 บาท | ข่าวหุ้นธุรกิจ LINE TODAY",
-      "summary": "“ทองคำ” เช้านี้ปรับลง 300 บ. “รูปพรรณ” ขายออก 65,150 บาท | ข่าวหุ้นธุรกิจ LINE TODAY",
-      "direction": "down",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
-    },
-    {
-      "id": "N4",
-      "title": "ราคาทองรูปพรรณวันนี้ พุ่งขนาดนี้ สายสะสมควรไปต่อหรือพอแค่นี้ - TrueID",
-      "publisher": "TrueID",
-      "published": "2026-11-10T05:37:37+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5XcmdkbE9LajA2VzcxQVloSEZIYWxVd0Y5NVBKYVZNZEhEMnc4WGpEZ0lNWTJiUndYWGpRaEZpNUQ4TDJHSTRPVnRoeVktRDFKc3E2NHJR?oc=5",
-      "snippet": "ราคาทองรูปพรรณวันนี้ พุ่งขนาดนี้ สายสะสมควรไปต่อหรือพอแค่นี้ TrueID",
-      "summary": "ราคาทองรูปพรรณวันนี้ พุ่งขนาดนี้ สายสะสมควรไปต่อหรือพอแค่นี้ TrueID",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N1",
-      "title": "ราคาทองวันนี้ (10 พ.ย.) เปิดตลาดบวก 150 บาท ทองรูปพรรณขายออก 66,050 บาท จับตา CPI สหรัฐฯ ชี้ทิศทางราคา - LINE TODAY",
-      "publisher": "LINE TODAY",
-      "published": "2026-11-10T02:54:30+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9keDJQd0pocGhYbWtSMmowdzQ2Q3JUdGhDaUY5REN0LThUM000Q0tnY3JKTVFCQUFsd0x0dFRibkZ5ai00QjJqNi1UY0pqTmZkSTlFN3QwekdqSEJXQUpqM2p4U3p1bk1BVlNHa2lVQXVaZ0x0ZjRrRVFhNFVXMnc?oc=5",
-      "snippet": "ราคาทองวันนี้ (10 พ.ย.) เปิดตลาดบวก 150 บาท ทองรูปพรรณขายออก 66,050 บาท จับตา CPI สหรัฐฯ ชี้ทิศทางราคา LINE TODAY",
-      "summary": "ราคาทองวันนี้ (10 พ.ย.) เปิดตลาดบวก 150 บาท ทองรูปพรรณขายออก 66,050 บาท จับตา CPI สหรัฐฯ ชี้ทิศทางราคา LINE TODAY",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N5",
-      "title": "ดอลลาร์อ่อน-น้ำมันร่วงช่วยคลายกังวลเงินเฟ้อเป็นปัจจัยหนุนทองคํา - ราคาทองคําวันนี้",
-      "publisher": "ราคาทองคําวันนี้",
-      "published": "2026-11-10T02:27:51+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitAZBVV95cUxNcXlnWkxXa2RURmhJU0F3bk56OEh1RXFCZ0piTF9uSWtENDdiV3AtSDBwRnhEb2M1bVdXa0xvRkhiYjhRaWFDcTlfbWVJTUg4T2VqWFM4NlFtaE9rN1dKam5pcTJkQWd5bmNuRTVpeXFqSVA3cnJFZ0dZSlVtYlIxQWw2aFc3c0NRZVdGQWdteVFYYlVEWW54LUZxaXMySFRRa3VaRDJtMXBEdlhBSW1xTnNiX3UxN3N4NGJpbU9TS2ZOTEkyYlhiUGxVLWtOYzFzMzB1WkduSGFzRkp3TEQtd094d24wald6dXNFRW9iaUwtaE8taDU0RkdmREotQTFJeXRCY3p1WVp3RlZwYjhuSG4wNUQ5alUwMHFTLTRlNzNsZDRUTElrOGltYThPdmhoQzJieHpyVUlZVFdXZVFqYjdsOXJlWmJveHVUejJKMmRMenJHX0JiWEJIdGdoS0ZabGV3d1c5MGRCTXYydE1Rb3Zwa2tXNjVOUXVJSFFjdGxqeFBjSldxZTZMdmdiRF9GUlFDQ2dDX0RtLWlkX21KQ3dRN3R3cmNvemh6Nm56YzhMQUctenFLNXhMRUlGNWNVcmZDdE51VEU0NDFTNEJsTF9fQVhkODhTRWRoZGZxUU9sSUNJQV85cFRZTVo0WXRkSlE0c0Q2UGZTSF92QmhQaU12VlJQUXoxN2VFbDdnMkdpSGpPUlQxRFp1QnZVdFYwNzhzdE1Ub01CU0Q2a0FVZ2hJa3ZON2dCRXFxbmRpRmo5QldsZ2U5UjdPajhMeWlrLTNjVVJ3bmV3S1FFaFZfNldxbmstSThDQWZCT2JsejdWRTRUZnVCa3otMHBsYVVENXlYN1V3aUdFNlg2ZnBHT1Zzc1liOUJfVFdGVDhacVhmRGdBVlI4SlI4bGRRdHJNTGJjSUhyUWU2dHJmdGZ3V0FRNE1kRlJXTEpHQlUydGFBN29DeWZWSEV5czd2cDhzc3VBM1dQVHNjRlZyU1VBbzZTMTdNZDhENTBUQVdGa2NPVGw5NzllUkpiTDlCUVVFN1VVTXBNc0FaM3NDcmxKZXZuSWg5R3Roam1PYXJtX2dtWkF3?oc=5",
-      "snippet": "ดอลลาร์อ่อน-น้ำมันร่วงช่วยคลายกังวลเงินเฟ้อเป็นปัจจัยหนุนทองคํา ราคาทองคําวันนี้",
-      "summary": "ดอลลาร์อ่อน-น้ำมันร่วงช่วยคลายกังวลเงินเฟ้อเป็นปัจจัยหนุนทองคํา ราคาทองคําวันนี้",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N11",
-      "title": "ราคาทองวันนี้ 10 พ.ย. เปิดตลาดขยับขึ้น 150 บาท ทองแท่งขายออก 65,250 บาท - The Bangkok Insight",
-      "publisher": "The Bangkok Insight",
-      "published": "2026-11-10T02:23:58+00:00",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1faUt0elpXRGlaM3l5SU9EVVg2TGJDMDNfOFBFaGJza0RUSlVqbmdhM05RVlBaaGpxYTBmd1ZxUXBrRHhOQndoRjV2ZFdKZVFHZ2tLdjNrMWpGQ29EclNIaWtzY3Bkd3JrX2J3MUNpcHBQckQzR2YzVQ?oc=5",
-      "snippet": "ราคาทองวันนี้ 10 พ.ย. เปิดตลาดขยับขึ้น 150 บาท ทองแท่งขายออก 65,250 บาท The Bangkok Insight",
-      "summary": "ราคาทองวันนี้ 10 พ.ย. เปิดตลาดขยับขึ้น 150 บาท ทองแท่งขายออก 65,250 บาท The Bangkok Insight",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N6",
-      "title": "ราคาทองไทยวันนี้ เปิดตลาดทะยาน 650 บาท แม้ทองโลกถูกกดดัน ดอลลาร์แข็ง–บอนด์ยีลด์พุ่ง - LINE TODAY",
-      "publisher": "LINE TODAY",
-      "published": "2026-11-09T02:24:09+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tbEJGWHdHN1k2OFVNeG0xT0pxX1hWQjBJal9QbGVkeW03Z0JRY1dXYjQ5ZFk4a1BHdFp6TEFxLU00blI2Z3BYNXBFVUVNLWZFVXcwbDV3?oc=5",
-      "snippet": "ราคาทองไทยวันนี้ เปิดตลาดทะยาน 650 บาท แม้ทองโลกถูกกดดัน ดอลลาร์แข็ง–บอนด์ยีลด์พุ่ง LINE TODAY",
-      "summary": "ราคาทองไทยวันนี้ เปิดตลาดทะยาน 650 บาท แม้ทองโลกถูกกดดัน ดอลลาร์แข็ง–บอนด์ยีลด์พุ่ง LINE TODAY",
+      "id": "N58",
+      "title": "Oil Prices Rise as Trump Dismisses Iran Deal, Gold and Copper Dr - GuruFocus",
+      "publisher": "GuruFocus",
+      "published": "2026-11-13T00:12:12+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeVpzMmU3ZkljeU5DSkgyX2pyM01hWF94WVFYWVlWU09mM2NRMXRid1ktd29qOGo0T1MyQk95MVJ2dEhNRVNBUGdhc3p3YkFIQTVpTV9NeFh2ZTBScWo3STRjSzZkZzFUVlZwcHhVYlBPcGprSHN3MUU3bGFjYUNrYnRacnBRVzdDSFp0Rk9NY3MwYm80VXJqaTMzRDZIcG9tTFZ3UHFZcw?oc=5",
+      "snippet": "Oil Prices Rise as Trump Dismisses Iran Deal, Gold and Copper Dr GuruFocus",
+      "summary": "Oil Prices Rise as Trump Dismisses Iran Deal, Gold and Copper Dr GuruFocus",
       "direction": "up",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
+    },
+    {
+      "id": "N34",
+      "title": "Trump's One Remark Chills Iran Peace Talks; Gold Plunges Below $3,900, Oil Jumps to $89 - BigGo Finance",
+      "publisher": "BigGo Finance",
+      "published": "2026-11-12T23:35:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBSRVVUdWRvbXZmaFF2RmN6eXNSX1NwemhYSkV6TnFtMnpqR3dGNmotbWYzOUdSUDZ3WWZsQ0dxd3RUMjhYbXFLTHRlc2R2eS1McFF1Ni1MR3dlQ0Q0bVFRdFJnVFpZQ2lfMVNOcGVVMnNKQzhXdHc?oc=5",
+      "snippet": "Trump's One Remark Chills Iran Peace Talks; Gold Plunges Below $3,900, Oil Jumps to $89 BigGo Finance",
+      "summary": "Trump's One Remark Chills Iran Peace Talks; Gold Plunges Below $3,900, Oil Jumps to $89 BigGo Finance",
+      "direction": "up",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
+    },
+    {
+      "id": "N14",
+      "title": "Gold plunges to one-year low near $3,850 as Fed hawks take charge - www.tmgm.com",
+      "publisher": "www.tmgm.com",
+      "published": "2026-11-12T22:00:22+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeUJzdFJUTjBGejFsMTk1ZHlhVkNJaGt1eGZIOG9QY3o2VVI4STlSWnJkN0ZuVnZfdTNNOTVtS0RvdmZYLWg2WlJqZWRrT0NnZXFMMThXZDh2d1ZlNFBoN0lWVHhhVHMwa0FmS1lxelR5cEhRUGtJbjczWXZsMmJhUGN2YldhZmZCQllnZW1jdEpmQVZ5V0VxVFJUYjJBckI4OGRuSkRNUERFSkVKZDRCODZNbXA0VEFDd1c5aWhBaWo1cElHX2szenVB?oc=5",
+      "snippet": "Gold plunges to one-year low near $3,850 as Fed hawks take charge www.tmgm.com",
+      "summary": "Gold plunges to one-year low near $3,850 as Fed hawks take charge www.tmgm.com",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     }
   ],
   "hot_news": [
     {
-      "id": "N23",
+      "id": "N38",
+      "title": "Commodity Corner: Oil holds gains on US-Iran tensions; gold near one-year low on rate hike bets - TradingView",
+      "publisher": "TradingView",
+      "published": "2026-11-13T02:31:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQbWMyTXozT2JNS1pQcXA1X08tVFFUTTNhNmpTUWNsdHBiSG1YeERkR05sdlhZZGM3TkpUT3p3eXJlN1RfOHFsQTRsd2JLakk4ZmNPTnlmNlluYmpDWVN3WTRyNTh4MEk0djVZN1V4bllvYm5QRHFqeUZtbVFWTzUwaHhfc3ljaGhkMWNBakFqU0E0eTFUcEhMcjJYWGhTZUVJcC0zb3BVcU1BVlBjeURIb0ZOUlNvb1BwRnNRcXg4YmpOdV9GeE5tcmpRZkhuNE85elVJVXZfeC1BNXhLZzBNWUVwQ2ttM2NZZmphMQ?oc=5",
+      "snippet": "Commodity Corner: Oil holds gains on US-Iran tensions; gold near one-year low on rate hike bets TradingView",
+      "summary": "Commodity Corner: Oil holds gains on US-Iran tensions; gold near one-year low on rate hike bets TradingView",
+      "direction": "up",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น",
+      "hot_reason": "คัดจากคำในพาดหัว: กล่าวถึงราคาทอง + ดอกเบี้ย/ยีลด์ + น้ำมัน/เงินเฟ้อ"
+    },
+    {
+      "id": "N88",
       "title": "กังวลเงินเฟ้อหลังน้ำมันพุ่งหนุนเฟดปรับขึ้นดอกเบี้ยกดดันทองคําร่วง - ราคาทองคําวันนี้",
       "publisher": "ราคาทองคําวันนี้",
       "published": "2026-11-13T01:59:33+00:00",
@@ -499,23 +512,10 @@
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้",
       "hot_reason": "คัดจากคำในพาดหัว: กล่าวถึงราคาทอง + ดอกเบี้ย/ยีลด์ + น้ำมัน/เงินเฟ้อ"
-    },
-    {
-      "id": "N8",
-      "title": "ราคาทองวันนี้ (12 พ.ย.) ร่วง 750 บาท รูปพรรณขายออก 64,600 บาท เงินเฟ้อสหรัฐฯ พุ่งเกินคาด ดอลลาร์แข็ง–ตลาดผวาเฟดขึ้นดอกเบี้ย | การเงินธนาคาร - LINE TODAY",
-      "publisher": "LINE TODAY",
-      "published": "2026-11-12T02:52:32+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBhc0syUTJQVDhyUmExc2dJM2hBZy1GNmRPcVpCVnY3S1BsdzR1X0xKU09lbk5lSGx2RHMxUFUwNTFDMkY3SVc3YUtTcElucEc1M0E3T0RR?oc=5",
-      "snippet": "ราคาทองวันนี้ (12 พ.ย.) ร่วง 750 บาท รูปพรรณขายออก 64,600 บาท เงินเฟ้อสหรัฐฯ พุ่งเกินคาด ดอลลาร์แข็ง–ตลาดผวาเฟดขึ้นดอกเบี้ย | การเงินธนาคาร LINE TODAY",
-      "summary": "ราคาทองวันนี้ (12 พ.ย.) ร่วง 750 บาท รูปพรรณขายออก 64,600 บาท เงินเฟ้อสหรัฐฯ พุ่งเกินคาด ดอลลาร์แข็ง–ตลาดผวาเฟดขึ้นดอกเบี้ย | การเงินธนาคาร LINE TODAY",
-      "direction": "down",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว",
-      "hot_reason": "คัดจากคำในพาดหัว: กล่าวถึงราคาทอง + ดอกเบี้ย/ยีลด์ + น้ำมัน/เงินเฟ้อ"
     }
   ],
-  "news_updated_at": "2026-11-13T15:27:29.073390+00:00",
-  "news_candidates": 25,
+  "news_updated_at": "2026-11-13T15:27:54.398340+00:00",
+  "news_candidates": 40,
   "ai_updated_at": "2026-11-12T18:05:25.637626+00:00",
   "status": {
     "technical": "ok",
@@ -523,5 +523,5 @@
     "ai": "preserved_morning_analysis"
   },
   "news_source_note": "พาดหัว/ข้อความย่อจาก Google News RSS; หากไม่มี API key จะประเมินทิศทางด้วยกฎคำสำคัญเบื้องต้น ไม่ใช่การอ่านบทความเต็ม และไม่ยืนยันว่าเป็นสาเหตุของราคา",
-  "generated_at_bangkok": "2026-11-13T22:27:26.825139+07:00"
+  "generated_at_bangkok": "2026-11-13T22:27:52.137614+07:00"
 }
