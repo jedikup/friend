@@ -1,77 +1,86 @@
 {
-  "generated_at": "2026-11-13T15:27:52.137614+00:00",
-  "attempted_at": "2026-11-13T15:27:52.137614+00:00",
+  "generated_at": "2026-11-14T15:02:32.000Z",
+  "attempted_at": "2026-11-14T15:02:32.000Z",
   "slot": "22:00",
   "live_quote": {
-    "spot": 3881.55,
-    "fx_usd_thb": 33.844,
-    "estimated_thb_per_baht": 62150,
-    "quote_updated": "2026-11-13T22:08:01.07895+00:00",
+    "spot": 3882,
+    "fx_usd_thb": 33.92,
+    "estimated_thb_per_baht": 62300,
+    "quote_updated": "2026-11-14T02:05:00.000Z",
     "fx_reference_date": "2026-11-14",
-    "spot_source": "GoldPrice.dev · XAU/USD Spot",
-    "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB"
+    "spot_source": "Gold Traders Association · ประกาศล่าสุด #1; Spot ตลาดปิดสุดสัปดาห์",
+    "fx_source": "Gold Traders Association · USD/THB ในประกาศ #1",
+    "association_buy": 62250,
+    "association_sell": 62450,
+    "association_updated": "2026-11-14T02:05:00.000Z",
+    "association_source_url": "https://sideb.goldtraders.or.th/UpdatePriceList.aspx"
   },
   "technical": {
-    "spot": 3885.34,
-    "fx_usd_thb": 33.814,
-    "estimated_thb_per_baht": 62150,
-    "daily_change_pct": -2.4,
+    "spot": 3882,
+    "fx_usd_thb": 33.92,
+    "estimated_thb_per_baht": 62300,
+    "daily_change_pct": 0.09,
     "indicators": {
-      "ema20": 4037.13,
-      "ema50": 4085.53,
+      "ema20": 4021.57,
+      "ema50": 4077.23,
       "ema200": null,
       "ema_reading": "Spot อยู่ใต้ EMA20/50; EMA200 ไม่มีข้อมูลจากประวัติ 30 วัน",
-      "rsi14": 33.9,
+      "rsi14": 33.5,
       "rsi_reading": "โมเมนตัมไม่สุดโต่ง; ต่ำกว่า 50 เอนอ่อน เหนือ 50 เอนแข็ง",
-      "macd": -35.33,
-      "macd_signal": -30.82,
-      "macd_hist": -4.52,
+      "macd": -44.02,
+      "macd_signal": -33.46,
+      "macd_hist": -10.56,
       "macd_reading": "แรงส่งลบ แต่เส้น MACD อยู่ใต้เส้นสัญญาณ",
-      "bb_upper": 4196.93,
-      "bb_mid": 4035.72,
-      "bb_lower": 3874.52,
+      "bb_upper": 4185.51,
+      "bb_mid": 4021.14,
+      "bb_lower": 3856.76,
       "bb_reading": "ราคาอยู่ในกรอบแถบ · ใช้ดูความผันผวน ไม่ใช่สัญญาณซื้อขายเดี่ยว",
-      "atr14": 95.98,
-      "atr_reading": "ช่วงแกว่งเฉลี่ยล่าสุดราว $95.98/oz ต่อวัน; ATR บอกขนาด ไม่บอกทิศทาง",
-      "source_note": "คำนวณจากแท่ง Gold Spot 1D ปิดแล้ว 21 แท่ง; snapshot 2026-11-12T00:00:00Z"
+      "atr14": 96.42,
+      "atr_reading": "ช่วงแกว่งเฉลี่ยล่าสุดราว $96.42/oz ต่อวัน; ATR บอกขนาด ไม่บอกทิศทาง",
+      "source_note": "คำนวณจากแท่ง Gold Spot 1D ปิดแล้ว 22 แท่ง; snapshot 2026-11-13T00:00:00Z · XAUAD/Swissquote"
     },
-    "atr14": 95.98,
+    "atr14": 96.42,
     "atr_period": 14,
-    "sma20": 4035.72,
+    "sma20": 4021.14,
     "sma_period": 20,
-    "ema50": 4085.53,
+    "ema50": 4077.23,
     "trend": "ขาลง",
     "support": [
       {
-        "low": 3852.95,
-        "high": 3887.5
+        "low": 3855.27,
+        "high": 3868.53
       },
       {
-        "low": 3835.99,
-        "high": 3870.54
+        "low": 3836.37,
+        "high": 3855.88
       }
     ],
     "resistance": [
       {
-        "low": 3964.05,
-        "high": 3998.6
+        "low": 3887.44,
+        "high": 3906.35
       },
       {
-        "low": 4065.89,
-        "high": 4100.45
+        "low": 3919.61,
+        "high": 3938.52
       }
     ],
     "last_closed_bar": {
-      "time": "2026-11-12T00:00:00Z",
-      "open": 3980.4164,
-      "high": 4000.0,
-      "low": 3853.2676,
-      "close": 3881.5355
+      "time": "2026-11-13T00:00:00Z",
+      "open": 3870.35,
+      "high": 3923.14,
+      "low": 3865.72,
+      "close": 3873.72
     },
-    "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
-    "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 14 แท่ง); SMA20 ใช้ข้อมูล 20 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
-    "quote_updated": "2026-11-13T15:12:01.051713+00:00",
-    "fx_reference_date": "2026-11-13"
+    "source": "Forexuro rates feed (Swissquote) · Friday close/high/low; Gold Traders Association announcement #1 for official local snapshot",
+    "method": "อ้างอิง pivot จาก session ล่าสุด: P $3,887.44; S1 $3,855.27/S2 $3,836.37; R1 $3,906.35/R2 $3,938.52 และตรวจเทียบ low $3,868.53/high $3,919.61 · ไม่ใช่การคาดการณ์ราคา",
+    "quote_updated": "2026-11-14T02:05:00.000Z",
+    "fx_reference_date": "2026-11-14",
+    "source_urls": [
+      "https://forexuro.com/xauusd-today",
+      "https://sideb.goldtraders.or.th/UpdatePriceList.aspx",
+      "https://xauad.com/gold-price-today.html"
+    ]
   },
   "daily_bars": [
     {
@@ -216,10 +225,17 @@
     },
     {
       "open": 3980.4164,
-      "high": 4000.0,
+      "high": 4000,
       "low": 3853.2676,
       "close": 3881.5355,
       "time": "2026-11-12T00:00:00Z"
+    },
+    {
+      "open": 3870.35,
+      "high": 3923.14,
+      "low": 3865.72,
+      "close": 3873.72,
+      "time": "2026-11-13T00:00:00Z"
     }
   ],
   "candidate_count": 40,
@@ -245,6 +261,54 @@
     "ก่อนส่งคำสั่ง เช็ก Spot $3,873.72, USD/THB 33.7230 และราคาสมาคมฯ ล่าสุด; ATR(14) $89.66 บอกขนาดการแกว่ง ไม่ได้บอกทิศทาง"
   ],
   "news": [
+    {
+      "id": "manual-20261114-ap-iran",
+      "title": "ท่าทีสหรัฐฯ ต่ออิหร่านยังไม่ชัด ขณะที่กาตาร์เดินหน้าหาข้อตกลงเรื่องช่องแคบฮอร์มุซ",
+      "publisher": "Associated Press",
+      "published": "2026-11-14T05:56:33Z",
+      "url": "https://apnews.com/article/02378df1ec3073d2c0f8f162e697d181",
+      "snippet": "AP รายงานว่าท่าทีของประธานาธิบดีสหรัฐฯ เปลี่ยนไปมา และกาตาร์ยังเป็นคนกลางเจรจาข้อตกลงชั่วคราวเพื่อให้การเดินเรือผ่านช่องแคบฮอร์มุซกลับมา; ยังมีความไม่แน่นอนเรื่องการเจรจาและความเสี่ยงต่อการขนส่งพลังงาน",
+      "summary": "ท่าทีสหรัฐฯ ต่อการเจรจาอิหร่านยังไม่แน่นอน; กาตาร์พยายามผลักดันข้อตกลงชั่วคราวเกี่ยวกับฮอร์มุซ",
+      "direction": "watch",
+      "response": "ความเสี่ยงภูมิรัฐศาสตร์อาจเพิ่มแรงซื้อสินทรัพย์ปลอดภัย แต่หากน้ำมัน/เงินเฟ้อและยีลด์สูงขึ้น อาจกดทองผ่านดอลลาร์และคาดการณ์ดอกเบี้ย ผลสุทธิยังผสม",
+      "market_reaction": "ยังไม่มีหลักฐานว่าข่าวนี้ทำให้ราคาทองขยับโดยตรง; ตลาด Spot ปิดสุดสัปดาห์"
+    },
+    {
+      "id": "manual-20261114-gta",
+      "title": "สมาคมค้าทองคำประกาศราคาวันที่ 14 พ.ย. ครั้งที่ 1 เวลา 09:05 น.",
+      "publisher": "สมาคมค้าทองคำ",
+      "published": "2026-11-14T02:05:00Z",
+      "url": "https://sideb.goldtraders.or.th/UpdatePriceList.aspx",
+      "snippet": "ทองคำแท่ง 96.5% รับซื้อ 62,250 บาท ขายออก 62,450 บาท; Gold Spot 3,882 ดอลลาร์/ออนซ์; USD/THB 33.92; เปลี่ยนแปลง -200 บาท",
+      "summary": "ราคาประกาศล่าสุดของวันนี้: รับซื้อ 62,250 บาท / ขายออก 62,450 บาท (ครั้งที่ 1, 09:05 น.)",
+      "direction": "down",
+      "response": "ราคาทองไทยประกาศลดลง 200 บาทจากประกาศก่อนหน้า; ตัวเลขนี้เป็นราคาสมาคมฯ ไม่ใช่การเปลี่ยนแปลง Spot สดระหว่างวัน",
+      "market_reaction": "ตรวจได้จากตารางประกาศสมาคมค้าทองคำ; ไม่มีประกาศรอบใหม่หลัง 09:05 น. ในข้อมูลที่ตรวจ"
+    },
+    {
+      "id": "manual-20261114-ap-gold-flow",
+      "title": "รายงานระบุว่าทองจากพื้นที่ขัดแย้งยังไหลเข้าสู่ UAE แม้มีข้อกำกับใหม่",
+      "publisher": "Associated Press",
+      "published": "2026-11-13T17:59:26Z",
+      "url": "https://apnews.com/article/1a1326e00b305df82062c3bb210da300",
+      "snippet": "รายงาน Swissaid ประเมินว่าทองจากพื้นที่ขัดแย้งและประเทศที่ถูกคว่ำบาตรยังเข้าสู่ UAE; AP ระบุประเด็นการตรวจสอบแหล่งที่มาและการบังคับใช้กฎ",
+      "summary": "ประเด็นนี้เกี่ยวกับความโปร่งใสและห่วงโซ่อุปทานทองคำ มากกว่าปัจจัยราคา Spot ระยะสั้น",
+      "direction": "watch",
+      "response": "อาจเพิ่มความสนใจต่อความรับผิดชอบในการจัดหาและการตรวจสอบแหล่งทอง; ยังไม่มีเหตุผลเพียงพอจะสรุปว่าเป็นแรงซื้อหรือขายทองในตลาดโลก",
+      "market_reaction": "ไม่พบหลักฐานการเคลื่อนไหวราคาที่ผูกกับรายงานนี้โดยตรง"
+    },
+    {
+      "id": "manual-20261113-reuters-ppi",
+      "title": "ทองฟื้นเล็กน้อยหลัง PPI ใกล้คาด แต่ยังเสี่ยงปิดสัปดาห์ติดลบจากมุมมอง Fed",
+      "publisher": "Reuters via MarketScreener",
+      "published": "2026-11-13T15:15:00Z",
+      "url": "https://ae.marketscreener.com/news/rate-hike-bets-keep-gold-on-track-for-its-worst-week-in-four-months-ce785ed9d18ff523",
+      "snippet": "Reuters รายงาน Spot ทองขึ้น 0.1% มาอยู่ที่ $3,879.71 ณ 14:05 ET; PPI ต.ค. เพิ่ม 0.3% เทียบคาด 0.4% แต่แรงขายวันก่อนทำให้ทองยังมุ่งสู่การลดลงรายสัปดาห์ราว 4.5%; ตลาดยังคาดโอกาสขึ้นดอกเบี้ย Fed 25bp ใน ธ.ค. สูง",
+      "summary": "PPI ต่ำกว่าคาดเล็กน้อยช่วยลดความกังวลการขึ้นดอกเบี้ยแรง แต่ Fed ยังมีท่าทีเข้มงวดและทองอ่อนลงทั้งสัปดาห์",
+      "direction": "mixed",
+      "response": "PPI ที่ไม่ร้อนกว่าคาดช่วยพยุงทองชั่วคราว; ความคาดหวังดอกเบี้ยสูงและยีลด์ยังเป็นแรงกดดัน จึงเป็นปัจจัยผสม",
+      "market_reaction": "Reuters ระบุ Spot +0.1% ที่ $3,879.71 เวลา 14:05 ET แต่ทองยังลดลงราว 4.5% ในสัปดาห์; เป็นการเคลื่อนไหวร่วมช่วงข่าว ไม่ยืนยันเหตุและผล"
+    },
     {
       "id": "N10",
       "title": "Gold Falls as Post-Election Optimism Proves Misplaced. Forecast as of 13.11.2026 - LiteFinance",
@@ -436,93 +500,58 @@
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N43",
-      "title": "Trump Says 'No Need for a Deal With Iran' as Oil Prices Jump More Than 2.6%, Brent Nears $96 - BigGo Finance",
-      "publisher": "BigGo Finance",
-      "published": "2026-11-13T00:55:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9yYkNjaGVZc3c4LTBoNWE4R0VCaTZuLTR4Q1dVZEVEWVVrZDNRamJhdlRGdHFPU19tQ3ZkTDQycTNsd3ZwdjVlOXFkQ1NPaGtESnRTRTd3SjRDdk5UNUNMOFphWUJTLTc5M0pER0tIZUIxRE9ncHc?oc=5",
-      "snippet": "Trump Says 'No Need for a Deal With Iran' as Oil Prices Jump More Than 2.6%, Brent Nears $96 BigGo Finance",
-      "summary": "Trump Says 'No Need for a Deal With Iran' as Oil Prices Jump More Than 2.6%, Brent Nears $96 BigGo Finance",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N58",
-      "title": "Oil Prices Rise as Trump Dismisses Iran Deal, Gold and Copper Dr - GuruFocus",
-      "publisher": "GuruFocus",
-      "published": "2026-11-13T00:12:12+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeVpzMmU3ZkljeU5DSkgyX2pyM01hWF94WVFYWVlWU09mM2NRMXRid1ktd29qOGo0T1MyQk95MVJ2dEhNRVNBUGdhc3p3YkFIQTVpTV9NeFh2ZTBScWo3STRjSzZkZzFUVlZwcHhVYlBPcGprSHN3MUU3bGFjYUNrYnRacnBRVzdDSFp0Rk9NY3MwYm80VXJqaTMzRDZIcG9tTFZ3UHFZcw?oc=5",
-      "snippet": "Oil Prices Rise as Trump Dismisses Iran Deal, Gold and Copper Dr GuruFocus",
-      "summary": "Oil Prices Rise as Trump Dismisses Iran Deal, Gold and Copper Dr GuruFocus",
-      "direction": "up",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
-    },
-    {
-      "id": "N34",
-      "title": "Trump's One Remark Chills Iran Peace Talks; Gold Plunges Below $3,900, Oil Jumps to $89 - BigGo Finance",
-      "publisher": "BigGo Finance",
-      "published": "2026-11-12T23:35:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBSRVVUdWRvbXZmaFF2RmN6eXNSX1NwemhYSkV6TnFtMnpqR3dGNmotbWYzOUdSUDZ3WWZsQ0dxd3RUMjhYbXFLTHRlc2R2eS1McFF1Ni1MR3dlQ0Q0bVFRdFJnVFpZQ2lfMVNOcGVVMnNKQzhXdHc?oc=5",
-      "snippet": "Trump's One Remark Chills Iran Peace Talks; Gold Plunges Below $3,900, Oil Jumps to $89 BigGo Finance",
-      "summary": "Trump's One Remark Chills Iran Peace Talks; Gold Plunges Below $3,900, Oil Jumps to $89 BigGo Finance",
-      "direction": "up",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
-    },
-    {
-      "id": "N14",
-      "title": "Gold plunges to one-year low near $3,850 as Fed hawks take charge - www.tmgm.com",
-      "publisher": "www.tmgm.com",
-      "published": "2026-11-12T22:00:22+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeUJzdFJUTjBGejFsMTk1ZHlhVkNJaGt1eGZIOG9QY3o2VVI4STlSWnJkN0ZuVnZfdTNNOTVtS0RvdmZYLWg2WlJqZWRrT0NnZXFMMThXZDh2d1ZlNFBoN0lWVHhhVHMwa0FmS1lxelR5cEhRUGtJbjczWXZsMmJhUGN2YldhZmZCQllnZW1jdEpmQVZ5V0VxVFJUYjJBckI4OGRuSkRNUERFSkVKZDRCODZNbXA0VEFDd1c5aWhBaWo1cElHX2szenVB?oc=5",
-      "snippet": "Gold plunges to one-year low near $3,850 as Fed hawks take charge www.tmgm.com",
-      "summary": "Gold plunges to one-year low near $3,850 as Fed hawks take charge www.tmgm.com",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     }
   ],
   "hot_news": [
     {
-      "id": "N38",
-      "title": "Commodity Corner: Oil holds gains on US-Iran tensions; gold near one-year low on rate hike bets - TradingView",
-      "publisher": "TradingView",
-      "published": "2026-11-13T02:31:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQbWMyTXozT2JNS1pQcXA1X08tVFFUTTNhNmpTUWNsdHBiSG1YeERkR05sdlhZZGM3TkpUT3p3eXJlN1RfOHFsQTRsd2JLakk4ZmNPTnlmNlluYmpDWVN3WTRyNTh4MEk0djVZN1V4bllvYm5QRHFqeUZtbVFWTzUwaHhfc3ljaGhkMWNBakFqU0E0eTFUcEhMcjJYWGhTZUVJcC0zb3BVcU1BVlBjeURIb0ZOUlNvb1BwRnNRcXg4YmpOdV9GeE5tcmpRZkhuNE85elVJVXZfeC1BNXhLZzBNWUVwQ2ttM2NZZmphMQ?oc=5",
-      "snippet": "Commodity Corner: Oil holds gains on US-Iran tensions; gold near one-year low on rate hike bets TradingView",
-      "summary": "Commodity Corner: Oil holds gains on US-Iran tensions; gold near one-year low on rate hike bets TradingView",
-      "direction": "up",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น",
-      "hot_reason": "คัดจากคำในพาดหัว: กล่าวถึงราคาทอง + ดอกเบี้ย/ยีลด์ + น้ำมัน/เงินเฟ้อ"
+      "id": "manual-20261113-reuters-ppi",
+      "title": "ทองฟื้นเล็กน้อยหลัง PPI ใกล้คาด แต่ยังเสี่ยงปิดสัปดาห์ติดลบจากมุมมอง Fed",
+      "publisher": "Reuters via MarketScreener",
+      "published": "2026-11-13T15:15:00Z",
+      "url": "https://ae.marketscreener.com/news/rate-hike-bets-keep-gold-on-track-for-its-worst-week-in-four-months-ce785ed9d18ff523",
+      "snippet": "Reuters รายงาน Spot ทองขึ้น 0.1% มาอยู่ที่ $3,879.71 ณ 14:05 ET; PPI ต.ค. เพิ่ม 0.3% เทียบคาด 0.4% แต่แรงขายวันก่อนทำให้ทองยังมุ่งสู่การลดลงรายสัปดาห์ราว 4.5%; ตลาดยังคาดโอกาสขึ้นดอกเบี้ย Fed 25bp ใน ธ.ค. สูง",
+      "summary": "PPI ต่ำกว่าคาดเล็กน้อยช่วยลดความกังวลการขึ้นดอกเบี้ยแรง แต่ Fed ยังมีท่าทีเข้มงวดและทองอ่อนลงทั้งสัปดาห์",
+      "direction": "mixed",
+      "response": "PPI ที่ไม่ร้อนกว่าคาดช่วยพยุงทองชั่วคราว; ความคาดหวังดอกเบี้ยสูงและยีลด์ยังเป็นแรงกดดัน จึงเป็นปัจจัยผสม",
+      "market_reaction": "Reuters ระบุ Spot +0.1% ที่ $3,879.71 เวลา 14:05 ET แต่ทองยังลดลงราว 4.5% ในสัปดาห์; เป็นการเคลื่อนไหวร่วมช่วงข่าว ไม่ยืนยันเหตุและผล",
+      "hot_reason": "Fed, PPI และพันธบัตรเป็นตัวขับเคลื่อนหลักที่อาจกดดันทอง"
     },
     {
-      "id": "N88",
-      "title": "กังวลเงินเฟ้อหลังน้ำมันพุ่งหนุนเฟดปรับขึ้นดอกเบี้ยกดดันทองคําร่วง - ราคาทองคําวันนี้",
-      "publisher": "ราคาทองคําวันนี้",
-      "published": "2026-11-13T01:59:33+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1wZBVV95cUxOZXRxUTR6ckF6QUpvS0prSXZPWlgtOHlzNU5SZmROY1JUaVJ6SHJyR3hoQjRVRVdwM2lDbVQzYkpRRmhqemRfaHdFbG9nT2E3aHVCZXpFRS1ubzRKbllOdmdPTGJhQ3JtcDQyLVZCeXVza3VEc1pBOTJscmVQS3dlbzRCZmVnbmNVZWdfYl9YVzNFdHJHYTVDZzBzczl6bUc4VjJpcXdmQXBPSHozQVhpdlFKa19RbFY0WmhmMUVkaUxfakZIQURDN0VETnlDc3hpaWVUNHNINmt2X3AwN1pFUENITVhJOWdSRWZGcThTQmF6TE1fU1RwakNQRHVQUGNEZ24tQU1ud3pJbzh0RG5YV3ZHME0zZlFIRlFCWnhxd3RCdmtSZHVBY0YtMXNlRUM4VV9UZi1yUmo4QTdadVd5LXZMTVhlNy1QbngzWkN4N0J3LVk2MWZGOFM0NkNkOWZNZXljR0JXcTVKS0JWNVI3aFFHZU5KYWg1cUxqajBEbE92dkVJd05IczN5UjFWWTcyTDRNZTNQMmVDMjRHdUtpWmdMV3Bnd21Ra3p6WENUVE8xNVhpTDFwY2tITG5RX1lNTkM5MGttV1AxTXBSQVJWbXd1SXQ0UGtpbWpid3BqT0tHSm1scTdzTzlNeXE0cmZZR3N6M2FnRXh5Q0ZVMHBRa0R4RUVsbU9BalVsOXd5N3N6Wm5xZ0h1WWxlUEo4VUlJMjFOWENOVkNpVlhuYlo4RHZleVIxWk1Na3FGNEtUbTNRZ0FCSWFRNVdUUTZvdFo4VmNHVEh5QUpIc1NsTS1fbEJtZUdZSkhwTmktSGxiQU4wdi1wQmJzT3pKNmRsQkJGUDZEZGRGa2dWYm00TkhReC1oTWZ0VXFzWTlSY2RnWXRjdlVaRThqUXQ5blBpZmV2OEZUOUNiZWMxQmg1RUtGTHEzdmlBSU41c1gtRGZUTkE3OFBIS19pUjdZakhQYUpDaDlrYXItU1lzWDJKcllGRl8zVmhFWGpkYzl2ejctSGt0YVpYUHpwMnJJSTd2dkFrdkdhWUlEOUsxTHg1SE4yVk83MDBSX2lUUEVseWlwNGphX2pYd3RQTnE3a00yV1ppc3NpYlFaUm5oalhTS0VsUFFQVEhsakU?oc=5",
-      "snippet": "กังวลเงินเฟ้อหลังน้ำมันพุ่งหนุนเฟดปรับขึ้นดอกเบี้ยกดดันทองคําร่วง ราคาทองคําวันนี้",
-      "summary": "กังวลเงินเฟ้อหลังน้ำมันพุ่งหนุนเฟดปรับขึ้นดอกเบี้ยกดดันทองคําร่วง ราคาทองคําวันนี้",
+      "id": "manual-20261114-ap-iran",
+      "title": "ท่าทีสหรัฐฯ ต่ออิหร่านยังไม่ชัด ขณะที่กาตาร์เดินหน้าหาข้อตกลงเรื่องช่องแคบฮอร์มุซ",
+      "publisher": "Associated Press",
+      "published": "2026-11-14T05:56:33Z",
+      "url": "https://apnews.com/article/02378df1ec3073d2c0f8f162e697d181",
+      "snippet": "AP รายงานว่าท่าทีของประธานาธิบดีสหรัฐฯ เปลี่ยนไปมา และกาตาร์ยังเป็นคนกลางเจรจาข้อตกลงชั่วคราวเพื่อให้การเดินเรือผ่านช่องแคบฮอร์มุซกลับมา; ยังมีความไม่แน่นอนเรื่องการเจรจาและความเสี่ยงต่อการขนส่งพลังงาน",
+      "summary": "ท่าทีสหรัฐฯ ต่อการเจรจาอิหร่านยังไม่แน่นอน; กาตาร์พยายามผลักดันข้อตกลงชั่วคราวเกี่ยวกับฮอร์มุซ",
       "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้",
-      "hot_reason": "คัดจากคำในพาดหัว: กล่าวถึงราคาทอง + ดอกเบี้ย/ยีลด์ + น้ำมัน/เงินเฟ้อ"
+      "response": "ความเสี่ยงภูมิรัฐศาสตร์อาจเพิ่มแรงซื้อสินทรัพย์ปลอดภัย แต่หากน้ำมัน/เงินเฟ้อและยีลด์สูงขึ้น อาจกดทองผ่านดอลลาร์และคาดการณ์ดอกเบี้ย ผลสุทธิยังผสม",
+      "market_reaction": "ยังไม่มีหลักฐานว่าข่าวนี้ทำให้ราคาทองขยับโดยตรง; ตลาด Spot ปิดสุดสัปดาห์",
+      "hot_reason": "ความเสี่ยงช่องแคบฮอร์มุซอาจเปลี่ยนราคาน้ำมันและแรงซื้อสินทรัพย์ปลอดภัย"
+    },
+    {
+      "id": "manual-20261114-gta",
+      "title": "สมาคมค้าทองคำประกาศราคาวันที่ 14 พ.ย. ครั้งที่ 1 เวลา 09:05 น.",
+      "publisher": "สมาคมค้าทองคำ",
+      "published": "2026-11-14T02:05:00Z",
+      "url": "https://sideb.goldtraders.or.th/UpdatePriceList.aspx",
+      "snippet": "ทองคำแท่ง 96.5% รับซื้อ 62,250 บาท ขายออก 62,450 บาท; Gold Spot 3,882 ดอลลาร์/ออนซ์; USD/THB 33.92; เปลี่ยนแปลง -200 บาท",
+      "summary": "ราคาประกาศล่าสุดของวันนี้: รับซื้อ 62,250 บาท / ขายออก 62,450 บาท (ครั้งที่ 1, 09:05 น.)",
+      "direction": "down",
+      "response": "ราคาทองไทยประกาศลดลง 200 บาทจากประกาศก่อนหน้า; ตัวเลขนี้เป็นราคาสมาคมฯ ไม่ใช่การเปลี่ยนแปลง Spot สดระหว่างวัน",
+      "market_reaction": "ตรวจได้จากตารางประกาศสมาคมค้าทองคำ; ไม่มีประกาศรอบใหม่หลัง 09:05 น. ในข้อมูลที่ตรวจ",
+      "hot_reason": "เป็นราคาอ้างอิงล่าสุดจากประกาศสมาคมค้าทองคำ"
     }
   ],
-  "news_updated_at": "2026-11-13T15:27:54.398340+00:00",
+  "news_updated_at": "2026-11-14T15:02:32.000Z",
   "news_candidates": 40,
   "ai_updated_at": "2026-11-12T18:05:25.637626+00:00",
   "status": {
     "technical": "ok",
-    "news": "rss_headline_heuristic",
+    "news": "source_verified_manual",
     "ai": "preserved_morning_analysis",
-    "live_quote": "ok"
+    "live_quote": "stale_market_closed"
   },
-  "news_source_note": "พาดหัว/ข้อความย่อจาก Google News RSS; หากไม่มี API key จะประเมินทิศทางด้วยกฎคำสำคัญเบื้องต้น ไม่ใช่การอ่านบทความเต็ม และไม่ยืนยันว่าเป็นสาเหตุของราคา",
-  "generated_at_bangkok": "2026-11-13T22:27:52.137614+07:00"
+  "news_source_note": "อัปเดตจากประกาศสมาคมค้าทองคำ, Reuters ผ่าน MarketScreener และ AP; Spot ปิดสุดสัปดาห์ จึงใช้ราคาปิด/ราคาอ้างอิงพร้อม timestamp · ผลกระทบต่อทองเป็นการตีความ ไม่ยืนยันเหตุและผล",
+  "generated_at_bangkok": "2026-11-14T22:02:32+07:00"
 }
