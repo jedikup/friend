@@ -3,17 +3,13 @@
   "attempted_at": "2026-11-14T15:02:32.000Z",
   "slot": "22:00",
   "live_quote": {
-    "spot": 3882,
-    "fx_usd_thb": 33.92,
-    "estimated_thb_per_baht": 62300,
-    "quote_updated": "2026-11-14T02:05:00.000Z",
+    "spot": 3881.55,
+    "fx_usd_thb": 33.844,
+    "estimated_thb_per_baht": 62150,
+    "quote_updated": "2026-11-13T22:08:01.07895+00:00",
     "fx_reference_date": "2026-11-14",
-    "spot_source": "Gold Traders Association · ประกาศล่าสุด #1; Spot ตลาดปิดสุดสัปดาห์",
-    "fx_source": "Gold Traders Association · USD/THB ในประกาศ #1",
-    "association_buy": 62250,
-    "association_sell": 62450,
-    "association_updated": "2026-11-14T02:05:00.000Z",
-    "association_source_url": "https://sideb.goldtraders.or.th/UpdatePriceList.aspx"
+    "spot_source": "GoldPrice.dev · XAU/USD Spot",
+    "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB"
   },
   "technical": {
     "spot": 3882,
@@ -550,7 +546,7 @@
     "technical": "ok",
     "news": "source_verified_manual",
     "ai": "preserved_morning_analysis",
-    "live_quote": "stale_market_closed"
+    "live_quote": "ok"
   },
   "news_source_note": "อัปเดตจากประกาศสมาคมค้าทองคำ, Reuters ผ่าน MarketScreener และ AP; Spot ปิดสุดสัปดาห์ จึงใช้ราคาปิด/ราคาอ้างอิงพร้อม timestamp · ผลกระทบต่อทองเป็นการตีความ ไม่ยืนยันเหตุและผล",
   "generated_at_bangkok": "2026-11-14T22:02:32+07:00"
