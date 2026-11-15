@@ -258,6 +258,18 @@
   ],
   "news": [
     {
+      "id": "manual-20261115-ap-mideast",
+      "title": "AP: อิหร่านอ้างโจมตีระบบเรดาร์ที่ฐานสหรัฐฯ ในบาห์เรน; กองทัพสหรัฐฯ ยังไม่ยืนยัน",
+      "publisher": "Associated Press",
+      "published": "2026-11-15T08:04:07Z",
+      "url": "https://apnews.com/article/mideast-news-israel-gaza-iran-november-15-2026-3b4adde832dadd333451fd2f7a51908c",
+      "snippet": "AP รายงานว่า IRGC อ้างว่าโจมตีระบบเรดาร์ที่ฐานเฮลิคอปเตอร์สหรัฐฯ ในบาห์เรน แต่กองทัพสหรัฐฯ ยังไม่ได้ให้ความเห็นยืนยัน; รายงานเดียวกันกล่าวถึงความเคลื่อนไหวในกาซาและเยเมน",
+      "summary": "เป็นข้ออ้างทางทหารที่ยังไม่ยืนยันจากฝ่ายสหรัฐฯ จึงควรติดตามการยืนยันและผลต่อความเสี่ยงในอ่าวเปอร์เซีย",
+      "direction": "watch",
+      "response": "หากยืนยันและทำให้ความขัดแย้งขยายวง อาจเพิ่มแรงซื้อทองในฐานะสินทรัพย์ปลอดภัย; หากดันราคาน้ำมันและคาดการณ์เงินเฟ้อ/ดอกเบี้ยขึ้น ผลต่อทองอาจผสมหรือถูกดอลลาร์กดดัน",
+      "market_reaction": "ยังระบุผลต่อราคาทองโดยตรงไม่ได้ เพราะรายงานเป็นข้ออ้างที่ยังไม่ยืนยันและตลาด Spot ปิดช่วงสุดสัปดาห์"
+    },
+    {
       "id": "manual-20261114-ap-iran",
       "title": "ท่าทีสหรัฐฯ ต่ออิหร่านยังไม่ชัด ขณะที่กาตาร์เดินหน้าหาข้อตกลงเรื่องช่องแคบฮอร์มุซ",
       "publisher": "Associated Press",
@@ -484,18 +496,6 @@
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N88",
-      "title": "กังวลเงินเฟ้อหลังน้ำมันพุ่งหนุนเฟดปรับขึ้นดอกเบี้ยกดดันทองคําร่วง - ราคาทองคําวันนี้",
-      "publisher": "ราคาทองคําวันนี้",
-      "published": "2026-11-13T01:59:33+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1wZBVV95cUxOZXRxUTR6ckF6QUpvS0prSXZPWlgtOHlzNU5SZmROY1JUaVJ6SHJyR3hoQjRVRVdwM2lDbVQzYkpRRmhqemRfaHdFbG9nT2E3aHVCZXpFRS1ubzRKbllOdmdPTGJhQ3JtcDQyLVZCeXVza3VEc1pBOTJscmVQS3dlbzRCZmVnbmNVZWdfYl9YVzNFdHJHYTVDZzBzczl6bUc4VjJpcXdmQXBPSHozQVhpdlFKa19RbFY0WmhmMUVkaUxfakZIQURDN0VETnlDc3hpaWVUNHNINmt2X3AwN1pFUENITVhJOWdSRWZGcThTQmF6TE1fU1RwakNQRHVQUGNEZ24tQU1ud3pJbzh0RG5YV3ZHME0zZlFIRlFCWnhxd3RCdmtSZHVBY0YtMXNlRUM4VV9UZi1yUmo4QTdadVd5LXZMTVhlNy1QbngzWkN4N0J3LVk2MWZGOFM0NkNkOWZNZXljR0JXcTVKS0JWNVI3aFFHZU5KYWg1cUxqajBEbE92dkVJd05IczN5UjFWWTcyTDRNZTNQMmVDMjRHdUtpWmdMV3Bnd21Ra3p6WENUVE8xNVhpTDFwY2tITG5RX1lNTkM5MGttV1AxTXBSQVJWbXd1SXQ0UGtpbWpid3BqT0tHSm1scTdzTzlNeXE0cmZZR3N6M2FnRXh5Q0ZVMHBRa0R4RUVsbU9BalVsOXd5N3N6Wm5xZ0h1WWxlUEo4VUlJMjFOWENOVkNpVlhuYlo4RHZleVIxWk1Na3FGNEtUbTNRZ0FCSWFRNVdUUTZvdFo4VmNHVEh5QUpIc1NsTS1fbEJtZUdZSkhwTmktSGxiQU4wdi1wQmJzT3pKNmRsQkJGUDZEZGRGa2dWYm00TkhReC1oTWZ0VXFzWTlSY2RnWXRjdlVaRThqUXQ5blBpZmV2OEZUOUNiZWMxQmg1RUtGTHEzdmlBSU41c1gtRGZUTkE3OFBIS19pUjdZakhQYUpDaDlrYXItU1lzWDJKcllGRl8zVmhFWGpkYzl2ejctSGt0YVpYUHpwMnJJSTd2dkFrdkdhWUlEOUsxTHg1SE4yVk83MDBSX2lUUEVseWlwNGphX2pYd3RQTnE3a00yV1ppc3NpYlFaUm5oalhTS0VsUFFQVEhsakU?oc=5",
-      "snippet": "กังวลเงินเฟ้อหลังน้ำมันพุ่งหนุนเฟดปรับขึ้นดอกเบี้ยกดดันทองคําร่วง ราคาทองคําวันนี้",
-      "summary": "กังวลเงินเฟ้อหลังน้ำมันพุ่งหนุนเฟดปรับขึ้นดอกเบี้ยกดดันทองคําร่วง ราคาทองคําวันนี้",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     }
   ],
   "hot_news": [
@@ -539,7 +539,7 @@
       "hot_reason": "Fed, PPI และพันธบัตรเป็นตัวขับเคลื่อนหลักที่อาจกดดันทอง"
     }
   ],
-  "news_updated_at": "2026-11-14T15:02:32.000Z",
+  "news_updated_at": "2026-11-15T16:29:00.000Z",
   "news_candidates": 40,
   "ai_updated_at": "2026-11-15T08:47:02.000Z",
   "status": {
@@ -548,9 +548,9 @@
     "ai": "rules_based_no_api_key",
     "live_quote": "ok"
   },
-  "news_source_note": "อัปเดตจากประกาศสมาคมค้าทองคำ, Reuters ผ่าน MarketScreener และ AP; Spot ปิดสุดสัปดาห์ จึงใช้ราคาปิด/ราคาอ้างอิงพร้อม timestamp · ผลกระทบต่อทองเป็นการตีความ ไม่ยืนยันเหตุและผล ตรวจซ้ำ 15 พ.ย. 15:47 น. (ไทย); ไม่พบข่าวทอง/ตลาดที่เผยแพร่ใหม่กว่าข่าวล่าสุดในรายการ จึงคงข่าวเดิมและ timestamp ข่าวเดิมไว้",
+  "news_source_note": "ตรวจแหล่งข่าวต้นทางล่าสุดเวลา 23:29 น. ไทย; เพิ่มรายงาน AP วันที่ 15 พ.ย. เรื่องข้ออ้างการโจมตีเรดาร์ในบาห์เรนซึ่งยังไม่มีการยืนยันจากกองทัพสหรัฐฯ. ตลาด Spot ปิดสุดสัปดาห์; แนวรับ–แนวต้านยังอ้างอิงแท่งปิดล่าสุด 13 พ.ย. จนกว่าจะมีราคาเปิด/แท่งใหม่",
   "generated_at_bangkok": "2026-11-15T15:47:02+07:00",
-  "news_reviewed_at": "2026-11-15T08:47:02.000Z",
+  "news_reviewed_at": "2026-11-15T16:29:00.000Z",
   "analysis_sources": [
     {
       "label": "Gold Traders Association · ราคาทอง/Spot/FX ล่าสุด",
