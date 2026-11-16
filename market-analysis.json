@@ -3,24 +3,13 @@
   "attempted_at": "2026-11-16T06:07:30.288Z",
   "slot": "08:00",
   "live_quote": {
-    "spot": 3866.685,
-    "fx_usd_thb": 33.85,
-    "estimated_thb_per_baht": 61900,
-    "quote_updated": "2026-11-16T05:45:00.000Z",
-    "fx_quote_updated": "2026-11-16T05:36:00.000Z",
+    "spot": 3869.52,
+    "fx_usd_thb": 33.89,
+    "estimated_thb_per_baht": 62000,
+    "quote_updated": "2026-11-16T12:55:01.128261+00:00",
     "fx_reference_date": "2026-11-16",
-    "spot_source": "XAUAD · Swissquote XAU/USD spot",
-    "fx_source": "สมาคมค้าทองคำ · snapshot 16 พ.ย. 12:36 น.",
-    "thai_official": {
-      "date": "2026-11-16",
-      "time": "12:36",
-      "round": 17,
-      "buy": 61850,
-      "sell": 62050,
-      "spot": 3868,
-      "usd_thb": 33.85,
-      "url": "https://newgta.goldtraders.or.th/dailyprices_print"
-    }
+    "spot_source": "GoldPrice.dev · XAU/USD Spot",
+    "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB"
   },
   "technical": {
     "spot": 3866.685,
