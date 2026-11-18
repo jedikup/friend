@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-17T17:14:13.000Z",
-  "attempted_at": "2026-11-17T17:14:13.000Z",
+  "generated_at": "2026-11-18T15:19:27.000Z",
+  "attempted_at": "2026-11-18T15:19:27.000Z",
   "slot": "22:00",
   "live_quote": {
     "spot": 3763.88,
@@ -12,10 +12,10 @@
     "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB"
   },
   "technical": {
-    "spot": 3858.19,
-    "fx_usd_thb": 33.877,
-    "estimated_thb_per_baht": 61800,
-    "daily_change_pct": -0.87,
+    "spot": 3766.9,
+    "fx_usd_thb": 33.97,
+    "estimated_thb_per_baht": 60500,
+    "daily_change_pct": -2.14,
     "indicators": {
       "ema20": 3994.56,
       "ema50": null,
@@ -43,22 +43,22 @@
     "trend": "ขาลงระยะสั้น",
     "support": [
       {
-        "low": 3837.06,
-        "high": 3838.54
+        "low": 3757.29,
+        "high": 3766.9
       },
       {
-        "low": 3810.93,
-        "high": 3837.06
+        "low": 3730.35,
+        "high": 3757.29
       }
     ],
     "resistance": [
       {
-        "low": 3864.66,
-        "high": 3892.27
+        "low": 3793.84,
+        "high": 3830.4
       },
       {
-        "low": 3892.27,
-        "high": 3918.39
+        "low": 3830.4,
+        "high": 3857.34
       }
     ],
     "last_closed_bar": {
@@ -71,24 +71,24 @@
       "bar_date": "2026-11-16",
       "observed_at": "2026-11-16T05:45:00Z"
     },
-    "source": "Investing.com XAU/USD daily OHLC (17 Nov) · latest Reuters spot observation · Frankfurter USD/THB reference (17 Nov)",
-    "method": "แนวรับ–แนวต้านจาก Pivot ของแท่ง XAU/USD วันที่ 17 พ.ย. (O 3,862.87 / H 3,890.79 / L 3,837.06 / C 3,866.14): P 3,864.66, S1 3,838.54, S2 3,810.93, R1 3,892.27, R2 3,918.39. Reuters สังเกต Spot $3,858.19 เวลา 15:08 GMT (22:08 น. ไทย), ต่ำกว่า Pivot; แปลงระดับทองไทยด้วย FX อ้างอิง 33.877 วันที่ 17 พ.ย.; เป็นโซนคำนวณ ไม่ใช่ราคาเสนอขายร้านทอง",
-    "quote_updated": "2026-11-17T15:08:00Z",
-    "fx_reference_date": "2026-11-17",
+    "source": "ForexR · intraday XAU/USD OHLC snapshot; Gold Traders Association · final daily Spot/FX snapshot",
+    "method": "ระดับ 18 พ.ย. คำนวณจาก ForexR snapshot เวลา 18:30 น. ไทย (H $3,857.34 / L $3,757.29 / Spot $3,766.90): Pivot $3,793.84, S1 $3,730.35, R1 $3,830.40. โซนรับใกล้ $3,757–3,767 ตาม low/current; แนวต้าน $3,794–3,830 และ high วัน $3,857. แปลงเป็นเงินบาทด้วย FX 33.97 จาก GTA รอบสุดท้าย 17:23 น.; อ้างอิงล่าช้า ไม่ใช่ quote สด",
+    "quote_updated": "2026-11-18T11:30:00Z",
+    "fx_reference_date": "2026-11-18",
     "source_urls": [
-      "https://www.investing.com/currencies/xau-usd-historical-data",
-      "https://in.marketscreener.com/news/gold-inches-up-from-over-one-year-low-fed-outlook-caps-gains-ce785edfd08bf423",
-      "https://newgta.goldtraders.or.th/dailyprices_print",
-      "https://www.bangkokbiznews.com/news/news-update/1261182",
+      "https://forexr.com/analysis/why-is-gold-moving-2026-11-18",
+      "https://www.goldtraders.or.th/dailyprices_print",
+      "https://uk.marketscreener.com/news/gold-slides-to-over-one-year-low-on-firm-dollar-us-rate-outlook-ce785edcde8ff721",
+      "https://apnews.com/article/b1f0b530cffe951e6fcc1e27b2e1af94",
       "https://waverate.app/rates/usd-to-thb"
     ],
     "pivot_bar": {
-      "date": "2026-11-17",
-      "open": 3862.87,
-      "high": 3890.79,
-      "low": 3837.06,
-      "close": 3866.14,
-      "source_url": "https://www.investing.com/currencies/xau-usd-historical-data"
+      "date": "2026-11-18",
+      "high": 3857.34,
+      "low": 3757.29,
+      "close": 3766.9,
+      "observed_at": "2026-11-18T11:30:00Z",
+      "source_url": "https://forexr.com/analysis/why-is-gold-moving-2026-11-18"
     }
   },
   "daily_bars": [
@@ -287,6 +287,43 @@
     "เช็ก USD/THB 33.85, DXY แถว 103.45, ข่าวน้ำมัน/อิหร่าน และถ้อยแถลง Fed; ATR(14) ราว $91/oz บอกขนาดการแกว่ง ไม่ได้บอกทิศทาง และห้ามใช้กรอบ ATR เป็นเป้าราคา"
   ],
   "news": [
+    {
+      "id": "manual-20261118-reuters-gold-fed",
+      "title": "Reuters: ทองร่วง 2.1% ทำจุดต่ำสุดรอบกว่าหนึ่งปี ขณะตลาดเพิ่มคาดการณ์ขึ้นดอกเบี้ย Fed",
+      "publisher": "Reuters · MarketScreener",
+      "published": "2026-11-18T11:19:00Z",
+      "source_published_at": "2026-11-18T03:08:00Z",
+      "url": "https://uk.marketscreener.com/news/gold-slides-to-over-one-year-low-on-firm-dollar-us-rate-outlook-ce785edcde8ff721",
+      "snippet": "Reuters รายงาน spot gold ที่ $3,769.68/oz เวลา 10:50 GMT ลด 2.1%; แตะ $3,757 ต่ำสุดนับจาก ก.ย. 2025. ดอลลาร์แข็งใกล้จุดสูงสุด 19 เดือนและตลาดคาด Fed อาจขึ้นดอกเบี้ย; รอ minutes วันที่ 18 พ.ย. เวลา 19:00 GMT",
+      "summary": "แรงขายมาจากดอลลาร์และยีลด์/คาดการณ์ดอกเบี้ยที่สูง; ตลาดรอ minutes Fed คืนนี้ตามเวลาไทย",
+      "direction": "down",
+      "response": "ถ้า minutes ยืนยันมุมมอง hawkish อาจกดทองต่อ; หากความเห็น Fed แบ่งฝั่งหรือกังวลการเติบโต อาจเกิดแรงรีบาวด์",
+      "market_reaction": "มีการเคลื่อนไหวที่ยืนยันจาก Reuters: spot ลด 2.1% ถึง $3,769.68 ณ 10:50 GMT; ไม่สรุปว่าเกิดจากปัจจัยเดียว"
+    },
+    {
+      "id": "manual-20261118-gta-final-close",
+      "title": "สมาคมค้าทองคำปิด 18 พ.ย. รอบที่ 24: ทองแท่งขายออก 60,750 บาท ลดวันละ 1,100 บาท",
+      "publisher": "สมาคมค้าทองคำ",
+      "published": "2026-11-18T10:23:00Z",
+      "url": "https://www.goldtraders.or.th/dailyprices_print",
+      "snippet": "ประกาศครั้งที่ 24 เวลา 17:23 น.: รับซื้อ 60,550 บาท ขายออก 60,750 บาท; Gold Spot $3,776/oz; USD/THB 33.97; ลดลงสุทธิ 1,100 บาทจากวันก่อน",
+      "summary": "ราคาประกาศทองแท่ง 96.5% ในไทยปิดลดลงหนักตาม Spot ที่อ่อนและค่าเงินบาทที่อ่อน",
+      "direction": "down",
+      "response": "เงินบาทอ่อนช่วยพยุงทองไทยบางส่วน แต่ชดเชยการลดลงของ Spot ไม่หมด; ส่วนต่างสมาคมฯ/ร้านค้าอาจต่างกัน",
+      "market_reaction": "ตัวเลขราคาไทยและ Spot/FX อ้างจากประกาศสมาคมค้าทองคำรอบสุดท้าย 17:23 น."
+    },
+    {
+      "id": "manual-20261118-ap-gulf-attacks",
+      "title": "AP: อิหร่านขยายการโจมตีไปยังฐานทัพสหรัฐฯ ในคูเวตและหลายจุดในบาห์เรน",
+      "publisher": "Associated Press",
+      "published": "2026-11-18T09:34:18Z",
+      "url": "https://apnews.com/article/b1f0b530cffe951e6fcc1e27b2e1af94",
+      "snippet": "AP รายงานว่าอิหร่านโจมตีฐานทัพอากาศสหรัฐฯ ในคูเวตและหลายจุดในบาห์เรน โดยดูเหมือนเป็นการตอบโต้การโจมตีของสหรัฐฯ ก่อนหน้า",
+      "summary": "ความขัดแย้งขยายไปยังหลายประเทศอ่าวเปอร์เซีย เพิ่มความไม่แน่นอนด้านความมั่นคงและเส้นทางพลังงาน",
+      "direction": "watch",
+      "response": "ความเสี่ยงภูมิรัฐศาสตร์อาจหนุนแรงซื้อสินทรัพย์ปลอดภัย แต่การดันน้ำมัน เงินเฟ้อ ดอลลาร์ และยีลด์อาจกดทองได้เช่นกัน",
+      "market_reaction": "Reuters รายงานทองลด 2.1% ระหว่างวันภายใต้แรงกดดันดอลลาร์และดอกเบี้ย; ยังแยกผลของข่าวสงครามโดยตรงไม่ได้"
+    },
     {
       "id": "manual-20261117-ap-bahrain-blockade",
       "title": "AP: สหรัฐฯ ระบุยังประเมินความเสียหายฐานในบาห์เรนไม่ได้; ปิดล้อมอิหร่านมีต้นทุนวันละราว 32 ล้านดอลลาร์",
@@ -491,84 +528,48 @@
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N84",
-      "title": "ปรับโหด! ราคาทองรอบบ่ายวันนี้ 13 พ.ย.69 - LINE TODAY",
-      "publisher": "LINE TODAY",
-      "published": "2026-11-13T08:11:44+00:00",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5uYWJFYWNUU3hjaWFSaS1qbnFkcUtEanlzcldQeHJUWHlkbldmMEllbXRMQTNGdE9FWnNmckhwUmNXX0xnRDdLSVlDcURlWnVIdGxDeWJDQmVnQUd4UkhhT2NRR1JoOWV4cDRHZU84cE8?oc=5",
-      "snippet": "ปรับโหด! ราคาทองรอบบ่ายวันนี้ 13 พ.ย.69 LINE TODAY",
-      "summary": "ปรับโหด! ราคาทองรอบบ่ายวันนี้ 13 พ.ย.69 LINE TODAY",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N35",
-      "title": "Oil on track to post second weekly decline as Trump eases fears of renewed war with Iran - www.thenationalnews.com",
-      "publisher": "www.thenationalnews.com",
-      "published": "2026-11-13T07:01:18+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPOHRNdFNqY3d4YkY5N1ljTzByOEpwcjhxRWZuNkljWVVZRFB1UjdXVkZFWDQ2c0Jpc05nMTBLaXEtTWtBV2lfeXVaWTdQVy1CWTB4Z0xkNW5UUk9WTTQyUEVlNFFFV3BTYXZQNVEzSkQyd2NLQkNld2h1c1Q4R21adXl5VWJHLUFLYm1EX2Z1bW1SdGZfOWxPSDh4V2UwU19XaHZFdmVUZ1pNTzZOdURHTl9aQjJTa0FKdDMxUFB0SkU2eUlSZ2JWWmJXTFdFeFlIdjNPQkpxcEw2UGNpOW1QU1p3?oc=5",
-      "snippet": "Oil on track to post second weekly decline as Trump eases fears of renewed war with Iran www.thenationalnews.com",
-      "summary": "Oil on track to post second weekly decline as Trump eases fears of renewed war with Iran www.thenationalnews.com",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N64",
-      "title": "Bank of Thailand Plans 5 Measures Covering Gold, BNPL - SME & Entrepreneurship Magazine",
-      "publisher": "SME & Entrepreneurship Magazine",
-      "published": "2026-11-13T07:00:48+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5aMTByeTJBeFlDSkVsc2Iwb3FXRW1jVVg4T2UwdExTSXhpVzNCNngtUVpiQkxfdklhTmFVR19CUkVyeFJKRmtIWlZzMWQyUTAxTUhjTWpuUU1WWmZDenVjYVhxM2dwVkNBVnZ5M01sZG9lekMzNmVyYmpR?oc=5",
-      "snippet": "Bank of Thailand Plans 5 Measures Covering Gold, BNPL SME & Entrepreneurship Magazine",
-      "summary": "Bank of Thailand Plans 5 Measures Covering Gold, BNPL SME & Entrepreneurship Magazine",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     }
   ],
   "hot_news": [
     {
-      "id": "manual-20261117-ap-bahrain-blockade",
-      "title": "AP: สหรัฐฯ ระบุยังประเมินความเสียหายฐานในบาห์เรนไม่ได้; ปิดล้อมอิหร่านมีต้นทุนวันละราว 32 ล้านดอลลาร์",
-      "publisher": "Associated Press",
-      "published": "2026-11-17T13:18:12Z",
-      "url": "https://apnews.com/article/e1fd6fce7b854d0d6d5e97a53138b47b",
-      "snippet": "AP รายงานจากการไต่สวนยืนยันตำแหน่งรัฐมนตรีทหารเรือว่า สหรัฐฯ ยังประเมินความเสียหายฐานในบาห์เรนจากการโจมตีของอิหร่านไม่ได้ และการปิดล้อมทางทะเลมีต้นทุนประมาณ 32 ล้านดอลลาร์ต่อวัน",
-      "summary": "ความขัดแย้งและการปิดล้อมยังดำเนินต่อ แต่ข้อมูลความเสียหายฐานยังไม่สรุป",
-      "direction": "watch",
-      "response": "ความเสี่ยงอ่าวเปอร์เซียอาจเพิ่มแรงซื้อสินทรัพย์ปลอดภัย; หากหนุนราคาน้ำมัน เงินเฟ้อ ยีลด์ และดอลลาร์ ผลสุทธิอาจกดทองได้เช่นกัน",
-      "market_reaction": "ยังไม่พบหลักฐานแยกผลของข่าวนี้ต่อราคาทองโดยตรง; ตลาดกำลังจับตา Fed และยีลด์"
-    },
-    {
-      "id": "manual-20261117-reuters-gold-fed",
-      "title": "Reuters: ทองฟื้นจากจุดต่ำสุดรอบปีได้ยาก ดอลลาร์และยีลด์ที่สูงกดแรงซื้อ",
+      "id": "manual-20261118-reuters-gold-fed",
+      "title": "Reuters: ทองร่วง 2.1% ทำจุดต่ำสุดรอบกว่าหนึ่งปี ขณะตลาดเพิ่มคาดการณ์ขึ้นดอกเบี้ย Fed",
       "publisher": "Reuters · MarketScreener",
-      "published": "2026-11-17T09:28:00Z",
-      "updated_at": "2026-11-17T15:37:00Z",
-      "url": "https://in.marketscreener.com/news/gold-inches-up-from-over-one-year-low-fed-outlook-caps-gains-ce785edfd08bf423",
-      "snippet": "Reuters รายงาน spot gold ทรงตัวที่ $3,858.19/oz เวลา 15:08 GMT; ดอลลาร์ทำจุดสูงสุดรอบ 19 เดือนและยีลด์พันธบัตรสหรัฐฯ สูง ขณะที่ตลาดรอ minutes ของ Fed วันที่ 18 พ.ย.; CME FedWatch ในรายงานให้โอกาส 92% ต่อการขึ้นดอกเบี้ย 25 bps ในเดือน ธ.ค.",
-      "summary": "ยีลด์และดอลลาร์สูงยังจำกัดแรงฟื้น แม้ทองรีบาวด์จากจุดต่ำสุด",
+      "published": "2026-11-18T11:19:00Z",
+      "source_published_at": "2026-11-18T03:08:00Z",
+      "url": "https://uk.marketscreener.com/news/gold-slides-to-over-one-year-low-on-firm-dollar-us-rate-outlook-ce785edcde8ff721",
+      "snippet": "Reuters รายงาน spot gold ที่ $3,769.68/oz เวลา 10:50 GMT ลด 2.1%; แตะ $3,757 ต่ำสุดนับจาก ก.ย. 2025. ดอลลาร์แข็งใกล้จุดสูงสุด 19 เดือนและตลาดคาด Fed อาจขึ้นดอกเบี้ย; รอ minutes วันที่ 18 พ.ย. เวลา 19:00 GMT",
+      "summary": "แรงขายมาจากดอลลาร์และยีลด์/คาดการณ์ดอกเบี้ยที่สูง; ตลาดรอ minutes Fed คืนนี้ตามเวลาไทย",
       "direction": "down",
-      "response": "ถ้า Fed ส่งสัญญาณ hawkish ต่อและยีลด์/ดอลลาร์ขึ้นต่อ จะกดทอง; หาก minutes ชี้ความกังวลเศรษฐกิจหรือแบ่งความเห็นชัด อาจหนุนรีบาวด์",
-      "market_reaction": "Reuters บันทึก spot $3,858.19 เวลา 15:08 GMT; สะท้อนทองยังทรงตัวใกล้ระดับต่ำ ไม่ใช่หลักฐานว่าข่าวใดข่าวหนึ่งเป็นเหตุโดยตรง"
+      "response": "ถ้า minutes ยืนยันมุมมอง hawkish อาจกดทองต่อ; หากความเห็น Fed แบ่งฝั่งหรือกังวลการเติบโต อาจเกิดแรงรีบาวด์",
+      "market_reaction": "มีการเคลื่อนไหวที่ยืนยันจาก Reuters: spot ลด 2.1% ถึง $3,769.68 ณ 10:50 GMT; ไม่สรุปว่าเกิดจากปัจจัยเดียว"
     },
     {
-      "id": "manual-20261117-gta-close",
-      "title": "สมาคมค้าทองคำปิดวัน 17 พ.ย. รอบที่ 26: ทองแท่งขายออก 61,850 บาท ลดลงสุทธิ 200 บาท",
-      "publisher": "สมาคมค้าทองคำ · Bangkok Biz News",
-      "published": "2026-11-17T10:17:00Z",
-      "url": "https://www.bangkokbiznews.com/news/news-update/1261182",
-      "snippet": "ราคาสมาคมฯ รอบสุดท้าย 17:17 น. รับซื้อ 61,650 บาท ขายออก 61,850 บาท; Gold Spot $3,859/oz; ลดลงสุทธิ 200 บาทจากวันก่อน",
-      "summary": "ราคาประกาศในไทยปิดลดลง 200 บาท หลังผันผวนและปรับราคา 26 รอบ",
+      "id": "manual-20261118-ap-gulf-attacks",
+      "title": "AP: อิหร่านขยายการโจมตีไปยังฐานทัพสหรัฐฯ ในคูเวตและหลายจุดในบาห์เรน",
+      "publisher": "Associated Press",
+      "published": "2026-11-18T09:34:18Z",
+      "url": "https://apnews.com/article/b1f0b530cffe951e6fcc1e27b2e1af94",
+      "snippet": "AP รายงานว่าอิหร่านโจมตีฐานทัพอากาศสหรัฐฯ ในคูเวตและหลายจุดในบาห์เรน โดยดูเหมือนเป็นการตอบโต้การโจมตีของสหรัฐฯ ก่อนหน้า",
+      "summary": "ความขัดแย้งขยายไปยังหลายประเทศอ่าวเปอร์เซีย เพิ่มความไม่แน่นอนด้านความมั่นคงและเส้นทางพลังงาน",
+      "direction": "watch",
+      "response": "ความเสี่ยงภูมิรัฐศาสตร์อาจหนุนแรงซื้อสินทรัพย์ปลอดภัย แต่การดันน้ำมัน เงินเฟ้อ ดอลลาร์ และยีลด์อาจกดทองได้เช่นกัน",
+      "market_reaction": "Reuters รายงานทองลด 2.1% ระหว่างวันภายใต้แรงกดดันดอลลาร์และดอกเบี้ย; ยังแยกผลของข่าวสงครามโดยตรงไม่ได้"
+    },
+    {
+      "id": "manual-20261118-gta-final-close",
+      "title": "สมาคมค้าทองคำปิด 18 พ.ย. รอบที่ 24: ทองแท่งขายออก 60,750 บาท ลดวันละ 1,100 บาท",
+      "publisher": "สมาคมค้าทองคำ",
+      "published": "2026-11-18T10:23:00Z",
+      "url": "https://www.goldtraders.or.th/dailyprices_print",
+      "snippet": "ประกาศครั้งที่ 24 เวลา 17:23 น.: รับซื้อ 60,550 บาท ขายออก 60,750 บาท; Gold Spot $3,776/oz; USD/THB 33.97; ลดลงสุทธิ 1,100 บาทจากวันก่อน",
+      "summary": "ราคาประกาศทองแท่ง 96.5% ในไทยปิดลดลงหนักตาม Spot ที่อ่อนและค่าเงินบาทที่อ่อน",
       "direction": "down",
-      "response": "สอดคล้องกับแรงกดดัน Spot และค่าเงินบาท; ใช้เป็นราคาประกาศของสมาคมฯ ไม่ใช่ quote สดหลังตลาดปิด",
-      "market_reaction": "ประกาศรอบสุดท้ายอ้างโดยตรงจากตารางสมาคมฯ เวลา 17:17 น.; ไม่มีการอ้างว่าเป็นผลจากข่าวใดข่าวหนึ่ง"
+      "response": "เงินบาทอ่อนช่วยพยุงทองไทยบางส่วน แต่ชดเชยการลดลงของ Spot ไม่หมด; ส่วนต่างสมาคมฯ/ร้านค้าอาจต่างกัน",
+      "market_reaction": "ตัวเลขราคาไทยและ Spot/FX อ้างจากประกาศสมาคมค้าทองคำรอบสุดท้าย 17:23 น."
     }
   ],
-  "news_updated_at": "2026-11-17T17:14:13.000Z",
+  "news_updated_at": "2026-11-18T15:19:27.000Z",
   "news_candidates": 40,
   "ai_updated_at": "2026-11-16T06:07:30.288Z",
   "status": {
@@ -577,38 +578,33 @@
     "ai": "rules_based_no_api_key",
     "live_quote": "ok"
   },
-  "news_source_note": "คัดข่าวและตรวจข้อมูลรอบค่ำเวลา 00:14 น. ไทย (18 พ.ย.); ข่าวต้นทางล่าสุด AP 17 พ.ย. 20:18 น. ไทย, Reuters 17 พ.ย. 22:08 น. ไทย; ราคาทอง/บาทไทยอ้างอิงเวลาที่ระบุในแต่ละแหล่ง",
+  "news_source_note": "ตรวจรอบค่ำ 22:19 น. ไทย: AP เผยแพร่ 16:34 น., GTA รอบสุดท้าย 17:23 น., Reuters ราคาทองสังเกต 17:50 น. และแก้ไขบทความถึง 18:19 น., ForexR spot snapshot 18:30 น. ข้อมูล Spot ที่ใช้คำนวณระดับไม่ใช่ราคาสดปัจจุบัน",
   "generated_at_bangkok": "2026-11-16 13:07:30",
-  "news_reviewed_at": "2026-11-17T17:14:13.000Z",
+  "news_reviewed_at": "2026-11-18T15:19:27.000Z",
   "analysis_sources": [
     {
-      "label": "Investing.com · XAU/USD daily OHLC 17 Nov",
-      "observed_at": "2026-11-17",
-      "url": "https://www.investing.com/currencies/xau-usd-historical-data"
+      "label": "ForexR · XAU/USD intraday price and range",
+      "observed_at": "2026-11-18T11:30:00Z",
+      "url": "https://forexr.com/analysis/why-is-gold-moving-2026-11-18"
     },
     {
-      "label": "Reuters · gold, dollar, Treasury yields and Fed minutes",
-      "observed_at": "2026-11-17T15:08:00Z",
-      "url": "https://in.marketscreener.com/news/gold-inches-up-from-over-one-year-low-fed-outlook-caps-gains-ce785edfd08bf423"
+      "label": "Gold Traders Association · final price #24, Spot and THB",
+      "observed_at": "2026-11-18T10:23:00Z",
+      "url": "https://www.goldtraders.or.th/dailyprices_print"
     },
     {
-      "label": "Gold Traders Association · 17 Nov final price #26 (via Bangkok Biz News)",
-      "observed_at": "2026-11-17T10:17:00Z",
-      "url": "https://www.bangkokbiznews.com/news/news-update/1261182"
+      "label": "Reuters · Gold, dollar, Treasury yields and Fed minutes",
+      "observed_at": "2026-11-18T10:50:00Z",
+      "url": "https://uk.marketscreener.com/news/gold-slides-to-over-one-year-low-on-firm-dollar-us-rate-outlook-ce785edcde8ff721"
     },
     {
-      "label": "Associated Press · latest US blockade and Bahrain damage assessment",
-      "observed_at": "2026-11-17T13:18:12Z",
-      "url": "https://apnews.com/article/e1fd6fce7b854d0d6d5e97a53138b47b"
-    },
-    {
-      "label": "Associated Press · new Iran strike on Bahrain",
-      "observed_at": "2026-11-17T10:07:42Z",
-      "url": "https://apnews.com/article/582e0b5d51be06f0ed630fac24f39b72"
+      "label": "Associated Press · Iran strikes in Kuwait and Bahrain",
+      "observed_at": "2026-11-18T09:34:18Z",
+      "url": "https://apnews.com/article/b1f0b530cffe951e6fcc1e27b2e1af94"
     },
     {
       "label": "Frankfurter reference USD/THB via WaveRate",
-      "observed_at": "2026-11-17",
+      "observed_at": "2026-11-18",
       "url": "https://waverate.app/rates/usd-to-thb"
     }
   ]
