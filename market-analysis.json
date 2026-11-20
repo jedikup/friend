@@ -3,23 +3,13 @@
   "attempted_at": "2026-11-20T16:20:56.421Z",
   "slot": "22:00",
   "live_quote": {
-    "spot": 3551.095,
-    "fx_usd_thb": 33.9,
-    "estimated_thb_per_baht": 56950,
-    "quote_updated": "2026-11-20T16:10:00.000Z",
+    "spot": 3541.72,
+    "fx_usd_thb": 33.924,
+    "estimated_thb_per_baht": 56850,
+    "quote_updated": "2026-11-20T16:59:01.98133+00:00",
     "fx_reference_date": "2026-11-20",
-    "spot_source": "XAUAD · Swissquote Spot",
-    "fx_source": "Investing.com USD/THB daily close · 20 พ.ย.; GTA #90 อ้าง 33.94",
-    "thai_official": {
-      "date": "2026-11-20",
-      "time": "17:29",
-      "round": 90,
-      "buy": 57400,
-      "sell": 57600,
-      "spot": 3580,
-      "usd_thb": 33.94,
-      "url": "https://www.goldtraders.or.th/gpog"
-    }
+    "spot_source": "GoldPrice.dev · XAU/USD Spot",
+    "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB"
   },
   "technical": {
     "spot": 3551.095,
