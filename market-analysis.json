@@ -3,24 +3,13 @@
   "attempted_at": "2026-11-21T16:37:20.731Z",
   "slot": "22:00",
   "live_quote": {
-    "spot": 3534.55,
-    "fx_usd_thb": 33.959,
-    "estimated_thb_per_baht": 56750,
-    "quote_updated": "2026-11-21T16:25:00.000Z",
-    "fx_reference_date": "2026-11-20",
-    "spot_source": "XAUAD · Swissquote Spot · observed 21 พ.ย. 23:25 น. ไทย",
-    "fx_source": "ExchangeRate.dev · USD/THB daily reference · 20 พ.ย.",
-    "fx_quote_updated": "2026-11-20T21:59:59Z",
-    "thai_official": {
-      "date": "2026-11-21",
-      "time": "09:11",
-      "round": 1,
-      "buy": 56950,
-      "sell": 57150,
-      "spot": null,
-      "usd_thb": null,
-      "url": "https://classic.goldtraders.or.th/default2.aspx"
-    }
+    "spot": 3539.37,
+    "fx_usd_thb": 33.927,
+    "estimated_thb_per_baht": 56800,
+    "quote_updated": "2026-11-20T22:08:01.937499+00:00",
+    "fx_reference_date": "2026-11-21",
+    "spot_source": "GoldPrice.dev · XAU/USD Spot",
+    "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB"
   },
   "technical": {
     "spot": 3534.55,
@@ -612,7 +601,7 @@
     "technical": "ok",
     "news": "manual_source_review",
     "ai": "preserved_morning_analysis",
-    "live_quote": "provider_observation_stale_after_market_close"
+    "live_quote": "ok"
   },
   "news_source_note": "ตรวจข่าวใหม่จาก Associated Press, Reuters และประกาศสมาคมค้าทองคำ; ราคาตลาดอ้างเวลาต้นทาง; ข่าวภูมิรัฐศาสตร์แปลผลเป็นทิศทางแน่นอนไม่ได้และยังยืนยันเหตุ-ผลต่อราคาไม่ได้",
   "generated_at_bangkok": "2026-11-21T23:37:20.731+07:00",
