@@ -1,103 +1,114 @@
 {
-  "generated_at": "2026-11-20T16:20:56.421Z",
-  "attempted_at": "2026-11-20T16:20:56.421Z",
+  "generated_at": "2026-11-21T16:37:20.731Z",
+  "attempted_at": "2026-11-21T16:37:20.731Z",
   "slot": "22:00",
   "live_quote": {
-    "spot": 3539.37,
-    "fx_usd_thb": 33.927,
-    "estimated_thb_per_baht": 56800,
-    "quote_updated": "2026-11-20T22:08:01.937499+00:00",
-    "fx_reference_date": "2026-11-21",
-    "spot_source": "GoldPrice.dev · XAU/USD Spot",
-    "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB"
+    "spot": 3534.55,
+    "fx_usd_thb": 33.959,
+    "estimated_thb_per_baht": 56750,
+    "quote_updated": "2026-11-21T16:25:00.000Z",
+    "fx_reference_date": "2026-11-20",
+    "spot_source": "XAUAD · Swissquote Spot · observed 21 พ.ย. 23:25 น. ไทย",
+    "fx_source": "ExchangeRate.dev · USD/THB daily reference · 20 พ.ย.",
+    "fx_quote_updated": "2026-11-20T21:59:59Z",
+    "thai_official": {
+      "date": "2026-11-21",
+      "time": "09:11",
+      "round": 1,
+      "buy": 56950,
+      "sell": 57150,
+      "spot": null,
+      "usd_thb": null,
+      "url": "https://classic.goldtraders.or.th/default2.aspx"
+    }
   },
   "technical": {
-    "spot": 3551.095,
-    "fx_usd_thb": 33.9,
-    "estimated_thb_per_baht": 56950,
-    "daily_change_pct": -3.31,
+    "spot": 3534.55,
+    "fx_usd_thb": 33.959,
+    "estimated_thb_per_baht": 56750,
+    "daily_change_pct": -0.47,
     "indicators": {
-      "ema20": 3893.69,
+      "ema20": 3859.49,
       "ema50": null,
       "ema200": null,
-      "ema_reading": "Spot ต่ำกว่า EMA20; ประวัติที่มีไม่ครบ 50/200 แท่ง จึงงด EMA50/200",
-      "rsi14": 27.38,
+      "ema_reading": "Spot ต่ำกว่า EMA20; ประวัติแท่งไม่พอคำนวณ EMA50/200 ให้เชื่อถือได้",
+      "rsi14": 14.53,
       "rsi_reading": "ต่ำกว่า 30 เข้าภาวะขายมาก แต่ยังไม่ยืนยันกลับตัว",
       "macd": null,
       "macd_signal": null,
       "macd_hist": null,
-      "macd_reading": "ข้อมูล 24 แท่งยังไม่พอสำหรับ MACD(12,26,9) ที่มีช่วง warm-up ครบ; งดแสดง",
-      "bb_upper": 4222.24,
-      "bb_mid": 3930.47,
-      "bb_lower": 3638.71,
-      "bb_reading": "ราคาต่ำกว่าแถบล่าง; อ่อนแรง/ผันผวน ไม่ใช้เป็นสัญญาณซื้อเดี่ยว",
-      "atr14": 98.64,
-      "atr_reading": "ATR(14) ราว $98.64/oz ต่อวัน; บอกขนาด ไม่บอกทิศทาง",
-      "source_note": "คำนวณจากแท่ง XAUAD/Swissquote 1D; แท่งวันที่ 20 พ.ย. ยังเป็นข้อมูลวันล่าสุด; MACD/EMA50/200 งดแสดงเพราะช่วงข้อมูลไม่พอ"
+      "macd_reading": "ข้อมูลแท่งยังไม่พอสำหรับ MACD(12,26,9) ที่ warm-up ครบ; งดแสดง",
+      "bb_upper": 4235.94,
+      "bb_mid": 3904.04,
+      "bb_lower": 3572.14,
+      "bb_reading": "ราคาต่ำกว่าแถบล่าง; ผันผวน/ขายมาก ไม่ใช้เป็นสัญญาณซื้อเดี่ยว",
+      "atr14": 91.73,
+      "atr_reading": "ATR(14) ราว $91.73/oz ต่อวัน; บอกขนาดการแกว่ง ไม่บอกทิศทาง",
+      "source_note": "คำนวณจาก OHLC รายวัน XAUAD/Swissquote; แท่ง 21 พ.ย. ตาม snapshot 23:25 น. ไทย; ตลาดสุดสัปดาห์ทำให้ quote มีช่วงสภาพคล่องต่ำ"
     },
-    "atr14": 98.64,
+    "atr14": 91.73,
     "atr_period": 14,
-    "sma20": 3930.47,
+    "sma20": 3904.04,
     "sma_period": 20,
     "ema50": null,
     "trend": "ขาลงและผันผวน",
     "support": [
       {
-        "low": 3514.72,
-        "high": 3551.3
+        "low": 3502.92,
+        "high": 3531.84
       },
       {
-        "low": 3408.56,
-        "high": 3479.93
+        "low": 3476.7,
+        "high": 3505.63
       }
     ],
     "resistance": [
       {
-        "low": 3586.09,
-        "high": 3657.46
+        "low": 3531.84,
+        "high": 3560.77
       },
       {
-        "low": 3657.46,
-        "high": 3763.62
+        "low": 3560.77,
+        "high": 3586.98
       }
     ],
     "last_closed_bar": {
-      "time": "2026-11-19T00:00:00Z",
-      "date": "2026-11-19",
-      "open": 3754.26,
-      "high": 3758.56,
-      "low": 3671.3,
-      "close": 3672.84
-    },
-    "source": "XAUAD/Swissquote daily OHLC + Spot; GTA #90; USD/THB daily close",
-    "method": "Pivot จากแท่ง 20 พ.ย. H 3692.25/L 3514.72/C 3551.3: P 3586.09, S1 3479.93, S2 3408.56, R1 3657.46, R2 3763.62; แนวรับใกล้ยึด low วันล่าสุด; FX 33.900 ใช้แปลงเป็นราคาไทยโดยประมาณ",
-    "quote_updated": "2026-11-20T16:10:00.000Z",
-    "fx_reference_date": "2026-11-20",
-    "current_bar": {
       "time": "2026-11-20T00:00:00Z",
       "date": "2026-11-20",
       "open": 3672.93,
       "high": 3692.25,
       "low": 3514.72,
-      "close": 3551.3,
+      "close": 3551.3
+    },
+    "source": "XAUAD/Swissquote Spot + daily OHLC; สมาคมค้าทองคำ #1 วันที่ 21 พ.ย.; USD/THB daily",
+    "method": "Pivot จากแท่ง 21 พ.ย. H 3558.06/L 3502.92/C 3534.55: P 3531.84, S1 3505.63, S2 3476.7, R1 3560.77, R2 3586.98; FX 33.959 ใช้แปลงไทยโดยประมาณ; ราคาสมาคมฯล่าสุดเป็นประกาศ 09:11 น.",
+    "quote_updated": "2026-11-21T16:25:00.000Z",
+    "fx_reference_date": "2026-11-20",
+    "current_bar": {
+      "time": "2026-11-21T00:00:00Z",
+      "date": "2026-11-21",
+      "open": 3551.11,
+      "high": 3558.06,
+      "low": 3502.92,
+      "close": 3534.55,
       "partial": true,
-      "observed_at": "2026-11-20T16:10:00.000Z"
+      "observed_at": "2026-11-21T16:25:00.000Z"
     },
     "source_urls": [
       "https://xauad.com/gold-price-today.html",
-      "https://www.goldtraders.or.th/gpog",
-      "https://ph.investing.com/currencies/usd-thb-historical-data",
-      "https://uk.marketscreener.com/news/gold-set-for-worst-week-in-eight-months-as-firm-dollar-fed-hike-bets-weigh-ce785ed2de80f42d",
-      "https://apnews.com/article/16c39c487a23b53b73c5eabb7f0fd57a",
-      "https://www.axios.com/2026/11/19/interest-rates-ai-fed-october",
-      "https://www.dealplexus.com/markets/usd-index-dxy"
+      "https://classic.goldtraders.or.th/default2.aspx",
+      "https://www.exchangerate.dev/exchange-rates/usd-thb",
+      "https://apnews.com/article/mideast-iran-gaza-israel-november-21-2026-29159a6f3365ff447c0ccbd1d7260f75",
+      "https://apnews.com/article/bfdee2ffadc2693e7338d6822e5356ef",
+      "https://apnews.com/article/8fd6dcd6dc4a1a77437cedc4567fbee8",
+      "https://uk.marketscreener.com/news/gold-set-for-worst-week-in-eight-months-as-firm-dollar-fed-hike-bets-weigh-ce785ed2de80f42d"
     ],
     "pivot_bar": {
-      "date": "2026-11-20",
-      "high": 3692.25,
-      "low": 3514.72,
-      "close": 3551.3,
-      "observed_at": "2026-11-20T16:10:00.000Z",
+      "date": "2026-11-21",
+      "high": 3558.06,
+      "low": 3502.92,
+      "close": 3534.55,
+      "observed_at": "2026-11-21T16:25:00.000Z",
       "source_url": "https://xauad.com/gold-price-today.html"
     }
   },
@@ -271,6 +282,15 @@
       "time": "2026-11-20T00:00:00Z",
       "partial": true,
       "observed_at": "2026-11-20T16:10:00.000Z"
+    },
+    {
+      "open": 3551.11,
+      "high": 3558.06,
+      "low": 3502.92,
+      "close": 3534.55,
+      "time": "2026-11-21T00:00:00Z",
+      "partial": true,
+      "observed_at": "2026-11-21T16:25:00.000Z"
     }
   ],
   "candidate_count": 40,
@@ -297,43 +317,82 @@
   ],
   "news": [
     {
-      "id": "R20261120",
-      "title": "Reuters: ทองเข้าใกล้การร่วงรายสัปดาห์หนักสุดในรอบ 8 เดือน จากดอลลาร์แข็งและคาดการณ์ Fed ขึ้นดอกเบี้ย",
+      "id": "APIRAN20261121",
+      "title": "AP: มีรายงานเรือบรรทุกน้ำมันอย่างน้อย 3 ลำถูกโจมตีบริเวณช่องแคบฮอร์มุซ ท่ามกลางการปะทะอิหร่าน",
+      "publisher": "Associated Press",
+      "published": "2026-11-21T14:43:49Z",
+      "url": "https://apnews.com/article/mideast-iran-gaza-israel-november-21-2026-29159a6f3365ff447c0ccbd1d7260f75",
+      "snippet": "AP รายงานการโจมตีเรือและการเปิดตัวระบบขีปนาวุธของอิหร่านในวันที่ 21 พ.ย.; มีความเสี่ยงต่อเส้นทางขนส่งพลังงาน",
+      "summary": "ความเสี่ยงภูมิรัฐศาสตร์อาจหนุนแรงซื้อสินทรัพย์ปลอดภัย แต่ความเสี่ยงน้ำมันแพงอาจเร่งเงินเฟ้อและคงแรงกดดันดอกเบี้ย",
+      "direction": "watch",
+      "response": "ผลต่อทองผสม: แรงซื้อหลบภัยอาจเพิ่ม แต่ถ้าดอลลาร์/ยีลด์ขึ้นจากความกังวลเงินเฟ้ออาจกดทอง",
+      "market_reaction": "ข่าวเกิดหลังตลาดสัปดาห์ปิด/ช่วงสภาพคล่องต่ำ; ยังยืนยันไม่ได้ว่าทำให้ Spot เปลี่ยนราคาโดยตรง",
+      "hot_reason": "เหตุการณ์กระทบการขนส่งน้ำมันบริเวณช่องแคบฮอร์มุซและอาจเพิ่มความผันผวน"
+    },
+    {
+      "id": "GTA20261121",
+      "title": "สมาคมค้าทองคำ: เปิดตลาด 21 พ.ย. เวลา 09:11 น. ทองแท่งรับซื้อ 56,950 / ขายออก 57,150 บาท",
+      "publisher": "สมาคมค้าทองคำ",
+      "published": "2026-11-21T02:11:00Z",
+      "url": "https://classic.goldtraders.or.th/default2.aspx",
+      "snippet": "ราคาทองแท่ง 96.5% ลด 450 บาทจากราคาปิดวันศุกร์; ประกาศครั้งที่ 1 เวลา 09:11 น.",
+      "summary": "ราคาทางการไทยลดลงตามการอ่อนตัวของ Spot ก่อนวันหยุด; เป็นราคาประกาศล่าสุดที่ตรวจได้ ไม่ใช่ราคาสดของวันอาทิตย์",
+      "direction": "down",
+      "response": "ให้ยึดเป็นราคาอ้างอิงทางการรอบล่าสุด; ตรวจประกาศใหม่วันทำการก่อนเทรด",
+      "market_reaction": "รับซื้อ 56,950 / ขายออก 57,150 บาทต่อบาททองคำ; ตลาดประกาศเพียงรอบเดียววันเสาร์",
+      "hot_reason": "เป็นข้อมูลสมาคมฯ ที่ยืนยันราคาทองไทยและเวลาประกาศ"
+    },
+    {
+      "id": "REUTERS20261120",
+      "title": "Reuters: ทองมุ่งสู่สัปดาห์ที่แย่ที่สุดในรอบ 8 เดือน หลังดอลลาร์แข็งและตลาดคาด Fed ขึ้นดอกเบี้ย",
       "publisher": "Reuters · MarketScreener",
       "published": "2026-11-20T11:48:00Z",
       "url": "https://uk.marketscreener.com/news/gold-set-for-worst-week-in-eight-months-as-firm-dollar-fed-hike-bets-weigh-ce785ed2de80f42d",
-      "snippet": "Spot ลด 1.9% สู่ $3,552.39 ณ 07:30 GMT; ก่อนหน้าทำ low $3,513.54 และอ่อนลงราว 8% ในสัปดาห์",
-      "summary": "ดอลลาร์/ยีลด์สูงจากความคาดหวัง Fed คุมเงินเฟ้อกดทอง ขณะมีแรงขายชดเชยขาดทุนหุ้น AI",
+      "snippet": "Reuters รายงาน Spot เคยลด 1.9% สู่ $3,552.39 ณ 07:30 GMT และทำจุดต่ำที่ $3,513.54; ลดราว 8% ในสัปดาห์",
+      "summary": "ดอลลาร์/ยีลด์ที่แข็งและคาดการณ์ดอกเบี้ยสูงเพิ่มต้นทุนค่าเสียโอกาสถือทอง; แรงขายหุ้น AI อาจกระตุ้นการขายสินทรัพย์เพื่อชดเชยขาดทุน",
       "direction": "down",
-      "response": "ลบต่อทองหากดอลลาร์และยีลด์ยังแข็ง แต่การลงแรงอาจเกิดแรงซื้อคืน",
-      "market_reaction": "Reuters รายงาน Spot ลด 1.9% และลงราว 8% ในสัปดาห์; ไม่ยืนยันว่าปัจจัยเดียวเป็นสาเหตุ",
-      "hot_reason": "ข่าวมีตัวเลขราคาและระบุปัจจัยดอลลาร์/Fed ชัดเจน"
+      "response": "ยังเป็นแรงกดดันระยะสั้นตราบใดที่ดอลลาร์และยีลด์ไม่อ่อน; การลงแรงก็อาจเกิดแรงซื้อคืน",
+      "market_reaction": "ราคาที่ Reuters ระบุเป็นช่วงเช้า GMT วันที่ 20 พ.ย. ไม่ใช่ราคาปัจจุบัน",
+      "hot_reason": "ข่าวรายงานทิศทางราคา ดอลลาร์ และนโยบาย Fed พร้อมตัวเลขชัดเจน"
     },
     {
-      "id": "GTA20261120",
-      "title": "สมาคมค้าทองคำ: ประกาศ #90 เวลา 17:29 น. ทองแท่งรับซื้อ 57,400 / ขายออก 57,600 บาท",
-      "publisher": "สมาคมค้าทองคำ",
-      "published": "2026-11-20T10:29:00Z",
-      "url": "https://www.goldtraders.or.th/gpog",
-      "snippet": "Spot 3,580 ดอลลาร์; USD/THB 33.94; ปรับขึ้น 50 บาทจากรอบก่อน แต่ลดลง 2,300 บาทเทียบวันก่อน",
-      "summary": "ราคารอบทางการลดลงแรงเมื่อเทียบวันก่อน; หลัง 17:29 ไม่มีประกาศรอบใหม่ในแหล่งที่ตรวจ",
-      "direction": "down",
-      "response": "เป็นราคาไทยรอบล่าสุด ไม่ใช่ quote สดหลังเวลาประกาศ; ตรวจรอบใหม่และ spread ก่อนส่งคำสั่ง",
-      "market_reaction": "ขายออก 57,600 บาท ลดสุทธิ 2,300 บาทจากวันก่อน ณ ประกาศ #90",
-      "hot_reason": "ประกาศทางการไทย มีราคาและเวลาอ้างอิง"
-    },
-    {
-      "id": "AP20261120ME",
-      "title": "AP: ซาอุดีอาระเบียโจมตีกลุ่มฮูตีและสกัดขีปนาวุธ/โดรน ท่ามกลางความเสี่ยงเส้นทางน้ำมัน",
+      "id": "APUKRAINE20261121",
+      "title": "AP: การโจมตีด้วยขีปนาวุธในยูเครนทำให้มีผู้เสียชีวิตและบาดเจ็บ",
       "publisher": "Associated Press",
-      "published": "2026-11-20T09:48:38Z",
-      "url": "https://apnews.com/article/16c39c487a23b53b73c5eabb7f0fd57a",
-      "snippet": "AP รายงานความตึงเครียดตะวันออกกลางและการส่งออกน้ำมันช่วงต้นเดือนที่ลดลงจากเดือนก่อน",
-      "summary": "ความขัดแย้งอาจหนุนสินทรัพย์ปลอดภัย แต่น้ำมันแพงอาจเพิ่มแรงกดเงินเฟ้อและคาดการณ์ดอกเบี้ยสูงนาน",
+      "published": "2026-11-21T10:55:08Z",
+      "url": "https://apnews.com/article/bfdee2ffadc2693e7338d6822e5356ef",
+      "snippet": "AP รายงานการโจมตีในยูเครนเมื่อ 21 พ.ย. และมีผู้เสียชีวิต/บาดเจ็บ",
+      "summary": "ข่าวสงครามอาจเพิ่มแรงซื้อหลบภัย แต่ผลจริงขึ้นกับการตอบสนองของตลาดและทิศทางดอลลาร์/ยีลด์",
       "direction": "watch",
-      "response": "ผลต่อทองผสม: geopolitics ช่วยแรงซื้อหลบภัย ขณะที่เงินเฟ้อ/ดอลลาร์แข็งอาจจำกัดการขึ้น",
-      "market_reaction": "ยังไม่มีหลักฐานว่าข่าวนี้ทำให้ทองเปลี่ยนทิศโดยตรง; ติดตามน้ำมัน ดอลลาร์ และยีลด์ควบคู่",
-      "hot_reason": "เป็นความเสี่ยงด้านความขัดแย้งและพลังงาน"
+      "response": "ติดตามความรุนแรงและการตอบโต้; อย่าตีความว่าข่าวสงครามแปลว่าทองขึ้นแน่นอน",
+      "market_reaction": "ยังไม่มีราคาตลาดเปิดหลังพาดหัวนี้เพื่อยืนยันผลเฉพาะข่าว",
+      "hot_reason": "เป็นเหตุการณ์ทางทหารล่าสุดที่อาจเพิ่มความไม่แน่นอน"
+    },
+    {
+      "id": "USDBAHT20261120",
+      "title": "USD/THB: อัตราอ้างอิงล่าสุดที่ตรวจได้ 33.959 บาทต่อดอลลาร์ (ข้อมูล 20 พ.ย.)",
+      "publisher": "ExchangeRate.dev",
+      "published": "2026-11-20T21:59:59Z",
+      "url": "https://www.exchangerate.dev/exchange-rates/usd-thb",
+      "snippet": "อัตราแลกเปลี่ยนรายวันแสดง USD/THB 33.959 ณ สิ้นวัน 20 พ.ย.",
+      "summary": "เงินบาทอ่อนลงเล็กน้อยเทียบข้อมูลก่อนหน้าอาจพยุงราคาอ้างอิงทองไทยบางส่วน ขณะที่ Spot ยังเป็นแรงกดหลัก",
+      "direction": "mixed",
+      "response": "เงินบาทอ่อนช่วยชดเชยการลงของ Spot ได้บางส่วน ไม่ได้บอกทิศทางทองโลก",
+      "market_reaction": "ข้อมูลเป็นอัตรารายวัน ไม่ใช่ราคา FX ซื้อขายสดสุดสัปดาห์",
+      "hot_reason": "ค่าเงินบาทเป็นปัจจัยแปลงสำคัญต่อทองคำแท่งไทย"
+    },
+    {
+      "id": "APIRANDEAL20261120",
+      "title": "AP: สหรัฐฯ-อิหร่านยังไม่เห็นข้อตกลงที่ยอมรับได้ ท่ามกลางความกังวลการปะทะรอบใหม่",
+      "publisher": "Associated Press",
+      "published": "2026-11-20T21:54:52Z",
+      "url": "https://apnews.com/article/8fd6dcd6dc4a1a77437cedc4567fbee8",
+      "snippet": "AP รายงานความไม่แน่นอนด้านการทูตและความเสี่ยงการกลับมาปะทะรุนแรงขึ้น",
+      "summary": "ความเสี่ยงภูมิรัฐศาสตร์อาจหนุนทอง แต่ความเสี่ยงน้ำมัน/เงินเฟ้อและดอกเบี้ยสูงอาจต้านทาง",
+      "direction": "watch",
+      "response": "ผลผสม; รอดูตลาดเปิดและการตอบสนองของน้ำมัน ดอลลาร์ และยีลด์",
+      "market_reaction": "ยังไม่มีหลักฐานว่าข่าวนี้ทำให้ราคา Spot เปลี่ยนโดยตรง",
+      "hot_reason": "เกี่ยวข้องกับความเสี่ยงการเมืองระหว่างประเทศและพลังงาน"
     },
     {
       "id": "AXIOS20261119FED",
@@ -347,19 +406,6 @@
       "response": "กดดันทองหากข้อมูลใหม่ยืนยันแรงกดเงินเฟ้อ; เป็นบริบทการประชุม ไม่ใช่ประกาศขึ้นดอกเบี้ยใหม่วันนี้",
       "market_reaction": "ข่าวเป็นข้อมูลนโยบาย ไม่ใช่หลักฐานว่าทองเคลื่อนไหวเพราะข่าวนี้โดยตรง",
       "hot_reason": "Fed มีผลต่อดอลลาร์ ยีลด์ และต้นทุนค่าเสียโอกาสของทอง"
-    },
-    {
-      "id": "USDTHB20261120",
-      "title": "USD/THB: ปิดรายวัน 33.900 บาทต่อดอลลาร์ วันที่ 20 พ.ย.",
-      "publisher": "Investing.com · historical data",
-      "published": "2026-11-20T10:00:00Z",
-      "url": "https://ph.investing.com/currencies/usd-thb-historical-data",
-      "snippet": "อัตราปิดรายวัน 33.900 จาก 33.960 วันก่อน",
-      "summary": "เงินบาทแข็งขึ้นเล็กน้อยช่วยพยุงราคาไทยบางส่วน แต่ไม่ชดเชย Spot ที่ลงแรง",
-      "direction": "mixed",
-      "response": "ค่าเงินเป็นแรงหักล้างบางส่วน; ใช้อัตรารายวัน ไม่ใช่ราคา FX สด",
-      "market_reaction": "USD/THB daily close ลดลง 0.21% ณ 20 พ.ย.",
-      "hot_reason": "อัตราแลกเปลี่ยนเป็นตัวคูณหลักของราคาอ้างอิงทองไทย"
     },
     {
       "id": "N47",
@@ -516,120 +562,96 @@
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N37",
-      "title": "NYT: Trump weighs new Iran strikes as Israel presses for a four- to seven-day air campaign - investingLive",
-      "publisher": "investingLive",
-      "published": "2026-11-19T03:12:02+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPR005WjQzQWRxQ2VMWExjVHVfczdkZ0tiVENXamxTeHdiYUVUQ3lWVktOLUtYdkozTHNUSk81dzd6MWR3ajE2N3pLQmhSSnhfXzBZV25xQm9xc3dOVUJzcExaRDNYTXJod3pBenNydDJUSktqZ3Z5SlBCb1lpbGhSMm0tOWdKeXR2LWQyZDRGOVBxempzWXhkZFRLQnNtT2RpYjVaQnA5UXlLZ19oSlBqNDhlb1NTRHk2aXlFN0pGMWVTRjMwOHc?oc=5",
-      "snippet": "NYT: Trump weighs new Iran strikes as Israel presses for a four- to seven-day air campaign investingLive",
-      "summary": "NYT: Trump weighs new Iran strikes as Israel presses for a four- to seven-day air campaign investingLive",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N91",
-      "title": "ราคาทองวันนี้ 19 พ.ย. 69 ครั้งที่ 1 ปรับลง 400 บาท ทองแท่งขาย 60,350 บาท - Thaiger",
-      "publisher": "Thaiger",
-      "published": "2026-11-19T03:01:26+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9sblNwU0tCTWplemdNMi02ZGdWS0hIQzlPZThZcUdfOFZMeEpucy1FUWRxYmU0ZmVwWU05REViTlk0MlFZZl83akpVQkdpVVJq?oc=5",
-      "snippet": "ราคาทองวันนี้ 19 พ.ย. 69 ครั้งที่ 1 ปรับลง 400 บาท ทองแท่งขาย 60,350 บาท Thaiger",
-      "summary": "ราคาทองวันนี้ 19 พ.ย. 69 ครั้งที่ 1 ปรับลง 400 บาท ทองแท่งขาย 60,350 บาท Thaiger",
-      "direction": "down",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     }
   ],
   "hot_news": [
     {
-      "id": "R20261120",
-      "title": "Reuters: ทองเข้าใกล้การร่วงรายสัปดาห์หนักสุดในรอบ 8 เดือน จากดอลลาร์แข็งและคาดการณ์ Fed ขึ้นดอกเบี้ย",
+      "id": "APIRAN20261121",
+      "title": "AP: มีรายงานเรือบรรทุกน้ำมันอย่างน้อย 3 ลำถูกโจมตีบริเวณช่องแคบฮอร์มุซ ท่ามกลางการปะทะอิหร่าน",
+      "publisher": "Associated Press",
+      "published": "2026-11-21T14:43:49Z",
+      "url": "https://apnews.com/article/mideast-iran-gaza-israel-november-21-2026-29159a6f3365ff447c0ccbd1d7260f75",
+      "snippet": "AP รายงานการโจมตีเรือและการเปิดตัวระบบขีปนาวุธของอิหร่านในวันที่ 21 พ.ย.; มีความเสี่ยงต่อเส้นทางขนส่งพลังงาน",
+      "summary": "ความเสี่ยงภูมิรัฐศาสตร์อาจหนุนแรงซื้อสินทรัพย์ปลอดภัย แต่ความเสี่ยงน้ำมันแพงอาจเร่งเงินเฟ้อและคงแรงกดดันดอกเบี้ย",
+      "direction": "watch",
+      "response": "ผลต่อทองผสม: แรงซื้อหลบภัยอาจเพิ่ม แต่ถ้าดอลลาร์/ยีลด์ขึ้นจากความกังวลเงินเฟ้ออาจกดทอง",
+      "market_reaction": "ข่าวเกิดหลังตลาดสัปดาห์ปิด/ช่วงสภาพคล่องต่ำ; ยังยืนยันไม่ได้ว่าทำให้ Spot เปลี่ยนราคาโดยตรง",
+      "hot_reason": "เหตุการณ์กระทบการขนส่งน้ำมันบริเวณช่องแคบฮอร์มุซและอาจเพิ่มความผันผวน"
+    },
+    {
+      "id": "GTA20261121",
+      "title": "สมาคมค้าทองคำ: เปิดตลาด 21 พ.ย. เวลา 09:11 น. ทองแท่งรับซื้อ 56,950 / ขายออก 57,150 บาท",
+      "publisher": "สมาคมค้าทองคำ",
+      "published": "2026-11-21T02:11:00Z",
+      "url": "https://classic.goldtraders.or.th/default2.aspx",
+      "snippet": "ราคาทองแท่ง 96.5% ลด 450 บาทจากราคาปิดวันศุกร์; ประกาศครั้งที่ 1 เวลา 09:11 น.",
+      "summary": "ราคาทางการไทยลดลงตามการอ่อนตัวของ Spot ก่อนวันหยุด; เป็นราคาประกาศล่าสุดที่ตรวจได้ ไม่ใช่ราคาสดของวันอาทิตย์",
+      "direction": "down",
+      "response": "ให้ยึดเป็นราคาอ้างอิงทางการรอบล่าสุด; ตรวจประกาศใหม่วันทำการก่อนเทรด",
+      "market_reaction": "รับซื้อ 56,950 / ขายออก 57,150 บาทต่อบาททองคำ; ตลาดประกาศเพียงรอบเดียววันเสาร์",
+      "hot_reason": "เป็นข้อมูลสมาคมฯ ที่ยืนยันราคาทองไทยและเวลาประกาศ"
+    },
+    {
+      "id": "REUTERS20261120",
+      "title": "Reuters: ทองมุ่งสู่สัปดาห์ที่แย่ที่สุดในรอบ 8 เดือน หลังดอลลาร์แข็งและตลาดคาด Fed ขึ้นดอกเบี้ย",
       "publisher": "Reuters · MarketScreener",
       "published": "2026-11-20T11:48:00Z",
       "url": "https://uk.marketscreener.com/news/gold-set-for-worst-week-in-eight-months-as-firm-dollar-fed-hike-bets-weigh-ce785ed2de80f42d",
-      "snippet": "Spot ลด 1.9% สู่ $3,552.39 ณ 07:30 GMT; ก่อนหน้าทำ low $3,513.54 และอ่อนลงราว 8% ในสัปดาห์",
-      "summary": "ดอลลาร์/ยีลด์สูงจากความคาดหวัง Fed คุมเงินเฟ้อกดทอง ขณะมีแรงขายชดเชยขาดทุนหุ้น AI",
+      "snippet": "Reuters รายงาน Spot เคยลด 1.9% สู่ $3,552.39 ณ 07:30 GMT และทำจุดต่ำที่ $3,513.54; ลดราว 8% ในสัปดาห์",
+      "summary": "ดอลลาร์/ยีลด์ที่แข็งและคาดการณ์ดอกเบี้ยสูงเพิ่มต้นทุนค่าเสียโอกาสถือทอง; แรงขายหุ้น AI อาจกระตุ้นการขายสินทรัพย์เพื่อชดเชยขาดทุน",
       "direction": "down",
-      "response": "ลบต่อทองหากดอลลาร์และยีลด์ยังแข็ง แต่การลงแรงอาจเกิดแรงซื้อคืน",
-      "market_reaction": "Reuters รายงาน Spot ลด 1.9% และลงราว 8% ในสัปดาห์; ไม่ยืนยันว่าปัจจัยเดียวเป็นสาเหตุ",
-      "hot_reason": "ข่าวมีตัวเลขราคาและระบุปัจจัยดอลลาร์/Fed ชัดเจน"
-    },
-    {
-      "id": "GTA20261120",
-      "title": "สมาคมค้าทองคำ: ประกาศ #90 เวลา 17:29 น. ทองแท่งรับซื้อ 57,400 / ขายออก 57,600 บาท",
-      "publisher": "สมาคมค้าทองคำ",
-      "published": "2026-11-20T10:29:00Z",
-      "url": "https://www.goldtraders.or.th/gpog",
-      "snippet": "Spot 3,580 ดอลลาร์; USD/THB 33.94; ปรับขึ้น 50 บาทจากรอบก่อน แต่ลดลง 2,300 บาทเทียบวันก่อน",
-      "summary": "ราคารอบทางการลดลงแรงเมื่อเทียบวันก่อน; หลัง 17:29 ไม่มีประกาศรอบใหม่ในแหล่งที่ตรวจ",
-      "direction": "down",
-      "response": "เป็นราคาไทยรอบล่าสุด ไม่ใช่ quote สดหลังเวลาประกาศ; ตรวจรอบใหม่และ spread ก่อนส่งคำสั่ง",
-      "market_reaction": "ขายออก 57,600 บาท ลดสุทธิ 2,300 บาทจากวันก่อน ณ ประกาศ #90",
-      "hot_reason": "ประกาศทางการไทย มีราคาและเวลาอ้างอิง"
-    },
-    {
-      "id": "AP20261120ME",
-      "title": "AP: ซาอุดีอาระเบียโจมตีกลุ่มฮูตีและสกัดขีปนาวุธ/โดรน ท่ามกลางความเสี่ยงเส้นทางน้ำมัน",
-      "publisher": "Associated Press",
-      "published": "2026-11-20T09:48:38Z",
-      "url": "https://apnews.com/article/16c39c487a23b53b73c5eabb7f0fd57a",
-      "snippet": "AP รายงานความตึงเครียดตะวันออกกลางและการส่งออกน้ำมันช่วงต้นเดือนที่ลดลงจากเดือนก่อน",
-      "summary": "ความขัดแย้งอาจหนุนสินทรัพย์ปลอดภัย แต่น้ำมันแพงอาจเพิ่มแรงกดเงินเฟ้อและคาดการณ์ดอกเบี้ยสูงนาน",
-      "direction": "watch",
-      "response": "ผลต่อทองผสม: geopolitics ช่วยแรงซื้อหลบภัย ขณะที่เงินเฟ้อ/ดอลลาร์แข็งอาจจำกัดการขึ้น",
-      "market_reaction": "ยังไม่มีหลักฐานว่าข่าวนี้ทำให้ทองเปลี่ยนทิศโดยตรง; ติดตามน้ำมัน ดอลลาร์ และยีลด์ควบคู่",
-      "hot_reason": "เป็นความเสี่ยงด้านความขัดแย้งและพลังงาน"
+      "response": "ยังเป็นแรงกดดันระยะสั้นตราบใดที่ดอลลาร์และยีลด์ไม่อ่อน; การลงแรงก็อาจเกิดแรงซื้อคืน",
+      "market_reaction": "ราคาที่ Reuters ระบุเป็นช่วงเช้า GMT วันที่ 20 พ.ย. ไม่ใช่ราคาปัจจุบัน",
+      "hot_reason": "ข่าวรายงานทิศทางราคา ดอลลาร์ และนโยบาย Fed พร้อมตัวเลขชัดเจน"
     }
   ],
-  "news_updated_at": "2026-11-20T16:20:56.421Z",
+  "news_updated_at": "2026-11-21T16:37:20.731Z",
   "news_candidates": 20,
   "ai_updated_at": "2026-11-19T11:06:46.000Z",
   "status": {
     "technical": "ok",
     "news": "manual_source_review",
     "ai": "preserved_morning_analysis",
-    "live_quote": "ok"
+    "live_quote": "provider_observation_stale_after_market_close"
   },
-  "news_source_note": "รอบนี้ตรวจ Reuters, AP, Axios, สมาคมค้าทองคำ และ USD/THB daily; เวลาเผยแพร่/สังเกตยึดตามแต่ละต้นทาง; ทิศทางข่าวเป็นการประเมิน ไม่ยืนยันเหตุและผล",
-  "generated_at_bangkok": "2026-11-20T23:20:56.421+07:00",
-  "news_reviewed_at": "2026-11-20T16:20:56.421Z",
+  "news_source_note": "ตรวจข่าวใหม่จาก Associated Press, Reuters และประกาศสมาคมค้าทองคำ; ราคาตลาดอ้างเวลาต้นทาง; ข่าวภูมิรัฐศาสตร์แปลผลเป็นทิศทางแน่นอนไม่ได้และยังยืนยันเหตุ-ผลต่อราคาไม่ได้",
+  "generated_at_bangkok": "2026-11-21T23:37:20.731+07:00",
+  "news_reviewed_at": "2026-11-21T16:37:20.731Z",
   "analysis_sources": [
     {
-      "name": "XAUAD/Swissquote Spot",
+      "name": "XAUAD · Swissquote Spot",
       "url": "https://xauad.com/gold-price-today.html",
-      "observed_at": "2026-11-20T16:10:00.000Z"
+      "observed_at": "2026-11-21T16:25:00.000Z"
     },
     {
-      "name": "Gold Traders Association · announcement #90",
-      "url": "https://www.goldtraders.or.th/gpog",
-      "observed_at": "2026-11-20T10:29:00Z"
+      "name": "สมาคมค้าทองคำ · ประกาศ 21 พ.ย. #1",
+      "url": "https://classic.goldtraders.or.th/default2.aspx",
+      "observed_at": "2026-11-21T02:11:00Z"
     },
     {
-      "name": "Investing.com USD/THB daily",
-      "url": "https://ph.investing.com/currencies/usd-thb-historical-data",
-      "observed_at": "2026-11-20"
+      "name": "USD/THB daily reference",
+      "url": "https://www.exchangerate.dev/exchange-rates/usd-thb",
+      "observed_at": "2026-11-20T21:59:59Z"
     },
     {
-      "name": "Reuters gold and Fed",
+      "name": "AP · tanker attacks / Iran",
+      "url": "https://apnews.com/article/mideast-iran-gaza-israel-november-21-2026-29159a6f3365ff447c0ccbd1d7260f75",
+      "observed_at": "2026-11-21T14:43:49Z"
+    },
+    {
+      "name": "AP · Ukraine missile attack",
+      "url": "https://apnews.com/article/bfdee2ffadc2693e7338d6822e5356ef",
+      "observed_at": "2026-11-21T10:55:08Z"
+    },
+    {
+      "name": "AP · Iran diplomacy / US",
+      "url": "https://apnews.com/article/8fd6dcd6dc4a1a77437cedc4567fbee8",
+      "observed_at": "2026-11-20T21:54:52Z"
+    },
+    {
+      "name": "Reuters · Fed/dollar pressure on gold",
       "url": "https://uk.marketscreener.com/news/gold-set-for-worst-week-in-eight-months-as-firm-dollar-fed-hike-bets-weigh-ce785ed2de80f42d",
       "observed_at": "2026-11-20T11:48:00Z"
-    },
-    {
-      "name": "Associated Press Middle East",
-      "url": "https://apnews.com/article/16c39c487a23b53b73c5eabb7f0fd57a",
-      "observed_at": "2026-11-20T09:48:38Z"
-    },
-    {
-      "name": "Axios Fed meeting minutes",
-      "url": "https://www.axios.com/2026/11/19/interest-rates-ai-fed-october",
-      "observed_at": "2026-11-19T17:15:05Z"
-    },
-    {
-      "name": "DXY daily reference",
-      "url": "https://www.dealplexus.com/markets/usd-index-dxy",
-      "observed_at": "2026-11-20"
     }
   ]
 }
