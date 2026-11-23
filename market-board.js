@@ -148,7 +148,8 @@
   function renderIndicators(data) {
     const t = data.technical || {};
     const v = t.indicators || {};
-    const stampText = stamp(v.source_note ? data.generated_at : t.last_closed_bar?.time);
+    const indicatorAt = v.updated_at || t.last_closed_bar?.time;
+    const stampText = stamp(indicatorAt);
     const set = (id, text) => {
       const el = $(id);
       if (!el) return false;
@@ -169,7 +170,8 @@
     const hasAtr = set('indicatorAtrNow', atr != null ? `ATR(14) $${fmt(atr)}/oz · ${v.atr_reading || 'บอกขนาดการแกว่ง ไม่ได้บอกทิศทาง'}` : '');
     const note = $('indicatorSnapshotAt');
     if (note) {
-      note.textContent = `ค่าที่แสดงอ้างอิง snapshot ${stampText} · Gold Spot 1D`;
+      const indicatorStale = indicatorAt && Date.now() - new Date(indicatorAt).getTime() > 48 * 60 * 60 * 1000;
+      note.textContent = `ค่า Indicator คำนวณจากแท่งปิด ${stampText} · Gold Spot 1D${indicatorStale ? ' · ยังไม่มีแท่งใหม่จากแหล่งข้อมูล จึงไม่ถือว่าเป็นค่าปัจจุบัน' : ''}`;
       const anyReading = hasEma || hasRsi || hasMacd || hasBands || hasAtr;
       note.hidden = !anyReading;
       if (note.parentElement) note.parentElement.hidden = !anyReading;
@@ -202,7 +204,7 @@
     $('planUpdatedAt').textContent = `${analysisStamp(data)} · แผนนี้เป็นแนวทางแบบมีเงื่อนไข ไม่ใช่คำสั่งซื้อขาย`;
   }
 
-  function fallbackChart(id,bars,field,fx){
+  function fallbackChart(id,bars,field,fx,latestPrice){
     const host=$(id); if(!host||!Array.isArray(bars)||bars.length<2)return;
     host.querySelector('.chart-fallback')?.remove();
     const data=bars.slice(-60).map(b=>({o:Number(b.open),h:Number(b.high),l:Number(b.low),c:Number(b.close)}))
@@ -216,7 +218,7 @@
       const sd=Math.sqrt(w.reduce((a,v)=>a+(v-avg)**2,0)/w.length);
       ma.push(avg);up.push(avg+2*sd);dn.push(avg-2*sd);
     }
-    const all=data.flatMap((b,i)=>[b.h*factor,b.l*factor,up[i],dn[i]]);
+    const live=Number(latestPrice)*factor;const all=data.flatMap((b,i)=>[b.h*factor,b.l*factor,up[i],dn[i]]);if(Number.isFinite(live)&&live>0)all.push(live);
     const lo=Math.min(...all),hi=Math.max(...all),span=(hi-lo)||1;
     const X=i=>38+i*(924/(n-1)),Y=v=>300-(v-lo)/span*250;
     const wrap=node('div','chart-fallback');wrap.style.cssText='position:absolute;inset:0;z-index:20;background:#f5f1df;padding:10px 12px;border:1px solid #c8bb80;border-radius:8px;overflow:hidden';
@@ -230,7 +232,7 @@
       const wick=document.createElementNS(svg.namespaceURI,'line');wick.setAttribute('x1',x);wick.setAttribute('x2',x);wick.setAttribute('y1',Y(h));wick.setAttribute('y2',Y(l));wick.setAttribute('stroke',color);wick.setAttribute('stroke-width','2');svg.append(wick);
       const rect=document.createElementNS(svg.namespaceURI,'rect');rect.setAttribute('x',x-body/2);rect.setAttribute('y',Math.min(Y(o),Y(c)));rect.setAttribute('width',body);rect.setAttribute('height',Math.max(2,Math.abs(Y(o)-Y(c))));rect.setAttribute('fill',color);svg.append(rect);
     });
-    wrap.append(svg);host.style.position='relative';host.append(wrap);
+    if(Number.isFinite(live)&&live>0){const y=Y(live),line=document.createElementNS(svg.namespaceURI,'line');line.setAttribute('x1','34');line.setAttribute('x2','975');line.setAttribute('y1',y);line.setAttribute('y2',y);line.setAttribute('stroke','#7b3fb4');line.setAttribute('stroke-width','2');line.setAttribute('stroke-dasharray','8 5');svg.append(line);const label=document.createElementNS(svg.namespaceURI,'text');label.setAttribute('x','960');label.setAttribute('y',Math.max(20,y-6));label.setAttribute('text-anchor','end');label.setAttribute('font-size','13');label.setAttribute('font-weight','700');label.setAttribute('fill','#63378d');label.textContent='ราคาล่าสุด '+(field==='thai'?'฿':'$')+fmt(Number(latestPrice),field==='thai'?0:2);svg.append(label)}wrap.append(svg);host.style.position='relative';host.append(wrap);
   }
   function renderNews(data) {
     const news = data.news || [];
@@ -272,7 +274,7 @@
       safeRender('plan', () => renderPlan(data));
       safeRender('news', () => renderNews(data));
       const q=data.live_quote||{};
-      safeRender('chart', () => fallbackChart('thaiOverviewChart',data.daily_bars,'thai',q.fx_usd_thb));
+      safeRender('chart', () => fallbackChart('thaiOverviewChart',data.daily_bars,'thai',q.fx_usd_thb,q.estimated_thb_per_baht));
       if(fallback){const status=$('feedStatus');if(status)status.textContent='ใช้ข้อมูลสำรองจากแคช/หน้าเว็บ · ราคาและข่าวอาจเก่า กรุณาดูเวลาต้นทาง';const dot=$('feedDot');if(dot)dot.classList.add('off');const note=$('newsSourceUpdatedAt');if(note)note.textContent+=' · แสดง snapshot สำรองเพราะเชื่อมต่อฟีดไม่สำเร็จ'}
       const status = data.status || {};
       const rulesBased = status.ai === 'rules_based_no_api_key';
@@ -300,6 +302,7 @@
     setInterval(() => { if (currentTech) updateThaiLevelLabels(Number(($('fxValue').textContent || '').replace(/[^0-9.]/g, ''))); }, 60000);
   }
   load();
+  setInterval(() => { if (!document.hidden) load(); }, 10 * 60 * 1000);
   document.addEventListener('visibilitychange', () => { if (!document.hidden) load(); });
 })();
 
