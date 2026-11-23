@@ -1,21 +1,24 @@
 {
-  "generated_at": "2026-11-23T15:14:57.820342+00:00",
-  "attempted_at": "2026-11-23T15:14:57.820342+00:00",
+  "generated_at": "2026-11-23T15:15:00+00:00",
+  "attempted_at": "2026-11-23T15:15:00+00:00",
   "slot": "22:00",
   "live_quote": {
-    "spot": 3667.05,
-    "fx_usd_thb": 33.957,
-    "estimated_thb_per_baht": 58900,
-    "quote_updated": "2026-11-23T14:59:01.757043+00:00",
+    "spot": 3663.83,
+    "fx_usd_thb": 33.939,
+    "estimated_thb_per_baht": 58800,
+    "quote_updated": "2026-11-23T15:08:00+00:00",
     "fx_reference_date": "2026-11-23",
-    "spot_source": "GoldPrice.dev · XAU/USD Spot",
-    "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB"
+    "spot_source": "FXEmpire · Gold/XAU live snapshot (Nov 23, 15:08 UTC)",
+    "fx_source": "WaveRate · daily reference USD/THB (Nov 23)",
+    "fx_updated_at": "2026-11-23",
+    "market_status": "open",
+    "market_note": "ราคา Spot จาก snapshot เวลา 22:08 น. ไทย; ไม่ใช่ราคา real-time ระดับ tick"
   },
   "technical": {
-    "spot": 3667.05,
-    "fx_usd_thb": 33.957,
-    "estimated_thb_per_baht": 58900,
-    "daily_change_pct": 1.67,
+    "spot": 3663.83,
+    "fx_usd_thb": 33.939,
+    "estimated_thb_per_baht": 58800,
+    "daily_change_pct": 2.21,
     "indicators": {
       "ema20": 3874.83,
       "ema50": 3947.21,
@@ -33,45 +36,67 @@
       "bb_reading": "ราคาอยู่ในกรอบแถบ · ใช้ดูความผันผวน ไม่ใช่สัญญาณซื้อขายเดี่ยว",
       "atr14": 100.52,
       "atr_reading": "ช่วงแกว่งเฉลี่ยล่าสุดราว $100.52/oz ต่อวัน; ATR บอกขนาด ไม่บอกทิศทาง",
-      "source_note": "คำนวณจากแท่ง Gold Spot 1D ปิดแล้ว 21 แท่ง; snapshot 2026-11-20T00:00:00Z"
+      "source_note": "คำนวณจากแท่ง Gold Spot 1D ปิดแล้ว 20 แท่ง; snapshot 2026-11-19T00:00:00Z",
+      "updated_at": "2026-11-19T00:00:00Z"
     },
-    "atr14": 100.52,
+    "atr14": 97.09,
     "atr_period": 14,
     "sma20": 3926.57,
     "sma_period": 20,
     "ema50": 3947.21,
-    "trend": "ขาลง",
+    "trend": "รีบาวด์รายวัน · แนวโน้มกลางยังอ่อน",
     "support": [
       {
-        "low": 3548.44,
-        "high": 3584.62
+        "low": 3570.54,
+        "high": 3584.32
       },
       {
-        "low": 3484.81,
-        "high": 3521.0
+        "low": 3502.99,
+        "high": 3538.19
       }
     ],
     "resistance": [
       {
-        "low": 3749.48,
-        "high": 3785.66
+        "low": 3637.07,
+        "high": 3665
       },
       {
-        "low": 4065.08,
-        "high": 4101.26
+        "low": 3685,
+        "high": 3724
       }
     ],
     "last_closed_bar": {
-      "time": "2026-11-20T00:00:00Z",
-      "open": 3606.5185,
-      "high": 3626.6438,
-      "low": 3502.905,
-      "close": 3539.3718
+      "time": "2026-11-23T00:00:00Z",
+      "open": 3573.03,
+      "high": 3637.07,
+      "low": 3570.54,
+      "close": 3619.46
     },
-    "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
-    "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 14 แท่ง); SMA20 ใช้ข้อมูล 20 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
-    "quote_updated": "2026-11-23T14:59:01.757043+00:00",
-    "fx_reference_date": "2026-11-23"
+    "source": "FXEmpire · Gold/XAU historical OHLC (23 Nov) + Investing.com XAU/USD day range + WaveRate USD/THB",
+    "method": "แนวรับอิง low ของแท่ง 23 พ.ย. และ 20 พ.ย.; แนวต้านอิง high 23 พ.ย. และแนว breakdown เดิม; ราคาไทยประมาณ Spot × USD/THB × 0.47296 ปัดใกล้ 50 บาท. Indicator เดิมยังคำนวณจากแท่งปิด 19 พ.ย. จึงแสดงวันที่แยกและไม่ถือเป็นค่าปัจจุบัน",
+    "quote_updated": "2026-11-23T15:08:00+00:00",
+    "fx_reference_date": "2026-11-23",
+    "support_thai": [
+      {
+        "low": 57450,
+        "high": 57700
+      },
+      {
+        "low": 56350,
+        "high": 56950
+      }
+    ],
+    "resistance_thai": [
+      {
+        "low": 58550,
+        "high": 59000
+      },
+      {
+        "low": 59250,
+        "high": 59950
+      }
+    ],
+    "levels_updated_at": "2026-11-23T15:15:00+00:00"
   },
   "daily_bars": [
     {
@@ -167,7 +192,7 @@
     },
     {
       "open": 3980.4164,
-      "high": 4000.0,
+      "high": 4000,
       "low": 3853.2676,
       "close": 3881.5355,
       "time": "2026-11-12T00:00:00Z"
@@ -270,6 +295,19 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
     },
     {
+      "id": "R20261123-DOLLAR",
+      "title": "Dollar steadies as traders take breather from AI wobbles",
+      "publisher": "Reuters · Euronext",
+      "published": "2026-11-23T13:04:00+00:00",
+      "url": "https://live.euronext.com/en/financial-news/dollar-steadies-traders-take-breather-ai-wobbles",
+      "snippet": "ดอลลาร์ใกล้จุดสูงสุด 19 เดือน ขณะที่คาดการณ์ Fed ขึ้นดอกเบี้ยเชิงรุกผ่อนลง",
+      "summary": "Reuters ระบุ DXY อยู่ที่ 103.91 ใกล้ระดับสูงสุดตั้งแต่ เม.ย. 2025; ตลาดให้โอกาสราว 96% ต่อการขึ้นดอกเบี้ย 25 bps ใน ธ.ค. และรอตัวเลข PCE วันพุธ",
+      "direction": "mixed",
+      "response": "ดอลลาร์ที่ยังแข็งและดอกเบี้ยสูงเป็นแรงกดทอง ขณะที่การตัดความเป็นไปได้ของการขึ้น 50 bps ออกจากราคาอาจช่วยลดแรงกดบางส่วน",
+      "market_reaction": "ข่าวรายงานดอลลาร์ทรงตัวที่ 103.91 เวลา 13:04 UTC; ไม่ยืนยันความสัมพันธ์เชิงเหตุผลกับการแกว่งของทองในเวลาเดียวกัน",
+      "hot_reason": "DXY และความคาดหวัง Fed ส่งผลต่อค่าเสียโอกาสการถือทองโดยตรง"
+    },
+    {
       "id": "N26",
       "title": "Gold Prices Face Another Major Test as Fed Rate Hike Fears Trigger a 2022-Style Selloff - Speaks Media",
       "publisher": "Speaks Media",
@@ -330,6 +368,19 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
     },
     {
+      "id": "AP20261123-IRAN",
+      "title": "Iran warns of retaliation if U.S. forces attack; regional conflict risks persist",
+      "publisher": "AP News",
+      "published": "2026-11-23T09:56:49+00:00",
+      "url": "https://apnews.com/article/mideast-iran-gaza-israel-houthis-libya-november-23-2026-c2cb6de3515f887a5786c1147e918489",
+      "snippet": "รัฐบาลอิหร่านเตือนว่าจะตอบโต้หากสหรัฐฯ โจมตีตำแหน่งของอิหร่าน",
+      "summary": "AP รายงานคำเตือนจากโฆษกกระทรวงต่างประเทศอิหร่านเกี่ยวกับการตอบโต้ที่อาจเกิดขึ้น; เป็นคำเตือน ไม่ใช่รายงานว่ามีการโจมตีครั้งใหม่",
+      "direction": "watch",
+      "response": "ความเสี่ยงภูมิรัฐศาสตร์อาจหนุนแรงซื้อสินทรัพย์ปลอดภัยหากความตึงเครียดเพิ่ม แต่ต้องรอการยืนยันเหตุการณ์และดูปฏิกิริยาราคาจริง",
+      "market_reaction": "ยังไม่มีหลักฐานว่าคำเตือนนี้เป็นสาเหตุให้ทองขยับ; จัดเป็นข่าวเฝ้าระวัง",
+      "hot_reason": "ข่าวความขัดแย้งมีโอกาสเปลี่ยน risk premium แต่ยังไม่มีเหตุโจมตีใหม่ที่ยืนยัน"
+    },
+    {
       "id": "N4",
       "title": "Gold Price Today: XAU/USD Reclaims $3,600 - Mitrade",
       "publisher": "Mitrade",
@@ -340,6 +391,19 @@
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "R20261123-GOLD",
+      "title": "Gold rises from 14-month low as markets await key US inflation data",
+      "publisher": "Reuters · MarketScreener",
+      "published": "2026-11-23T07:42:00+00:00",
+      "url": "https://www.marketscreener.com/news/gold-rises-from-14-month-low-as-markets-await-us-inflation-data-ce785ed3d089f520",
+      "snippet": "ทองฟื้นจากจุดต่ำสุดในรอบ 14 เดือน นักลงทุนจับตาตัวเลขเงินเฟ้อสหรัฐฯ",
+      "summary": "Reuters รายงาน Spot ทองขึ้น 2.9% เป็น $3,635.80/oz ณ 07:21 GMT หลังร่วงราว 9% ในสัปดาห์ก่อน ตลาดยังประเมินโอกาสขึ้นดอกเบี้ย Fed 25 bps เดือน ธ.ค.; ความเสี่ยงขายบังคับยังอยู่",
+      "direction": "mixed",
+      "response": "บวกต่อทองระยะสั้นจากแรงซื้อคืนและความคาดหวังขึ้นดอกเบี้ยที่ผ่อนลง แต่ยังไม่ยืนยันจุดต่ำสุด; PCE วันพุธเป็นตัวแปรสำคัญ",
+      "market_reaction": "FXEmpire แสดง Spot snapshot $3,663.83 เวลา 15:08 UTC (+2.21% ในวัน); เป็นการเคลื่อนไหวที่เกิดร่วมช่วงเดียวกัน ไม่ยืนยันว่าข่าวเป็นสาเหตุ",
+      "hot_reason": "การฟื้นหลังร่วงแรงและมีตัวเลข PCE ใกล้ประกาศ แต่ต้องระวังความผันผวน"
     },
     {
       "id": "N54",
@@ -448,53 +512,19 @@
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N32",
-      "title": "Gold’s Slide Is a Bet on the Fed, Not on Peace. Peace May Be What Rescues It - Modern Diplomacy",
-      "publisher": "Modern Diplomacy",
-      "published": "2026-11-22T16:45:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcmpNSkdlTFhOM2pLQmRwNGZVa3NYeGlBSVBWQndNTVFIdGZ4Sllsc0xZdzJoVUNCRmlGemgyQlZsRHhlZ1dkem1Bd2M1NDhrMTlCdlczU21lbGgwd1l5UUFkdEpYQndFSjB1U2JMd0pfRWZsdk9kOFlYc0tEXzJDejRQX0JEZ1BWS0trQzBCVTJrZ3NJSTlCS0FEUQ?oc=5",
-      "snippet": "Gold’s Slide Is a Bet on the Fed, Not on Peace. Peace May Be What Rescues It Modern Diplomacy",
-      "summary": "Gold’s Slide Is a Bet on the Fed, Not on Peace. Peace May Be What Rescues It Modern Diplomacy",
-      "direction": "down",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
-    },
-    {
-      "id": "N1",
-      "title": "Gold Price Forecast This Week: Can XAU/USD Recover From $3,500 Before US PCE? - Markets.com",
-      "publisher": "Markets.com",
-      "published": "2026-11-22T16:03:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBIOUJvREZUckdILVhmYktiMWFlWlEycnVUY0NIWXlFTXlqajBDdnM0YTVPMG9kV0c2WUZWbFItd0V3Sl9uU2V2d1U3TWFheG1hZmJsOER4ZlpHbDdBLTAwQTNQLXBIcXdpazdqaGpmZ0dJZDlyR1BGS2Jn?oc=5",
-      "snippet": "Gold Price Forecast This Week: Can XAU/USD Recover From $3,500 Before US PCE? Markets.com",
-      "summary": "Gold Price Forecast This Week: Can XAU/USD Recover From $3,500 Before US PCE? Markets.com",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N8",
-      "title": "Gold Price Today, November 23, 2026: XAU/USD Rebounds to $3,576 Ahead of US Inflation Data - Markets.com",
-      "publisher": "Markets.com",
-      "published": "2026-11-22T16:03:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE00T1dLTGdNUUpPb0laNUdieDNFTW9ia09JamZ3T00xdEtRYi0yczdKOTRza1l3d2VBSE5qVHFGeENCWjFxcnk4dnhZalc0M2dlaXhObnYtMGdTWEhJZG1OQ1E0am53SGd3dVFlSzdmQQ?oc=5",
-      "snippet": "Gold Price Today, November 23, 2026: XAU/USD Rebounds to $3,576 Ahead of US Inflation Data Markets.com",
-      "summary": "Gold Price Today, November 23, 2026: XAU/USD Rebounds to $3,576 Ahead of US Inflation Data Markets.com",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     }
   ],
   "hot_news": [],
-  "news_updated_at": "2026-11-23T15:15:00.734438+00:00",
-  "news_candidates": 40,
+  "news_updated_at": "2026-11-23T15:15:00+00:00",
+  "news_candidates": 23,
   "ai_updated_at": "2026-11-19T11:06:46.000Z",
   "status": {
     "technical": "ok",
-    "news": "rss_headline_heuristic",
-    "ai": "preserved_morning_analysis"
+    "news": "curated_source_review",
+    "ai": "preserved_morning_analysis",
+    "live_quote": "current_delayed_snapshot",
+    "indicators": "stale_as_of_2026-11-19"
   },
-  "news_source_note": "พาดหัว/ข้อความย่อจาก Google News RSS; หากไม่มี API key จะประเมินทิศทางด้วยกฎคำสำคัญเบื้องต้น ไม่ใช่การอ่านบทความเต็ม และไม่ยืนยันว่าเป็นสาเหตุของราคา",
-  "generated_at_bangkok": "2026-11-23T22:14:57.820342+07:00"
+  "news_source_note": "คัดข่าว Reuters, AP และแหล่งตลาด โดยแยกข้อเท็จจริงจากการประเมิน; ข่าวภูมิรัฐศาสตร์ที่เป็นคำเตือน/ข้อกล่าวอ้างไม่จัดเป็นเหตุการณ์ยืนยัน และไม่อนุมานว่าเป็นสาเหตุของราคา",
+  "generated_at_bangkok": "2026-11-23T22:15:00+07:00"
 }
