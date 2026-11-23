@@ -141,7 +141,7 @@
     if ($('spotResistanceNear')) $('spotResistanceNear').textContent = rangeText(resistances[0]);
     if ($('spotResistanceNext')) $('spotResistanceNext').textContent = rangeText(resistances[1]);
     updateThaiLevelLabels(technical.fx_usd_thb);
-    if ($('levelsUpdatedAt')) $('levelsUpdatedAt').textContent = `คำนวณล่าสุด ${stamp(data.generated_at)} · แหล่งข้อมูล: ${technical.source || 'OHLC/Spot'}`;
+    if ($('levelsUpdatedAt')) $('levelsUpdatedAt').textContent = `คำนวณล่าสุด ${stamp(technical.levels_updated_at || data.generated_at)} · แหล่งข้อมูล: ${technical.source || 'OHLC/Spot'}`;
     if ($('levelsMethod')) $('levelsMethod').textContent = `${technical.method || 'คำนวณจาก swing high/low และ ATR'} · ภาพแนวโน้ม ${technical.trend || '—'} · ATR(${technical.atr_period || 14}) $${fmt(technical.atr14 || 0)}`;
   }
 
@@ -281,8 +281,8 @@
       if ($('analysisStatus')) {
         $('analysisStatus').textContent = rulesBased
           ? 'ราคา Spot ตรวจทุก 10 นาที · ข่าวและแนวรับ/แนวต้านรอบ 08:00/22:00 · Scenario/Checklist รอบ 08:00 · ไม่มี API key จึงใช้กฎคัดพาดหัว ไม่ใช่ AI'
-          : `สถานะ AI: ${status.ai || 'ไม่ทราบ'} · ข่าว: ${status.news || 'ไม่ทราบ'} · ข้อมูลเทคนิค: ${status.technical || 'ไม่ทราบ'}`;
-        $('analysisStatus').classList.toggle('status-warning', (!rulesBased && status.ai === 'needs_api_key') || status.technical !== 'ok' || status.ai?.includes('error'));
+          : `สถานะ AI: ${status.ai || 'ไม่ทราบ'} · ข่าว: ${status.news || 'ไม่ทราบ'} · แนวรับ/ต้าน: ${status.technical || 'ไม่ทราบ'} · Indicator: ${status.indicators || 'ไม่ระบุ'}`;
+        $('analysisStatus').classList.toggle('status-warning', (!rulesBased && status.ai === 'needs_api_key') || status.technical !== 'ok' || (status.indicators && status.indicators !== 'ok') || status.ai?.includes('error'));
       }
       if (status.technical !== 'ok' && $('levelsUpdatedAt')) $('levelsUpdatedAt').textContent = `เตือน: ข้อมูลเทคนิคล่าสุดไม่สำเร็จ · แสดงข้อมูลเดิม ${stamp(data.generated_at)}`;
     } catch (error) {
