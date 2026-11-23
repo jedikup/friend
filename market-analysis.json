@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-23T15:22:46.330764+00:00",
-  "attempted_at": "2026-11-23T15:22:46.330764+00:00",
+  "generated_at": "2026-11-23T15:26:45.591926+00:00",
+  "attempted_at": "2026-11-23T15:26:45.591926+00:00",
   "slot": "22:00",
   "live_quote": {
-    "spot": 3667.98,
+    "spot": 3657.97,
     "fx_usd_thb": 33.957,
-    "estimated_thb_per_baht": 58900,
-    "quote_updated": "2026-11-23T15:07:00.710223+00:00",
+    "estimated_thb_per_baht": 58750,
+    "quote_updated": "2026-11-23T15:11:02.019743+00:00",
     "fx_reference_date": "2026-11-23",
     "spot_source": "GoldPrice.dev · XAU/USD Spot",
     "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB"
   },
   "technical": {
-    "spot": 3667.98,
+    "spot": 3657.97,
     "fx_usd_thb": 33.957,
-    "estimated_thb_per_baht": 58900,
-    "daily_change_pct": 1.7,
+    "estimated_thb_per_baht": 58750,
+    "daily_change_pct": 1.42,
     "indicators": {
       "ema20": 3874.83,
       "ema50": 3947.21,
@@ -43,8 +43,8 @@
     "trend": "ขาลง",
     "support": [
       {
-        "low": 3549.37,
-        "high": 3585.55
+        "low": 3539.36,
+        "high": 3575.54
       },
       {
         "low": 3484.81,
@@ -53,8 +53,8 @@
     ],
     "resistance": [
       {
-        "low": 3750.41,
-        "high": 3786.59
+        "low": 3740.4,
+        "high": 3776.58
       },
       {
         "low": 4065.08,
@@ -70,7 +70,7 @@
     },
     "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
     "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 14 แท่ง); SMA20 ใช้ข้อมูล 20 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
-    "quote_updated": "2026-11-23T15:07:00.710223+00:00",
+    "quote_updated": "2026-11-23T15:11:02.019743+00:00",
     "fx_reference_date": "2026-11-23"
   },
   "daily_bars": [
@@ -453,7 +453,7 @@
       "hot_reason": "คัดจากคำในพาดหัว: กล่าวถึงราคาทอง + ดอกเบี้ย/ยีลด์ + ภูมิรัฐศาสตร์"
     }
   ],
-  "news_updated_at": "2026-11-23T15:22:48.956504+00:00",
+  "news_updated_at": "2026-11-23T15:26:48.146223+00:00",
   "news_candidates": 16,
   "ai_updated_at": "2026-11-19T11:06:46.000Z",
   "status": {
@@ -462,5 +462,5 @@
     "ai": "preserved_morning_analysis"
   },
   "news_source_note": "พาดหัว/ข้อความย่อจาก Google News RSS; หากไม่มี API key จะประเมินทิศทางด้วยกฎคำสำคัญเบื้องต้น ไม่ใช่การอ่านบทความเต็ม และไม่ยืนยันว่าเป็นสาเหตุของราคา",
-  "generated_at_bangkok": "2026-11-23T22:22:46.330764+07:00"
+  "generated_at_bangkok": "2026-11-23T22:26:45.591926+07:00"
 }
