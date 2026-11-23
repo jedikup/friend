@@ -48,7 +48,7 @@
       },
       {
         "low": 3484.81,
-        "high": 3521.0
+        "high": 3521
       }
     ],
     "resistance": [
@@ -63,15 +63,23 @@
     ],
     "last_closed_bar": {
       "time": "2026-11-20T00:00:00Z",
-      "open": 3606.5185,
-      "high": 3626.6438,
-      "low": 3502.905,
-      "close": 3539.3718
+      "open": 3596.89,
+      "high": 3609.74,
+      "low": 3502.99,
+      "close": 3538.19
     },
     "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
     "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 14 แท่ง); SMA20 ใช้ข้อมูล 20 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
     "quote_updated": "2026-11-23T15:03:00.824098+00:00",
-    "fx_reference_date": "2026-11-23"
+    "fx_reference_date": "2026-11-23",
+    "current_session_bar": {
+      "time": "2026-11-23T00:00:00Z",
+      "open": 3573.03,
+      "high": 3637.07,
+      "low": 3570.54,
+      "close": 3619.46,
+      "provisional": true
+    }
   },
   "daily_bars": [
     {
@@ -167,7 +175,7 @@
     },
     {
       "open": 3980.4164,
-      "high": 4000.0,
+      "high": 4000,
       "low": 3853.2676,
       "close": 3881.5355,
       "time": "2026-11-12T00:00:00Z"
@@ -220,6 +228,13 @@
       "low": 3502.905,
       "close": 3539.3718,
       "time": "2026-11-20T00:00:00Z"
+    },
+    {
+      "open": 3573.03,
+      "high": 3637.07,
+      "low": 3570.54,
+      "close": 3619.46,
+      "time": "2026-11-23T00:00:00Z"
     }
   ],
   "candidate_count": 40,
