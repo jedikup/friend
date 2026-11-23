@@ -274,7 +274,7 @@
       safeRender('plan', () => renderPlan(data));
       safeRender('news', () => renderNews(data));
       const q=data.live_quote||{};
-      safeRender('chart', () => fallbackChart('thaiOverviewChart',data.daily_bars,'thai',q.fx_usd_thb,q.estimated_thb_per_baht));
+      safeRender('chart', () => fallbackChart('thaiOverviewChart',data.daily_bars,'thai',q.fx_usd_thb,q.spot));
       if(fallback){const status=$('feedStatus');if(status)status.textContent='ใช้ข้อมูลสำรองจากแคช/หน้าเว็บ · ราคาและข่าวอาจเก่า กรุณาดูเวลาต้นทาง';const dot=$('feedDot');if(dot)dot.classList.add('off');const note=$('newsSourceUpdatedAt');if(note)note.textContent+=' · แสดง snapshot สำรองเพราะเชื่อมต่อฟีดไม่สำเร็จ'}
       const status = data.status || {};
       const rulesBased = status.ai === 'rules_based_no_api_key';
