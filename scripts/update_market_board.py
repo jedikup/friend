@@ -223,6 +223,21 @@ def news_candidates(now: datetime) -> list[dict]:
                 publisher = source_node.text.strip() if source_node is not None and source_node.text else "Google News · โปรดตรวจต้นทาง"
                 if not title or not link.startswith("http"):
                     continue
+                # Keep reports from established market, wire, and official sources.
+                # Google News can match unrelated opinion/blog sites to broad macro terms.
+                trusted_publishers = (
+                    "reuters", "associated press", "ap news", "bloomberg", "financial times",
+                    "wall street journal", "cnbc", "bbc", "abc news", "al jazeera",
+                    "the guardian", "marketwatch", "marketscreener", "investing.com",
+                    "fxstreet", "kitco", "the straits times", "channel newsasia", "cna",
+                    "nikkei asia", "bangkok post", "the nation thailand", "nation thailand",
+                    "thai pbs", "thaipbs", "the bangkok insight", "prachachat",
+                    "krungthep turakij", "matichon", "post today", "gold traders association",
+                    "goldtraders", "bank of thailand", "ธนาคารแห่งประเทศไทย", "กระทรวงการคลัง",
+                    "กรมประชาสัมพันธ์", "รัฐบาลไทย",
+                )
+                if not any(source in publisher.casefold() for source in trusted_publishers):
+                    continue
                 # Google News RSS may return loosely matched items; keep gold stories or
                 # directly relevant macro/geopolitical drivers to prevent unrelated headlines.
                 relevance_text = f"{title} {snippet}".lower()
