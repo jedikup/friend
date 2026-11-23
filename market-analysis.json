@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-23T15:20:26.359323+00:00",
-  "attempted_at": "2026-11-23T15:20:26.359323+00:00",
+  "generated_at": "2026-11-23T15:22:22.607773+00:00",
+  "attempted_at": "2026-11-23T15:22:22.607773+00:00",
   "slot": "22:00",
   "live_quote": {
-    "spot": 3671.36,
+    "spot": 3667.98,
     "fx_usd_thb": 33.957,
-    "estimated_thb_per_baht": 58950,
-    "quote_updated": "2026-11-23T15:05:02.148379+00:00",
+    "estimated_thb_per_baht": 58900,
+    "quote_updated": "2026-11-23T15:07:00.710223+00:00",
     "fx_reference_date": "2026-11-23",
     "spot_source": "GoldPrice.dev · XAU/USD Spot",
     "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB"
   },
   "technical": {
-    "spot": 3671.36,
+    "spot": 3667.98,
     "fx_usd_thb": 33.957,
-    "estimated_thb_per_baht": 58950,
-    "daily_change_pct": 1.79,
+    "estimated_thb_per_baht": 58900,
+    "daily_change_pct": 1.7,
     "indicators": {
       "ema20": 3874.83,
       "ema50": 3947.21,
@@ -43,8 +43,8 @@
     "trend": "ขาลง",
     "support": [
       {
-        "low": 3552.75,
-        "high": 3588.93
+        "low": 3549.37,
+        "high": 3585.55
       },
       {
         "low": 3484.81,
@@ -53,8 +53,8 @@
     ],
     "resistance": [
       {
-        "low": 3753.79,
-        "high": 3789.97
+        "low": 3750.41,
+        "high": 3786.59
       },
       {
         "low": 4065.08,
@@ -70,7 +70,7 @@
     },
     "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
     "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 14 แท่ง); SMA20 ใช้ข้อมูล 20 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
-    "quote_updated": "2026-11-23T15:05:02.148379+00:00",
+    "quote_updated": "2026-11-23T15:07:00.710223+00:00",
     "fx_reference_date": "2026-11-23"
   },
   "daily_bars": [
@@ -246,7 +246,19 @@
   ],
   "news": [
     {
-      "id": "N54",
+      "id": "N20",
+      "title": "Where to Buy Gold in Australia in 2026: Is Now a Good Time? - Mitrade",
+      "publisher": "Mitrade",
+      "published": "2026-11-23T14:15:30+00:00",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5kOWlER0hKMlZEcWZUaC1SYWpiYVU4dzBxb01lZnQtYXk5TFdhUDJwcGd5ZGlQMi1BYllaRHprQnFGTW15RnpnTjIxM3lJYkdSY2xNNUhsb0ZRaWlsdEZpQ3QweUF0V0ZVOXJycnRpMlE5Zm82MGNN?oc=5",
+      "snippet": "Where to Buy Gold in Australia in 2026: Is Now a Good Time? Mitrade",
+      "summary": "Where to Buy Gold in Australia in 2026: Is Now a Good Time? Mitrade",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N55",
       "title": "‘IN THE END, AMERICA WILL WIN’: Trump Says Iran’s Post-Midterm Missile Surge Has Been Knocked Down - Sean Hannity",
       "publisher": "Sean Hannity",
       "published": "2026-11-23T14:06:58+00:00",
@@ -270,7 +282,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
     },
     {
-      "id": "N25",
+      "id": "N26",
       "title": "Gold Prices Face Another Major Test as Fed Rate Hike Fears Trigger a 2022-Style Selloff - Speaks Media",
       "publisher": "Speaks Media",
       "published": "2026-11-23T11:26:25+00:00",
@@ -306,7 +318,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N62",
+      "id": "N63",
       "title": "Gold prices in Thailand jump THB1,200 by the close of trading - Nation Thailand",
       "publisher": "Nation Thailand",
       "published": "2026-11-23T10:53:00+00:00",
@@ -318,7 +330,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
     },
     {
-      "id": "N39",
+      "id": "N40",
       "title": "[MARKET ANALYSIS] TTF rallies on colder weather forecasts; crude softer while gold rebounds from 14-month lows - Newsquawk",
       "publisher": "Newsquawk",
       "published": "2026-11-23T10:07:00+00:00",
@@ -342,7 +354,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N53",
+      "id": "N54",
       "title": "Crude oil price analysis as Iran’s IRGC seeks to challenge the US blockade - Invezz",
       "publisher": "Invezz",
       "published": "2026-11-23T06:36:54+00:00",
@@ -354,7 +366,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N95",
+      "id": "N94",
       "title": "ราคาทองวันนี้ 23 พ.ย. 69 ครั้งที่ 1 ปรับขึ้น 850 บาท ทองแท่งขาย 58,000 บาท - Thaiger",
       "publisher": "Thaiger",
       "published": "2026-11-23T06:09:11+00:00",
@@ -378,7 +390,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N94",
+      "id": "N93",
       "title": "ราคาทองไทยจ่อหลุด 56,000 บาท MTS Gold เปิดแนวโน้มสัปดาห์นี้ ลุ้นลงต่อถึง 55,000 บาท - ทองรูปพรรณ | ฐานเศรษฐกิจ ข่าว - Head Topics",
       "publisher": "Head Topics",
       "published": "2026-11-23T04:25:00+00:00",
@@ -390,7 +402,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N45",
+      "id": "N46",
       "title": "Oil, natural gas slip as gold jumps over 1.5% in Monday trade - Gulf News",
       "publisher": "Gulf News",
       "published": "2026-11-23T03:23:54+00:00",
@@ -402,25 +414,13 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
     },
     {
-      "id": "N41",
+      "id": "N42",
       "title": "Oil prices fall amid equity selloff though Iran war attacks limit losses - Business Standard",
       "publisher": "Business Standard",
       "published": "2026-11-23T02:50:56+00:00",
       "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPOHluRThtOW1FdTlreHp3MFVSSWRJa0YyM21XNHdVeFdHQndYZENuMEVKUDhnemxxRmhwTmNjaFlDUGNWbHJ6cjB1MXk2MG5IWWc3bVA2aUljWl82Z0J2dzBYcUpaV3hjUHI4MG95WVVLTEIyWXNGNFA4OGJ3Z1ZSOUphTEtpR0pTOWxwN1hYOGNfZmMyZmlYTHhtYmFTRTZqcG9OMUtaNVNsTzliWE9NdUNJWHdYcmEzN1ZZUFZ2R1dWNUwtUG00VU1EdUsydjNzUl9NZmJZU0xURGtweEhn0gHkAUFVX3lxTFBlQ2ZfNlpXREpIRDFnVHpDZE5EYnVuUDRkNzRpZ2xTdDdpVXlONFVHQU5nLU05RVpaY0pRZ1dPb0FvOG9ZZm5peW1SSWlZMU53ZzVhLW43aDRHZ0NsZHhuZkc0YWRpeGpxR2xrR1QtX3F4X2toOGxfazVUZU00WXJTYWN4LVp1VTQwOXluU3V1OFNoUlJ1Z3NzSVU5WUtpZWFDRHNhVXM2emFPWmp5MVdFakg5WE85UkNTaExmWEFfNzV5WmhGaHZHOGlDMmR5OHBaYXlxMTRMMWdTT21RUnRTLWt5RA?oc=5",
       "snippet": "Oil prices fall amid equity selloff though Iran war attacks limit losses Business Standard",
       "summary": "Oil prices fall amid equity selloff though Iran war attacks limit losses Business Standard",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N80",
-      "title": "ราคาทองวันนี้ (23 พ.ย.) เปิดตลาดพุ่ง 850 บาท ลุ้นรีบาวด์ หลังร่วงหนักจากแรงกดดัน Fed-หุ้น AI - LINE TODAY",
-      "publisher": "LINE TODAY",
-      "published": "2026-11-23T02:38:13+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9HNTctT3RuZlE2bnMwUS1TRGpuQ1poQWlmWTlNRkRVYmtNOHUyOWk5U0RBUUVrZzBBNDFKVGRWNFo2RzlrNEFleTl1QXVQOGJNNU9nSW04aXlsVnY3TTluT0oyMFNPZmhhNFZDV2JHX1hHYUw5N3JrajVGMkxzVzg?oc=5",
-      "snippet": "ราคาทองวันนี้ (23 พ.ย.) เปิดตลาดพุ่ง 850 บาท ลุ้นรีบาวด์ หลังร่วงหนักจากแรงกดดัน Fed-หุ้น AI LINE TODAY",
-      "summary": "ราคาทองวันนี้ (23 พ.ย.) เปิดตลาดพุ่ง 850 บาท ลุ้นรีบาวด์ หลังร่วงหนักจากแรงกดดัน Fed-หุ้น AI LINE TODAY",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
@@ -438,7 +438,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N89",
+      "id": "N88",
       "title": "ฟื้นแล้ว! ราคาทองวันนี้ 25 พ.ย. เปิดตลาดทะยาน 850 บาท ทองแท่งขายออก 58,000 บาท - The Bangkok Insight",
       "publisher": "The Bangkok Insight",
       "published": "2026-11-23T02:21:36+00:00",
@@ -474,7 +474,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N31",
+      "id": "N32",
       "title": "Gold’s Slide Is a Bet on the Fed, Not on Peace. Peace May Be What Rescues It - Modern Diplomacy",
       "publisher": "Modern Diplomacy",
       "published": "2026-11-22T16:45:00+00:00",
@@ -487,7 +487,7 @@
     }
   ],
   "hot_news": [],
-  "news_updated_at": "2026-11-23T15:20:28.745350+00:00",
+  "news_updated_at": "2026-11-23T15:22:25.242545+00:00",
   "news_candidates": 40,
   "ai_updated_at": "2026-11-19T11:06:46.000Z",
   "status": {
@@ -496,5 +496,5 @@
     "ai": "preserved_morning_analysis"
   },
   "news_source_note": "พาดหัว/ข้อความย่อจาก Google News RSS; หากไม่มี API key จะประเมินทิศทางด้วยกฎคำสำคัญเบื้องต้น ไม่ใช่การอ่านบทความเต็ม และไม่ยืนยันว่าเป็นสาเหตุของราคา",
-  "generated_at_bangkok": "2026-11-23T22:20:26.359323+07:00"
+  "generated_at_bangkok": "2026-11-23T22:22:22.607773+07:00"
 }
