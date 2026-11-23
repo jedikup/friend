@@ -141,7 +141,7 @@
     if ($('spotResistanceNear')) $('spotResistanceNear').textContent = rangeText(resistances[0]);
     if ($('spotResistanceNext')) $('spotResistanceNext').textContent = rangeText(resistances[1]);
     updateThaiLevelLabels(technical.fx_usd_thb);
-    if ($('levelsUpdatedAt')) $('levelsUpdatedAt').textContent = `คำนวณล่าสุด ${stamp(technical.levels_updated_at || data.generated_at)} · แหล่งข้อมูล: ${technical.source || 'OHLC/Spot'}`;
+    if ($('levelsUpdatedAt')) $('levelsUpdatedAt').textContent = `ประมวลผล ${stamp(technical.levels_updated_at || data.generated_at)} · แท่ง OHLC ล่าสุด ${stamp(technical.last_closed_bar?.time)} · ราคา Spot ${stamp(technical.quote_updated || data.live_quote?.quote_updated)} · แหล่งข้อมูล: ${technical.source || 'OHLC/Spot'}`;
     if ($('levelsMethod')) $('levelsMethod').textContent = `${technical.method || 'คำนวณจาก swing high/low และ ATR'} · ภาพแนวโน้ม ${technical.trend || '—'} · ATR(${technical.atr_period || 14}) $${fmt(technical.atr14 || 0)}`;
   }
 
@@ -222,7 +222,7 @@
     const lo=Math.min(...all),hi=Math.max(...all),span=(hi-lo)||1;
     const X=i=>38+i*(924/(n-1)),Y=v=>300-(v-lo)/span*250;
     const wrap=node('div','chart-fallback');wrap.style.cssText='position:absolute;inset:0;z-index:20;background:#f5f1df;padding:10px 12px;border:1px solid #c8bb80;border-radius:8px;overflow:hidden';
-    wrap.append(node('b','',field==='thai'?'กราฟสำรอง · ทองไทยประมาณการ (แท่ง OHLC + Bollinger 20,2)':'กราฟสำรอง · Gold Spot (แท่ง OHLC)'));
+    wrap.append(node('b','',`${field==='thai'?'กราฟสำรอง · ทองไทยประมาณการ (แท่ง OHLC + Bollinger 20,2)':'กราฟสำรอง · Gold Spot (แท่ง OHLC)'} · แท่งล่าสุด ${stamp(data[data.length-1]?.time)}`));
     const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 1000 340');svg.setAttribute('preserveAspectRatio','none');svg.style.cssText='width:100%;height:calc(100% - 34px);display:block';
     for(let g=0;g<5;g++){const y=35+g*62;const line=document.createElementNS(svg.namespaceURI,'line');line.setAttribute('x1','34');line.setAttribute('x2','975');line.setAttribute('y1',String(y));line.setAttribute('y2',String(y));line.setAttribute('stroke','#d8d0b5');line.setAttribute('stroke-width','1');svg.append(line)}
     const poly=(values,color,width,dash='')=>{const p=document.createElementNS(svg.namespaceURI,'polyline');p.setAttribute('points',values.map((v,i)=>X(i)+','+Y(v)).join(' '));p.setAttribute('fill','none');p.setAttribute('stroke',color);p.setAttribute('stroke-width',String(width));if(dash)p.setAttribute('stroke-dasharray',dash);svg.append(p)};
