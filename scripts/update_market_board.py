@@ -561,9 +561,22 @@ def main() -> None:
     now = datetime.now(timezone.utc)
     local_now = now.astimezone(BANGKOK)
     previous = previous_data()
-    if os.getenv("GITHUB_EVENT_NAME") == "schedule" and not (local_now.hour in (8, 22) and local_now.minute < 10):
-        live_only_update(previous, now)
-        return
+    if os.getenv("GITHUB_EVENT_NAME") == "schedule":
+        scheduled_slot = "08:00" if local_now.hour == 8 else "22:00" if local_now.hour == 22 else None
+        try:
+            previous_generated = datetime.fromisoformat(previous.get("generated_at", "")).astimezone(BANGKOK)
+            already_updated_this_slot = (
+                scheduled_slot is not None
+                and previous.get("slot") == scheduled_slot
+                and previous_generated.date() == local_now.date()
+            )
+        except (TypeError, ValueError):
+            already_updated_this_slot = False
+        # GitHub may delay cron starts. Accept any run during the scheduled hour,
+        # then use the saved slot/date to prevent duplicate analysis that hour.
+        if scheduled_slot is None or already_updated_this_slot:
+            live_only_update(previous, now)
+            return
     market = {"generated_at": previous.get("generated_at"), "attempted_at": now.isoformat(), "slot": "08:00" if local_now.hour < 14 else "22:00"}
     status = {"technical": "error", "news": "needs_api_key", "ai": "needs_api_key"}
     market_error = False
