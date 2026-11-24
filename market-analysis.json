@@ -1,77 +1,77 @@
 {
-  "generated_at": "2026-11-23T15:26:45.591926+00:00",
-  "attempted_at": "2026-11-23T15:26:45.591926+00:00",
+  "generated_at": "2026-11-24T15:05:50.219722+00:00",
+  "attempted_at": "2026-11-24T15:05:50.219722+00:00",
   "slot": "22:00",
   "live_quote": {
-    "spot": 3633.07,
-    "fx_usd_thb": 33.982,
-    "estimated_thb_per_baht": 58400,
-    "quote_updated": "2026-11-24T04:10:00.917493+00:00",
+    "spot": 3628.17,
+    "fx_usd_thb": 33.97,
+    "estimated_thb_per_baht": 58300,
+    "quote_updated": "2026-11-24T14:50:01.228344+00:00",
     "fx_reference_date": "2026-11-24",
     "spot_source": "GoldPrice.dev · XAU/USD Spot",
     "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB"
   },
   "technical": {
-    "spot": 3657.97,
-    "fx_usd_thb": 33.957,
-    "estimated_thb_per_baht": 58750,
-    "daily_change_pct": 1.42,
+    "spot": 3628.17,
+    "fx_usd_thb": 33.97,
+    "estimated_thb_per_baht": 58300,
+    "daily_change_pct": 2.51,
     "indicators": {
-      "ema20": 3874.83,
-      "ema50": 3947.21,
+      "ema20": 3851.59,
+      "ema50": 3934.8,
       "ema200": null,
       "ema_reading": "Spot อยู่ใต้ EMA20/50; EMA200 ไม่มีข้อมูลจากประวัติ 30 วัน",
-      "rsi14": 27.3,
-      "rsi_reading": "เขตอ่อนแรงมาก แต่ไม่ยืนยันว่าจะเด้ง",
-      "macd": -87.65,
-      "macd_signal": -40.5,
-      "macd_hist": -47.15,
+      "rsi14": 34.7,
+      "rsi_reading": "โมเมนตัมไม่สุดโต่ง; ต่ำกว่า 50 เอนอ่อน เหนือ 50 เอนแข็ง",
+      "macd": -95.69,
+      "macd_signal": -51.54,
+      "macd_hist": -44.15,
       "macd_reading": "แรงส่งลบ แต่เส้น MACD อยู่ใต้เส้นสัญญาณ",
-      "bb_upper": 4234.12,
-      "bb_mid": 3926.57,
-      "bb_lower": 3619.03,
+      "bb_upper": 4231.27,
+      "bb_mid": 3904.95,
+      "bb_lower": 3578.63,
       "bb_reading": "ราคาอยู่ในกรอบแถบ · ใช้ดูความผันผวน ไม่ใช่สัญญาณซื้อขายเดี่ยว",
-      "atr14": 100.52,
-      "atr_reading": "ช่วงแกว่งเฉลี่ยล่าสุดราว $100.52/oz ต่อวัน; ATR บอกขนาด ไม่บอกทิศทาง",
-      "source_note": "คำนวณจากแท่ง Gold Spot 1D ปิดแล้ว 21 แท่ง; snapshot 2026-11-20T00:00:00Z"
+      "atr14": 100.41,
+      "atr_reading": "ช่วงแกว่งเฉลี่ยล่าสุดราว $100.41/oz ต่อวัน; ATR บอกขนาด ไม่บอกทิศทาง",
+      "source_note": "คำนวณจากแท่ง Gold Spot 1D ปิดแล้ว 22 แท่ง; snapshot 2026-11-23T00:00:00Z"
     },
-    "atr14": 100.52,
+    "atr14": 100.41,
     "atr_period": 14,
-    "sma20": 3926.57,
+    "sma20": 3904.95,
     "sma_period": 20,
-    "ema50": 3947.21,
+    "ema50": 3934.8,
     "trend": "ขาลง",
     "support": [
       {
-        "low": 3539.36,
-        "high": 3575.54
+        "low": 3509.69,
+        "high": 3545.84
       },
       {
-        "low": 3484.81,
-        "high": 3521.0
+        "low": 3484.83,
+        "high": 3520.98
       }
     ],
     "resistance": [
       {
-        "low": 3740.4,
-        "high": 3776.58
+        "low": 3710.5,
+        "high": 3746.65
       },
       {
-        "low": 4065.08,
-        "high": 4101.26
+        "low": 4048.46,
+        "high": 4084.6
       }
     ],
     "last_closed_bar": {
-      "time": "2026-11-20T00:00:00Z",
-      "open": 3606.5185,
-      "high": 3626.6438,
-      "low": 3502.905,
-      "close": 3539.3718
+      "time": "2026-11-23T00:00:00Z",
+      "open": 3583.22,
+      "high": 3689.6056,
+      "low": 3567.816,
+      "close": 3630.73
     },
     "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
     "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 14 แท่ง); SMA20 ใช้ข้อมูล 20 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
-    "quote_updated": "2026-11-23T15:11:02.019743+00:00",
-    "fx_reference_date": "2026-11-23"
+    "quote_updated": "2026-11-24T14:50:01.228344+00:00",
+    "fx_reference_date": "2026-11-24"
   },
   "daily_bars": [
     {
@@ -220,9 +220,16 @@
       "low": 3502.905,
       "close": 3539.3718,
       "time": "2026-11-20T00:00:00Z"
+    },
+    {
+      "open": 3583.22,
+      "high": 3689.6056,
+      "low": 3567.816,
+      "close": 3630.73,
+      "time": "2026-11-23T00:00:00Z"
     }
   ],
-  "candidate_count": 16,
+  "candidate_count": 20,
   "update_slot": "evening",
   "analysis_type": "rules_based",
   "market_summary": "สรุปตรวจตลาด 2026-11-19 18:06:46 น. (เวลาไทย; รอบเช้า 08:00 ล่าช้า)\\n• Gold Spot XAUAD/Swissquote $3734.59/oz เวลา 17:40 น.; ลด 0.15% ในวันและแกว่ง $3,693.47–3,758.56 หลังเพิ่งทำ low รอบกว่า 1 ปี\\n• สมาคมค้าทองคำรอบล่าสุดที่ยืนยันได้ #33 เวลา 16:16 น.: รับซื้อ ฿59,750 / ขายออก ฿59,950, Spot $3,733 และ USD/THB 33.89. อัตราแปลง Spot×FX×0.47296 ได้ราว ฿59,850 ไม่ใช่ราคาประกาศ/ร้านทอง\\n• ค่าเงินบาท 33.89 ตาม GTA; reference WaveRate 33.905 วันที่ 19 พ.ย. เทียบ GTA 33.97 วันที่ 18 พ.ย. บาทแข็งขึ้นเล็กน้อย จึงช่วยพยุงทองไทย แต่ Spot ที่ต่ำลงยังเป็นแรงกด\\n• ภาพเทคนิคยังขาลง: ราคาใต้ EMA20 $3939, RSI(14) 27.8 ต่ำกว่า 30, MACD -78.3 ใต้ signal -54.8, ต่ำกว่า Bollinger lower $3737; oversold อาจเด้งได้แต่ยังไม่ใช่สัญญาณกลับตัว\\n• แนวรับ $3693–$3699 และ $3664; แนวต้าน $3729–$3764. ยืนเหนือ $3,764 จึงลดแรงกดดัน; หลุด $3,693 ให้ระวังแนว $3,664\\n• Reuters รายงาน spot ฟื้น 0.3% ที่ $3,733.76 เวลา 06:30 GMT หลัง low $3,693.13; แต่ FedWatch 90% โอกาสขึ้น 25 bps และ 10% ขึ้น 50 bps ใน ธ.ค. รายงาน minutes Fed เน้นความเสี่ยงเงินเฟ้อ; DXY ล่าสุดที่ตรวจได้ 103.94 เวลา 11:21 UTC (18 พ.ย.) ยังแข็ง",
@@ -247,18 +254,66 @@
   "news": [
     {
       "id": "N1",
-      "title": "Gold consolidates gains as US Dollar climbs to fresh 19-month high - FXStreet",
+      "title": "Gold slips after sharp rebound with inflation, Fed expectations in focus - Investing.com",
+      "publisher": "Investing.com",
+      "published": "2026-11-24T11:37:23+00:00",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPcU9Cd2xHVXVEMWNPM3pIMWRDakVBcVRzZkFyUHJGVi04VEdIY1EwRXVSS251ZExra2swcW45Z1BkbVdmWFl4dFU0c3JLdTFZRmNGaE5ZMHlYTmtqMTJGTjc4RG42YVVLei1PaTQ3N05xQkpjQ09nYmVTU2lEVlZ4WHl5R3hoU2w1Rk1COGNRZ2RpeVRqUi01RWs1bXZuU0hDdHJERDl1SE5rZVkwR0VIM3NzVkpJenAxdlNZdklHR0J2ZU4zUjVzZ1RyOHRrNk0?oc=5",
+      "snippet": "Gold slips after sharp rebound with inflation, Fed expectations in focus Investing.com",
+      "summary": "Gold slips after sharp rebound with inflation, Fed expectations in focus Investing.com",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N6",
+      "title": "Gold rebound loses steam as Fed interest rate hike bets weigh - FXStreet",
       "publisher": "FXStreet",
-      "published": "2026-11-23T13:19:03+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbVZxM1F1VXJ3dDBHWld0OG1tMERFXzdvcjlfMjhYSnRydjQ2aHJhT1RxUUc0OWFfOTFkeXMtYVlCYTJDUTRsM3d4d1NGWUNEVlI2YmFyZF9XZTNGSkotMGRpaU5jMXpFUklfOUpvUlhZaWFjbUhlZUpiUjVzRzZ6X0xNWHVOdTVGQ1p3YUhKSVN3ZmRLdUttOVFpeC1VRFJvaUc2RjI1ZTBDbUY1MFE?oc=5",
-      "snippet": "Gold consolidates gains as US Dollar climbs to fresh 19-month high FXStreet",
-      "summary": "Gold consolidates gains as US Dollar climbs to fresh 19-month high FXStreet",
+      "published": "2026-11-24T11:03:55+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMWtSZWRxbG91ZllDcldaMVdtNDRVT3pTbkdZNzM5RkFjUEExb1l1ZTMwaHRIZWF6VkhZSXNodVNWNE1aR2o0NnlmLXFid2ZDMFJ5OURMeXg2dU03d0FYWkVEVWFGOHF0U1F4RXpydEI4bmdjY0ZtYWNFc0R2WjlVTjJwTVFtOHNLYVFncXdGc1Z6TFJPWWNiN29rWVRTQzJmRm90X3Bhdw?oc=5",
+      "snippet": "Gold rebound loses steam as Fed interest rate hike bets weigh FXStreet",
+      "summary": "Gold rebound loses steam as Fed interest rate hike bets weigh FXStreet",
+      "direction": "down",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: ตลาดกังวลดอกเบี้ยสูง/ขึ้นดอกเบี้ย · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · ตลาดกังวลดอกเบี้ยสูง/ขึ้นดอกเบี้ย"
+    },
+    {
+      "id": "N8",
+      "title": "Gold extends rebound as Nvidia CEO news lifts equities, dip-buying lifts bullion - Investing.com Nigeria",
+      "publisher": "Investing.com Nigeria",
+      "published": "2026-11-24T03:51:41+00:00",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPa0NOSUVHazAxenp5c0xieW9pX0FFSjdReFd1NTNJb1gzQi1sTnNJUmV5N1N1TUQwQWVveFB3OWFBVEZxbldNZjJmMjFadjFoRnZJd1k0VmYtV3VNTlZvZEoyTHZyb3MzY3JTUkI3WlpOMGI0UnhkOE9rc2VVbklSaC1BelJlUlFwT0hLZGJBTmVVUGNUT2MzUVd5Vm95b2dYVE1nNlJMdkdPN1N2WGZ2ZUVfUU11dDdadlBpOUxiN3dMc1I1SkI5WXNKd2VGUQ?oc=5",
+      "snippet": "Gold extends rebound as Nvidia CEO news lifts equities, dip-buying lifts bullion Investing.com Nigeria",
+      "summary": "Gold extends rebound as Nvidia CEO news lifts equities, dip-buying lifts bullion Investing.com Nigeria",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N19",
+      "title": "ราคาทองวันนี้ 24 พ.ย. เปิดตลาดทะยาน 450 บาท ทองแท่งขายออก 58,800 บาท - The Bangkok Insight",
+      "publisher": "The Bangkok Insight",
+      "published": "2026-11-24T02:15:30+00:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBBb3dVZGN3X2dabThSRFFsU09fWWRrRVFscEFmakVMc2V4Tzhab0lXT3RTeWFMSllNam1uT2Q5YzlyLUhDZWdMRXZyUDlCeFdyRzBPVWRJQlJvUjVtZmxER0k2cGlwMVV6T2dpQVNpbm9jX0FjLThGYg?oc=5",
+      "snippet": "ราคาทองวันนี้ 24 พ.ย. เปิดตลาดทะยาน 450 บาท ทองแท่งขายออก 58,800 บาท The Bangkok Insight",
+      "summary": "ราคาทองวันนี้ 24 พ.ย. เปิดตลาดทะยาน 450 บาท ทองแท่งขายออก 58,800 บาท The Bangkok Insight",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N7",
+      "title": "Gold reclaims $3,650 as Nvidia news sparks rally ahead of US PCE - FXStreet",
+      "publisher": "FXStreet",
+      "published": "2026-11-23T19:16:53+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVnBvekdxUE5QSkRORzlVcXRVdXBRMW9oWTZMV1haTFZTNHhzRThZRE5idWxIdVU4TmhyUGxWa0JOS2hRaXhlT1lFRGEzVmM3OUk5Y3NmRUFEeEJ6QzNrN21HcDAtRWNwYmg2ZThCM2QtZGVqU3dudURZVE42MDhsSTg5RVk5UlBTVTdqNGpzT0oxRUhpR2x0TDZEYUticmNVN2tDUFdDRXlDdw?oc=5",
+      "snippet": "Gold reclaims $3,650 as Nvidia news sparks rally ahead of US PCE FXStreet",
+      "summary": "Gold reclaims $3,650 as Nvidia news sparks rally ahead of US PCE FXStreet",
       "direction": "up",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองแข็งขึ้น · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
     },
     {
-      "id": "N8",
+      "id": "N12",
       "title": "Gold prices in Thailand jump THB1,200 by the close of trading - Nation Thailand",
       "publisher": "Nation Thailand",
       "published": "2026-11-23T10:53:00+00:00",
@@ -270,7 +325,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองแข็งขึ้น"
     },
     {
-      "id": "N16",
+      "id": "N20",
       "title": "ฟื้นแล้ว! ราคาทองวันนี้ 25 พ.ย. เปิดตลาดทะยาน 850 บาท ทองแท่งขายออก 58,000 บาท - The Bangkok Insight",
       "publisher": "The Bangkok Insight",
       "published": "2026-11-23T02:21:36+00:00",
@@ -282,7 +337,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N14",
+      "id": "N18",
       "title": "ราคาทองวันนี้ 21 พ.ย. ประกาศครั้งเดียว! ร่วง 450 บาท ทองแท่งเกือบหลุด 57,000 บาท - The Bangkok Insight",
       "publisher": "The Bangkok Insight",
       "published": "2026-11-21T02:25:29+00:00",
@@ -294,7 +349,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
-      "id": "N10",
+      "id": "N14",
       "title": "Gold hits 14-month low on AI stock losses and Fed rate hike bets - Nation Thailand",
       "publisher": "Nation Thailand",
       "published": "2026-11-21T00:17:00+00:00",
@@ -306,19 +361,31 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · ตลาดกังวลดอกเบี้ยสูง/ขึ้นดอกเบี้ย"
     },
     {
+      "id": "N5",
+      "title": "Gold heads for worst week since March as Fed rate hike bets and forced selling weigh - FXStreet",
+      "publisher": "FXStreet",
+      "published": "2026-11-20T15:53:25+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUHdUSjAxbnhzMHFmUjZheXJxNUZ5SDJzZGVvVGxycXNYRm1SejNWaFdLblI1dFFOdVVpWmZhZ1FJVlI3YVFsNlZ3T0VlTWYyRkNQcTczSjhxeXJ2eHlSQVJBQ3ZRQVdodmdkYUVMekdqakJXSFRiMmY3X29tRHFUSzNEY3VTNGdSZWVmVm1pSk8zUTRqYlBRbE9HMVdWaGJyc0JBX012cHJCc3pSUDFUZ2cxd255Wmhqc3BaVWhHbnZKWjVuaVZkLU93?oc=5",
+      "snippet": "Gold heads for worst week since March as Fed rate hike bets and forced selling weigh FXStreet",
+      "summary": "Gold heads for worst week since March as Fed rate hike bets and forced selling weigh FXStreet",
+      "direction": "down",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: ตลาดกังวลดอกเบี้ยสูง/ขึ้นดอกเบี้ย · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · ตลาดกังวลดอกเบี้ยสูง/ขึ้นดอกเบี้ย"
+    },
+    {
       "id": "N3",
-      "title": "TSX futures slip as lower oil, gold prices weigh; retail sales data eyed - Kitco",
-      "publisher": "Kitco",
-      "published": "2026-11-20T13:34:08+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbWtVZ3ZCNFl6M2Qyd2h4bUNlVkw0akd5RFZUWjVPTEZ4b09MNnV6dlBCTHVqU3JRaUZBT1d0dC1NTm9sQ2RyS1VGakJlOThaWDBhM0xvZHl1Mm92d2ptOWtSTmFzQzJLQTdJY2RaWW5CcG81cGYzLXlROVhyNWM5NWtLT1RjU3FlOVhTbVRjRFRTM1BIZ2hvZzEwN1RRUXR4b1RVeDRyZkpjUDBQNE14X042Skl0Vi1kNkE?oc=5",
-      "snippet": "TSX futures slip as lower oil, gold prices weigh; retail sales data eyed Kitco",
-      "summary": "TSX futures slip as lower oil, gold prices weigh; retail sales data eyed Kitco",
+      "title": "Gold Weekly Forecast: Hawkish Fed rhetoric, possible deleveraging weigh heavily on precious metal - FXStreet",
+      "publisher": "FXStreet",
+      "published": "2026-11-20T14:30:32+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPY2NOWTZodFczanU4QmxUSVdhQW1idjNGSmdRSHFVQUdXSTBwZXBmYVkyd0FEMXMwZ0pCNTFPdlRiS2dueGdfQUdxLUVDYjc2eUkzTkhhVXdQR1ctM2NDVklObDRZenl6SUJ1WDFVVEdxUVFvWVl4c0tNYkdMRkRiZkJ2a2ppZVJ3d0NET1FZQVJGajdQd2FKSlprV2tjcm9WTlFXR0E0dTh2Q0U1cGEzeHBnWlpSVDh3Z1k4Zm4tX1l2QkF5NDhUZG1CUGFUVVhRci10d0EwRk1yQQ?oc=5",
+      "snippet": "Gold Weekly Forecast: Hawkish Fed rhetoric, possible deleveraging weigh heavily on precious metal FXStreet",
+      "summary": "Gold Weekly Forecast: Hawkish Fed rhetoric, possible deleveraging weigh heavily on precious metal FXStreet",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N9",
+      "id": "N13",
       "title": "Thai gold prices fall THB2,300 while a firm dollar weighs on spot gold - Nation Thailand",
       "publisher": "Nation Thailand",
       "published": "2026-11-20T12:13:00+00:00",
@@ -330,7 +397,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
-      "id": "N5",
+      "id": "N10",
       "title": "Gold falls more than 30% from January record high as dollar strengthens - Nation Thailand",
       "publisher": "Nation Thailand",
       "published": "2026-11-20T08:45:00+00:00",
@@ -342,7 +409,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว; ดอลลาร์แข็งอาจกดดันทอง"
     },
     {
-      "id": "N4",
+      "id": "N9",
       "title": "Thai gold prices sink 2,500 baht amid dollar strength and Fed hike bets - Nation Thailand",
       "publisher": "Nation Thailand",
       "published": "2026-11-20T03:44:00+00:00",
@@ -354,7 +421,19 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
-      "id": "N13",
+      "id": "N4",
+      "title": "Gold Price Forecast: XAU/USD in a freefall - is a bottom in sight? - FXStreet",
+      "publisher": "FXStreet",
+      "published": "2026-11-20T03:04:43+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWEptRXhqV2tPNVFzbXFFN0t4d0xYaFBmaU1EaHdoLTlXSUNSdEJQdlZUUVpPNmtyV2t1MV9ZUEcwSTR4YWs4X2QyYWhiR0JlRlRkUEVnODFZajRyU3F6VlpFREwwOXItYmlwaTRpTmt4V0VqenRkRVUwZzczOHpkZVJxM3JFeXBLc3NPTEpHNF9JbHhVUUYzRVpLSnNMaDd0bDJjRW1Xb04tSk1Ld0E?oc=5",
+      "snippet": "Gold Price Forecast: XAU/USD in a freefall - is a bottom in sight? FXStreet",
+      "summary": "Gold Price Forecast: XAU/USD in a freefall - is a bottom in sight? FXStreet",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N17",
       "title": "ช็อก! ราคาทองวันนี้ 20 พ.ย. เปิดตลาดร่วงพรวดเดียว 2,500 บาท - The Bangkok Insight",
       "publisher": "The Bangkok Insight",
       "published": "2026-11-20T02:23:02+00:00",
@@ -366,7 +445,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N6",
+      "id": "N11",
       "title": "Gold prices hit 14-month low on Fed hike expectations - Bangkok Post",
       "publisher": "Bangkok Post",
       "published": "2026-11-19T22:03:00+00:00",
@@ -378,19 +457,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N2",
-      "title": "Gold struggles near $3,700 despite weaker Philly Fed, renewed Hormuz tensions - Kitco AM Report - Kitco",
-      "publisher": "Kitco",
-      "published": "2026-11-19T14:04:03+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMTdzaHBscEFHNFRYSjhEeXF0T2JQdjJjQjg1a1F4QmQ4bE95c254OWNTeFhEWkNYSzJDTlRWNk9Eckk1U280SXd1WFFIZDVoX2xHSUkyTUpIQkF4OU9wMjVKdGZtdENGNDctck5MZFVPU1gwd3V6NWRaZXlIdFZqTHR1V3F3bnZxZXlsbnRoMGdnMHVTNE9WZ1JtdVktTnhaVnByU0M2UnhNM1Jqcnh6QnR0WEd2NDJ0Y2szWg?oc=5",
-      "snippet": "Gold struggles near $3,700 despite weaker Philly Fed, renewed Hormuz tensions - Kitco AM Report Kitco",
-      "summary": "Gold struggles near $3,700 despite weaker Philly Fed, renewed Hormuz tensions - Kitco AM Report Kitco",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N12",
+      "id": "N16",
       "title": "ดิ่งไม่หยุด! ราคาทองวันนี้ 19 พ.ย. เปิดตลาดลด 400 บาท ทองแท่งขายออก 60,350 บาท - The Bangkok Insight",
       "publisher": "The Bangkok Insight",
       "published": "2026-11-19T02:24:13+00:00",
@@ -402,19 +469,19 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N7",
-      "title": "Thai gold prices drop THB1,100 as bullion falls to THB60,750 - Nation Thailand",
-      "publisher": "Nation Thailand",
-      "published": "2026-11-18T11:13:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5WY3FLUTM4RmFxZkNmWGFRb0V2Vy1ZU0YwdjNZMFJ0Um02a1lKN1o1Qk92MFZqSi1zSWRYdWdUSkFfaFBVaU1QQ0kwU2tfWUJIaF9pempLN0ZwTjU5ZThMajZERlljdG1iUUVvMldoOTAxYm56alE?oc=5",
-      "snippet": "Thai gold prices drop THB1,100 as bullion falls to THB60,750 Nation Thailand",
-      "summary": "Thai gold prices drop THB1,100 as bullion falls to THB60,750 Nation Thailand",
+      "id": "N2",
+      "title": "Gold drops 2% to over one-year low as hawkish Fed signals boost dollar - Kitco",
+      "publisher": "Kitco",
+      "published": "2026-11-18T13:45:37+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ0VJSlZDemZHTlZuTnlwbHdTYmV5dFRfWHlIZUlIbXF0RWN0aWNRMUFoNW5PSEttRkdLa29MbDYwRkhvTDRxSlhzM0JPQnNLNGpuVTVoNlFsak9BLVJLY2l6TV9MUXJKcjlyZzZ6eDNtaVJCb2NWVjh0WGNOV05YMW5MZk90bjRtMlgwaWFoS3l5djUyMGphd1RGOVVaQU4yazVOVm9NbTFUYml1M1p2U0xlODU?oc=5",
+      "snippet": "Gold drops 2% to over one-year low as hawkish Fed signals boost dollar Kitco",
+      "summary": "Gold drops 2% to over one-year low as hawkish Fed signals boost dollar Kitco",
       "direction": "down",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
-      "id": "N11",
+      "id": "N15",
       "title": "ราคาทองวันนี้ 18 พ.ย. เปิดตลาดดิ่งอีก 750 บาท ทองแท่งเกือบหลุด 61,000 บาท - The Bangkok Insight",
       "publisher": "The Bangkok Insight",
       "published": "2026-11-18T02:27:07+00:00",
@@ -424,44 +491,31 @@
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N15",
-      "title": "ราคาทองวันนี้ 17 พ.ย. เปิดตลาดลด 50 บาท ทองแท่งขายออก 62,000 บาท - The Bangkok Insight",
-      "publisher": "The Bangkok Insight",
-      "published": "2026-11-17T02:17:26+00:00",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1NWW84TXk2NW1PRW1SQUlnemJvSmpNZ2dFemVPT3JNT0ZRdXlERkVOdTZMems2TnlRTDNWaVdvQzI5RTBuVC1WU3VGSTRVRlFBT0FyQ1hLaHRUNFBvOERzTzMxNlYyZ2k3azdiMmJzekRxUldENHNncA?oc=5",
-      "snippet": "ราคาทองวันนี้ 17 พ.ย. เปิดตลาดลด 50 บาท ทองแท่งขายออก 62,000 บาท The Bangkok Insight",
-      "summary": "ราคาทองวันนี้ 17 พ.ย. เปิดตลาดลด 50 บาท ทองแท่งขายออก 62,000 บาท The Bangkok Insight",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     }
   ],
   "hot_news": [
     {
-      "id": "N2",
-      "title": "Gold struggles near $3,700 despite weaker Philly Fed, renewed Hormuz tensions - Kitco AM Report - Kitco",
-      "publisher": "Kitco",
-      "published": "2026-11-19T14:04:03+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMTdzaHBscEFHNFRYSjhEeXF0T2JQdjJjQjg1a1F4QmQ4bE95c254OWNTeFhEWkNYSzJDTlRWNk9Eckk1U280SXd1WFFIZDVoX2xHSUkyTUpIQkF4OU9wMjVKdGZtdENGNDctck5MZFVPU1gwd3V6NWRaZXlIdFZqTHR1V3F3bnZxZXlsbnRoMGdnMHVTNE9WZ1JtdVktTnhaVnByU0M2UnhNM1Jqcnh6QnR0WEd2NDJ0Y2szWg?oc=5",
-      "snippet": "Gold struggles near $3,700 despite weaker Philly Fed, renewed Hormuz tensions - Kitco AM Report Kitco",
-      "summary": "Gold struggles near $3,700 despite weaker Philly Fed, renewed Hormuz tensions - Kitco AM Report Kitco",
+      "id": "N1",
+      "title": "Gold slips after sharp rebound with inflation, Fed expectations in focus - Investing.com",
+      "publisher": "Investing.com",
+      "published": "2026-11-24T11:37:23+00:00",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPcU9Cd2xHVXVEMWNPM3pIMWRDakVBcVRzZkFyUHJGVi04VEdIY1EwRXVSS251ZExra2swcW45Z1BkbVdmWFl4dFU0c3JLdTFZRmNGaE5ZMHlYTmtqMTJGTjc4RG42YVVLei1PaTQ3N05xQkpjQ09nYmVTU2lEVlZ4WHl5R3hoU2w1Rk1COGNRZ2RpeVRqUi01RWs1bXZuU0hDdHJERDl1SE5rZVkwR0VIM3NzVkpJenAxdlNZdklHR0J2ZU4zUjVzZ1RyOHRrNk0?oc=5",
+      "snippet": "Gold slips after sharp rebound with inflation, Fed expectations in focus Investing.com",
+      "summary": "Gold slips after sharp rebound with inflation, Fed expectations in focus Investing.com",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวขึ้นในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้",
-      "hot_reason": "คัดจากคำในพาดหัว: กล่าวถึงราคาทอง + ดอกเบี้ย/ยีลด์ + ภูมิรัฐศาสตร์"
+      "hot_reason": "คัดจากคำในพาดหัว: กล่าวถึงราคาทอง + ดอกเบี้ย/ยีลด์ + น้ำมัน/เงินเฟ้อ"
     }
   ],
-  "news_updated_at": "2026-11-23T15:26:48.146223+00:00",
-  "news_candidates": 16,
+  "news_updated_at": "2026-11-24T15:05:53.289236+00:00",
+  "news_candidates": 20,
   "ai_updated_at": "2026-11-19T11:06:46.000Z",
   "status": {
     "technical": "ok",
     "news": "rss_headline_heuristic",
-    "ai": "preserved_morning_analysis",
-    "live_quote": "ok"
+    "ai": "preserved_morning_analysis"
   },
   "news_source_note": "พาดหัว/ข้อความย่อจาก Google News RSS; หากไม่มี API key จะประเมินทิศทางด้วยกฎคำสำคัญเบื้องต้น ไม่ใช่การอ่านบทความเต็ม และไม่ยืนยันว่าเป็นสาเหตุของราคา",
-  "generated_at_bangkok": "2026-11-23T22:26:45.591926+07:00"
+  "generated_at_bangkok": "2026-11-24T22:05:50.219722+07:00"
 }
