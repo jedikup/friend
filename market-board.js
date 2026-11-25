@@ -207,7 +207,7 @@
   function fallbackChart(id,bars,field,fx,latestPrice){
     const host=$(id); if(!host||!Array.isArray(bars)||bars.length<2)return;
     host.querySelector('.chart-fallback')?.remove();
-    const data=bars.slice(-60).map(b=>({o:Number(b.open),h:Number(b.high),l:Number(b.low),c:Number(b.close)}))
+    const data=bars.slice(-60).map(b=>({o:Number(b.open),h:Number(b.high),l:Number(b.low),c:Number(b.close),time:b.time}))
       .filter(b=>[b.o,b.h,b.l,b.c].every(Number.isFinite));
     if(data.length<2)return;
     const factor=field==='thai'?Number(fx)*0.47296:1;
@@ -303,6 +303,9 @@
   }
   load();
   setInterval(() => { if (!document.hidden) load(); }, 10 * 60 * 1000);
+  window.addEventListener('focus', () => load());
   document.addEventListener('visibilitychange', () => { if (!document.hidden) load(); });
+  // Refresh the complete board (prices, chart, indicators, news and analysis) from the latest published snapshot.
+  setInterval(() => { if (!document.hidden) load(); }, 10 * 60 * 1000);
 })();
 
