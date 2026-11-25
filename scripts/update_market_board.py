@@ -139,7 +139,8 @@ def technical_levels(bars: list[dict], spot: float, fx: float) -> dict:
     while len(resistances) < 2:
         resistances.append(spot + atr * (len(resistances) + 1))
     daily = bars[-1]
-    previous_close = closes[-2]
+    # bars contains completed daily candles only; compare the live quote with the latest closed candle.
+    previous_close = closes[-1]
     delta_pct = (spot / previous_close - 1) * 100
     ma20 = mean(closes[-sma_period:])
     ma50 = ema(closes, 50)
