@@ -203,8 +203,10 @@ def technical_levels(bars: list[dict], spot: float, fx: float) -> dict:
 def news_candidates(now: datetime) -> list[dict]:
     queries = [
         ("gold bullion XAU Fed inflation when:7d", "en-US", "US", "US:en"),
+        ("US PCE inflation Federal Reserve data when:7d", "en-US", "US", "US:en"),
         ("Iran OR Hormuz oil gold when:7d", "en-US", "US", "US:en"),
         ("Thailand gold price baht economy when:7d", "en-US", "TH", "TH:en"),
+        ("USD THB baht Bank of Thailand economy when:7d", "en-US", "TH", "TH:en"),
         ("ทองคำ ราคาทอง ค่าเงินบาท เศรษฐกิจ when:7d", "th", "TH", "TH:th"),
     ]
     found: dict[str, dict] = {}
