@@ -340,10 +340,82 @@ def headline_outlook(item: dict, daily_change_pct: float) -> tuple[str, str, str
 
 
 def embed_public_data(data: dict) -> None:
-    # Put the same generated snapshot into each Pages document. GitHub Pages serves
-    # the HTML reliably even when static JSON MIME/path handling differs by client.
+    # Keep the same snapshot in each Pages document and render a no-JS fallback.
+    # This keeps the price cards, news and Thai chart visible if a browser script/CDN fails.
     serialized = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     block = f'<script id="marketAnalysisData" type="application/json">{serialized}</script>'
+
+    def stamp(value: str) -> str:
+        try:
+            dt = datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(BANGKOK)
+            return dt.strftime("%d/%m/%Y %H:%M น.")
+        except (TypeError, ValueError):
+            return "เวลาไม่ระบุ"
+
+    def esc(value: object) -> str:
+        return html.escape(str(value or ""), quote=True)
+
+    def number(value: object, digits: int = 2) -> str:
+        try:
+            return f"{float(value):,.{digits}f}"
+        except (TypeError, ValueError):
+            return "—"
+
+    quote = data.get("live_quote") or {}
+    news = data.get("news") or []
+    bars = data.get("daily_bars") or []
+    news_markup = "".join(
+        '<article class="news-item news-watch">'
+        f'<b>{esc(item.get("title") or "ข่าวตลาด")}</b>'
+        f'<small class="news-meta">{esc(item.get("publisher") or "แหล่งข่าว")} · {esc(stamp(item.get("published", "")))}</small>'
+        f'<p>{esc(item.get("summary") or item.get("snippet") or "")}</p>'
+        f'<p>ตลาดอาจตอบสนอง: {esc(item.get("response") or "ติดตามข้อมูลเพิ่มเติม")}</p>'
+        + (f'<a href="{esc(item.get("url"))}" target="_blank" rel="noopener noreferrer">อ่านต้นทาง ↗</a>' if item.get("url") else "")
+        + '</article>'
+        for item in news[:3]
+    )
+
+    chart_markup = ""
+    try:
+        factor = float(quote["fx_usd_thb"]) * 0.47296
+        rows = bars[-40:]
+        prices = [float(row["close"]) * factor for row in rows]
+        if len(rows) >= 2 and factor > 0:
+            bands = []
+            for i in range(len(rows)):
+                window = prices[max(0, i - 19):i + 1]
+                mid = mean(window)
+                deviation = math.sqrt(mean([(x - mid) ** 2 for x in window]))
+                bands.append((mid, mid + 2 * deviation, mid - 2 * deviation))
+            values = [float(row[k]) * factor for row in rows for k in ("high", "low")] + [v for pair in bands for v in pair]
+            low, high = min(values), max(values)
+            span = high - low or 1.0
+            x = lambda i: 45 + i * 910 / max(1, len(rows) - 1)
+            y = lambda value: 325 - (value - low) / span * 280
+            svg = ['<svg viewBox="0 0 1000 360" preserveAspectRatio="none" style="width:100%;height:calc(100% - 32px);display:block">']
+            for grid in range(5):
+                gy = 35 + grid * 62
+                svg.append(f'<line x1="34" x2="975" y1="{gy}" y2="{gy}" stroke="#d8d0b5"/>')
+            for column, color, dash in ((1, "#d49b18", ' stroke-dasharray="6 4"'), (0, "#5267c8", ""), (2, "#d49b18", ' stroke-dasharray="6 4"')):
+                points = " ".join(f"{x(i):.2f},{y(pair[column]):.2f}" for i, pair in enumerate(bands))
+                svg.append(f'<polyline points="{points}" fill="none" stroke="{color}" stroke-width="2"{dash}/>')
+            body = max(3.0, min(12.0, 910 / max(1, len(rows) - 1) * 0.55))
+            for i, row in enumerate(rows):
+                opening, closing = float(row["open"]) * factor, float(row["close"]) * factor
+                top, bottom = float(row["high"]) * factor, float(row["low"]) * factor
+                color = "#13835d" if closing >= opening else "#c43d48"
+                xpos = x(i)
+                svg.append(f'<line x1="{xpos:.2f}" x2="{xpos:.2f}" y1="{y(top):.2f}" y2="{y(bottom):.2f}" stroke="{color}" stroke-width="2"/>')
+                svg.append(f'<rect x="{xpos-body/2:.2f}" y="{min(y(opening), y(closing)):.2f}" width="{body:.2f}" height="{max(2.0, abs(y(opening)-y(closing))):.2f}" fill="{color}"/>')
+            svg.append('</svg>')
+            chart_markup = (
+                '<div class="chart-fallback" style="position:absolute;inset:0;z-index:20;background:#f5f1df;padding:10px 12px;border:1px solid #c8bb80;border-radius:8px;overflow:hidden">'
+                f'<b>กราฟสำรอง · ทองไทยประมาณการ · แท่ง OHLC + Bollinger Bands (20,2) · snapshot {esc(stamp(data.get("generated_at", "")))}</b>'
+                + "".join(svg) + '</div>'
+            )
+    except (KeyError, TypeError, ValueError, OverflowError):
+        chart_markup = ""
+
     for name in ("index.html", "news.html"):
         path = ROOT / name
         if not path.exists():
@@ -354,9 +426,46 @@ def embed_public_data(data: dict) -> None:
             page = re.sub(pattern, lambda _: block, page, count=1, flags=re.DOTALL)
         else:
             marker = '<script src="./market-board.js?v=5" defer></script>'
-            if marker not in page:
-                raise ValueError(f"Could not locate market-board.js script tag in {name}")
+            if not marker in page:
+                marker = re.search(r'<script src="./market-board.js\?v=\d+" defer></script>', page)
+                if not marker:
+                    raise ValueError(f"Could not locate market-board.js script tag in {name}")
+                marker = marker.group(0)
             page = page.replace(marker, block + marker, 1)
+
+        if quote:
+            for element_id, value in (
+                ("thaiValue", "฿" + number(quote.get("estimated_thb_per_baht"), 0)),
+                ("spotValue", "$" + number(quote.get("spot"))),
+                ("fxValue", number(quote.get("fx_usd_thb"), 3)),
+            ):
+                page = re.sub(
+                    rf'(<div id="{element_id}" class="num">).*?(</div>)',
+                    lambda match, value=value: match.group(1) + esc(value) + match.group(2),
+                    page, count=1,
+                )
+            page = re.sub(
+                r'(<div id="updatedAt">).*?(</div>)',
+                lambda match: match.group(1) + esc(f'ราคา Spot: {stamp(quote.get("quote_updated", ""))} · USD/THB อ้างอิง {quote.get("fx_reference_date", "ไม่ระบุ")}') + match.group(2),
+                page, count=1,
+            )
+            page = re.sub(
+                r'(<div id="checkedAt">).*?(</div>)',
+                lambda match: match.group(1) + esc(f'ตรวจข้อมูลล่าสุด: {stamp(data.get("generated_at", ""))}') + match.group(2),
+                page, count=1,
+            )
+        if news_markup:
+            page = re.sub(
+                r'(<div id="latestNewsItems">).*?(</div>)',
+                lambda match: match.group(1) + news_markup + match.group(2),
+                page, count=1, flags=re.DOTALL,
+            )
+        if chart_markup:
+            page = re.sub(
+                r'(<div id="thaiOverviewChart" class="tv-chart tv-chart-main"[^>]*>).*?(</div>)',
+                lambda match: match.group(1).replace('style="position:relative"', '') + chart_markup + match.group(2),
+                page, count=1, flags=re.DOTALL,
+            )
         path.write_text(page, encoding="utf-8")
 
 
