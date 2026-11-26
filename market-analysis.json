@@ -3,10 +3,10 @@
   "attempted_at": "2026-11-26T01:08:22.261098+00:00",
   "slot": "08:00",
   "live_quote": {
-    "spot": 3563.97,
-    "fx_usd_thb": 34.02,
-    "estimated_thb_per_baht": 57350,
-    "quote_updated": "2026-11-26T00:53:01.543114+00:00",
+    "spot": 3572.01,
+    "fx_usd_thb": 34.051,
+    "estimated_thb_per_baht": 57550,
+    "quote_updated": "2026-11-26T09:13:01.442366+00:00",
     "fx_reference_date": "2026-11-26",
     "spot_source": "GoldPrice.dev · XAU/USD Spot",
     "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB"
@@ -514,7 +514,8 @@
   "status": {
     "technical": "ok",
     "news": "rss_headline_heuristic",
-    "ai": "rules_based_no_api_key"
+    "ai": "rules_based_no_api_key",
+    "live_quote": "ok"
   },
   "news_source_note": "พาดหัว/ข้อความย่อจาก Google News RSS; หากไม่มี API key จะประเมินทิศทางด้วยกฎคำสำคัญเบื้องต้น ไม่ใช่การอ่านบทความเต็ม และไม่ยืนยันว่าเป็นสาเหตุของราคา",
   "generated_at_bangkok": "2026-11-26T08:08:22.261098+07:00"
