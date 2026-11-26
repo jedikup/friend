@@ -463,7 +463,7 @@ def embed_public_data(data: dict) -> None:
         if chart_markup:
             page = re.sub(
                 r'(<div id="thaiOverviewChart" class="tv-chart tv-chart-main"[^>]*>).*?(</div>)',
-                lambda match: match.group(1).replace('style="position:relative"', '') + chart_markup + match.group(2),
+                lambda match: (match.group(1) if "position:relative" in match.group(1) else match.group(1)[:-1] + ' style="position:relative">') + chart_markup + match.group(2),
                 page, count=1, flags=re.DOTALL,
             )
         path.write_text(page, encoding="utf-8")
