@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-26T14:02:07.039705+00:00",
-  "attempted_at": "2026-11-26T14:02:07.039705+00:00",
+  "generated_at": "2026-11-26T14:04:52.851846+00:00",
+  "attempted_at": "2026-11-26T14:04:52.851846+00:00",
   "slot": "22:00",
   "live_quote": {
-    "spot": 3570.62,
+    "spot": 3569.84,
     "fx_usd_thb": 34.063,
     "estimated_thb_per_baht": 57500,
-    "quote_updated": "2026-11-26T13:47:01.5087+00:00",
+    "quote_updated": "2026-11-26T13:49:01.349876+00:00",
     "fx_reference_date": "2026-11-26",
     "spot_source": "GoldPrice.dev · XAU/USD Spot",
     "fx_source": "Frankfurter · อัตราอ้างอิงรายวัน USD/THB"
   },
   "technical": {
-    "spot": 3570.62,
+    "spot": 3569.84,
     "fx_usd_thb": 34.063,
     "estimated_thb_per_baht": 57500,
-    "daily_change_pct": -0.17,
+    "daily_change_pct": -0.19,
     "indicators": {
       "ema20": 3804.4,
       "ema50": 3925.93,
@@ -47,14 +47,14 @@
         "high": 3522.62
       },
       {
-        "low": 3441.38,
-        "high": 3480.81
+        "low": 3440.6,
+        "high": 3480.03
       }
     ],
     "resistance": [
       {
-        "low": 3660.43,
-        "high": 3699.86
+        "low": 3659.65,
+        "high": 3699.08
       },
       {
         "low": 3903.5,
@@ -70,7 +70,7 @@
     },
     "source": "GoldPrice.dev · XAU/USD Spot OHLC รายวัน (ใช้แท่งปิดแล้ว) + GoldPriceZone Spot/FX",
     "method": "Pivot swing 2 แท่งซ้าย/ขวา จัดกลุ่มระดับใกล้กันร่วมกับ high/low 10 วันและ ATR(14; ใช้ข้อมูล 14 แท่ง); SMA20 ใช้ข้อมูล 20 แท่ง; ราคาไทยประมาณการจาก Spot × USD/THB × 0.47296",
-    "quote_updated": "2026-11-26T13:47:01.5087+00:00",
+    "quote_updated": "2026-11-26T13:49:01.349876+00:00",
     "fx_reference_date": "2026-11-26"
   },
   "daily_bars": [
@@ -253,7 +253,7 @@
   ],
   "news": [
     {
-      "id": "N21",
+      "id": "N19",
       "title": "Gold Edges Lower as US Inflation Data Fuels Bets for Rate Hikes - Bloomberg.com",
       "publisher": "Bloomberg.com",
       "published": "2026-11-26T11:05:04+00:00",
@@ -277,25 +277,37 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N20",
-      "title": "Gold Edges Lower as US Inflation Data Fuels Bets for Rate Hikes - Bloomberg",
-      "publisher": "Bloomberg",
-      "published": "2026-11-26T00:18:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPN1JTeTJ4dVBCb1RnXzZqNGpuUkhGY21IeGF2ZHZPbUl2a19PUUdKRWpobmZRRUhfbUlTOGxpY1VTcERfeWJpNHJsbXk4SmswZFVIM0hKNlMtTjhhalpjbmVXY0hlR1VyT1hrdHlHaC1idzZ3VFpHX1Nua2kyS2xaQmRiTGZjZXJxak5fNTJpRWlWNUNGS29jMFVKTDJlZFNEMms3eHZudXZHSlN2cFc0QXRjNG9QeFFLYWhTU1hSZTB0NmJ3MWJJSXF1bDVKSlF4b3hr?oc=5",
-      "snippet": "Gold Edges Lower as US Inflation Data Fuels Bets for Rate Hikes Bloomberg",
-      "summary": "Gold Edges Lower as US Inflation Data Fuels Bets for Rate Hikes Bloomberg",
+      "id": "N30",
+      "title": "Gold rebounds above $3,550 as easing yields and weaker US Dollar counter hot US inflation data - FXStreet",
+      "publisher": "FXStreet",
+      "published": "2026-11-25T23:26:01+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNV2dlTUJEaktWRnlZVGtZanQ5aF9lbjZFWm1ITDIyeVdvNndTVXlhRHc3b3ZWVExVQVdMY1ZNOWt1OUtack82YVo5N2tKR2dKWU9tbFJTazlyOVpNWE1PX3JHWm9HNFdfb2ttVWw4SlZZcjNBYk1sWXoxWXUybzloSFh5UldpOGRPeldlQTdNYVVKelAwbXRSRmxUcVl5WUZTSWVyQlZpOXdkNzVhZE1JR0NSbjJxTHN6LV9tbXV2ZXQtSFdKWWtqV1JsRFlLQko2OXc?oc=5",
+      "snippet": "Gold rebounds above $3,550 as easing yields and weaker US Dollar counter hot US inflation data FXStreet",
+      "summary": "Gold rebounds above $3,550 as easing yields and weaker US Dollar counter hot US inflation data FXStreet",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N12",
+      "id": "N13",
       "title": "US economy roars ahead in third quarter, inflation remains high in October - Reuters",
       "publisher": "Reuters",
       "published": "2026-11-25T22:06:55+00:00",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNalBrRjhRWHdhRDduMzduLU1kN1lGVFpzNFllX0RzdjJXMjdtajRZS1l1dms2MFJFbkhJQmx3Qzgydi1nTTJnQ1JPLUtoa1R5LWZjWjItUXJhXzhoZG51NU9ENzVBQjVSZWFpdHlqbV9PSkVncWtjUlptdXhjd0ZKRXZ6d2Y1dw?oc=5",
       "snippet": "US economy roars ahead in third quarter, inflation remains high in October Reuters",
       "summary": "US economy roars ahead in third quarter, inflation remains high in October Reuters",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N7",
+      "title": "Fed policymakers at odds over causes of high inflation - Reuters",
+      "publisher": "Reuters",
+      "published": "2026-11-25T20:50:24+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ2Vtdjdia2xUaVF5bWxRSVlPUTZjc1JmWG9Uam1QSHpNcXZuREdQVmRyX2hkNEtMbWhFd1VFb3l6QVJGYkJHZlZXUDJLVlM4cDdDR0RSVTRPMmZaUHAtMlhtSDlQeFF4UGJadUhrQmhlaWlJT1cwSG9IRnF1cC1COEtKdTBsUWVsXzhkYWhUWHNKTjJsUVJuNw?oc=5",
+      "snippet": "Fed policymakers at odds over causes of high inflation Reuters",
+      "summary": "Fed policymakers at odds over causes of high inflation Reuters",
       "direction": "watch",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
@@ -313,7 +325,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
-      "id": "N28",
+      "id": "N24",
       "title": "Bitcoin briefly slips below $58K as hot PCE inflation fuels Fed rate hike bets - FXStreet",
       "publisher": "FXStreet",
       "published": "2026-11-25T17:58:00+00:00",
@@ -337,7 +349,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N18",
+      "id": "N17",
       "title": "US PCE inflation keeps Fed on course for more tightening - Financial Times",
       "publisher": "Financial Times",
       "published": "2026-11-25T15:12:01+00:00",
@@ -349,7 +361,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N26",
+      "id": "N23",
       "title": "Gold sinks below $3,500 as hawkish Fed bets and equity rout fuel selling - FXStreet",
       "publisher": "FXStreet",
       "published": "2026-11-25T15:10:06+00:00",
@@ -359,18 +371,6 @@
       "direction": "down",
       "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวรายงานราคาทองอ่อนตัว · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
-    },
-    {
-      "id": "N29",
-      "title": "Euro struggles for traction as upbeat US economic data reinforce hawkish Fed outlook - FXStreet",
-      "publisher": "FXStreet",
-      "published": "2026-11-25T14:49:46+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSUphSjBNRUZSRWJUSVdkWjF0dFRBWWZCWjJkaHZxcUtSTXFoUl9JVnRVS0U3WHZxR3dSV3djdWh4UHgwNjJFbUExbnV4eE8tVVlucXZYWTYyZHlRcHBpU0JjNzFTNVlrdjZxUHhNaFdERGNpYW9yV2x0aUN5bG5QOTNaaU93bjJQVVNGOVViOFpFY053SEx5S2ZXLTluUDlETVhkTlpwbVBaY2YtSlU0MGlzN20ycFROd0ZzNk5iZ1l3ZVduY2c?oc=5",
-      "snippet": "Euro struggles for traction as upbeat US economic data reinforce hawkish Fed outlook FXStreet",
-      "summary": "Euro struggles for traction as upbeat US economic data reinforce hawkish Fed outlook FXStreet",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
       "id": "N10",
@@ -385,7 +385,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N17",
+      "id": "N16",
       "title": "Gold prices drop another 1% as US Q3 GDP revised to 4.3% with contained PCE inflation - Kitco",
       "publisher": "Kitco",
       "published": "2026-11-25T13:51:16+00:00",
@@ -421,19 +421,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N25",
-      "title": "Silver price sinks to 14-month low on firm US Dollar ahead of PCE inflation data - FXStreet",
-      "publisher": "FXStreet",
-      "published": "2026-11-25T12:49:59+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQzEtejVNQlJzcDZFUlhGUV8zdUMwYUM4MktxVl80X1JfOW56TmNfOHNqQ1Y3azkza0RBRkRPWE0xYm5KMTNKYjZWVjlUNUFEX215OUgxUDhGQ2ctSFJOUGpxWFpPTm5XaDBnaXh0WmEzQUM2V3dqRHJnbkJNVG1SUjZaOXdOQ3VHNUFmVWtJTkNBSTY2MXV1U29wMmNzMWlqTF9Zd2txWFhPaVI5U1J3Q1pEcm11eVQzdThCa2hFTnc?oc=5",
-      "snippet": "Silver price sinks to 14-month low on firm US Dollar ahead of PCE inflation data FXStreet",
-      "summary": "Silver price sinks to 14-month low on firm US Dollar ahead of PCE inflation data FXStreet",
-      "direction": "watch",
-      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
-      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
-    },
-    {
-      "id": "N32",
+      "id": "N27",
       "title": "Gold today: Will US PCE data rescue the metal from its slide? - FXStreet",
       "publisher": "FXStreet",
       "published": "2026-11-25T12:14:10+00:00",
@@ -445,7 +433,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวรายงานราคาทองอ่อนตัว"
     },
     {
-      "id": "N23",
+      "id": "N21",
       "title": "Euro weakens against US Dollar ahead of key US PCE inflation data - FXStreet",
       "publisher": "FXStreet",
       "published": "2026-11-25T11:32:24+00:00",
@@ -458,6 +446,18 @@
     },
     {
       "id": "N31",
+      "title": "US Dollar Index Price Forecast: Struggles to extend rally beyond 61.8% Fibo retracement at 104.65 - FXStreet",
+      "publisher": "FXStreet",
+      "published": "2026-11-25T09:02:30+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQ1FpVk56VjV3M1A0ellGV1BCZTlfU2xfd2ZEMVNQZGlBbGVWVEVpUkVJQXhFd1NFenIxc3FNMWpBaWNDM21rV0dvZ0lieUpkWXphTHh6eUJ4VGpIcVE3RjlSRmk2QXdPMGpYNGowRUloU2hCT0xjN2dEYmd5bXRkT1FOTms4bndyS0dIRTlWQ3k1Zmd4M2VkX3ZrOEF0YmxtTk9UdjNObG1MY2lOMjk0TzdPY1dzNkRoc2Y3SVEyMlB0UjFOVFJlRzRkMTdPOUcxcnc?oc=5",
+      "snippet": "US Dollar Index Price Forecast: Struggles to extend rally beyond 61.8% Fibo retracement at 104.65 FXStreet",
+      "summary": "US Dollar Index Price Forecast: Struggles to extend rally beyond 61.8% Fibo retracement at 104.65 FXStreet",
+      "direction": "watch",
+      "response": "ประเมินเบื้องต้นจากพาดหัว: พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้ · เป็นเพียงสัญญาณคำสำคัญ โปรดเปิดอ่านต้นทางเพื่อดูบริบท",
+      "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
+    },
+    {
+      "id": "N26",
       "title": "Gold stays weak below $3,550 as traders await US PCE data for Fed cues amid firmer USD - FXStreet",
       "publisher": "FXStreet",
       "published": "2026-11-25T08:39:29+00:00",
@@ -469,7 +469,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N19",
+      "id": "N18",
       "title": "Forex Today: US Dollar rebounds ahead of critical PCE inflation data - FXStreet",
       "publisher": "FXStreet",
       "published": "2026-11-25T06:57:33+00:00",
@@ -481,7 +481,7 @@
       "market_reaction": "ข้อมูลราคาเคลื่อนไหวลงในวันเดียวกัน แต่ไม่ยืนยันว่าเกิดจากข่าวนี้ · พาดหัวไม่มีสัญญาณทิศทางที่กฎตรวจจับได้ หรือเป็นข่าวภูมิรัฐศาสตร์/ปัจจัยหลายด้านที่ยังสรุปผลต่อทองไม่ได้"
     },
     {
-      "id": "N14",
+      "id": "N15",
       "title": "South African rand eases, with US inflation data in focus - Reuters",
       "publisher": "Reuters",
       "published": "2026-11-25T06:13:00+00:00",
@@ -495,7 +495,7 @@
   ],
   "hot_news": [
     {
-      "id": "N21",
+      "id": "N19",
       "title": "Gold Edges Lower as US Inflation Data Fuels Bets for Rate Hikes - Bloomberg.com",
       "publisher": "Bloomberg.com",
       "published": "2026-11-26T11:05:04+00:00",
@@ -508,7 +508,7 @@
       "hot_reason": "คัดจากคำในพาดหัว: กล่าวถึงราคาทอง + ดอกเบี้ย/ยีลด์ + น้ำมัน/เงินเฟ้อ"
     }
   ],
-  "news_updated_at": "2026-11-26T14:02:09.882409+00:00",
+  "news_updated_at": "2026-11-26T14:04:56.477642+00:00",
   "news_candidates": 40,
   "ai_updated_at": "2026-11-26T01:08:26.289604+00:00",
   "status": {
@@ -517,5 +517,5 @@
     "ai": "preserved_morning_analysis"
   },
   "news_source_note": "พาดหัว/ข้อความย่อจาก Google News RSS; หากไม่มี API key จะประเมินทิศทางด้วยกฎคำสำคัญเบื้องต้น ไม่ใช่การอ่านบทความเต็ม และไม่ยืนยันว่าเป็นสาเหตุของราคา",
-  "generated_at_bangkok": "2026-11-26T21:02:07.039705+07:00"
+  "generated_at_bangkok": "2026-11-26T21:04:52.851846+07:00"
 }
