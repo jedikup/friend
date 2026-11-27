@@ -9,7 +9,7 @@ on:
       - "index.html"
   schedule:
     # Price feed checked every 10 minutes; script runs full analysis only at Bangkok 08:00/22:00.
-    # Scheduled events may be delayed; a recovery push still refreshes quotes/news without overwriting the morning scenario.
+    # Recovery runs refresh quotes, news and levels; the evening run preserves morning Scenario and plan.
     - cron: '*/10 * * * *'
   workflow_dispatch:
 
